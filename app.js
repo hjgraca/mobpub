@@ -11,10 +11,5 @@ app.use(express.static(__dirname + '/'));
             return res.render('index');
     });
 
-    // app.get('*', function(req, res){
-    //     console.log(req.params[0]);
-    //     return res.render(req.params[0]);
-    // });
-
     app.listen(process.env.PORT || 8080);
     console.log('Express server started on port 8080');
