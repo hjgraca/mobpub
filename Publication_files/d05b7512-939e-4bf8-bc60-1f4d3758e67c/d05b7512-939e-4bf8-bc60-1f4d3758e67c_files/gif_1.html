@@ -1,0 +1,174 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+d05b7512-939e-4bf8-bc60-1f4d3758e67c.vsd
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 4;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = -0.005000;
+	viewMgr.visBBoxRight = 10.831772;
+	viewMgr.visBBoxBottom = -0.005000;
+	viewMgr.visBBoxTop = 8.863268;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_1.gif" ALT="Page-1" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.3.5 Manage the KM project life cycle (11099)" origTitle="12.3.5 Manage the KM project life cycle (11099)" TITLE="12.3.5 Manage the KM project life cycle (11099)"  target="_top" COORDS="555,625,552,625,550,627,549,630,549,647,549,694,550,697,552,699,555,700,732,700,735,699,737,697,738,694,738,647,738,630,737,627,735,625,732,625,555,625" onmouseover="UpdateTooltip(this,4,97,event)" onfocus="UpdateTooltip(this,4,97,event)" onclick="return OnShapeClick(4,97,event);" onkeyup="OnShapeKey(4,97,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.3.4 Design and launch KM projects (11098)" origTitle="12.3.4 Design and launch KM projects (11098)" TITLE="12.3.4 Design and launch KM projects (11098)"  target="_top" COORDS="555,530,552,531,550,533,549,536,549,553,549,600,550,603,552,605,555,606,732,606,735,605,737,603,738,600,738,553,738,536,737,533,735,531,732,530,555,530" onmouseover="UpdateTooltip(this,4,93,event)" onfocus="UpdateTooltip(this,4,93,event)" onclick="return OnShapeClick(4,93,event);" onkeyup="OnShapeKey(4,93,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.3.3 Identify and plan KM projects (11097)" origTitle="12.3.3 Identify and plan KM projects (11097)" TITLE="12.3.3 Identify and plan KM projects (11097)"  target="_top" COORDS="555,435,552,436,550,438,549,441,549,458,549,505,550,508,552,510,555,511,732,511,735,510,737,508,738,505,738,458,738,441,737,438,735,436,732,435,555,435" onmouseover="UpdateTooltip(this,4,89,event)" onfocus="UpdateTooltip(this,4,89,event)" onclick="return OnShapeClick(4,89,event);" onkeyup="OnShapeKey(4,89,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.2.6 Establish need for change (11088)" origTitle="12.2.6 Establish need for change (11088)" TITLE="12.2.6 Establish need for change (11088)"  target="_top" COORDS="309,719,306,720,304,722,303,725,303,742,303,789,304,792,306,794,309,795,486,795,489,794,491,792,492,789,492,742,492,725,491,722,489,720,486,719,309,719" onmouseover="UpdateTooltip(this,4,85,event)" onfocus="UpdateTooltip(this,4,85,event)" onclick="return OnShapeClick(4,85,event);" onkeyup="OnShapeKey(4,85,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.2.5 Conduct gap analysis to understand need for change and..." origTitle="12.2.5 Conduct gap analysis to understand need for change and..." TITLE="12.2.5 Conduct gap analysis to understand need for change and..."  target="_top" COORDS="421,701,483,701,483,700,486,700,489,699,491,697,492,694,492,647,492,630,491,627,489,625,486,625,309,625,306,625,304,627,303,630,303,647,303,694,304,697,306,699,309,700,316,700,316,701,375,701,375,717,379,717,416,717,421,717,421,701" onmouseover="UpdateTooltip(this,4,41,event)" onfocus="UpdateTooltip(this,4,41,event)" onclick="return OnShapeClick(4,41,event);" onkeyup="OnShapeKey(4,41,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.1.5 Measure cycle time (11079)" origTitle="12.1.5 Measure cycle time (11079)" TITLE="12.1.5 Measure cycle time (11079)"  target="_top" COORDS="63,625,60,625,58,627,57,630,57,647,57,694,58,697,60,699,63,700,241,700,243,699,246,697,246,694,246,647,246,630,246,627,243,625,241,625,63,625" onmouseover="UpdateTooltip(this,4,37,event)" onfocus="UpdateTooltip(this,4,37,event)" onclick="return OnShapeClick(4,37,event);" onkeyup="OnShapeKey(4,37,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.1.4 Measure staff efficiency (11078)" origTitle="12.1.4 Measure staff efficiency (11078)" TITLE="12.1.4 Measure staff efficiency (11078)"  target="_top" COORDS="63,530,60,531,58,533,57,536,57,553,57,600,58,603,60,605,63,606,241,606,243,605,246,603,246,600,246,553,246,536,246,533,243,531,241,530,63,530" onmouseover="UpdateTooltip(this,4,25,event)" onfocus="UpdateTooltip(this,4,25,event)" onclick="return OnShapeClick(4,25,event);" onkeyup="OnShapeKey(4,25,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.4.4 Sustain improvement (11137)" origTitle="12.4.4 Sustain improvement (11137)" TITLE="12.4.4 Sustain improvement (11137)"  target="_top" COORDS="800,530,798,531,795,533,795,536,795,553,795,600,795,603,798,605,800,606,978,606,981,605,983,603,984,600,984,553,984,536,983,533,981,531,978,530,800,530" onmouseover="UpdateTooltip(this,4,61,event)" onfocus="UpdateTooltip(this,4,61,event)" onclick="return OnShapeClick(4,61,event);" onkeyup="OnShapeKey(4,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.3.2 Assess knowledge management capabilities (11096)" origTitle="12.3.2 Assess knowledge management capabilities (11096)" TITLE="12.3.2 Assess knowledge management capabilities (11096)"  target="_top" COORDS="666,416,732,416,735,416,737,414,738,411,738,364,738,347,737,344,735,342,732,341,555,341,552,342,550,344,549,347,549,364,549,411,550,414,552,416,555,416,620,416,620,417,625,417,662,417,666,417,666,416" onmouseover="UpdateTooltip(this,4,57,event)" onfocus="UpdateTooltip(this,4,57,event)" onclick="return OnShapeClick(4,57,event);" onkeyup="OnShapeKey(4,57,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.1.3 Measure cost effectiveness (11077)" origTitle="12.1.3 Measure cost effectiveness (11077)" TITLE="12.1.3 Measure cost effectiveness (11077)"  target="_top" COORDS="63,435,60,436,58,438,57,441,57,458,57,505,58,508,60,510,63,511,241,511,243,510,246,508,246,505,246,458,246,441,246,438,243,436,241,435,63,435" onmouseover="UpdateTooltip(this,4,53,event)" onfocus="UpdateTooltip(this,4,53,event)" onclick="return OnShapeClick(4,53,event);" onkeyup="OnShapeKey(4,53,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.2.4 Conduct competitive benchmarking (11086)" origTitle="12.2.4 Conduct competitive benchmarking (11086)" TITLE="12.2.4 Conduct competitive benchmarking (11086)"  target="_top" COORDS="309,530,306,531,304,533,303,536,303,553,303,600,304,603,306,605,309,606,486,606,489,605,491,603,492,600,492,553,492,536,491,533,489,531,486,530,309,530" onmouseover="UpdateTooltip(this,4,238,event)" onfocus="UpdateTooltip(this,4,238,event)" onclick="return OnShapeClick(4,238,event);" onkeyup="OnShapeKey(4,238,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.4.3 Implement change (11136)" origTitle="12.4.3 Implement change (11136)" TITLE="12.4.3 Implement change (11136)"  target="_top" COORDS="800,435,798,436,795,438,795,441,795,458,795,505,795,508,798,510,800,511,978,511,981,510,983,508,984,505,984,458,984,441,983,438,981,436,978,435,800,435" onmouseover="UpdateTooltip(this,4,226,event)" onfocus="UpdateTooltip(this,4,226,event)" onclick="return OnShapeClick(4,226,event);" onkeyup="OnShapeKey(4,226,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.4.2 Design the change (11135)" origTitle="12.4.2 Design the change (11135)" TITLE="12.4.2 Design the change (11135)"  target="_top" COORDS="800,341,798,342,795,344,795,347,795,364,795,411,795,414,798,416,800,416,978,416,981,416,983,414,984,411,984,364,984,347,983,344,981,342,978,341,800,341" onmouseover="UpdateTooltip(this,4,222,event)" onfocus="UpdateTooltip(this,4,222,event)" onclick="return OnShapeClick(4,222,event);" onkeyup="OnShapeKey(4,222,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.4.1 Plan for change (11134)" origTitle="12.4.1 Plan for change (11134)" TITLE="12.4.1 Plan for change (11134)"  target="_top" COORDS="800,246,798,247,795,249,795,252,795,269,795,316,795,319,798,321,800,322,978,322,981,321,983,319,984,316,984,269,984,252,983,249,981,247,978,246,800,246" onmouseover="UpdateTooltip(this,4,218,event)" onfocus="UpdateTooltip(this,4,218,event)" onclick="return OnShapeClick(4,218,event);" onkeyup="OnShapeKey(4,218,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.4 Manage change (11074)" origTitle="12.4 Manage change (11074)" TITLE="12.4 Manage change (11074)"  target="_top" COORDS="781,171,779,171,777,174,776,176,776,193,776,619,777,622,779,624,781,625,997,625,1000,624,1002,622,1003,619,1003,193,1003,176,1002,174,1000,171,997,171,781,171" onmouseover="UpdateTooltip(this,4,214,event)" onfocus="UpdateTooltip(this,4,214,event)" onclick="return OnShapeClick(4,214,event);" onkeyup="OnShapeKey(4,214,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.2.3 Conduct process benchmarking (11085)" origTitle="12.2.3 Conduct process benchmarking (11085)" TITLE="12.2.3 Conduct process benchmarking (11085)"  target="_top" COORDS="309,435,306,436,304,438,303,441,303,458,303,505,304,508,306,510,309,511,486,511,489,510,491,508,492,505,492,458,492,441,491,438,489,436,486,435,309,435" onmouseover="UpdateTooltip(this,4,49,event)" onfocus="UpdateTooltip(this,4,49,event)" onclick="return OnShapeClick(4,49,event);" onkeyup="OnShapeKey(4,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.2.1 Conduct performance assessments (11083)" origTitle="12.2.1 Conduct performance assessments (11083)" TITLE="12.2.1 Conduct performance assessments (11083)"  target="_top" COORDS="309,246,306,247,304,249,303,252,303,269,303,316,304,319,306,321,309,322,486,322,489,321,491,319,492,316,492,269,492,252,491,249,489,247,486,246,309,246" onmouseover="UpdateTooltip(this,4,45,event)" onfocus="UpdateTooltip(this,4,45,event)" onclick="return OnShapeClick(4,45,event);" onkeyup="OnShapeKey(4,45,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.2.2 Develop benchmarking capabilities (11084)" origTitle="12.2.2 Develop benchmarking capabilities (11084)" TITLE="12.2.2 Develop benchmarking capabilities (11084)"  target="_top" COORDS="309,341,306,342,304,344,303,347,303,364,303,411,304,414,306,416,309,416,486,416,489,416,491,414,492,411,492,364,492,347,491,344,489,342,486,341,309,341" onmouseover="UpdateTooltip(this,4,21,event)" onfocus="UpdateTooltip(this,4,21,event)" onclick="return OnShapeClick(4,21,event);" onkeyup="OnShapeKey(4,21,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.2 Benchmark performance (11072)" origTitle="12.2 Benchmark performance (11072)" TITLE="12.2 Benchmark performance (11072)"  target="_top" COORDS="290,171,287,171,285,174,284,176,284,193,284,808,285,811,287,813,290,814,505,814,508,813,510,811,511,808,511,193,511,176,510,174,508,171,505,171,290,171" onmouseover="UpdateTooltip(this,4,5,event)" onfocus="UpdateTooltip(this,4,5,event)" onclick="return OnShapeClick(4,5,event);" onkeyup="OnShapeKey(4,5,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.3.1 Develop KM strategy (11095)" origTitle="12.3.1 Develop KM strategy (11095)" TITLE="12.3.1 Develop KM strategy (11095)"  target="_top" COORDS="555,246,552,247,550,249,549,252,549,269,549,316,550,319,552,321,555,322,732,322,735,321,737,319,738,316,738,269,738,252,737,249,735,247,732,246,555,246" onmouseover="UpdateTooltip(this,4,33,event)" onfocus="UpdateTooltip(this,4,33,event)" onclick="return OnShapeClick(4,33,event);" onkeyup="OnShapeKey(4,33,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.3 Develop enterprise-wide knowledge management (KM)..." origTitle="12.3 Develop enterprise-wide knowledge management (KM)..." TITLE="12.3 Develop enterprise-wide knowledge management (KM)..."  target="_top" COORDS="536,171,533,171,531,174,530,176,530,193,530,713,531,716,533,718,536,719,751,719,754,718,756,716,757,713,757,193,757,176,756,174,754,171,751,171,536,171" onmouseover="UpdateTooltip(this,4,29,event)" onfocus="UpdateTooltip(this,4,29,event)" onclick="return OnShapeClick(4,29,event);" onkeyup="OnShapeKey(4,29,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.1.1 Create enterprise measurement systems model (11075)" origTitle="12.1.1 Create enterprise measurement systems model (11075)" TITLE="12.1.1 Create enterprise measurement systems model (11075)"  target="_top" COORDS="175,322,241,322,243,321,246,319,246,316,246,269,246,252,246,249,243,247,241,246,63,246,60,247,58,249,57,252,57,269,57,316,58,319,60,321,63,322,129,322,129,322,133,322,170,322,175,322,175,322" onmouseover="UpdateTooltip(this,4,17,event)" onfocus="UpdateTooltip(this,4,17,event)" onclick="return OnShapeClick(4,17,event);" onkeyup="OnShapeKey(4,17,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.1.2 Measure process productivity (11076)" origTitle="12.1.2 Measure process productivity (11076)" TITLE="12.1.2 Measure process productivity (11076)"  target="_top" COORDS="63,341,60,342,58,344,57,347,57,364,57,411,58,414,60,416,63,416,241,416,243,416,246,414,246,411,246,364,246,347,246,344,243,342,241,341,63,341" onmouseover="UpdateTooltip(this,4,13,event)" onfocus="UpdateTooltip(this,4,13,event)" onclick="return OnShapeClick(4,13,event);" onkeyup="OnShapeKey(4,13,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12.1 Create and manage organizational performance strategy..." origTitle="12.1 Create and manage organizational performance strategy..." TITLE="12.1 Create and manage organizational performance strategy..."  target="_top" COORDS="44,171,41,171,39,174,38,176,38,193,38,713,39,716,41,718,44,719,260,719,262,718,264,716,265,713,265,193,265,176,264,174,262,171,260,171,44,171" onmouseover="UpdateTooltip(this,4,9,event)" onfocus="UpdateTooltip(this,4,9,event)" onclick="return OnShapeClick(4,9,event);" onkeyup="OnShapeKey(4,9,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12 Manage Knowledge, Improvement, and Change" origTitle="12 Manage Knowledge, Improvement, and Change" TITLE="12 Manage Knowledge, Improvement, and Change"  target="_top" COORDS="25,95,22,96,20,98,19,101,19,118,19,827,20,830,22,832,25,833,1016,833,1019,832,1021,830,1022,827,1022,118,1022,101,1021,98,1019,96,1016,95,25,95" onmouseover="UpdateTooltip(this,4,1,event)" onfocus="UpdateTooltip(this,4,1,event)" onclick="return OnShapeClick(4,1,event);" onkeyup="OnShapeKey(4,1,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="1022,57,1022,19,19,19,19,57,19,76,326,76,327,76,411,76,558,76,643,76,790,76,875,76,1022,76,1022,57" onmouseover="UpdateTooltip(this,4,205,event)" onfocus="UpdateTooltip(this,4,205,event)" onclick="return OnShapeClick(4,205,event);" onkeyup="OnShapeKey(4,205,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="0,851,1041,851,1041,0,0,0,0,851" onmouseover="UpdateTooltip(this,4,242,event)" onfocus="UpdateTooltip(this,4,242,event)" onclick="return OnShapeClick(4,242,event);" onkeyup="OnShapeKey(4,242,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

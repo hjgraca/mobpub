@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+        <link rel=stylesheet href="pubtogframe.css">
+        <script language="jscript" type="text/jscript" src="pubtogframe.js"></script>
+        <script language="jscript" type="text/jscript" src="pubdoc.js"></script>
+        <script language="jscript" type="text/jscript" src="puboptions.js"></script>
+        <script language="jscript" type="text/jscript"><!--
+        window.onload = function () {
+            puboptionsOnLoad();
+            pubtogframeOnLoad();
+            pubdocOnLoad();
+        }
+        window.onunload = function() {
+            pubtogframeOnUnload();
+            pubdocOnUnload();
+        }
+    // --></script>
+        <xml id="publicationOptions">
+            <publicationOptions>
+                <publicationOption optionName="autoCloseFrame" optionValue="yes" />
+                <publicationOption optionName="minimizedRows" optionValue="*,0" />
+            </publicationOptions>
+        </xml>
+    </head>
+<body class="bodyFrameClosed">
+<div class="divFrameContents" id="frameContentsOpen">
+    <table height="100%" width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr><td height="20">
+    <div class="divToolbar">
+        <div class="divLeftToolbarPortion">
+            <div onclick="openDocument()" class="divToolbarButton divFrameToolbarButton" onmouseout="this.className =  'divToolbarButton divFrameToolbarButton'" onmouseover="this.className = 'divToolbarButton divFrameToolbarButton divFrameToolbarButtonHighlighted';" id="openDoc">Open document in new window...</div>
+        </div>
+        <div class="divRightToolbarPortion">
+            <div class="divToolbarButton" onclick="toggleFrame()">
+                <img src="Images/closeframe.gif" class="imgCloseFrame" style="margin-right: 5px;" onmouseout="this.className =  'imgCloseFrame';" onmouseover="this.className = 'imgCloseFrame imgCloseFrameHighlighted';" title="Hide preview">
+            </div>
+        </div>
+    </div>
+    </td></tr>
+    <tr><td height="100%">
+        <iframe src="pubdocdefault.html" class="iframeContent" frameborder="no" id="docPreview"></iframe>
+    </td></tr>
+    </table>
+</div>
+<div class="divFrameContentsHidden" id="frameContentsClosed">
+    <div class="divToolbar">
+            <div class="divToolbarButton" onclick="toggleFrame()"><img src="Images/tocup.gif"></div>
+            <div class="divToolbarButton" onclick="toggleFrame()">Show preview</div>
+    </div>
+</div>
+</body>
+</html>

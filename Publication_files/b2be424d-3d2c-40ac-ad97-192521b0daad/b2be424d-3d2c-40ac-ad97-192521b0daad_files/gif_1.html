@@ -1,0 +1,182 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+b2be424d-3d2c-40ac-ad97-192521b0daad.vsd
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 4;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = -0.005000;
+	viewMgr.visBBoxRight = 15.556181;
+	viewMgr.visBBoxBottom = -0.005000;
+	viewMgr.visBBoxTop = 7.879016;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_1.gif" ALT="Page-1" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.5.5 Manage returns; manage reverse logistics (10342)" origTitle="4.5.5 Manage returns; manage reverse logistics (10342)" TITLE="4.5.5 Manage returns; manage reverse logistics (10342)"  target="_top" COORDS="1366,700,1432,700,1435,699,1437,697,1438,695,1438,647,1438,630,1437,627,1435,625,1432,625,1254,625,1252,625,1249,627,1249,630,1249,647,1249,695,1249,697,1252,699,1254,700,1320,700,1320,701,1325,701,1362,701,1366,701,1366,700" onmouseover="UpdateTooltip(this,4,294,event)" onfocus="UpdateTooltip(this,4,294,event)" onclick="return OnShapeClick(4,294,event);" onkeyup="OnShapeKey(4,294,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.5.4 Operate outbound transportation (10341)" origTitle="4.5.4 Operate outbound transportation (10341)" TITLE="4.5.4 Operate outbound transportation (10341)"  target="_top" COORDS="1254,530,1252,531,1249,533,1249,536,1249,553,1249,600,1249,603,1252,605,1254,606,1432,606,1435,605,1437,603,1438,600,1438,553,1438,536,1437,533,1435,531,1432,530,1254,530" onmouseover="UpdateTooltip(this,4,290,event)" onfocus="UpdateTooltip(this,4,290,event)" onclick="return OnShapeClick(4,290,event);" onkeyup="OnShapeKey(4,290,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.5.3 Operate warehousing (10340)" origTitle="4.5.3 Operate warehousing (10340)" TITLE="4.5.3 Operate warehousing (10340)"  target="_top" COORDS="1254,435,1252,436,1249,438,1249,441,1249,458,1249,505,1249,508,1252,510,1254,511,1432,511,1435,510,1437,508,1438,505,1438,458,1438,441,1437,438,1435,436,1432,435,1254,435" onmouseover="UpdateTooltip(this,4,286,event)" onfocus="UpdateTooltip(this,4,286,event)" onclick="return OnShapeClick(4,286,event);" onkeyup="OnShapeKey(4,286,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.5.2 Plan inbound material flow (10339)" origTitle="4.5.2 Plan inbound material flow (10339)" TITLE="4.5.2 Plan inbound material flow (10339)"  target="_top" COORDS="1254,341,1252,342,1249,344,1249,347,1249,364,1249,411,1249,414,1252,416,1254,417,1432,417,1435,416,1437,414,1438,411,1438,364,1438,347,1437,344,1435,342,1432,341,1254,341" onmouseover="UpdateTooltip(this,4,282,event)" onfocus="UpdateTooltip(this,4,282,event)" onclick="return OnShapeClick(4,282,event);" onkeyup="OnShapeKey(4,282,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.5.1 Define logistics strategy (10338)" origTitle="4.5.1 Define logistics strategy (10338)" TITLE="4.5.1 Define logistics strategy (10338)"  target="_top" COORDS="1254,246,1252,247,1249,249,1249,252,1249,269,1249,316,1249,319,1252,321,1254,322,1432,322,1435,321,1437,319,1438,316,1438,269,1438,252,1437,249,1435,247,1432,246,1254,246" onmouseover="UpdateTooltip(this,4,278,event)" onfocus="UpdateTooltip(this,4,278,event)" onclick="return OnShapeClick(4,278,event);" onkeyup="OnShapeKey(4,278,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.5 Manage logistics and warehousing (10219)" origTitle="4.5 Manage logistics and warehousing (10219)" TITLE="4.5 Manage logistics and warehousing (10219)"  target="_top" COORDS="1235,171,1233,171,1231,174,1230,176,1230,193,1230,713,1231,716,1233,718,1235,719,1451,719,1454,718,1456,716,1457,713,1457,193,1457,176,1456,174,1454,171,1451,171,1235,171" onmouseover="UpdateTooltip(this,4,274,event)" onfocus="UpdateTooltip(this,4,274,event)" onclick="return OnShapeClick(4,274,event);" onkeyup="OnShapeKey(4,274,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.4.4 Ensure quality of service (10323)" origTitle="4.4.4 Ensure quality of service (10323)" TITLE="4.4.4 Ensure quality of service (10323)"  target="_top" COORDS="1008,530,1006,531,1004,533,1003,536,1003,553,1003,600,1004,603,1006,605,1008,606,1186,606,1189,605,1191,603,1192,600,1192,553,1192,536,1191,533,1189,531,1186,530,1008,530" onmouseover="UpdateTooltip(this,4,270,event)" onfocus="UpdateTooltip(this,4,270,event)" onclick="return OnShapeClick(4,270,event);" onkeyup="OnShapeKey(4,270,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.4.3 Provide service to specific customers (10322)" origTitle="4.4.3 Provide service to specific customers (10322)" TITLE="4.4.3 Provide service to specific customers (10322)"  target="_top" COORDS="1008,435,1006,436,1004,438,1003,441,1003,458,1003,505,1004,508,1006,510,1008,511,1186,511,1189,510,1191,508,1192,505,1192,458,1192,441,1191,438,1189,436,1186,435,1008,435" onmouseover="UpdateTooltip(this,4,266,event)" onfocus="UpdateTooltip(this,4,266,event)" onclick="return OnShapeClick(4,266,event);" onkeyup="OnShapeKey(4,266,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.4.2 Identify and schedule resources to meet service..." origTitle="4.4.2 Identify and schedule resources to meet service..." TITLE="4.4.2 Identify and schedule resources to meet service..."  target="_top" COORDS="1161,417,1186,417,1189,416,1191,414,1192,411,1192,364,1192,347,1191,344,1189,342,1186,341,1008,341,1006,342,1004,344,1003,347,1003,364,1003,411,1004,414,1006,416,1008,417,1034,417,1034,417,1115,417,1120,417,1157,417,1161,417,1161,417" onmouseover="UpdateTooltip(this,4,262,event)" onfocus="UpdateTooltip(this,4,262,event)" onclick="return OnShapeClick(4,262,event);" onkeyup="OnShapeKey(4,262,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.4.1 Confirm specific service requirements for individual..." origTitle="4.4.1 Confirm specific service requirements for individual..." TITLE="4.4.1 Confirm specific service requirements for individual..."  target="_top" COORDS="1150,322,1186,322,1189,321,1191,319,1192,316,1192,269,1192,252,1191,249,1189,247,1186,246,1008,246,1006,247,1004,249,1003,252,1003,269,1003,316,1004,319,1006,321,1008,322,1045,322,1045,322,1104,322,1108,322,1145,322,1150,322,1150,322" onmouseover="UpdateTooltip(this,4,258,event)" onfocus="UpdateTooltip(this,4,258,event)" onclick="return OnShapeClick(4,258,event);" onkeyup="OnShapeKey(4,258,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.4 Deliver service to customer (10218)" origTitle="4.4 Deliver service to customer (10218)" TITLE="4.4 Deliver service to customer (10218)"  target="_top" COORDS="990,171,987,171,985,174,984,176,984,193,984,713,985,716,987,718,990,719,1205,719,1208,718,1210,716,1211,713,1211,193,1211,176,1210,174,1208,171,1205,171,990,171" onmouseover="UpdateTooltip(this,4,254,event)" onfocus="UpdateTooltip(this,4,254,event)" onclick="return OnShapeClick(4,254,event);" onkeyup="OnShapeKey(4,254,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.3.5 Maintain production records and manage lot traceability..." origTitle="4.3.5 Maintain production records and manage lot traceability..." TITLE="4.3.5 Maintain production records and manage lot traceability..."  target="_top" COORDS="908,700,940,700,943,699,945,697,946,695,946,647,946,630,945,627,943,625,940,625,763,625,760,625,758,627,757,630,757,647,757,695,758,697,760,699,763,700,795,700,795,701,862,701,867,701,904,701,908,701,908,700" onmouseover="UpdateTooltip(this,4,250,event)" onfocus="UpdateTooltip(this,4,250,event)" onclick="return OnShapeClick(4,250,event);" onkeyup="OnShapeKey(4,250,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.3.4 Perform quality testing (10369)" origTitle="4.3.4 Perform quality testing (10369)" TITLE="4.3.4 Perform quality testing (10369)"  target="_top" COORDS="763,530,760,531,758,533,757,536,757,553,757,600,758,603,760,605,763,606,940,606,943,605,945,603,946,600,946,553,946,536,945,533,943,531,940,530,763,530" onmouseover="UpdateTooltip(this,4,246,event)" onfocus="UpdateTooltip(this,4,246,event)" onclick="return OnShapeClick(4,246,event);" onkeyup="OnShapeKey(4,246,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.3.3 Schedule and perform maintenance (10305)" origTitle="4.3.3 Schedule and perform maintenance (10305)" TITLE="4.3.3 Schedule and perform maintenance (10305)"  target="_top" COORDS="763,435,760,436,758,438,757,441,757,458,757,505,758,508,760,510,763,511,940,511,943,510,945,508,946,505,946,458,946,441,945,438,943,436,940,435,763,435" onmouseover="UpdateTooltip(this,4,242,event)" onfocus="UpdateTooltip(this,4,242,event)" onclick="return OnShapeClick(4,242,event);" onkeyup="OnShapeKey(4,242,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.3.2 Produce product (10304)" origTitle="4.3.2 Produce product (10304)" TITLE="4.3.2 Produce product (10304)"  target="_top" COORDS="763,341,760,342,758,344,757,347,757,364,757,411,758,414,760,416,763,417,940,417,943,416,945,414,946,411,946,364,946,347,945,344,943,342,940,341,763,341" onmouseover="UpdateTooltip(this,4,238,event)" onfocus="UpdateTooltip(this,4,238,event)" onclick="return OnShapeClick(4,238,event);" onkeyup="OnShapeKey(4,238,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.3.1 Schedule production (10303)" origTitle="4.3.1 Schedule production (10303)" TITLE="4.3.1 Schedule production (10303)"  target="_top" COORDS="763,246,760,247,758,249,757,252,757,269,757,316,758,319,760,321,763,322,940,322,943,321,945,319,946,316,946,269,946,252,945,249,943,247,940,246,763,246" onmouseover="UpdateTooltip(this,4,234,event)" onfocus="UpdateTooltip(this,4,234,event)" onclick="return OnShapeClick(4,234,event);" onkeyup="OnShapeKey(4,234,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.3 Produce/Manufacture/Deliver product (10217)" origTitle="4.3 Produce/Manufacture/Deliver product (10217)" TITLE="4.3 Produce/Manufacture/Deliver product (10217)"  target="_top" COORDS="744,171,741,171,739,174,738,176,738,193,738,713,739,716,741,718,744,719,959,719,962,718,964,716,965,713,965,193,965,176,964,174,962,171,959,171,744,171" onmouseover="UpdateTooltip(this,4,230,event)" onfocus="UpdateTooltip(this,4,230,event)" onclick="return OnShapeClick(4,230,event);" onkeyup="OnShapeKey(4,230,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.2.4 Appraise and develop suppliers (10280)" origTitle="4.2.4 Appraise and develop suppliers (10280)" TITLE="4.2.4 Appraise and develop suppliers (10280)"  target="_top" COORDS="517,530,514,531,512,533,511,536,511,553,511,600,512,603,514,605,517,606,695,606,697,605,699,603,700,600,700,553,700,536,699,533,697,531,695,530,517,530" onmouseover="UpdateTooltip(this,4,222,event)" onfocus="UpdateTooltip(this,4,222,event)" onclick="return OnShapeClick(4,222,event);" onkeyup="OnShapeKey(4,222,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.1.9 Develop quality standards and procedures (10368)" origTitle="4.1.9 Develop quality standards and procedures (10368)" TITLE="4.1.9 Develop quality standards and procedures (10368)"  target="_top" COORDS="383,606,449,606,451,605,454,603,454,600,454,553,454,536,454,533,451,531,449,530,271,530,268,531,266,533,265,536,265,553,265,600,266,603,268,605,271,606,337,606,337,606,341,606,378,606,383,606,383,606" onmouseover="UpdateTooltip(this,4,226,event)" onfocus="UpdateTooltip(this,4,226,event)" onclick="return OnShapeClick(4,226,event);" onkeyup="OnShapeKey(4,226,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.1.5 Plan distribution requirements (10225)" origTitle="4.1.5 Plan distribution requirements (10225)" TITLE="4.1.5 Plan distribution requirements (10225)"  target="_top" COORDS="63,625,60,625,58,627,57,630,57,647,57,695,58,697,60,699,63,700,241,700,243,699,246,697,246,695,246,647,246,630,246,627,243,625,241,625,63,625" onmouseover="UpdateTooltip(this,4,218,event)" onfocus="UpdateTooltip(this,4,218,event)" onclick="return OnShapeClick(4,218,event);" onkeyup="OnShapeKey(4,218,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.1.4 Create and manage master production schedule (10224)" origTitle="4.1.4 Create and manage master production schedule (10224)" TITLE="4.1.4 Create and manage master production schedule (10224)"  target="_top" COORDS="175,606,241,606,243,605,246,603,246,600,246,553,246,536,246,533,243,531,241,530,63,530,60,531,58,533,57,536,57,553,57,600,58,603,60,605,63,606,129,606,129,606,133,606,170,606,175,606,175,606" onmouseover="UpdateTooltip(this,4,214,event)" onfocus="UpdateTooltip(this,4,214,event)" onclick="return OnShapeClick(4,214,event);" onkeyup="OnShapeKey(4,214,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.1.7 Review distribution planning policies (10227)" origTitle="4.1.7 Review distribution planning policies (10227)" TITLE="4.1.7 Review distribution planning policies (10227)"  target="_top" COORDS="271,341,268,342,266,344,265,347,265,364,265,411,266,414,268,416,271,417,449,417,451,416,454,414,454,411,454,364,454,347,454,344,451,342,449,341,271,341" onmouseover="UpdateTooltip(this,4,61,event)" onfocus="UpdateTooltip(this,4,61,event)" onclick="return OnShapeClick(4,61,event);" onkeyup="OnShapeKey(4,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.1.8 Assess distribution planning performance (10228)" origTitle="4.1.8 Assess distribution planning performance (10228)" TITLE="4.1.8 Assess distribution planning performance (10228)"  target="_top" COORDS="383,511,449,511,451,510,454,508,454,505,454,458,454,441,454,438,451,436,449,435,271,435,268,436,266,438,265,441,265,458,265,505,266,508,268,510,271,511,337,511,337,512,341,512,378,512,383,512,383,511" onmouseover="UpdateTooltip(this,4,5,event)" onfocus="UpdateTooltip(this,4,5,event)" onclick="return OnShapeClick(4,5,event);" onkeyup="OnShapeKey(4,5,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.2.3 Order materials and services (10279)" origTitle="4.2.3 Order materials and services (10279)" TITLE="4.2.3 Order materials and services (10279)"  target="_top" COORDS="517,435,514,436,512,438,511,441,511,458,511,505,512,508,514,510,517,511,695,511,697,510,699,508,700,505,700,458,700,441,699,438,697,436,695,435,517,435" onmouseover="UpdateTooltip(this,4,41,event)" onfocus="UpdateTooltip(this,4,41,event)" onclick="return OnShapeClick(4,41,event);" onkeyup="OnShapeKey(4,41,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.2.2 Select suppliers and develop/maintain contracts (10278)" origTitle="4.2.2 Select suppliers and develop/maintain contracts (10278)" TITLE="4.2.2 Select suppliers and develop/maintain contracts (10278)"  target="_top" COORDS="629,417,695,417,697,416,699,414,700,411,700,364,700,347,699,344,697,342,695,341,517,341,514,342,512,344,511,347,511,364,511,411,512,414,514,416,517,417,583,417,583,417,587,417,624,417,629,417,629,417" onmouseover="UpdateTooltip(this,4,37,event)" onfocus="UpdateTooltip(this,4,37,event)" onclick="return OnShapeClick(4,37,event);" onkeyup="OnShapeKey(4,37,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.2.1 Develop sourcing strategies (10277)" origTitle="4.2.1 Develop sourcing strategies (10277)" TITLE="4.2.1 Develop sourcing strategies (10277)"  target="_top" COORDS="517,246,514,247,512,249,511,252,511,269,511,316,512,319,514,321,517,322,695,322,697,321,699,319,700,316,700,269,700,252,699,249,697,247,695,246,517,246" onmouseover="UpdateTooltip(this,4,33,event)" onfocus="UpdateTooltip(this,4,33,event)" onclick="return OnShapeClick(4,33,event);" onkeyup="OnShapeKey(4,33,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.2 Procure materials and services (10216)" origTitle="4.2 Procure materials and services (10216)" TITLE="4.2 Procure materials and services (10216)"  target="_top" COORDS="498,171,495,171,493,174,492,176,492,193,492,713,493,716,495,718,498,719,713,719,716,718,718,716,719,713,719,193,719,176,718,174,716,171,713,171,498,171" onmouseover="UpdateTooltip(this,4,29,event)" onfocus="UpdateTooltip(this,4,29,event)" onclick="return OnShapeClick(4,29,event);" onkeyup="OnShapeKey(4,29,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.1.3 Create materials plan (10223)" origTitle="4.1.3 Create materials plan (10223)" TITLE="4.1.3 Create materials plan (10223)"  target="_top" COORDS="63,435,60,436,58,438,57,441,57,458,57,505,58,508,60,510,63,511,241,511,243,510,246,508,246,505,246,458,246,441,246,438,243,436,241,435,63,435" onmouseover="UpdateTooltip(this,4,25,event)" onfocus="UpdateTooltip(this,4,25,event)" onclick="return OnShapeClick(4,25,event);" onkeyup="OnShapeKey(4,25,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.1.6 Establish distribution planning constraints (10226)" origTitle="4.1.6 Establish distribution planning constraints (10226)" TITLE="4.1.6 Establish distribution planning constraints (10226)"  target="_top" COORDS="271,246,268,247,266,249,265,252,265,269,265,316,266,319,268,321,271,322,449,322,451,321,454,319,454,316,454,269,454,252,454,249,451,247,449,246,271,246" onmouseover="UpdateTooltip(this,4,21,event)" onfocus="UpdateTooltip(this,4,21,event)" onclick="return OnShapeClick(4,21,event);" onkeyup="OnShapeKey(4,21,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.1.1 Develop production and materials strategies (10221)" origTitle="4.1.1 Develop production and materials strategies (10221)" TITLE="4.1.1 Develop production and materials strategies (10221)"  target="_top" COORDS="63,246,60,247,58,249,57,252,57,269,57,316,58,319,60,321,63,322,241,322,243,321,246,319,246,316,246,269,246,252,246,249,243,247,241,246,63,246" onmouseover="UpdateTooltip(this,4,17,event)" onfocus="UpdateTooltip(this,4,17,event)" onclick="return OnShapeClick(4,17,event);" onkeyup="OnShapeKey(4,17,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.1.2 Manage demand for products and services (10222)" origTitle="4.1.2 Manage demand for products and services (10222)" TITLE="4.1.2 Manage demand for products and services (10222)"  target="_top" COORDS="175,417,241,417,243,416,246,414,246,411,246,364,246,347,246,344,243,342,241,341,63,341,60,342,58,344,57,347,57,364,57,411,58,414,60,416,63,417,129,417,129,417,133,417,170,417,175,417,175,417" onmouseover="UpdateTooltip(this,4,13,event)" onfocus="UpdateTooltip(this,4,13,event)" onclick="return OnShapeClick(4,13,event);" onkeyup="OnShapeKey(4,13,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4.1 Plan for and acquire necessary resources (Supply Chain..." origTitle="4.1 Plan for and acquire necessary resources (Supply Chain..." TITLE="4.1 Plan for and acquire necessary resources (Supply Chain..."  target="_top" COORDS="44,171,41,171,39,174,38,176,38,193,38,713,39,716,41,718,44,719,468,719,470,718,472,716,473,713,473,193,473,176,472,174,470,171,468,171,44,171" onmouseover="UpdateTooltip(this,4,9,event)" onfocus="UpdateTooltip(this,4,9,event)" onclick="return OnShapeClick(4,9,event);" onkeyup="OnShapeKey(4,9,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4 Deliver Products and Services" origTitle="4 Deliver Products and Services" TITLE="4 Deliver Products and Services"  target="_top" COORDS="25,95,22,96,20,98,19,101,19,118,19,732,20,735,22,737,25,738,1470,738,1473,737,1475,735,1476,732,1476,118,1476,101,1475,98,1473,96,1470,95,25,95" onmouseover="UpdateTooltip(this,4,1,event)" onfocus="UpdateTooltip(this,4,1,event)" onclick="return OnShapeClick(4,1,event);" onkeyup="OnShapeKey(4,1,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="1476,57,1476,19,19,19,19,57,19,76,465,76,466,76,589,76,802,76,926,76,1139,76,1262,76,1476,76,1476,57" onmouseover="UpdateTooltip(this,4,205,event)" onfocus="UpdateTooltip(this,4,205,event)" onclick="return OnShapeClick(4,205,event);" onkeyup="OnShapeKey(4,205,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="0,757,1495,757,1495,0,0,0,0,757" onmouseover="UpdateTooltip(this,4,298,event)" onfocus="UpdateTooltip(this,4,298,event)" onclick="return OnShapeClick(4,298,event);" onkeyup="OnShapeKey(4,298,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

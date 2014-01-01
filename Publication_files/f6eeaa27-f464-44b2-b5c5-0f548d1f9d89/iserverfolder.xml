@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerFolder ID="f6eeaa27-f464-44b2-b5c5-0f548d1f9d89">
+  <iServerProperties>
+    <RepositoryName>6.0 Develop and Manage Human Capital</RepositoryName>
+    <Category>Process Folder</Category>
+    <Logo>../Images/treefolder.gif</Logo>
+    <Description />
+    <Timestamp CreatedOn="2013-02-22" CreatedBy="System Administrator" LastModifiedOn="2013-02-22" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <CustomAttributes />
+  <Issues />
+</iServerFolder>

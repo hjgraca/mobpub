@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerFolder ID="870eb28f-9366-430b-8e4e-10a915a0e0a2">
+  <iServerProperties>
+    <RepositoryName>4.0 Deliver Products and Services</RepositoryName>
+    <Category>Process Folder</Category>
+    <Logo>../Images/treefolder.gif</Logo>
+    <Description />
+    <Timestamp CreatedOn="2013-02-22" CreatedBy="System Administrator" LastModifiedOn="2013-02-22" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <CustomAttributes />
+  <Issues />
+</iServerFolder>

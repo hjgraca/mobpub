@@ -1,0 +1,196 @@
+<HTML>
+<HEAD>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <TITLE>iServer Interactive Publisher</TITLE>
+    <LINK REL=stylesheet HREF="publication.css">
+    <LINK REL=stylesheet HREF="pubtogframe.css">
+    <script language="javascript"><!--
+        var diagramID;
+        var diagramName = '[Unnamed diagram]';
+
+        function displayReportingLinks() {
+            if ((parent.iServerXML) && (parent.PublicationPropertiesData)) {
+                var diagramNode = parent.iServerXML.selectSingleNode("iServerDiagram");
+                if (diagramNode) {
+                    var diaIdAttr = diagramNode.attributes.getNamedItem("ID");
+                    if (diaIdAttr) {
+                        diagramID = diaIdAttr.text;
+                    }
+                }
+                var reportingNode = parent.PublicationPropertiesData.selectSingleNode("iServerPublication/PublicationProperties/Reporting");
+                var htmlEnabledAttr = reportingNode.attributes.getNamedItem("html_enabled");
+                var wordEnabledAttr = reportingNode.attributes.getNamedItem("word_enabled");
+                var imageEnabledAttr = reportingNode.attributes.getNamedItem("image_enabled");
+
+                var htmlEnabled = (htmlEnabledAttr && htmlEnabledAttr.text === "true");
+                var wordEnabled = (wordEnabledAttr && wordEnabledAttr.text === "true");
+                var imageEnabled = (imageEnabledAttr && imageEnabledAttr.text === "true");
+
+                if (htmlEnabled || wordEnabled || imageEnabled) {
+                    document.getElementById("reportsTitle").style.display = "inline";
+                    if (htmlEnabled) {
+                        document.getElementById("reportsHTML").style.display = "inline";
+                    }
+                    if (wordEnabled) {
+                        document.getElementById("reportsWord").style.display = "inline";
+                    }
+                    if (imageEnabled) {
+                        document.getElementById("reportsImage").style.display = "inline";
+                    }
+                }
+
+            }
+            displayBreadcrumbs();
+        }
+        function openPrintReportHTML() {
+            window.open(diagramID + '/iserverdiagramreport.xml');
+        }
+        function openPrintReportWord() {
+            window.open(diagramID + '/' + diagramID + '.docx');
+        }
+        function openPrintDiagram() {
+            window.open(diagramID + '/' + diagramID + '_files/diagrampreview.html');
+        }
+
+        var COOKIE_BREADCRUMBS = "OrbusBreadcrumbs";
+        var BREADCRUMBS = [];
+        var MAX_STORED_BREADCRUMBS = 10;
+        var MAX_SHOWN_BREADCRUMBS = 2;
+        var MAX_BREADCRUMB_LENGTH = 40;
+        var KEEP_BREADCRUMB_TAIL = 0;
+
+        function removeBreadcrumb(url) {
+            var newBCs = []
+            var deleted = 0;
+            var i; var j = 0;
+            // Omit URL portion after ? if present
+            var baseURL;
+            if (url.indexOf('?') >= 0) {
+                baseURL = url.substr(0, url.indexOf('?'));
+            } else {
+                baseURL = url;
+            }
+            for (i = 0; i < BREADCRUMBS.length; i++) {
+                var qm = BREADCRUMBS[i][0].indexOf('?');
+                var bc;
+                if (qm >= 0) {
+                    bc = BREADCRUMBS[i][0].substr(0, qm);
+                } else {
+                    bc = BREADCRUMBS[i][0];
+                }
+                if (bc != baseURL) {
+                    newBCs[j] = BREADCRUMBS[i];
+                    j++;
+                }
+            }
+            BREADCRUMBS = newBCs;
+        }
+
+        function setBreadcrumbs() {
+            if (parent.iServerXML) {
+                var repNameNode = parent.iServerXML.selectSingleNode('iServerDiagram/iServerProperties/RepositoryName');
+                if (repNameNode) {
+                    diagramTitle = repNameNode.text;
+                }
+            }
+        
+            // Add current page
+            BREADCRUMBS[BREADCRUMBS.length] = [parent.location, diagramTitle];
+            // Shift something off tail of list if it's too long
+            if (BREADCRUMBS.length > MAX_STORED_BREADCRUMBS) {
+                var dropped = BREADCRUMBS.shift();
+            }
+            // Store breadcrumbs in cookie
+            var cookiePath = '';
+            if (location.protocol.substr(0,4) === 'file') {
+                cookiePath = '/';
+            } else {
+                var pathBits = location.pathname.split(/[\/\\]/);
+                for (var i = 0; i < pathBits.length - 1; i++) {
+                    cookiePath = cookiePath + '/' + pathBits[i];
+                }
+            }
+            var bcCookie = '';
+            for (var i = 0; i < BREADCRUMBS.length; i++) {
+                bcCookie  = bcCookie + escape(BREADCRUMBS[i][0]) + '|' + escape(BREADCRUMBS[i][1]) + '!';
+            }
+            document.cookie = COOKIE_BREADCRUMBS + '=' + bcCookie + '; path=' + cookiePath;
+
+        }
+
+        function getBreadcrumbs() {
+            var crumbs = document.cookie.split("; ");
+            var i;
+            for (i = 0; i < crumbs.length; i++) {
+                var crumbBits = crumbs[i].split('=');
+                if (crumbBits[0] && (crumbBits[0] === COOKIE_BREADCRUMBS) && crumbBits[1]) {
+                    var parts = crumbBits[1].split('!');
+                    for (j = 0; j < parts.length; j++) {
+                        if (parts[j]) {
+                            var bits = parts[j].split('|');
+                            if (bits[0] && bits[1]) {
+                                BREADCRUMBS[j] = [ unescape(bits[0]), unescape(bits[1]) ];
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        function displayBreadcrumbs() {
+            getBreadcrumbs();
+            removeBreadcrumb(parent.location.toString());
+            setBreadcrumbs();
+//        if (BREADCRUMBS.length) {
+            var clickMsg = document.getElementById('pClickMessage');
+            var breadPara = document.getElementById('pBreadcrumbs');
+            if (breadPara) {
+                // Swap the 'Click here to...' message to breadcrumbs list
+                if (clickMsg) {
+                    clickMsg.style.display = 'none';
+                }
+                breadPara.style.display = 'block';
+
+                // Create cells to display breadcrumbs
+                var breadSpan = document.getElementById('spanBreadcrumbs');
+                var bcTemplate = document.getElementById('spanBreadcrumbTemplate');
+                var bc; var tn; var shown = 0;
+                for (var i = BREADCRUMBS.length - 1; (i >= 0) && (shown < MAX_SHOWN_BREADCRUMBS); i--) {
+                    // Only show this location's breadcrumb if it's at the head of the list
+                    if (BREADCRUMBS[i][0] != parent.location || i == BREADCRUMBS.length - 1) {
+                        bc = bcTemplate.cloneNode(true);
+                        bc.style.display = 'inline';
+                        bc.firstChild.href = BREADCRUMBS[i][0];
+                        var bcTitle = BREADCRUMBS[i][1];
+                        var bcLen = BREADCRUMBS[i][1].length;
+                        if (bcLen > MAX_BREADCRUMB_LENGTH) {
+                            bc.firstChild.firstChild.nodeValue = bcTitle.substr(0,MAX_BREADCRUMB_LENGTH - KEEP_BREADCRUMB_TAIL - 3) + '...' + bcTitle.substr(bcLen - KEEP_BREADCRUMB_TAIL, KEEP_BREADCRUMB_TAIL);
+                        } else {
+                            bc.firstChild.firstChild.nodeValue = BREADCRUMBS[i][1];
+                        }
+                        bc.firstChild.title = BREADCRUMBS[i][1];
+                        breadSpan.insertBefore(bc, breadSpan.firstChild);
+                        tn = document.createTextNode(' -> ');
+                        breadSpan.insertBefore(tn, breadSpan.firstChild);
+                        shown++;
+                    }
+                }
+            }
+//        }
+        }
+// --></script>
+</HEAD>
+<BODY ID="bodyDoc" STYLE="overflow:hidden;" CLASS="bodyDoc">
+        <table id="ta1bDocToggler" width="100%" height="100%" class="documentframe" style="margin-bottom:1px;" cellspacing="0" cellpadding="0" border="0">
+    <tr id="trDocTog1gle" height="25"><td height="25" style="overflow: hidden; white-space: nowrap;">
+        <p class="p1" align="left" id="pClickMessage">&nbsp;&nbsp;</p>
+        <p class="p1" style="display: none;" align="left" id="pBreadcrumbs"><span id="spanBreadcrumbBase">&nbsp;&nbsp;<a href="../index.html" class="a1" target="_top">Repository</a></span><span id="spanBreadcrumbs"><span id="spanBreadcrumbTemplate" style="display: none;"><a href="#" class="a1" target="_top">Breadcrumb</a></span></span></p>
+    </td><td height="25" style="overflow: hidden; white-space: nowrap;">
+        <p class="p1" align="right"><span id="reportsTitle" style="display: none;">Reports:</span>
+            <span id="reportsHTML" style="display: none"><a id="wordReport" class="a1" onclick="openPrintReportHTML(); return false;" href="#">HTML</a> |</span>
+            <span id="reportsWord" style="display: none"><a id="htmlReport" class="a1" onclick="openPrintReportWord(); return false;" href="#">Word</a> |</span>
+            <span id="reportsImage" style="display: none"><a id="imageReport" class="a1" onclick="openPrintDiagram(); return false;" href="#" >Diagram</a>&nbsp;&nbsp;</span>
+            <!-- &nbsp;&nbsp; -->
+            <!-- <a class="a1" target="_top" href="../index.html">Repository</a>&nbsp;&nbsp; --></p></td></tr></table></BODY>
+    

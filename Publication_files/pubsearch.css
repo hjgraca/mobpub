@@ -1,0 +1,52 @@
+.divFrameContents {
+    height:         100%;
+}
+input {
+    font-family:    Tahoma, sans-serif;
+    font-size:      8pt;
+}
+
+.divItem {
+    margin-bottom:  4px;
+    position:       relative;
+    min-height:     16px;
+}
+.divItemLabel {
+}
+.divIcon {
+    position:       absolute;
+    top:            0;
+    left:           -19px;
+    height:         16px;
+    width:          16px;
+    cursor:         default;
+}
+.imgIcon {
+    width:          16px;
+}
+.divText {
+    border:         solid 1px #fff;
+    position:       relative;
+    margin-left:    19px;
+    line-height:    16px;
+    font-family:    Tahoma, sans-serif;
+    font-size:      8pt;
+    cursor:         default;
+}
+.divTextMouseover {
+    border:         solid 1px #fff;
+    color:          #009;
+    text-decoration: underline;
+}
+.divTextSelected {
+    border:         solid 1px #47c;
+    background:     #47c;
+    color:          #fff;
+}
+.divTextSelectedMouseover {
+    border:         solid 1px #47c;
+    background:     #47c;
+    color:          #fff;
+    text-decoration: underline;
+}
+

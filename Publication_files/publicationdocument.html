@@ -1,0 +1,69 @@
+<HTML>
+    <HEAD>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <TITLE>iServer Publication</TITLE>
+        <LINK REL=stylesheet HREF="publication.css">
+        <LINK REL=stylesheet HREF="pubtogframe.css">
+        <SCRIPT TYPE="text/jscript" LANGUAGE="jscript">
+
+var expandedFramesetRows;
+
+function OpenDoc(url) {
+  var spanOpenNewWindow = document.getElementById('spanOpenNewWindow');
+  var aOpenNewWindow = document.getElementById('aOpenNewWindow');
+  spanOpenNewWindow.style.display = "";
+  aOpenNewWindow.href = url;
+}
+
+function ClearOpenDoc() {
+    var spanOpenNewWindow = document.getElementById('spanOpenNewWindow');
+    spanOpenNewWindow.style.display = "none";
+    window.open("publicationdefaultdocument.html", "frmdocument");
+}
+
+function IsPreviewOpen() {
+  var ifrmDoc = document.getElementById('ifrmDoc');
+  return (ifrmDoc.style.display == "");
+}
+
+function ToggleDoc() {
+  var ifrmDoc = document.getElementById('ifrmDoc');
+  var frmst = parent.getDocumentPaneFrameset();
+  var frmDoc = parent.getDocumentPaneFrame();
+  var bodyDoc = document.getElementById('bodyDoc');
+  var trDocToggle = document.getElementById('trDocToggle');
+  var trColDocToggle = document.getElementById('trColDocToggle');
+  if (ifrmDoc.style.display == "") {
+    ifrmDoc.style.display = "none";
+    trDocToggle.style.display = "none";
+    trColDocToggle.style.display = "";
+    expandedFramesetRows = frmst.rows;  // Memorize position of frame for later restoration
+    frmst.rows = "25,*,0";
+    frmDoc.noResize = true;
+    bodyDoc.style.overflow = "hidden";
+  } else {
+    ifrmDoc.style.display = "";
+    trDocToggle.style.display = "";
+    trColDocToggle.style.display ="none";
+    if (!expandedFramesetRows) {
+            expandedFramesetRows = "25,*," + parent.getDocumentPaneHeight();
+    }
+    frmst.rows = expandedFramesetRows;
+    frmDoc.noResize = false;
+    bodyDoc.style.overflow = "scroll";
+  }
+}
+
+</SCRIPT>
+    </HEAD>
+<BODY ID="bodyDoc" STYLE="overflow:hidden;" CLASS="bodyDoc">
+        <table id="tabDocToggler" class="documentframe" width="100%" height="100%" style="margin-bottom:1px;" cellspacing="0" cellpadding="0" border="0">
+    <tr id="trDocToggle" height="25" style="display:none;"><td height="25"><p class="p1">&nbsp;
+		<a href="javascript:ToggleDoc();" title="Hide document preview" class="a1">Hide Preview</a><span id="spanOpenNewWindow" style="display:none;"> | <a id="aOpenNewWindow" onclick="ClearOpenDoc(); ToggleDoc();" href="" target="_blank" title="Open document in new window" class="a1">Open&nbsp;in&nbsp;new&nbsp;window...</a></span></p></td>
+		<td height="25" width="50%" align="left"><a href="javascript:ToggleDoc();" title="Hide document preview"><img class="imgCloseFrame" src="Images/closeframe.gif" onmouseout="this.className =  'imgCloseFrame';" onmouseover="this.className = 'imgCloseFrame imgCloseFrameHighlighted';" title="Hide document preview" width="16" height="16" align="right"></a></td></tr>
+    <tr id="trColDocToggle" height="25"><td height="25"><p class="p1">&nbsp; <a href="javascript:ToggleDoc();" title="Show document preview" class="a1">
+		Show Preview</a></p></td><td height="25" width="50%" align="left">
+		<p align="right"><a href="javascript:ToggleDoc();" title="Show document preview"><img class="imgCloseFrame" src="Images/maximisetop.gif" title="Show document preview" onmouseout="this.className =  'imgCloseFrame';" onmouseover="this.className = 'imgCloseFrame imgCloseFrameHighlighted';" width="16" height="16"></a></td></tr>
+    <tr height="100%"><td height="100%" colspan=2><IFRAME STYLE="display:none;width:100%;height:100%" BORDER="0" FRAMEBORDER="no" BORDERCOLOR="#999999" ID="ifrmDoc" CLASS="ifrmDoc" NAME="frmdocument" SRC="publicationdefaultdocument.html" /></td></tr></table>
+</BODY>
+</HTML>

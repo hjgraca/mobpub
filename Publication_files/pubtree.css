@@ -1,0 +1,107 @@
+body {
+    background:     #fff;
+    margin:         0pt;
+    overflow:       scroll;
+    font-size:      8pt;
+}
+.divTree {
+}
+.divTreeHidden {
+    display:    none;
+}
+.divItem {
+    white-space:    nowrap;
+}
+.divItemGroup {
+}
+.divSubitems {
+    display:        block;
+    position:       relative;
+    left:           16px;
+}
+.divHiddenSubitems {
+    display:        none;
+}
+.divPlusMinus {
+    height:         16px;
+    width:          16px;
+    display:        inline;
+    vertical-align: middle;
+    text-align:     center;
+}
+.imgPlusMinus {
+    margin:         0px;
+    height:         9px;
+    width:          9px;
+}
+.divItemLabel {
+    display:        inline;
+    white-space:    nowrap;
+}
+.divIcon {
+    height:         16px;
+    width:          16px;
+    display:        inline;
+    vertical-align: middle;
+    text-align:     center;
+    cursor:         default;
+}
+.imgIcon {
+    
+    width:          16px;
+}
+
+.divText {
+    border:         solid 1px #fff;
+    position:       relative;
+    left:           3px;
+    display:        inline;
+    height:         16px;
+    font-family:    Tahoma, sans-serif;
+    font-size:      8pt;
+    vertical-align: middle;
+    cursor:         default;
+}
+.divTextMouseover {
+    border:         solid 1px #fff;
+    color:          #009;
+    text-decoration: underline;
+    position:       relative;
+    left:           3px;
+    display:        inline;
+    height:         16px;
+    font-family:    Tahoma, sans-serif;
+    font-size:      8pt;
+    vertical-align: middle;
+    cursor:         default;
+}
+.divTextSelected {
+    border:         solid 1px #47c;
+    background:     #47c;
+    color:          #fff;
+    position:       relative;
+    left:           3px;
+    display:        inline;
+    height:         16px;
+    font-family:    Tahoma, sans-serif;
+    font-size:      8pt;
+    vertical-align: middle;
+    cursor:         default;
+}
+.divTextSelectedMouseover {
+    border:         solid 1px #47c;
+    background:     #47c;
+    color:          #fff;
+    text-decoration: underline;
+    position:       relative;
+    left:           3px;
+    display:        inline;
+    height:         16px;
+    font-family:    Tahoma, sans-serif;
+    font-size:      8pt;
+    vertical-align: middle;
+    cursor:         default;
+}
+
+
+

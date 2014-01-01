@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+	<DocumentProperties>
+		<Title></Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="0" Name="APQC" NameU="Functional Decomposition Diagram">
+			<Layer IX="0">
+				<Name>Background</Name>
+				<NameUniv>Background</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name>Organization Unit</Name>
+				<NameUniv>Organization Unit</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="2">
+				<Name>Function</Name>
+				<NameUniv>Function</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="3">
+				<Name>Process</Name>
+				<NameUniv>Process</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="4">
+				<Name>Connector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="5">
+				<Name>Assumption</Name>
+				<NameUniv>Assumption</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="6">
+				<Name>Actor</Name>
+				<NameUniv>Actor</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="7">
+				<Name>Role</Name>
+				<NameUniv>Role</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="8">
+				<Name>Business Service</Name>
+				<NameUniv>Service</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="9">
+				<Name>Requirement</Name>
+				<NameUniv>Requirement</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="10">
+				<Name>Physical Technology Component</Name>
+				<NameUniv>Physical Technology Component</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="11">
+				<Name>Logical Application Component</Name>
+				<NameUniv>Logical Application Component</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="12">
+				<Name>Physical Application Component</Name>
+				<NameUniv>Physical Application Component</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="13">
+				<Name>Product</Name>
+				<NameUniv>Product</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="14">
+				<Name>Logical Technology Component</Name>
+				<NameUniv>Logical Technology Component</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="15">
+				<Name></Name>
+				<NameUniv></NameUniv>
+				<Visible>0</Visible>
+			</Layer>
+			<Value Unit="STR">APQC PCF Cross Industry</Value>
+			<Label>Repository Name</Label>
+			<Value Unit="STR">APQC - Process Classification Framework</Value>
+			<Label>Object Category</Label>
+			<Value></Value>
+			<Label>Description</Label>
+			<Value Unit="STR">3</Value>
+			<Label>System Version No</Label>
+			<Value Unit="STR">v1</Value>
+			<Label>User Version No</Label>
+			<Value Unit="STR">System Administrator</Value>
+			<Label>Created By</Label>
+			<Value Unit="STR">22/02/2013 14:57:04</Value>
+			<Label>Date Created</Label>
+			<Value Unit="STR">System Administrator</Value>
+			<Label>Last Modified By</Label>
+			<Value Unit="STR">12/05/2013 17:18:18</Value>
+			<Label>Date Last Modified</Label>
+			<Shapes>
+				<Shape ID="72" UniqueID="{BE2D5DE4-FA2A-45F3-88D4-3A2F7EBDADF3}" Name="Sheet.72" NameU="Sheet.72">
+					<XForm>
+						<PinX Unit="MM">5.807086614173228</PinX>
+						<PinY Unit="MM">3.641732283464567</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="70" UniqueID="{9BE07476-F92A-4FE8-99EB-C27324691367}" Name="Sheet.70" NameU="Sheet.70">
+					<Text>MANAGEMENT AND SUPPORT PROCESSES
+</Text>
+					<XForm>
+						<PinX Unit="MM">7.775590551181102</PinX>
+						<PinY Unit="MM">2.362204724409449</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="9" UniqueID="{E2F414B4-E1B7-4324-AB8D-EA4DDC9B40A4}" Name="Process Category (Box).9" NameU="Process Category (Box).9" Master="11">
+					<Text>6 Develop and Manage Human Capital</Text>
+					<XForm>
+						<PinX Unit="MM">7.775590551181102</PinX>
+						<PinY Unit="MM">3.543307086614173</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10007.0000</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="14" UniqueID="{EEC7272E-B1FE-4C1E-B53A-D5F11CD5B817}" Name="Process Category (Box).14" NameU="Process Category (Box).14" Master="11">
+					<Text>7 Manage Information Technology</Text>
+					<XForm>
+						<PinX Unit="MM">7.775590551181102</PinX>
+						<PinY Unit="MM">3.047244094488189</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10008.0000</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="16" UniqueID="{846B4D0D-DBDA-45CA-9100-91FFB973D14A}" Name="Process Category (Box).16" NameU="Process Category (Box).16" Master="11">
+					<Text>8 Manage Financial Resources</Text>
+					<XForm>
+						<PinX Unit="MM">7.775590551181102</PinX>
+						<PinY Unit="MM">2.559055118110236</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10009.0000</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="18" UniqueID="{B0845871-BA9E-4B64-A2FA-6EA854A2454E}" Name="Process Category (Box).18" NameU="Process Category (Box).18" Master="11">
+					<Text>9 Acquire, Construct, and Manage Property</Text>
+					<XForm>
+						<PinX Unit="MM">7.775590551181102</PinX>
+						<PinY Unit="MM">2.066929133858268</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10010.0000</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="20" UniqueID="{7831661B-9E24-432D-9FDA-F6B9497DF8D7}" Name="Process Category (Box).20" NameU="Process Category (Box).20" Master="11">
+					<Text>10 Manage Environmental Health and Safety (EHS)</Text>
+					<XForm>
+						<PinX Unit="MM">7.775590551181102</PinX>
+						<PinY Unit="MM">1.574803149606299</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">11179.0000</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="22" UniqueID="{957BDFAC-5CA2-4A98-8D14-73F002FA7467}" Name="Process Category (Box).22" NameU="Process Category (Box).22" Master="11">
+					<Text>11 Manage External Relationships</Text>
+					<XForm>
+						<PinX Unit="MM">7.775590551181102</PinX>
+						<PinY Unit="MM">1.082677165354331</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="24" UniqueID="{565BFB0A-DF57-406D-9FA5-85AD409EA2BC}" Name="Process Category (Box).24" NameU="Process Category (Box).24" Master="11">
+					<Text>12 Manage Knowledge, Improvement, and Change</Text>
+					<XForm>
+						<PinX Unit="MM">7.775590551181102</PinX>
+						<PinY Unit="MM">0.590551181102362</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10013.0000</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="54" UniqueID="{029A3537-E8F0-4DE4-A881-9F9473E08063}" Name="Sheet.54" NameU="Sheet.54">
+					<Text>OPERATING PROCESSES</Text>
+					<XForm>
+						<PinX Unit="MM">7.775590551181102</PinX>
+						<PinY Unit="MM">5.905511811023621</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="56" UniqueID="{880E4053-88AB-4DA7-ABCB-8C1B09C74839}" Name="Sheet.56" NameU="Sheet.56">
+					<Text>THE APQC PROCESS CLASSIFICATION
+FRAMEWORKSM
+
+The PCF was developed by APQC and its member companies as an open standard to facilitate improvement through process management and benchmarking, regardless of industry, size, or geography. The PCF organizes operating and management processes into 12 enterprise level categories, including process groups and over 1,000 processes and associated activities. The PCF and associated measures and benchmarking surveys are available for download and completion at no charge from the Open Standards Benchmarking Collaborative Web site at www.apqc.org/OSBCdatabase.</Text>
+					<XForm>
+						<PinX Unit="MM">2.066929133858268</PinX>
+						<PinY Unit="MM">1.574803149606299</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address>http://www.apqc.org/OSBCdatabase</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+										<HLURL:AbsoluteURL>http://www.apqc.org/OSBCdatabase</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="71" UniqueID="{640D93F0-87CE-4D09-B4F4-377FA206B0DF}" Name="Sheet.71" NameU="Sheet.71">
+					<Text>APQC: [Industry]
+Process Classification Framework</Text>
+					<XForm>
+						<PinX Unit="MM">2.027559055118110</PinX>
+						<PinY Unit="MM">6.811023622047244</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="11" UniqueID="{B80B5B4D-4B3C-4FDD-B9FB-F49BC919DE4E}" Name="Sheet.11" NameU="Sheet.11">
+					<Text>HOW TO USE THE APQC PCF
+
+[Your Notes Here]</Text>
+					<XForm>
+						<PinX Unit="MM">2.066929133858268</PinX>
+						<PinY Unit="MM">4.527559055118111</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address>http://www.apqc.org/OSBCdatabase</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+										<HLURL:AbsoluteURL>http://www.apqc.org/OSBCdatabase</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="12" UniqueID="{A92E1684-B34A-4958-AEC3-F62C9C13632F}" Name="Process Category (Box)" NameU="Process Category (Box)" Master="11">
+					<Text>1 Develop Vision and Strategy</Text>
+					<XForm>
+						<PinX Unit="MM">5.019685039370078</PinX>
+						<PinY Unit="MM">5.610236220472441</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10002.0000</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="1" UniqueID="{4D0F89BC-F1CC-4C70-942E-8A1E1AD45D4C}" Name="Process Category (Box).1" NameU="Process Category (Box).1" Master="11">
+					<Text>2 Develop and Manage Products and Services</Text>
+					<XForm>
+						<PinX Unit="MM">6.397637795275590</PinX>
+						<PinY Unit="MM">5.610236220472441</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10003.0000</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="3" UniqueID="{E269EDF9-DB01-49FF-96CA-D08AC8E9FC4C}" Name="Process Category (Box).3" NameU="Process Category (Box).3" Master="11">
+					<Text>3 Market and Sell Products and Services</Text>
+					<XForm>
+						<PinX Unit="MM">7.775590551181102</PinX>
+						<PinY Unit="MM">5.610236220472441</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10004.0000</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="5" UniqueID="{3DEBC17F-4129-4893-8578-E99D93FBF745}" Name="Process Category (Box).5" NameU="Process Category (Box).5" Master="11">
+					<Text>4 Deliver Products and Services</Text>
+					<XForm>
+						<PinX Unit="MM">9.153543307086615</PinX>
+						<PinY Unit="MM">5.610236220472441</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10005.0000</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="7" UniqueID="{A74E1417-860A-4698-9BB7-4882B75F6C52}" Name="Process Category (Box).7" NameU="Process Category (Box).7" Master="11">
+					<Text>5 Manage Customer Service</Text>
+					<XForm>
+						<PinX Unit="MM">10.531496062992124</PinX>
+						<PinY Unit="MM">5.610236220472441</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10006.0000</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>

@@ -1,0 +1,34 @@
+<div id="diagrampage" data-role="page" data-theme="a" data-title="Diagram" data-add-back-btn="true"> 
+       <div data-role="header"> 
+        <a href="" data-rel="back">Back</a>
+             <h1>Orbus</h1> 
+             <a href="/" data-icon="home">Home</a>
+         </div> 
+       <div data-role="content">      
+             <div id="imagewrapper">
+      <div id="imagescroller">
+        <img id="im" src=""/>
+        
+      </div>  
+    </div>         
+       </div>   
+      <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="bottom">
+            <ul>
+                <li><a href="/partials/setup.html" data-icon="gear" data-transition="flip">Setup</a></li>
+                <li><a href="/partials/search.html" data-icon="search" data-transition="flip">Search</a></li>
+                <li><a href="#diagraminfopanel" data-icon="info">Info</a></li>
+            </ul>
+        </div><!-- /navbar -->
+      </div> 
+
+
+<div data-role="panel" id="diagraminfopanel" data-display="overlay" data-position-fixed="true">
+  <div data-role="header" data-theme="b" style="z-index:2"> 
+    <h2>Info</h2> 
+  </div>
+  <div data-role="content" class="wrapper" id="diagraminfowrapper" >
+    <div class="scroller" id="diagraminfolist"></div>
+  </div>
+</div>
+  </div> 

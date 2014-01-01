@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <title>Publisher</title>
+        <link rel="stylesheet" href="pubinfo.css" type="text/css" />
+        <link rel="stylesheet" href="pubtogframe.css" type="text/css" />
+        <link rel="stylesheet" href="pubsearch.css" type="text/css" />
+        <script language="jscript" type="text/jscript" src="pubtogframe.js"></script>
+        <script language="jscript" type="text/jscript" src="puboptions.js"></script>
+        <script language="jscript" type="text/jscript" src="pubsearch.js"></script>
+        <script language="jscript" type="text/jscript"><!--
+            // (De)initializers
+            window.onload = function () {
+                puboptionsOnLoad();
+                pubtogframeOnLoad();
+            }
+            window.onunload = function () {
+                pubtogframeOnUnload();
+            }
+        // --></script>
+        <xml id="publicationOptions">
+            <publicationOptions>
+                <publicationOption optionName="autoCloseFrame" optionValue="no" />
+                <publicationOption optionName="minimizedCols" optionValue="0,*" />
+            </publicationOptions>
+        </xml>
+    </head>
+    <body class="bodyFrameOpen" style="background:  #ecf5fe;">
+        <div class="divFrameContents" id="frameContentsOpen">
+            <div class="divTopMatter">
+                <div class="divToolbar">
+                    <div class="divRightToolbarPortion">
+                        <div class="divToolbarButton" onclick="toggleFrame()">
+                                <img src="Images/closeframe.gif" class="imgCloseFrame" title="Hide tree">
+                        </div>
+                    </div>
+                </div>
+                <div class="divHeader">
+                        Search
+                </div>
+                <div class="divControls" style="line-height: 20px; padding-left: 5px;"></div>
+            </div>
+            <div class="divBottomMatter">
+                <div class="divBottomMatterInner">
+                    <div class="divPanel" id="pnlSettings">
+                        <div class="divPanelTitle">
+                            <div class="divPanelLabel">Find objects</div>
+                        </div>
+                        <div class="divPanelBody">
+                            <div id="divSearch">
+                                <form onsubmit="doSearch(); return false;" style="margin-bottom: 0;">
+                                    <b>Search publication for:</b><br />
+                                    <div style="text-align: left; margin-bottom: 10px;">
+                                        <input type="checkbox" name="searchTypeShapes" value="1" checked="1" />Shapes
+                                        <input type="checkbox" name="searchTypeDocuments" value="1" checked="1" />Documents
+                                        <input type="checkbox" name="searchTypeDiagrams" value="1" checked="1" />Diagrams
+                                        <input type="checkbox" name="searchTypeFolders" value="1" checked="1" />Folders
+                                    </div>
+                                    <b>containing the following keywords:</b>
+                                    <div style="margin-bottom: 10px;">
+                                        <input type="text" style="width: 100%" id="inputSearchFor" name="searchFor" />
+                                    </div>
+                                    <b>in these fields:</b>
+                                    <div style="margin-bottom: 10px;">
+                                        <input type="checkbox" name="searchName" checked="1" />Name<br />
+                                        <input type="checkbox" name="searchDescription" />Description<br />
+                                        <input type="checkbox" name="searchAttributes" />Attribute values<br />
+                                    </div>
+                                    <div style="text-align: right">
+                                        <input type="submit" value="Search" onclick="doSearch(); return false;" />
+                                        <input type="submit" value="Cancel" onclick="doBack(); return false;"/>
+                                    </div>
+                                </form>
+                                <div class="divProgress">
+                                    <!-- color: 2255cc', EndColorStr=5987d6' -->
+                                    <div class="divProgressSlider">
+                                        <div class="divProgressElement"></div>
+                                        <div class="divProgressElement"></div>
+                                        <div class="divProgressElement"></div>
+                                        <div class="divProgressElement"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="divSearching" style="display: none;">
+                                Searching...
+                            </div>
+                            <div id="divSearched" style="display: none;">
+                                <div style="text-align: right">
+                                    <input type="submit" value="Search again" onclick="doSearchAgain(); return false;"/>
+                                    <input type="submit" value="Cancel" onclick="doBack(); return false;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divPanel" id="pnlSearchResults" style="display: none;">
+                        <div class="divPanelTitle">
+                            <div class="divPanelLabel">Search results</div>
+                        </div>
+                        <div class="divPanelBody" id="resultsStage">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divFrameContentsHidden" id="frameContentsClosed">
+            <div class="divFrameOpener">
+                <img src="Images/toc2.gif" onclick="toggleFrame()">
+            </div>
+        </div>
+    </body>
+
+
+
+    <body>
+    </body>
+</html>

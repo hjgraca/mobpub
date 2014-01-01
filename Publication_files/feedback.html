@@ -1,0 +1,655 @@
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+        <title>iServer Publisher: Feedback</title>
+
+        <SCRIPT LANGUAGE="JavaScript">
+
+            var CommentEmail = "<undefined>";
+            var CommentAddress = "<undefined>";
+            var publicationFeedback = null;
+            var USE_EMAIL_CLIENT = 0;
+            var USE_SCRIPT = 1;
+            var MAX_COMMENT_LENGTH = 0;
+	
+            function GetPublicationData(xmlNode)
+            {
+                publicationFeedback = new PublicationFeedback(xmlNode);
+                if (publicationFeedback != null)
+                {
+                    return publicationFeedback;
+                }
+            }
+
+            function PublicationFeedback(xmlNode)
+            {
+                this.Enabled = "false";
+                this.FeedbackAdministrators = [];
+                this.IssueCategories = [];
+                this.IssuePriorities = [];
+                this.FeedbackWindow = null;
+                this.MailURL = null;
+                this.SendMethod = null;
+
+                if (xmlNode != null)
+                {
+                    var feedbacknode = xmlNode.selectSingleNode("iServerPublication/PublicationFeedback");
+                    if (feedbacknode != null)
+                    {
+                        var enabled = feedbacknode.attributes.getNamedItem ("Enabled");
+                        if (enabled != null && enabled.text.length > 0)
+                        {
+                            this.Enabled = HTMLEscape (enabled.text);
+                        } else {
+                            this.Enabled = "false";
+                        }
+
+                        var mailurl = feedbacknode.attributes.getNamedItem ("MailURL");
+                        if (mailurl != null && mailurl.text.length > 0)
+                        {
+                            this.MailURL = HTMLEscape(mailurl.text);
+                            this.SendMethod = USE_SCRIPT;
+                            MAX_COMMENT_LENGTH = 1000;
+                        } 
+                        else 
+                        {
+                            this.MailURL = null;
+                            this.SendMethod = USE_EMAIL_CLIENT;
+                            MAX_COMMENT_LENGTH = 500;
+                        }
+                        var administrators = [];
+                        var contacts = feedbacknode.selectSingleNode("PublicationContacts");
+
+                        var FeedbackAdministratorEmailString = "";
+                        var FeedbackAdministratorIDString = "";			
+
+                        if (contacts != null)
+                        {
+
+                            //Build list of Administrator Emails and IDS
+                            for (var nTag = 0; nTag < contacts.childNodes.length; nTag++)
+                            {
+                                administrators[administrators.length] = new FeedbackAdministrator(contacts.childNodes[nTag]);
+                                FeedbackAdministratorEmailString += administrators[nTag].Email + ";";
+                                var tempID = administrators[nTag].UserID
+                                if (tempID)
+                                {
+                                    FeedbackAdministratorIDString += tempID + ";";					
+                                }
+                            }
+
+                            //Remove last semi colon from Email list
+                            if (FeedbackAdministratorEmailString.length > 1)
+                            {
+                                FeedbackAdministratorEmailString = FeedbackAdministratorEmailString.substr(0, (FeedbackAdministratorEmailString.length - 1));						
+                            }
+				
+                            //Remove last semi colon from ID list
+                            if (FeedbackAdministratorIDString.length > 1)
+                            {
+                                FeedbackAdministratorIDString = FeedbackAdministratorIDString.substr(0, (FeedbackAdministratorIDString.length - 1));
+                            }				
+
+                            FeedbackForm.FeedbackAdministratorEmails.value = FeedbackAdministratorEmailString;
+                            FeedbackForm.FeedbackAdministratorIDs.value = FeedbackAdministratorIDString;				
+
+                        }
+
+                        this.FeedbackAdministrators = administrators;
+
+                        var categories = [];
+                        var categoriesnode = feedbacknode.selectSingleNode("IssueCategories");
+                        if (categoriesnode != null)
+                        {
+                            for (var nTag = 0; nTag < categoriesnode.childNodes.length; nTag++)
+                            {
+                                var thisCategory = new IssueCategory(categoriesnode.childNodes[nTag]);
+                                comboOpt = document.createElement("OPTION");
+                                comboOpt.value = thisCategory.ID;
+                                comboOpt.text = thisCategory.Name;
+                                FeedbackForm.CommentType.add(comboOpt, FeedbackForm.CommentType.options.length);
+                            }
+                        }
+                        this.IssueCategories = categories;
+
+                        var priorities = [];
+                        var prioritiesnode = feedbacknode.selectSingleNode("IssuePriorities");
+                        if (prioritiesnode != null)
+                        {
+                            for (var nTag = 0; nTag < prioritiesnode.childNodes.length; nTag++)
+                            {
+                                var thisPriority = new IssuePriority(prioritiesnode.childNodes[nTag]);
+                                comboOpt = document.createElement("OPTION");
+                                comboOpt.value = thisPriority.ID;
+                                comboOpt.text = thisPriority.Name;
+                                FeedbackForm.CommentPriority.add(comboOpt, FeedbackForm.CommentPriority.options.length);
+                            }
+                        }
+                        this.IssuePriorities = priorities;
+
+                        //Callback to Diagram window to retrieve selected object's details.
+                        var parentWindow = window.opener;
+                        if (parentWindow)
+                        {
+                            if (!parentWindow.closed)
+                            {
+                                var objectname = parentWindow.PublicationData.CurrentObjectName;
+                                var objectid = parentWindow.PublicationData.CurrentObjectID;
+                                var typeindex = parentWindow.PublicationData.CurrentTypeIndex;
+
+                                if (!objectname)
+                                {
+                                    FeedbackForm.ObjectName.value = "";
+                                    FeedbackForm.CommentAbout.options[3].selected = true;
+
+                                } 
+                                else 
+                                {
+
+                                    FeedbackForm.ObjectName.value = objectname;
+                                    if (!typeindex)
+                                    {
+                                        if (typeindex == 0)
+                                        {
+                                        } 
+                                        else
+                                        {
+                                            typeindex = 3;
+                                        }
+                                    }
+                                    FeedbackForm.CommentAbout.options[typeindex].selected = true;
+                                }
+					
+                                if (!objectid)
+                                {
+                                    FeedbackForm.ObjectID.value = "";
+                                } 
+                                else 
+                                {
+                                    FeedbackForm.ObjectID.value = objectid;
+                                }
+                            } 
+                            else 
+                            {
+                                if 	(confirm("The parent diagram window has been closed. Would you like to create a general comment?"))
+                                {
+                                    FeedbackForm.ObjectName.value = "";
+                                    FeedbackForm.CommentAbout.options[3].selected = true;
+                                } 
+                                else 
+                                {
+                                    window.close();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            function FeedbackAdministrator (xmlNode)
+            {
+                this.Name = null;
+                this.Email= null;
+                this.UserID= null;
+	
+                if (xmlNode != null)
+                {
+                    var userid = xmlNode.attributes.getNamedItem ("UserID");
+                    if (userid != null && userid.text.length > 0)
+                    {
+                        this.UserID = HTMLEscape (userid.text);
+                    } else {
+                        this.UserID = null;
+                    }
+			
+                    var name = xmlNode.attributes.getNamedItem ("Name");
+                    if (name != null && name.text.length > 0)
+                    {
+                        this.Name = HTMLEscape (name.text);
+                    } else {
+                        this.Name = "Unknown";
+                    }
+
+                    var email = xmlNode.attributes.getNamedItem ("Email");
+                    if (email != null && email.text.length > 0)
+                    {
+                        this.Email = HTMLEscape (email.text);
+                    } else {
+                        this.Email = "Unknown";
+                    }
+                }
+            }
+
+            function IssuePriority (xmlNode)
+            {
+                this.Name = null;
+                this.Description = null;
+                this.ID = null;
+	
+                if (xmlNode != null)
+                {
+                    var id = xmlNode.attributes.getNamedItem ("ID");
+                    if (id != null && id.text.length > 0)
+                    {
+                        this.ID = HTMLEscape (id.text);
+                    } else {
+                        this.ID = "Unknown";
+                    }			
+	
+                    var name = xmlNode.attributes.getNamedItem ("Name");
+                    if (name != null && name.text.length > 0)
+                    {
+                        this.Name = HTMLEscape (name.text);
+                    } else {
+                        this.Name = "Unknown";
+                    }
+
+                    var desc = xmlNode.attributes.getNamedItem ("Description");
+                    if (desc != null && desc.text.length > 0)
+                    {
+                        this.Description = HTMLEscape (desc.text);
+                    } else {
+                        this.Description = "Unknown";
+                    }
+                }
+            }
+
+            function IssueCategory (xmlNode)
+            {
+                this.Name = null;
+                this.Description = null;
+                this.ID = null;
+	
+                if (xmlNode != null)
+                {
+                    var id = xmlNode.attributes.getNamedItem ("ID");
+                    if (id != null && id.text.length > 0)
+                    {
+                        this.ID = HTMLEscape (id.text);
+                    } else {
+                        this.ID = "Unknown";
+                    }		
+			
+                    var name = xmlNode.attributes.getNamedItem ("Name");
+                    if (name != null && name.text.length > 0)
+                    {
+                        this.Name = HTMLEscape (name.text);
+                    } else {
+                        this.Name = "Unknown";
+                    }
+
+                    var desc = xmlNode.attributes.getNamedItem ("Description");
+                    if (desc != null && desc.text.length > 0)
+                    {
+                        this.Description = HTMLEscape (desc.text);
+                    } else {
+                        this.Description = "Unknown";
+                    }
+                }
+            }
+
+            function XMLData(file)
+            {
+                var temp = null;
+
+                temp = CreateObject("Microsoft.XMLDOM");
+                if (temp == null)
+                {
+                    temp = CreateObject("MSXML2.DOMDocument");
+                }
+
+                if (temp != null)
+                {
+                    temp.async = false;
+
+                    temp.load(file);
+                    if (temp.parseError.errorCode != 0)
+                    {
+                        temp = null;
+                    }
+                }
+
+                return temp;
+            }
+
+            function CreateObject (strObj)
+            {
+                var obj = null;
+                eval ("try { obj = new ActiveXObject(strObj); } catch (e) {}");
+                return obj;
+            }
+
+            function textCounter(field, countfield, maxlimit)
+            {
+                if (field.value.length > maxlimit)
+                {
+                    field.value = field.value.substring(0, maxlimit);
+                } else {
+                    countfield.value = maxlimit - field.value.length;
+                }
+            }
+
+            function printRules () {
+
+                var rules = "Your comment cannot contain the following characters: & < > \" \'. These characters will be removed if found\n\n";
+                rules +="Comment Text can be no longer than 500 characters.\n\n";
+                rules +="Comment Title, Object Name, Author Name, Author Email can be no longer than 200 characters each.\n\n";
+                rules +="On some systems the email that is generated will be truncated. There is a link at the bottom of the page to a copy+paste friendly output that can be dropped into a blank email.";
+                alert(rules);
+            }
+
+            function HTMLEscape (str)
+            {
+                var strResult = "";
+
+                for (var i = 0 ; i < str.length ; i++)
+                {
+                    var curChar = str.charAt(i);
+                    if (curChar == '\\')
+                    {
+                        //strResult += "&#92;";
+                    }
+                    else if (curChar == '\"')
+                    {
+                        //strResult += "&#34;";
+                    }
+                    else if (curChar == '\'')
+                    {
+                        //strResult += "&#39;";
+                    }
+                    else if (curChar == '<')
+                    {
+                        //strResult += "&#60;";
+                    }
+                    else if (curChar == '<')
+                    {
+                        //strResult += "&#62;";
+                    }
+                    else if (curChar == '&')
+                    {
+                        //strResult += "&#38;";
+                    }
+                    else
+                    {
+                        strResult += curChar;
+                    }
+                }
+
+                return strResult;
+            }
+
+            function getNow() 
+            {
+
+                var months=new Array(13);
+                months[1]="January";months[2]="February";months[3]="March";months[4]="April";months[5]="May";months[6]="June";months[7]="July";months[8]="August";months[9]="September";months[10]="October";months[11]="November";months[12]="December";
+                var time=new Date();var lmonth=months[time.getMonth() + 1];var date=time.getDate();var year=time.getYear();
+                var dateNow = lmonth + " " + date + ", " + year;
+                return dateNow;
+            }
+
+            function sendComment(Form) 
+            {
+                var pass=false;
+                if (publicationFeedback.SendMethod == USE_EMAIL_CLIENT)
+                {
+                    pass = sendAsEmail(Form);
+                }
+                else
+                {
+                    pass = sendViaWeb(Form);
+                }
+                if (pass == true) {
+                    window.close();
+                }
+            }
+
+            function sendAsEmail(Form) 
+            {
+                var pass=true;
+                if (document.images)
+                {
+                    for (i=0;i<Form.length;i++)
+                    {
+                        var tempobject=Form.elements[i];
+                        if (tempobject.name.substring(0,8)=="required")
+                        {
+                            if (((tempobject.type=="text"||tempobject.type=="textarea")&&tempobject.value=='')||(tempobject.type.toString().charAt(0)=="s"&&tempobject.selectedIndex==0))
+                            {
+                                pass=false;
+                                break;
+                            }
+                        }
+                    }
+                }
+                if (!pass)
+                {
+                    shortFieldName=tempobject.name.substring(8,30);
+                    alert("Please complete the "+shortFieldName+" field.");
+                    tempobject.focus();
+                    return false;
+                } else
+                {
+			
+                    CommentEmail = "\n" + "Comment Title: " + Form.elements.requiredCommentTitle.value + "\n\n";
+                    CommentEmail += "This is a " + Form.elements.CommentAbout.value + "\n\n";
+                    CommentEmail += "Selected Object: " + Form.elements.ObjectName.value + "\n\n";
+                    CommentEmail += "Comment Type: " + Form.elements.CommentType.options[Form.elements.CommentType.options.selectedIndex].text + "\n\n";
+                    CommentEmail += "Comment Priority: " + Form.elements.CommentPriority.options[Form.elements.CommentPriority.options.selectedIndex].text + "\n\n";
+                    CommentEmail += "Comment Text: " + Form.elements.requiredCommentText.value + "\n\n";
+                    CommentEmail += "Author Name: " + Form.elements.requiredAuthorName.value + "\n\n";
+                    CommentEmail += "Author Email: " + Form.elements.AuthorEmail.value + "\n\n";
+
+                    var Subject = "iServer Publication Comment: " + getNow();
+
+                    var RecipientEmail = "mailto:" + escape(Form.elements.FeedbackAdministratorEmails.value) + "?subject=" + escape(Subject) + "&body=" + escape(CommentEmail);
+
+                    window.open(RecipientEmail);
+
+                    Form.Cancel.value = "Close";
+
+                    return true;
+                }
+            }
+
+            function sendViaWeb(Form) 
+            {
+                var pass=true;
+                var IssueCategories = publicationFeedback.IssueCategories;
+	
+                if (document.images)
+                {
+                    for (i=0;i<Form.length;i++)
+                    {
+                        var tempobject=Form.elements[i];
+                        if (tempobject.name.substring(0,8)=="required")
+                        {
+                            if (((tempobject.type=="text"||tempobject.type=="textarea")&&tempobject.value=='')||(tempobject.type.toString().charAt(0)=="s"&&tempobject.selectedIndex==0))
+                            {
+                                pass=false;
+                                break;
+                            }
+                        }
+                    }
+                }
+                if (!pass)
+                {
+                    shortFieldName=tempobject.name.substring(8,30);
+                    alert("Please complete the "+shortFieldName+" field.");
+                    tempobject.focus();
+                    return false;
+                } else
+                {
+		
+                    var querystring = "?CommentTitle=" + escape(Form.elements.requiredCommentTitle.value);
+                    querystring+= "&CommentAbout=" + escape(Form.elements.CommentAbout.value);
+                    querystring+= "&ObjectName=" + escape(Form.elements.ObjectName.value);
+                    querystring+= "&ObjectID=" + escape(Form.elements.ObjectID.value);
+                    querystring+= "&CommentType=" + escape(Form.elements.CommentType.options[Form.elements.CommentType.options.selectedIndex].text);
+                    querystring+= "&CommentTypeID=" + escape(Form.elements.CommentType.options[Form.elements.CommentType.options.selectedIndex].value);
+                    querystring+= "&CommentPriorityID=" + escape(Form.elements.CommentPriority.options[Form.elements.CommentPriority.options.selectedIndex].value);
+                    querystring+= "&CommentPriority=" + escape(Form.elements.CommentPriority.options[Form.elements.CommentPriority.options.selectedIndex].text);
+                    querystring+= "&CommentText=" + escape(Form.elements.requiredCommentText.value);
+                    querystring+= "&AuthorName=" + escape(Form.elements.requiredAuthorName.value);
+                    querystring+= "&AuthorEmail=" + escape(Form.elements.AuthorEmail.value);
+                    querystring+= "&Recipient=" + escape(Form.elements.FeedbackAdministratorEmails.value);
+                    querystring+= "&RecipientID=" + escape(Form.elements.FeedbackAdministratorIDs.value);			
+			
+                    var mailhref= publicationFeedback.MailURL + querystring;
+                    var windowprops = "height=140,width=305,location=no, scrollbars=no,menubars=no,toolbars=no,resizable=no, status=no";
+                    var windowname = "commentViaWeb";
+                    window.open(mailhref, windowname, windowprops);
+
+                    Form.Cancel.value = "Close";
+                    return true;
+                }
+            }
+
+
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="publication.css">
+
+    </head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" class="p2" onload="GetPublicationData(XMLData('publicationproperties.xml'))">
+
+<div align="center">
+<form name="FeedbackForm">
+	<input type="hidden" name="FeedbackAdministratorEmails" value="">
+	<input type="hidden" name="FeedbackAdministratorIDs" value="">	
+	<input type="hidden" name="ObjectID" value="">	
+	<table border="0" cellpadding="0" width="496" bordercolor="#000000" id="table1" background="Images/postit_tall.jpg">
+		<tr>
+			<td>
+			<div align="center">
+				<table border="0" cellpadding="0" style="border-collapse: collapse" width="496" bordercolor="#000000" id="table2">
+					<tr>
+						<td width="501" height="67" class="p2" colspan="5">&nbsp;</td>
+					</tr>
+					<tr>
+						<td width="25" height="25" class="p2"></td>
+						<td width="440" colspan="3" height="25" class="label"><b>
+						iServer Publication	Feedback: New Comment</b></td>
+						<td width="36" height="25" class="p2"></td>
+					</tr>
+					<tr>
+						<td width="25" height="20" class="p2"></td>
+						<td width="14" height="20" class="p2"></td>
+						<td width="127" height="20" class="p2">
+						</td>
+						<td width="299" height="20" class="p2">
+						</td>
+						<td width="36" height="20" class="p2"></td>
+					</tr>
+					<tr>
+						<td width="25" height="35" class="p2"></td>
+						<td width="14" height="35" class="p2"></td>
+						<td width="127" height="35" class="p2">
+						Comment Title</td>
+						<td width="299" height="35" class="p2">
+						<input type="text" name="requiredCommentTitle" size="31" maxlength="200"></td>
+						<td width="36" height="35" class="p2"></td>
+					</tr>
+					<tr>
+						<td width="25" height="35" class="p2"></td>
+						<td width="14" height="35" class="p2"></td>
+						<td width="127" height="35" class="p2">
+						This is a</td>
+						<td width="299" height="35" class="p2">
+						<select size="1" name="CommentAbout">
+						<option value="Comment about a Diagram">Comment about a Diagram</option>
+						<option value="Comment about a Shape">Comment about a Shape</option>
+						<option value="Comment about a Document">Comment about a Document</option>
+						<option value="Comment about the Publication">Comment about the Publication</option>
+						<option value="General Comment">General Comment</option>
+						</select></td>
+						<td width="36" height="35" class="p2"></td>
+					</tr>
+					<tr>
+						<td width="25" height="35" class="p2"></td>
+						<td width="14" height="35" class="p2"></td>
+						<td width="127" height="35" class="p2"><b>
+						(Object Name)</b></td>
+						<td width="299" height="35" class="p2">
+						<input type="text" name="ObjectName" size="31" maxlength="200"></td>
+						<td width="36" height="35" class="p2"></td>
+					</tr>
+					<tr>
+						<td width="25" height="35" class="p2"></td>
+						<td width="14" height="35" class="p2"></td>
+						<td width="127" height="35" class="p2">
+						Comment Type</td>
+						<td width="299" height="35" class="p2">
+						<select size="1" name="CommentType">
+						</select></td>
+						<td width="36" height="35" class="p2"></td>
+					</tr>
+					<tr>
+						<td width="25" height="35" class="p2"></td>
+						<td width="14" height="35" class="p2"></td>
+						<td width="127" height="35" class="p2">
+						Comment Priority</td>
+						<td width="299" height="35" class="p2">
+						<select size="1" name="CommentPriority">
+						</select></td>
+						<td width="36" height="35" class="p2"></td>
+					</tr>
+					<tr>
+						<td width="25" height="160" rowspan="2" class="p2"></td>
+						<td width="14" height="160" rowspan="2" class="p2"></td>
+						<td width="127" height="80" class="p2">
+						Comment Text:<br>
+						<a class="tdCommentFormLink" href="javascript:%20printRules();">
+						(Help</a>)</td>
+						<td width="299" height="160" rowspan="2" class="p2">
+						<textarea rows="9" name="requiredCommentText" cols="31" onKeyDown="textCounter(this.form.requiredCommentText,this.form.remLen,MAX_COMMENT_LENGTH);" onKeyUp="textCounter(this.form.requiredCommentText,this.form.remLen,MAX_COMMENT_LENGTH);"></textarea></td>
+						<td width="36" height="160" rowspan="2" class="p2"></td>
+					</tr>
+					<tr>
+						<td width="127" height="80" class="p2">
+						<p align="center">
+						<input readonly type=text name=remLen size=3 maxlength=3 value=""> chars left</td>
+					</tr>
+					<tr>
+						<td width="25" height="35" class="p2"></td>
+						<td width="14" height="35" class="p2"></td>
+						<td width="127" height="35" class="p2">
+						My Name</td>
+						<td width="299" height="35" class="p2">
+						<input type="text" name="requiredAuthorName" size="31" maxlength="200"></td>
+						<td width="36" height="35" class="p2"></td>
+					</tr>
+					<tr>
+						<td width="25" height="35" class="p2"></td>
+						<td width="14" height="35" class="p2"></td>
+						<td width="127" height="35" class="p2">
+						My Email</td>
+						<td width="299" height="35" class="p2">
+						<input type="text" name="AuthorEmail" size="31" maxlength="200"></td>
+						<td width="36" height="35" class="p2"></td>
+					</tr>
+					<tr>
+						<td width="25" height="35" class="p2"></td>
+						<td width="14" height="35" class="p2"></td>
+						<td width="127" height="35" class="p2">Post Comment:</td>
+						<td width="299" height="35" class="p2">
+						<input type="button" value="Send Comment" name="PostComment" onClick="sendComment(document.FeedbackForm)">
+						<input type="button" value="Cancel" name="Cancel" onClick="window.close()"></td>
+						<td width="36" height="35" class="p2"></td>
+					</tr>
+					<tr>
+						<td width="501" height="70" class="p2" colspan="5">&nbsp;</td>
+					</tr>
+				</table>
+			</div>
+			</td>
+		</tr>
+	</table>
+	</form>
+</div>
+
+</body>
+
+</html>

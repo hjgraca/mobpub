@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerDiagram ID="687c7271-2149-4e9f-80fc-24e5814cfd95">
+  <iServerProperties>
+    <RepositoryName>1 Develop Vision and Strategy</RepositoryName>
+    <Category>BPA - Process Decomposition</Category>
+    <Logo>../Images/visio.gif</Logo>
+    <Ext>.html</Ext>
+    <Description />
+    <Timestamp CreatedOn="2013-02-22" CreatedBy="System Administrator" LastModifiedOn="2013-05-12" LastModifiedBy="System Administrator" />
+    <Owner UserID="" Name="" Email="" />
+    <Navigation>
+      <TargetFrame repository_open_document="_top" repository_open_diagram="_top" repository_link_document="_top" repository_link_diagram="_top" repository_link_shape="_top" diagram_link_document="_top" diagram_link_diagram="_top" diagram_link_shape="_top" />
+      <DocumentFrame enabled="false" height="30%" />
+      <PopupMenu first_tier_links="5" />
+      <VisioHyperlinks publish="false" />
+      <Indicators ShowDocLinks="true" ShowDiagLinks="true" ShowIssues="true" Positioning="bottom" />
+    </Navigation>
+    <Pages Count="1">
+      <Page ID="4">
+        <Dimensions>
+          <Height Unit="mm">180</Height>
+          <Width Unit="mm">275</Width>
+        </Dimensions>
+      </Page>
+    </Pages>
+  </iServerProperties>
+  <CustomAttributes>
+    <Attribute>
+      <Name>Approval Status</Name>
+      <Description />
+      <Value>Draft</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Next Review Date</Name>
+      <Description />
+      <Value />
+      <Datatype>Date</Datatype>
+    </Attribute>
+  </CustomAttributes>
+  <Issues />
+  <Relations />
+  <Shapes>
+    <Shape ID="137" PageID="4" Source="4_137.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="173" PageID="4" Source="4_173.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="197" PageID="4" Source="4_197.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="201" PageID="4" Source="4_201.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="77" PageID="4" Source="4_77.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="1" PageID="4" Source="4_1.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="189" PageID="4" Source="4_189.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="113" PageID="4" Source="4_113.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="93" PageID="4" Source="4_93.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="89" PageID="4" Source="4_89.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="33" PageID="4" Source="4_33.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="73" PageID="4" Source="4_73.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="117" PageID="4" Source="4_117.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="193" PageID="4" Source="4_193.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="5" PageID="4" Source="4_5.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="169" PageID="4" Source="4_169.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="49" PageID="4" Source="4_49.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="185" PageID="4" Source="4_185.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="45" PageID="4" Source="4_45.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+  </Shapes>
+</iServerDiagram>

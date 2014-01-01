@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerFolder ID="9fd2f9ea-e2dc-4442-8f06-4f5459c5ceb6">
+  <iServerProperties>
+    <RepositoryName>12.0 Manage Knowledge, Improvement and Change</RepositoryName>
+    <Category>Process Folder</Category>
+    <Logo>../Images/treefolder.gif</Logo>
+    <Description />
+    <Timestamp CreatedOn="2013-02-22" CreatedBy="System Administrator" LastModifiedOn="2013-02-22" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <CustomAttributes />
+  <Issues />
+</iServerFolder>

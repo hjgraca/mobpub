@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="publication.structview.xsl"?>
+<iServerPublication version="7.0.00" ID="2a539292-326a-4181-8e8b-bf85b2ec3d5b">
+  <PublicationProperties>
+    <Title>APQC</Title>
+    <Description />
+    <Notes />
+    <DefaultView>structview</DefaultView>
+    <Timestamp CreatedOn="2013-05-12" CreatedBy="System Administrator" LastModifiedOn="2013-05-12" LastModifiedBy="System Administrator" />
+    <Navigation>
+      <TargetFrame repository_open_document="_top" repository_open_diagram="_top" repository_link_document="_top" repository_link_diagram="_top" repository_link_shape="_top" diagram_link_document="_top" diagram_link_diagram="_top" diagram_link_shape="_top" />
+      <DocumentFrame enabled="false" height="30%" />
+      <PopupMenu first_tier_links="5" />
+      <VisioHyperlinks publish="false" />
+      <Indicators ShowDocLinks="true" ShowDiagLinks="true" ShowIssues="true" Positioning="bottom" />
+    </Navigation>
+    <Reporting word_enabled="false" html_enabled="true" image_enabled="true" />
+  </PublicationProperties>
+  <PublicationStructure>
+    <Folder ID="e6f78541-b1b3-438f-bb72-b7e3f4f2b4ca" Name="Process Repository" Category="Top Level Folder">
+      <Folder ID="b5bf7983-c8b3-4edd-8dda-21bca9d8e310" Name="Production Processes" Category="Top Level Folder">
+        <Folder ID="80e56a48-3287-41f4-862a-63a1328b0989" Name="Process Framework" Category="Process Folder">
+          <Folder ID="b401f954-6a30-4a5c-ad93-bf5ffca35fef" Name="1.0 Develop Vision and Strategy" Category="Process Folder">
+            <Diagram ID="687c7271-2149-4e9f-80fc-24e5814cfd95" Name="1 Develop Vision and Strategy" Category="BPA - Process Decomposition" Logo="Images/visio.gif" />
+          </Folder>
+          <Folder ID="64b8f58d-0005-4ef8-b8f6-e20ff031964e" Name="2.0 Design and Manage Products and Services" Category="Process Folder">
+            <Diagram ID="8987095e-c617-424d-a32f-729cf6c10c8e" Name="2 Design and Manage Products and Services" Category="BPA - Process Decomposition" Logo="Images/visio.gif" />
+          </Folder>
+          <Folder ID="e88a0011-390a-45ca-8858-ce1c6768969a" Name="3.0 Market and Sell Products and Services" Category="Process Folder">
+            <Diagram ID="99634e42-c152-42f3-84cc-7954c34ab205" Name="3 Market and Sell Products and Services" Category="BPA - Process Decomposition" Logo="Images/visio.gif" />
+          </Folder>
+          <Folder ID="870eb28f-9366-430b-8e4e-10a915a0e0a2" Name="4.0 Deliver Products and Services" Category="Process Folder">
+            <Diagram ID="b2be424d-3d2c-40ac-ad97-192521b0daad" Name="4 Deliver Products and Services" Category="BPA - Process Decomposition" Logo="Images/visio.gif" />
+          </Folder>
+          <Folder ID="00ae262a-0bbe-49c4-ad93-0c3ec0d46434" Name="5.0 Manage Customer Service" Category="Process Folder">
+            <Diagram ID="0cc53af7-2dd7-4298-b996-8eb417efbb58" Name="5 Manage Customer Service" Category="BPA - Process Decomposition" Logo="Images/visio.gif" />
+          </Folder>
+          <Folder ID="f6eeaa27-f464-44b2-b5c5-0f548d1f9d89" Name="6.0 Develop and Manage Human Capital" Category="Process Folder">
+            <Diagram ID="7db11ba0-8c6c-4b58-b4af-1abd69920c30" Name="6 Develop and Manage Human Capital" Category="BPA - Process Decomposition" Logo="Images/visio.gif" />
+          </Folder>
+          <Folder ID="7cf022e1-9e3c-4fd8-8e8b-42ac5280f7ee" Name="7.0 Manage Information Technology" Category="Process Folder">
+            <Diagram ID="c08f3430-74ac-43af-9fe1-3732d1438e5f" Name="7 Manage Information Technology" Category="BPA - Process Decomposition" Logo="Images/visio.gif" />
+          </Folder>
+          <Folder ID="f9c35f28-04f0-4b89-a1f9-7fc03d7b9c8e" Name="8.0 Manage Financial Resources" Category="Process Folder">
+            <Diagram ID="494e2e30-de80-48f6-83a4-cbc897b2fcbf" Name="8 Manage Financial Resources" Category="BPA - Process Decomposition" Logo="Images/visio.gif" />
+          </Folder>
+          <Folder ID="b26b58a1-c3d0-40f2-a0f3-e1ad3847f11c" Name="9.0 Acquire, Construct and Manage Property" Category="Process Folder">
+            <Diagram ID="582bb0c6-4d80-4757-b4bb-706952588fbe" Name="9 Acquire, Construct and Manage Property" Category="BPA - Process Decomposition" Logo="Images/visio.gif" />
+          </Folder>
+          <Folder ID="136f9551-3b77-408e-96b8-ce44ba11b242" Name="10.0 Manage Environment Health and Safety" Category="Process Folder">
+            <Diagram ID="f8ab6a37-a20f-40b0-bf99-55bc160cd640" Name="10 Manage Environment Health and Safety" Category="BPA - Process Decomposition" Logo="Images/visio.gif" />
+          </Folder>
+          <Folder ID="4fd722ad-bdec-430f-bee2-9f2a1c275b37" Name="11.0 Manage External Relationships" Category="Process Folder">
+            <Diagram ID="124811ad-ecaa-46ac-8f0e-1758e7d3097e" Name="11 Manage External Relationships" Category="BPA - Process Decomposition" Logo="Images/visio.gif" />
+          </Folder>
+          <Folder ID="9fd2f9ea-e2dc-4442-8f06-4f5459c5ceb6" Name="12.0 Manage Knowledge, Improvement and Change" Category="Process Folder">
+            <Diagram ID="d05b7512-939e-4bf8-bc60-1f4d3758e67c" Name="12 Manage Knowledge, Improvement and Change" Category="BPA - Process Decomposition" Logo="Images/visio.gif" />
+          </Folder>
+          <Diagram ID="2baddfea-b757-4346-ac22-c604b8d35b9f" Name="APQC PCF Cross Industry" Category="APQC - Process Classification Framework" Logo="Images/visio.gif" />
+        </Folder>
+      </Folder>
+    </Folder>
+  </PublicationStructure>
+</iServerPublication>

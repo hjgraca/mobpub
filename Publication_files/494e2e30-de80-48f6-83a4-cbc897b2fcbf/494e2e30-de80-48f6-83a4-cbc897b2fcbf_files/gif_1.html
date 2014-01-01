@@ -1,0 +1,194 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+494e2e30-de80-48f6-83a4-cbc897b2fcbf.vsd
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 4;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = -0.005000;
+	viewMgr.visBBoxRight = 18.508937;
+	viewMgr.visBBoxBottom = -0.005000;
+	viewMgr.visBBoxTop = 9.847520;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_1.gif" ALT="Page-1" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.10.4 Report results (10770)" origTitle="8.10.4 Report results (10770)" TITLE="8.10.4 Report results (10770)"  target="_top" COORDS="1537,530,1535,531,1533,533,1532,535,1532,552,1532,600,1533,603,1535,605,1537,605,1715,605,1718,605,1720,603,1721,600,1721,552,1721,535,1720,533,1718,531,1715,530,1537,530" onmouseover="UpdateTooltip(this,4,121,event)" onfocus="UpdateTooltip(this,4,121,event)" onclick="return OnShapeClick(4,121,event);" onkeyup="OnShapeKey(4,121,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.10.3 Monitor currency exposure/hedge currency (10769)" origTitle="8.10.3 Monitor currency exposure/hedge currency (10769)" TITLE="8.10.3 Monitor currency exposure/hedge currency (10769)"  target="_top" COORDS="1649,511,1715,511,1718,510,1720,508,1721,505,1721,458,1721,441,1720,438,1718,436,1715,435,1537,435,1535,436,1533,438,1532,441,1532,458,1532,505,1533,508,1535,510,1537,511,1603,511,1603,511,1608,511,1645,511,1649,511,1649,511" onmouseover="UpdateTooltip(this,4,117,event)" onfocus="UpdateTooltip(this,4,117,event)" onclick="return OnShapeClick(4,117,event);" onkeyup="OnShapeKey(4,117,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.10.2 Manage transactions (10768)" origTitle="8.10.2 Manage transactions (10768)" TITLE="8.10.2 Manage transactions (10768)"  target="_top" COORDS="1537,341,1535,342,1533,344,1532,346,1532,363,1532,411,1533,414,1535,416,1537,416,1715,416,1718,416,1720,414,1721,411,1721,363,1721,346,1720,344,1718,342,1715,341,1537,341" onmouseover="UpdateTooltip(this,4,113,event)" onfocus="UpdateTooltip(this,4,113,event)" onclick="return OnShapeClick(4,113,event);" onkeyup="OnShapeKey(4,113,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.10.1 Monitor international rates (10767)" origTitle="8.10.1 Monitor international rates (10767)" TITLE="8.10.1 Monitor international rates (10767)"  target="_top" COORDS="1537,246,1535,247,1533,249,1532,252,1532,269,1532,316,1533,319,1535,321,1537,322,1715,322,1718,321,1720,319,1721,316,1721,269,1721,252,1720,249,1718,247,1715,246,1537,246" onmouseover="UpdateTooltip(this,4,109,event)" onfocus="UpdateTooltip(this,4,109,event)" onclick="return OnShapeClick(4,109,event);" onkeyup="OnShapeKey(4,109,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.10 Manage international funds/consolidation (10737)" origTitle="8.10 Manage international funds/consolidation (10737)" TITLE="8.10 Manage international funds/consolidation (10737)"  target="_top" COORDS="1519,171,1516,171,1514,173,1513,176,1513,193,1513,619,1514,621,1516,624,1519,624,1734,624,1737,624,1739,621,1740,619,1740,193,1740,176,1739,173,1737,171,1734,171,1519,171" onmouseover="UpdateTooltip(this,4,105,event)" onfocus="UpdateTooltip(this,4,105,event)" onclick="return OnShapeClick(4,105,event);" onkeyup="OnShapeKey(4,105,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.9.2 Process taxes (10766)" origTitle="8.9.2 Process taxes (10766)" TITLE="8.9.2 Process taxes (10766)"  target="_top" COORDS="1292,719,1289,720,1287,722,1286,725,1286,742,1286,789,1287,792,1289,794,1292,794,1469,794,1472,794,1474,792,1475,789,1475,742,1475,725,1474,722,1472,720,1469,719,1292,719" onmouseover="UpdateTooltip(this,4,89,event)" onfocus="UpdateTooltip(this,4,89,event)" onclick="return OnShapeClick(4,89,event);" onkeyup="OnShapeKey(4,89,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.9.1 Develop tax strategy and plan (10765)" origTitle="8.9.1 Develop tax strategy and plan (10765)" TITLE="8.9.1 Develop tax strategy and plan (10765)"  target="_top" COORDS="1292,624,1289,625,1287,627,1286,630,1286,647,1286,694,1287,697,1289,699,1292,700,1469,700,1472,699,1474,697,1475,694,1475,647,1475,630,1474,627,1472,625,1469,624,1292,624" onmouseover="UpdateTooltip(this,4,85,event)" onfocus="UpdateTooltip(this,4,85,event)" onclick="return OnShapeClick(4,85,event);" onkeyup="OnShapeKey(4,85,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.9 Manage taxes (10736)" origTitle="8.9 Manage taxes (10736)" TITLE="8.9 Manage taxes (10736)"  target="_top" COORDS="1273,549,1270,550,1268,552,1267,554,1267,571,1267,808,1268,811,1270,813,1273,813,1488,813,1491,813,1493,811,1494,808,1494,571,1494,554,1493,552,1491,550,1488,549,1273,549" onmouseover="UpdateTooltip(this,4,69,event)" onfocus="UpdateTooltip(this,4,69,event)" onclick="return OnShapeClick(4,69,event);" onkeyup="OnShapeKey(4,69,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.5.3 Process payroll taxes (10755)" origTitle="8.5.3 Process payroll taxes (10755)" TITLE="8.5.3 Process payroll taxes (10755)"  target="_top" COORDS="800,435,797,436,795,438,794,441,794,458,794,505,795,508,797,510,800,511,978,511,981,510,983,508,984,505,984,458,984,441,983,438,981,436,978,435,800,435" onmouseover="UpdateTooltip(this,4,45,event)" onfocus="UpdateTooltip(this,4,45,event)" onclick="return OnShapeClick(4,45,event);" onkeyup="OnShapeKey(4,45,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.1.4 Evaluate and manage financial performance (10741)" origTitle="8.1.4 Evaluate and manage financial performance (10741)" TITLE="8.1.4 Evaluate and manage financial performance (10741)"  target="_top" COORDS="63,530,60,531,58,533,57,535,57,552,57,600,58,603,60,605,63,605,241,605,243,605,245,603,246,600,246,552,246,535,245,533,243,531,241,530,63,530" onmouseover="UpdateTooltip(this,4,189,event)" onfocus="UpdateTooltip(this,4,189,event)" onclick="return OnShapeClick(4,189,event);" onkeyup="OnShapeKey(4,189,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.8.3 Report on internal controls compliance (10764)" origTitle="8.8.3 Report on internal controls compliance (10764)" TITLE="8.8.3 Report on internal controls compliance (10764)"  target="_top" COORDS="1292,435,1289,436,1287,438,1286,441,1286,458,1286,505,1287,508,1289,510,1292,511,1469,511,1472,510,1474,508,1475,505,1475,458,1475,441,1474,438,1472,436,1469,435,1292,435" onmouseover="UpdateTooltip(this,4,141,event)" onfocus="UpdateTooltip(this,4,141,event)" onclick="return OnShapeClick(4,141,event);" onkeyup="OnShapeKey(4,141,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.8.2 Operate controls and monitor compliance with internal..." origTitle="8.8.2 Operate controls and monitor compliance with internal..." TITLE="8.8.2 Operate controls and monitor compliance with internal..."  target="_top" COORDS="1439,417,1468,417,1468,416,1469,416,1472,416,1474,414,1475,411,1475,363,1475,346,1474,344,1472,342,1469,341,1292,341,1289,342,1287,344,1286,346,1286,363,1286,411,1287,414,1289,416,1292,416,1296,416,1296,417,1322,417,1322,433,1393,433,1397,433,1434,433,1439,433,1439,417" onmouseover="UpdateTooltip(this,4,133,event)" onfocus="UpdateTooltip(this,4,133,event)" onclick="return OnShapeClick(4,133,event);" onkeyup="OnShapeKey(4,133,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.8.1 Establish internal controls, policies, and procedures..." origTitle="8.8.1 Establish internal controls, policies, and procedures..." TITLE="8.8.1 Establish internal controls, policies, and procedures..."  target="_top" COORDS="1439,322,1469,322,1472,321,1474,319,1475,316,1475,269,1475,252,1474,249,1472,247,1469,246,1292,246,1289,247,1287,249,1286,252,1286,269,1286,316,1287,319,1289,321,1292,322,1322,322,1322,322,1393,322,1397,322,1434,322,1439,322,1439,322" onmouseover="UpdateTooltip(this,4,129,event)" onfocus="UpdateTooltip(this,4,129,event)" onclick="return OnShapeClick(4,129,event);" onkeyup="OnShapeKey(4,129,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.8 Manage internal controls (10735)" origTitle="8.8 Manage internal controls (10735)" TITLE="8.8 Manage internal controls (10735)"  target="_top" COORDS="1273,171,1270,171,1268,173,1267,176,1267,193,1267,524,1268,527,1270,529,1273,530,1488,530,1491,529,1493,527,1494,524,1494,193,1494,176,1493,173,1491,171,1488,171,1273,171" onmouseover="UpdateTooltip(this,4,125,event)" onfocus="UpdateTooltip(this,4,125,event)" onclick="return OnShapeClick(4,125,event);" onkeyup="OnShapeKey(4,125,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.7.5 Manage financial risks (11208)" origTitle="8.7.5 Manage financial risks (11208)" TITLE="8.7.5 Manage financial risks (11208)"  target="_top" COORDS="1046,624,1043,625,1041,627,1040,630,1040,647,1040,694,1041,697,1043,699,1046,700,1224,700,1226,699,1228,697,1229,694,1229,647,1229,630,1228,627,1226,625,1224,624,1046,624" onmouseover="UpdateTooltip(this,4,234,event)" onfocus="UpdateTooltip(this,4,234,event)" onclick="return OnShapeClick(4,234,event);" onkeyup="OnShapeKey(4,234,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.7.4 Manage debt and investment (10761)" origTitle="8.7.4 Manage debt and investment (10761)" TITLE="8.7.4 Manage debt and investment (10761)"  target="_top" COORDS="1046,530,1043,531,1041,533,1040,535,1040,552,1040,600,1041,603,1043,605,1046,605,1224,605,1226,605,1228,603,1229,600,1229,552,1229,535,1228,533,1226,531,1224,530,1046,530" onmouseover="UpdateTooltip(this,4,230,event)" onfocus="UpdateTooltip(this,4,230,event)" onclick="return OnShapeClick(4,230,event);" onkeyup="OnShapeKey(4,230,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.7.3 Manage in-house bank accounts (10760)" origTitle="8.7.3 Manage in-house bank accounts (10760)" TITLE="8.7.3 Manage in-house bank accounts (10760)"  target="_top" COORDS="1046,435,1043,436,1041,438,1040,441,1040,458,1040,505,1041,508,1043,510,1046,511,1224,511,1226,510,1228,508,1229,505,1229,458,1229,441,1228,438,1226,436,1224,435,1046,435" onmouseover="UpdateTooltip(this,4,226,event)" onfocus="UpdateTooltip(this,4,226,event)" onclick="return OnShapeClick(4,226,event);" onkeyup="OnShapeKey(4,226,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.7.2 Manage cash (10759)" origTitle="8.7.2 Manage cash (10759)" TITLE="8.7.2 Manage cash (10759)"  target="_top" COORDS="1046,341,1043,342,1041,344,1040,346,1040,363,1040,411,1041,414,1043,416,1046,416,1224,416,1226,416,1228,414,1229,411,1229,363,1229,346,1228,344,1226,342,1224,341,1046,341" onmouseover="UpdateTooltip(this,4,222,event)" onfocus="UpdateTooltip(this,4,222,event)" onclick="return OnShapeClick(4,222,event);" onkeyup="OnShapeKey(4,222,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.7.1 Manage treasury policies and procedures (10758)" origTitle="8.7.1 Manage treasury policies and procedures (10758)" TITLE="8.7.1 Manage treasury policies and procedures (10758)"  target="_top" COORDS="1158,322,1224,322,1226,321,1228,319,1229,316,1229,269,1229,252,1228,249,1226,247,1224,246,1046,246,1043,247,1041,249,1040,252,1040,269,1040,316,1041,319,1043,321,1046,322,1112,322,1112,322,1116,322,1153,322,1158,322,1158,322" onmouseover="UpdateTooltip(this,4,218,event)" onfocus="UpdateTooltip(this,4,218,event)" onclick="return OnShapeClick(4,218,event);" onkeyup="OnShapeKey(4,218,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.7 Manage treasury operations (10734)" origTitle="8.7 Manage treasury operations (10734)" TITLE="8.7 Manage treasury operations (10734)"  target="_top" COORDS="1027,171,1024,171,1022,173,1021,176,1021,193,1021,713,1022,716,1024,718,1027,719,1243,719,1245,718,1247,716,1248,713,1248,193,1248,176,1247,173,1245,171,1243,171,1027,171" onmouseover="UpdateTooltip(this,4,214,event)" onfocus="UpdateTooltip(this,4,214,event)" onclick="return OnShapeClick(4,214,event);" onkeyup="OnShapeKey(4,214,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.6.2 Process expense reimbursements (10757)" origTitle="8.6.2 Process expense reimbursements (10757)" TITLE="8.6.2 Process expense reimbursements (10757)"  target="_top" COORDS="800,719,797,720,795,722,794,725,794,742,794,789,795,792,797,794,800,794,978,794,981,794,983,792,984,789,984,742,984,725,983,722,981,720,978,719,800,719" onmouseover="UpdateTooltip(this,4,153,event)" onfocus="UpdateTooltip(this,4,153,event)" onclick="return OnShapeClick(4,153,event);" onkeyup="OnShapeKey(4,153,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.6.1 Process accounts payable (10756)" origTitle="8.6.1 Process accounts payable (10756)" TITLE="8.6.1 Process accounts payable (10756)"  target="_top" COORDS="800,624,797,625,795,627,794,630,794,647,794,694,795,697,797,699,800,700,978,700,981,699,983,697,984,694,984,647,984,630,983,627,981,625,978,624,800,624" onmouseover="UpdateTooltip(this,4,149,event)" onfocus="UpdateTooltip(this,4,149,event)" onclick="return OnShapeClick(4,149,event);" onkeyup="OnShapeKey(4,149,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.6 Process accounts payable and expense reimbursements (10733)" origTitle="8.6 Process accounts payable and expense reimbursements (10733)" TITLE="8.6 Process accounts payable and expense reimbursements (10733)"  target="_top" COORDS="781,549,778,550,776,552,776,554,776,571,776,808,776,811,778,813,781,813,997,813,1000,813,1002,811,1002,808,1002,571,1002,554,1002,552,1000,550,997,549,781,549" onmouseover="UpdateTooltip(this,4,145,event)" onfocus="UpdateTooltip(this,4,145,event)" onclick="return OnShapeClick(4,145,event);" onkeyup="OnShapeKey(4,145,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.5.2 Manage pay (10754)" origTitle="8.5.2 Manage pay (10754)" TITLE="8.5.2 Manage pay (10754)"  target="_top" COORDS="800,341,797,342,795,344,794,346,794,363,794,411,795,414,797,416,800,416,978,416,981,416,983,414,984,411,984,363,984,346,983,344,981,342,978,341,800,341" onmouseover="UpdateTooltip(this,4,101,event)" onfocus="UpdateTooltip(this,4,101,event)" onclick="return OnShapeClick(4,101,event);" onkeyup="OnShapeKey(4,101,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.5.1 Report time (10753)" origTitle="8.5.1 Report time (10753)" TITLE="8.5.1 Report time (10753)"  target="_top" COORDS="800,246,797,247,795,249,794,252,794,269,794,316,795,319,797,321,800,322,978,322,981,321,983,319,984,316,984,269,984,252,983,249,981,247,978,246,800,246" onmouseover="UpdateTooltip(this,4,97,event)" onfocus="UpdateTooltip(this,4,97,event)" onclick="return OnShapeClick(4,97,event);" onkeyup="OnShapeKey(4,97,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.5 Process payroll (10732)" origTitle="8.5 Process payroll (10732)" TITLE="8.5 Process payroll (10732)"  target="_top" COORDS="781,171,778,171,776,173,776,176,776,193,776,524,776,527,778,529,781,530,997,530,1000,529,1002,527,1002,524,1002,193,1002,176,1002,173,1000,171,997,171,781,171" onmouseover="UpdateTooltip(this,4,93,event)" onfocus="UpdateTooltip(this,4,93,event)" onclick="return OnShapeClick(4,93,event);" onkeyup="OnShapeKey(4,93,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.4.2 Perform capital project accounting (10752)" origTitle="8.4.2 Perform capital project accounting (10752)" TITLE="8.4.2 Perform capital project accounting (10752)"  target="_top" COORDS="554,813,552,814,550,816,549,819,549,836,549,883,550,886,552,888,554,889,732,889,735,888,737,886,738,883,738,836,738,819,737,816,735,814,732,813,554,813" onmouseover="UpdateTooltip(this,4,81,event)" onfocus="UpdateTooltip(this,4,81,event)" onclick="return OnShapeClick(4,81,event);" onkeyup="OnShapeKey(4,81,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.4.1 Perform capital planning and project approval (10751)" origTitle="8.4.1 Perform capital planning and project approval (10751)" TITLE="8.4.1 Perform capital planning and project approval (10751)"  target="_top" COORDS="554,719,552,720,550,722,549,725,549,742,549,789,550,792,552,794,554,794,732,794,735,794,737,792,738,789,738,742,738,725,737,722,735,720,732,719,554,719" onmouseover="UpdateTooltip(this,4,77,event)" onfocus="UpdateTooltip(this,4,77,event)" onclick="return OnShapeClick(4,77,event);" onkeyup="OnShapeKey(4,77,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.4 Manage fixed-asset project accounting (10731)" origTitle="8.4 Manage fixed-asset project accounting (10731)" TITLE="8.4 Manage fixed-asset project accounting (10731)"  target="_top" COORDS="535,643,533,644,531,646,530,649,530,666,530,902,531,905,533,907,535,908,751,908,754,907,756,905,757,902,757,666,757,649,756,646,754,644,751,643,535,643" onmouseover="UpdateTooltip(this,4,73,event)" onfocus="UpdateTooltip(this,4,73,event)" onclick="return OnShapeClick(4,73,event);" onkeyup="OnShapeKey(4,73,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.3.4 Perform financial reporting (10750)" origTitle="8.3.4 Perform financial reporting (10750)" TITLE="8.3.4 Perform financial reporting (10750)"  target="_top" COORDS="554,530,552,531,550,533,549,535,549,552,549,600,550,603,552,605,554,605,732,605,735,605,737,603,738,600,738,552,738,535,737,533,735,531,732,530,554,530" onmouseover="UpdateTooltip(this,4,65,event)" onfocus="UpdateTooltip(this,4,65,event)" onclick="return OnShapeClick(4,65,event);" onkeyup="OnShapeKey(4,65,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.3.3 Perform fixed-asset accounting (10749)" origTitle="8.3.3 Perform fixed-asset accounting (10749)" TITLE="8.3.3 Perform fixed-asset accounting (10749)"  target="_top" COORDS="554,435,552,436,550,438,549,441,549,458,549,505,550,508,552,510,554,511,732,511,735,510,737,508,738,505,738,458,738,441,737,438,735,436,732,435,554,435" onmouseover="UpdateTooltip(this,4,61,event)" onfocus="UpdateTooltip(this,4,61,event)" onclick="return OnShapeClick(4,61,event);" onkeyup="OnShapeKey(4,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.3.2 Perform general accounting (10748)" origTitle="8.3.2 Perform general accounting (10748)" TITLE="8.3.2 Perform general accounting (10748)"  target="_top" COORDS="554,341,552,342,550,344,549,346,549,363,549,411,550,414,552,416,554,416,732,416,735,416,737,414,738,411,738,363,738,346,737,344,735,342,732,341,554,341" onmouseover="UpdateTooltip(this,4,57,event)" onfocus="UpdateTooltip(this,4,57,event)" onclick="return OnShapeClick(4,57,event);" onkeyup="OnShapeKey(4,57,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.3.1 Manage policies and procedures (10747)" origTitle="8.3.1 Manage policies and procedures (10747)" TITLE="8.3.1 Manage policies and procedures (10747)"  target="_top" COORDS="554,246,552,247,550,249,549,252,549,269,549,316,550,319,552,321,554,322,732,322,735,321,737,319,738,316,738,269,738,252,737,249,735,247,732,246,554,246" onmouseover="UpdateTooltip(this,4,53,event)" onfocus="UpdateTooltip(this,4,53,event)" onclick="return OnShapeClick(4,53,event);" onkeyup="OnShapeKey(4,53,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.3 Perform general accounting and reporting (10730)" origTitle="8.3 Perform general accounting and reporting (10730)" TITLE="8.3 Perform general accounting and reporting (10730)"  target="_top" COORDS="535,171,533,171,531,173,530,176,530,193,530,619,531,621,533,624,535,624,751,624,754,624,756,621,757,619,757,193,757,176,756,173,754,171,751,171,535,171" onmouseover="UpdateTooltip(this,4,49,event)" onfocus="UpdateTooltip(this,4,49,event)" onclick="return OnShapeClick(4,49,event);" onkeyup="OnShapeKey(4,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.2.5 Manage and process adjustments/deductions (10746)" origTitle="8.2.5 Manage and process adjustments/deductions (10746)" TITLE="8.2.5 Manage and process adjustments/deductions (10746)"  target="_top" COORDS="420,700,486,700,489,699,491,697,492,694,492,647,492,630,491,627,489,625,486,624,309,624,306,625,304,627,303,630,303,647,303,694,304,697,306,699,309,700,374,700,374,700,379,700,416,700,420,700,420,700" onmouseover="UpdateTooltip(this,4,21,event)" onfocus="UpdateTooltip(this,4,21,event)" onclick="return OnShapeClick(4,21,event);" onkeyup="OnShapeKey(4,21,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.2.4 Manage and process collections (10745)" origTitle="8.2.4 Manage and process collections (10745)" TITLE="8.2.4 Manage and process collections (10745)"  target="_top" COORDS="309,530,306,531,304,533,303,535,303,552,303,600,304,603,306,605,309,605,486,605,489,605,491,603,492,600,492,552,492,535,491,533,489,531,486,530,309,530" onmouseover="UpdateTooltip(this,4,5,event)" onfocus="UpdateTooltip(this,4,5,event)" onclick="return OnShapeClick(4,5,event);" onkeyup="OnShapeKey(4,5,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.2.3 Process accounts receivable (AR) (10744)" origTitle="8.2.3 Process accounts receivable (AR) (10744)" TITLE="8.2.3 Process accounts receivable (AR) (10744)"  target="_top" COORDS="309,435,306,436,304,438,303,441,303,458,303,505,304,508,306,510,309,511,486,511,489,510,491,508,492,505,492,458,492,441,491,438,489,436,486,435,309,435" onmouseover="UpdateTooltip(this,4,41,event)" onfocus="UpdateTooltip(this,4,41,event)" onclick="return OnShapeClick(4,41,event);" onkeyup="OnShapeKey(4,41,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.2.2 Invoice customer (10743)" origTitle="8.2.2 Invoice customer (10743)" TITLE="8.2.2 Invoice customer (10743)"  target="_top" COORDS="309,341,306,342,304,344,303,346,303,363,303,411,304,414,306,416,309,416,486,416,489,416,491,414,492,411,492,363,492,346,491,344,489,342,486,341,309,341" onmouseover="UpdateTooltip(this,4,37,event)" onfocus="UpdateTooltip(this,4,37,event)" onclick="return OnShapeClick(4,37,event);" onkeyup="OnShapeKey(4,37,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.2.1 Process customer credit (10742)" origTitle="8.2.1 Process customer credit (10742)" TITLE="8.2.1 Process customer credit (10742)"  target="_top" COORDS="309,246,306,247,304,249,303,252,303,269,303,316,304,319,306,321,309,322,486,322,489,321,491,319,492,316,492,269,492,252,491,249,489,247,486,246,309,246" onmouseover="UpdateTooltip(this,4,33,event)" onfocus="UpdateTooltip(this,4,33,event)" onclick="return OnShapeClick(4,33,event);" onkeyup="OnShapeKey(4,33,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.2 Perform revenue accounting (10729)" origTitle="8.2 Perform revenue accounting (10729)" TITLE="8.2 Perform revenue accounting (10729)"  target="_top" COORDS="290,171,287,171,285,173,284,176,284,193,284,713,285,716,287,718,290,719,505,719,508,718,510,716,511,713,511,193,511,176,510,173,508,171,505,171,290,171" onmouseover="UpdateTooltip(this,4,29,event)" onfocus="UpdateTooltip(this,4,29,event)" onclick="return OnShapeClick(4,29,event);" onkeyup="OnShapeKey(4,29,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.1.3 Perform cost management (10740)" origTitle="8.1.3 Perform cost management (10740)" TITLE="8.1.3 Perform cost management (10740)"  target="_top" COORDS="63,435,60,436,58,438,57,441,57,458,57,505,58,508,60,510,63,511,241,511,243,510,245,508,246,505,246,458,246,441,245,438,243,436,241,435,63,435" onmouseover="UpdateTooltip(this,4,25,event)" onfocus="UpdateTooltip(this,4,25,event)" onclick="return OnShapeClick(4,25,event);" onkeyup="OnShapeKey(4,25,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.1.1 Perform planning/budgeting/forecasting (10738)" origTitle="8.1.1 Perform planning/budgeting/forecasting (10738)" TITLE="8.1.1 Perform planning/budgeting/forecasting (10738)"  target="_top" COORDS="63,246,60,247,58,249,57,252,57,269,57,316,58,319,60,321,63,322,241,322,243,321,245,319,246,316,246,269,246,252,245,249,243,247,241,246,63,246" onmouseover="UpdateTooltip(this,4,17,event)" onfocus="UpdateTooltip(this,4,17,event)" onclick="return OnShapeClick(4,17,event);" onkeyup="OnShapeKey(4,17,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.1.2 Perform cost accounting and control (10739)" origTitle="8.1.2 Perform cost accounting and control (10739)" TITLE="8.1.2 Perform cost accounting and control (10739)"  target="_top" COORDS="63,341,60,342,58,344,57,346,57,363,57,411,58,414,60,416,63,416,241,416,243,416,245,414,246,411,246,363,246,346,245,344,243,342,241,341,63,341" onmouseover="UpdateTooltip(this,4,13,event)" onfocus="UpdateTooltip(this,4,13,event)" onclick="return OnShapeClick(4,13,event);" onkeyup="OnShapeKey(4,13,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8.1 Perform planning and management accounting (10728)" origTitle="8.1 Perform planning and management accounting (10728)" TITLE="8.1 Perform planning and management accounting (10728)"  target="_top" COORDS="44,171,41,171,39,173,38,176,38,193,38,619,39,621,41,624,44,624,259,624,262,624,264,621,265,619,265,193,265,176,264,173,262,171,259,171,44,171" onmouseover="UpdateTooltip(this,4,9,event)" onfocus="UpdateTooltip(this,4,9,event)" onclick="return OnShapeClick(4,9,event);" onkeyup="OnShapeKey(4,9,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8 Manage Financial Resources" origTitle="8 Manage Financial Resources" TITLE="8 Manage Financial Resources"  target="_top" COORDS="25,95,22,96,20,98,19,101,19,118,19,921,20,924,22,926,25,927,1753,927,1756,926,1758,924,1759,921,1759,118,1759,101,1758,98,1756,96,1753,95,25,95" onmouseover="UpdateTooltip(this,4,1,event)" onfocus="UpdateTooltip(this,4,1,event)" onclick="return OnShapeClick(4,1,event);" onkeyup="OnShapeKey(4,1,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="1759,57,1759,19,19,19,19,57,19,76,552,76,553,76,699,76,954,76,1102,76,1356,76,1504,76,1759,76,1759,57" onmouseover="UpdateTooltip(this,4,205,event)" onfocus="UpdateTooltip(this,4,205,event)" onclick="return OnShapeClick(4,205,event);" onkeyup="OnShapeKey(4,205,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="0,946,1778,946,1778,0,0,0,0,946" onmouseover="UpdateTooltip(this,4,238,event)" onfocus="UpdateTooltip(this,4,238,event)" onclick="return OnShapeClick(4,238,event);" onkeyup="OnShapeKey(4,238,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

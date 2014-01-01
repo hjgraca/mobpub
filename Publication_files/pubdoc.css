@@ -1,0 +1,49 @@
+.bodyFrameClosed {
+    overflow:       hidden;
+    margin:         0pt;
+    background:     #999;
+}
+.bodyFrameOpen {
+    background:     #fff;
+    margin:         0pt;
+    overflow:       scroll;
+    font-size:      8pt;
+}
+.divFrameContents {
+}
+.divFrameContentsHidden {
+    display:        none;
+}
+.divFrameOpener {
+    background:     #999;
+    height:         100%;
+    width:          100%;
+}
+.divToolbar {
+    background:     #999;
+    color:          #fff;
+    font-size:      8pt;
+    font-family:    Tahoma, sans-serif;
+    width:          100%;
+    height:         22px;
+}
+.divLeftToolbarPortion {
+    height:         22px;
+    float:          left;
+}
+.divRightToolbarPortion {
+    height:         22px;
+    float:          right;
+}
+.divToolbarButton {
+    display:        inline;
+    height:         22px;
+    margin-right:   2px;
+    vertical-align: middle;
+    cursor:        pointer;
+    cursor:        hand;
+}
+.iframeDocPreview {
+    height:         100%;
+    width:          100%;
+}

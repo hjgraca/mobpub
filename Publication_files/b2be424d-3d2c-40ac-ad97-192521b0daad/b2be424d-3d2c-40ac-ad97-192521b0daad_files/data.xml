@@ -1,0 +1,1653 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+	<DocumentProperties>
+		<Title></Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="4" Name="Page-1" NameU="1.0">
+			<Layer IX="0">
+				<Name>Process</Name>
+				<NameUniv>Process</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name></Name>
+				<NameUniv></NameUniv>
+				<Visible>0</Visible>
+			</Layer>
+			<Value Unit="STR">4 Deliver Products and Services</Value>
+			<Label>Repository Name</Label>
+			<Value Unit="STR">BPA - Process Decomposition</Value>
+			<Label>Object Category</Label>
+			<Value></Value>
+			<Label>Description</Label>
+			<Value Unit="STR">2</Value>
+			<Label>System Version No</Label>
+			<Value Unit="STR">v1</Value>
+			<Label>User Version No</Label>
+			<Value Unit="STR">System Administrator</Value>
+			<Label>Created By</Label>
+			<Value Unit="STR">22/02/2013 14:57:04</Value>
+			<Label>Date Created</Label>
+			<Value Unit="STR">System Administrator</Value>
+			<Label>Last Modified By</Label>
+			<Value Unit="STR">12/05/2013 17:17:45</Value>
+			<Label>Date Last Modified</Label>
+			<Shapes>
+				<Shape ID="298" UniqueID="{1E279BC4-8E14-448E-9D6C-AA2573425143}" Name="Sheet.298" NameU="Sheet.298">
+					<XForm>
+						<PinX Unit="MM">7.775590551181102</PinX>
+						<PinY Unit="MM">3.937007874015748</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="205" UniqueID="{9FF4C4BB-97C4-40B2-9349-A4BE6E5CE705}" Name="Sheet.205" NameU="Sheet.205">
+					<XForm>
+						<PinX Unit="MM">7.775590551181102</PinX>
+						<PinY Unit="MM">7.381889763779527</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="206" UniqueID="{22BFDFFC-832B-4C4D-9A44-5711ED3AE24E}" Name="Sheet.206" NameU="Sheet.206">
+					<Text>4 Deliver Products and Services</Text>
+					<XForm>
+						<PinX Unit="MM">7.775590551181102</PinX>
+						<PinY Unit="MM">7.479330708661417</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="207" UniqueID="{CF144028-6B07-49F0-BFFD-DAD9226C6468}" Name="Sheet.207" NameU="Sheet.207">
+					<Text>BPA - Process Decomposition</Text>
+					<XForm>
+						<PinX Unit="MM">2.520645285193011</PinX>
+						<PinY Unit="MM">7.184055118110236</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="208" UniqueID="{070514C1-090C-483C-8D9D-F9C8CC8ED595}" Name="Sheet.208" NameU="Sheet.208">
+					<Text>Version:</Text>
+					<XForm>
+						<PinX Unit="MM">5.481442749343832</PinX>
+						<PinY Unit="MM">7.184055118110236</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="209" UniqueID="{2B5504C9-32A9-4DFA-A498-4988822F74FC}" Name="Sheet.209" NameU="Sheet.209">
+					<Text>v1</Text>
+					<XForm>
+						<PinX Unit="MM">7.234026410761151</PinX>
+						<PinY Unit="MM">7.184055118110236</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="210" UniqueID="{ACD679F7-2488-48D8-A733-648B9C43D40F}" Name="Sheet.210" NameU="Sheet.210">
+					<Text>Author:</Text>
+					<XForm>
+						<PinX Unit="MM">8.986610072178475</PinX>
+						<PinY Unit="MM">7.184055118110236</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="211" UniqueID="{83FB2DDE-65FD-41FB-B8D2-861E6A975CB5}" Name="Sheet.211" NameU="Sheet.211">
+					<Text>System Administrator on 22/02/2013</Text>
+					<XForm>
+						<PinX Unit="MM">10.739193733595796</PinX>
+						<PinY Unit="MM">7.184055118110236</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="212" UniqueID="{2E5DE26F-402F-4887-9B98-F346B6CE26D2}" Name="Sheet.212" NameU="Sheet.212">
+					<Text>Last Modified:</Text>
+					<XForm>
+						<PinX Unit="MM">12.491777395013122</PinX>
+						<PinY Unit="MM">7.184055118110236</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="213" UniqueID="{68A951A1-80F7-4852-8C11-F315A48D80A8}" Name="Sheet.213" NameU="Sheet.213">
+					<Text>System Administrator on 12/05/2013</Text>
+					<XForm>
+						<PinX Unit="MM">14.244361056430447</PinX>
+						<PinY Unit="MM">7.184055118110236</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="1" UniqueID="{13409568-63B9-446F-A72E-D4CE12CBA553}" Name="Process Category.1" NameU="Process Category.1" Master="0">
+					<Text>4 Deliver Products and Services</Text>
+					<XForm>
+						<PinX Unit="MM">7.775590551181103</PinX>
+						<PinY Unit="MM">3.543307086614173</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4 Deliver Products and Services</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10005</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="3" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="6" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="3" UniqueID="{FDB457C5-02CB-4503-B7F4-338B88331771}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS CATEGORY</Text>
+					<XForm>
+						<PinX Unit="MM">7.775590551181127</PinX>
+						<PinY Unit="MM">6.771653543307085</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="9" UniqueID="{4A479BA5-0DF4-4246-901F-A40A6D93F2AE}" Name="Process group" NameU="Process group" Master="5">
+					<Text>4.1 Plan for and acquire necessary resources (Supply Chain Planning) (10215)</Text>
+					<XForm>
+						<PinX Unit="MM">2.657480314960630</PinX>
+						<PinY Unit="MM">3.248031496062993</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.1 Plan for and acquire necessary resources (Supply Chain Planning) (10215)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10215</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="3" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="6" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="11" UniqueID="{8F05413A-1FBB-4F20-847B-38F3C7F10526}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS GROUP</Text>
+					<XForm>
+						<PinX Unit="MM">2.657480314960637</PinX>
+						<PinY Unit="MM">5.984251968503939</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="13" UniqueID="{7BC743AA-17D5-4F4E-9075-2957A235BCFA}" Name="Process.13" NameU="Process.13" Master="6">
+					<Text>4.1.2 Manage demand for products and services (10222)</Text>
+					<XForm>
+						<PinX Unit="MM">1.574803149606301</PinX>
+						<PinY Unit="MM">3.937007874015747</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.1.2 Manage demand for products and services (10222)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10222</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="15" UniqueID="{4C836365-511B-40E0-B1A6-C4756D751353}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">1.574803149606304</PinX>
+						<PinY Unit="MM">4.212598425196849</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="17" UniqueID="{CC9D088C-5F94-4C4A-A92B-5F246D742875}" Name="Process" NameU="Process.9" Master="6">
+					<Text>4.1.1 Develop production and materials strategies (10221)</Text>
+					<XForm>
+						<PinX Unit="MM">1.574803149606300</PinX>
+						<PinY Unit="MM">4.921259842519685</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.1.1 Develop production and materials strategies (10221)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10221</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="19" UniqueID="{38587473-3A1C-410C-9A43-DF5B2BC213D9}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">1.574803149606304</PinX>
+						<PinY Unit="MM">5.196850393700787</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="21" UniqueID="{819FD237-BC08-457D-9A6C-E9A0C0C5A6FB}" Name="Process.21" NameU="Process.21" Master="6">
+					<Text>4.1.6 Establish distribution planning constraints (10226)</Text>
+					<XForm>
+						<PinX Unit="MM">3.740157480314960</PinX>
+						<PinY Unit="MM">4.921259842519685</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.1.6 Establish distribution planning constraints (10226)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10226</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="23" UniqueID="{A46F908A-3C4D-40FF-8448-D7E98EB071D7}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">3.740157480314963</PinX>
+						<PinY Unit="MM">5.196850393700787</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="25" UniqueID="{D89AE346-0506-4B71-BFE2-E42B26A07F5B}" Name="Process.25" NameU="Process.25" Master="6">
+					<Text>4.1.3 Create materials plan (10223)</Text>
+					<XForm>
+						<PinX Unit="MM">1.574803149606299</PinX>
+						<PinY Unit="MM">2.952755905511812</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.1.3 Create materials plan (10223)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10223</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="27" UniqueID="{96DF0388-4EDD-43B6-AEF4-EFD7A82E4F9D}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">1.574803149606302</PinX>
+						<PinY Unit="MM">3.228346456692914</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="29" UniqueID="{4EC10DBA-7A0F-4165-8BA0-ACACA635DCEE}" Name="Process group.77" NameU="Process group.77" Master="5">
+					<Text>4.2 Procure materials and services (10216)</Text>
+					<XForm>
+						<PinX Unit="MM">6.299212598425196</PinX>
+						<PinY Unit="MM">3.248031496062993</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.2 Procure materials and services (10216)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10216</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="3" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="6" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="31" UniqueID="{E7A80774-18AF-4EB0-9A6F-C4C48779BC62}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS GROUP</Text>
+					<XForm>
+						<PinX Unit="MM">6.299212598425200</PinX>
+						<PinY Unit="MM">5.984251968503939</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="33" UniqueID="{A009CFB5-ABC6-4DA8-9CAE-05874B8A0B8C}" Name="Process.93" NameU="Process.33" Master="6">
+					<Text>4.2.1 Develop sourcing strategies (10277)</Text>
+					<XForm>
+						<PinX Unit="MM">6.299212598425196</PinX>
+						<PinY Unit="MM">4.921259842519685</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.2.1 Develop sourcing strategies (10277)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="35" UniqueID="{AD1220A5-6923-4F14-8CAF-B53D9EC0AB7B}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">6.299212598425200</PinX>
+						<PinY Unit="MM">5.196850393700787</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="37" UniqueID="{202D05B5-F53E-46AE-B812-A096339144FF}" Name="Process.137" NameU="Process.37" Master="6">
+					<Text>4.2.2 Select suppliers and develop/maintain contracts (10278)</Text>
+					<XForm>
+						<PinX Unit="MM">6.299212598425193</PinX>
+						<PinY Unit="MM">3.937007874015750</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.2.2 Select suppliers and develop/maintain contracts (10278)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10278</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="39" UniqueID="{E9AC75BD-BA9B-49D7-BD45-03045340F385}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">6.299212598425196</PinX>
+						<PinY Unit="MM">4.212598425196852</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="41" UniqueID="{C2A68460-2A97-4723-B861-6D21AE407EBE}" Name="Process.89" NameU="Process.41" Master="6">
+					<Text>4.2.3 Order materials and services (10279)</Text>
+					<XForm>
+						<PinX Unit="MM">6.299212598425196</PinX>
+						<PinY Unit="MM">2.952755905511812</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.2.3 Order materials and services (10279)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10279</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="43" UniqueID="{516944BD-5CD2-4BBE-8C67-8439265CA737}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">6.299212598425200</PinX>
+						<PinY Unit="MM">3.228346456692914</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="5" UniqueID="{363F99EA-15B7-42D6-87D5-19479543CA54}" Name="Process.5" NameU="Process.5" Master="6">
+					<Text>4.1.8 Assess distribution planning performance (10228)</Text>
+					<XForm>
+						<PinX Unit="MM">3.740157480314961</PinX>
+						<PinY Unit="MM">2.952755905511812</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.1.8 Assess distribution planning performance (10228)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10228</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="7" UniqueID="{C058794D-0424-4458-9E5E-5DB1F19516DD}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">3.740157480314964</PinX>
+						<PinY Unit="MM">3.228346456692915</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="61" UniqueID="{CAB5D06C-8A68-45A3-86B0-7133B40C3BEC}" Name="Process.61" NameU="Process.61" Master="6">
+					<Text>4.1.7 Review distribution planning policies (10227)</Text>
+					<XForm>
+						<PinX Unit="MM">3.740157480314961</PinX>
+						<PinY Unit="MM">3.937007874015750</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.1.7 Review distribution planning policies (10227)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10227</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="63" UniqueID="{05F90210-5843-4EC5-93BF-073A76F83CF9}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">3.740157480314964</PinX>
+						<PinY Unit="MM">4.212598425196853</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="214" UniqueID="{B1E717B0-47EF-44B1-BD37-FEBF2F7006D1}" Name="Process.214" NameU="Process.214" Master="6">
+					<Text>4.1.4 Create and manage master production schedule (10224)</Text>
+					<XForm>
+						<PinX Unit="MM">1.574803149606301</PinX>
+						<PinY Unit="MM">1.968503937007870</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.1.4 Create and manage master production schedule (10224)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10224</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="216" UniqueID="{4EFCC519-AF13-47BB-B791-74538C312DFF}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">1.574803149606304</PinX>
+						<PinY Unit="MM">2.244094488188972</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="218" UniqueID="{568028B8-466D-40E3-9ABE-ACF5C50A65B6}" Name="Process.218" NameU="Process.218" Master="6">
+					<Text>4.1.5 Plan distribution requirements (10225)</Text>
+					<XForm>
+						<PinX Unit="MM">1.574803149606299</PinX>
+						<PinY Unit="MM">0.984251968503935</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.1.5 Plan distribution requirements (10225)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10225</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="220" UniqueID="{B9E95934-93A4-42BB-8029-EF4A7A0EEBA5}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">1.574803149606302</PinX>
+						<PinY Unit="MM">1.259842519685037</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="226" UniqueID="{A0A4B09A-E6C3-42FF-AA73-66ABAAFC4C5D}" Name="Process.226" NameU="Process.226" Master="6">
+					<Text>4.1.9 Develop quality standards and procedures (10368)</Text>
+					<XForm>
+						<PinX Unit="MM">3.740157480314961</PinX>
+						<PinY Unit="MM">1.968503937007874</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.1.9 Develop quality standards and procedures (10368)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10368</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="228" UniqueID="{044F7455-235E-42D9-A905-0947356420E3}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">3.740157480314964</PinX>
+						<PinY Unit="MM">2.244094488188976</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="222" UniqueID="{89EBC078-BA29-4E20-BA92-9416E8969C35}" Name="Process.222" NameU="Process.222" Master="6">
+					<Text>4.2.4 Appraise and develop suppliers (10280)</Text>
+					<XForm>
+						<PinX Unit="MM">6.299212598425196</PinX>
+						<PinY Unit="MM">1.968503937007874</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.2.4 Appraise and develop suppliers (10280)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10280</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="224" UniqueID="{298127EA-BDEA-4F8A-B9D9-ED9A993CF9C9}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">6.299212598425200</PinX>
+						<PinY Unit="MM">2.244094488188976</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="230" UniqueID="{7DF82E04-CF0F-42C6-B05F-4CD749009B9D}" Name="Process group.230" NameU="Process group.230" Master="5">
+					<Text>4.3 Produce/Manufacture/Deliver product (10217)</Text>
+					<XForm>
+						<PinX Unit="MM">8.858267716535432</PinX>
+						<PinY Unit="MM">3.248031496062993</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.3 Produce/Manufacture/Deliver product (10217)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10217</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="3" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="6" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="232" UniqueID="{24ED6485-2474-4686-97EA-515C1E62311E}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS GROUP</Text>
+					<XForm>
+						<PinX Unit="MM">8.858267716535435</PinX>
+						<PinY Unit="MM">5.984251968503939</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="234" UniqueID="{C04E1352-C4D5-43EF-851D-32DF1FD2DCCC}" Name="Process.234" NameU="Process.234" Master="6">
+					<Text>4.3.1 Schedule production (10303)</Text>
+					<XForm>
+						<PinX Unit="MM">8.858267716535432</PinX>
+						<PinY Unit="MM">4.921259842519685</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.3.1 Schedule production (10303)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10303</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="236" UniqueID="{71031611-C234-4587-8525-3C4026CF7D64}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">8.858267716535435</PinX>
+						<PinY Unit="MM">5.196850393700787</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="238" UniqueID="{4398E3BD-90FF-41CF-AF5C-B2040416B770}" Name="Process.238" NameU="Process.238" Master="6">
+					<Text>4.3.2 Produce product (10304)</Text>
+					<XForm>
+						<PinX Unit="MM">8.858267716535428</PinX>
+						<PinY Unit="MM">3.937007874015750</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.3.2 Produce product (10304)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10304</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="240" UniqueID="{CE616ABD-19F3-4BE7-8459-83F54D3785E8}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">8.858267716535432</PinX>
+						<PinY Unit="MM">4.212598425196852</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="242" UniqueID="{FCEBC230-1874-4D6D-B2CF-7CF164DBEF74}" Name="Process.242" NameU="Process.242" Master="6">
+					<Text>4.3.3 Schedule and perform maintenance (10305)</Text>
+					<XForm>
+						<PinX Unit="MM">8.858267716535432</PinX>
+						<PinY Unit="MM">2.952755905511812</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.3.3 Schedule and perform maintenance (10305)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10305</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="244" UniqueID="{0092FC9E-B691-49F6-BECA-B69D1DFB2EEE}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">8.858267716535435</PinX>
+						<PinY Unit="MM">3.228346456692914</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="246" UniqueID="{2C6C39D6-83A4-40D9-B41E-FE7B0FF2EBFC}" Name="Process.246" NameU="Process.246" Master="6">
+					<Text>4.3.4 Perform quality testing (10369)</Text>
+					<XForm>
+						<PinX Unit="MM">8.858267716535432</PinX>
+						<PinY Unit="MM">1.968503937007874</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.3.4 Perform quality testing (10369)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10369</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="248" UniqueID="{D0154CAB-E685-4B39-8452-52D0D4F53D8D}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">8.858267716535435</PinX>
+						<PinY Unit="MM">2.244094488188976</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="250" UniqueID="{21EA845C-F790-4DD1-A08D-44D39C4DDFB8}" Name="Process.250" NameU="Process.250" Master="6">
+					<Text>4.3.5 Maintain production records and manage lot traceability (10370)</Text>
+					<XForm>
+						<PinX Unit="MM">8.858267716535432</PinX>
+						<PinY Unit="MM">0.984251968503937</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.3.5 Maintain production records and manage lot traceability (10370)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10370</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="252" UniqueID="{90207D0B-610E-4A50-91A9-2BAC2B15A771}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">8.858267716535435</PinX>
+						<PinY Unit="MM">1.259842519685040</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="254" UniqueID="{60767617-9C06-4E65-B49A-9292DA4835A9}" Name="Process group.254" NameU="Process group.254" Master="5">
+					<Text>4.4 Deliver service to customer (10218)</Text>
+					<XForm>
+						<PinX Unit="MM">11.417322834645669</PinX>
+						<PinY Unit="MM">3.248031496062993</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.4 Deliver service to customer (10218)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10218</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="3" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="6" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="256" UniqueID="{58B2675B-D193-497E-A224-D8AA53DB3344}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS GROUP</Text>
+					<XForm>
+						<PinX Unit="MM">11.417322834645672</PinX>
+						<PinY Unit="MM">5.984251968503939</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="258" UniqueID="{4E9D4E14-12C9-4937-BDBA-32A157783CE5}" Name="Process.258" NameU="Process.258" Master="6">
+					<Text>4.4.1 Confirm specific service requirements for individual customer (10320)</Text>
+					<XForm>
+						<PinX Unit="MM">11.417322834645669</PinX>
+						<PinY Unit="MM">4.921259842519685</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.4.1 Confirm specific service requirements for individual customer (10320)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10320</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="260" UniqueID="{0776175B-32A2-43CC-9A62-C95BE5F7C985}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">11.417322834645672</PinX>
+						<PinY Unit="MM">5.196850393700787</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="262" UniqueID="{2F61454F-48D5-4398-9701-E97ACAC98E6E}" Name="Process.262" NameU="Process.262" Master="6">
+					<Text>4.4.2 Identify and schedule resources to meet service requirements (10321)</Text>
+					<XForm>
+						<PinX Unit="MM">11.417322834645665</PinX>
+						<PinY Unit="MM">3.937007874015750</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.4.2 Identify and schedule resources to meet service requirements (10321)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10321</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="264" UniqueID="{99C96EF3-EAF1-4DFF-BE47-5ACEA921F87D}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">11.417322834645669</PinX>
+						<PinY Unit="MM">4.212598425196852</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="266" UniqueID="{3D690CF7-CCF9-4B53-A459-C94D66C591A9}" Name="Process.266" NameU="Process.266" Master="6">
+					<Text>4.4.3 Provide service to specific customers (10322)</Text>
+					<XForm>
+						<PinX Unit="MM">11.417322834645669</PinX>
+						<PinY Unit="MM">2.952755905511812</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.4.3 Provide service to specific customers (10322)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="268" UniqueID="{A4DE15C6-5165-4E95-BCB4-2185EABC5FF2}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">11.417322834645672</PinX>
+						<PinY Unit="MM">3.228346456692914</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="270" UniqueID="{8FD4B1C4-D073-43BD-921A-26382AD93870}" Name="Process.270" NameU="Process.270" Master="6">
+					<Text>4.4.4 Ensure quality of service (10323)</Text>
+					<XForm>
+						<PinX Unit="MM">11.417322834645669</PinX>
+						<PinY Unit="MM">1.968503937007874</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.4.4 Ensure quality of service (10323)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10323</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="272" UniqueID="{E0DD92A1-1DB5-470F-B7FA-B47E8945C7FE}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">11.417322834645672</PinX>
+						<PinY Unit="MM">2.244094488188976</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="274" UniqueID="{98E8BA9B-55ED-4585-9B4A-ACC3ADCEDAEB}" Name="Process group.274" NameU="Process group.274" Master="5">
+					<Text>4.5 Manage logistics and warehousing (10219)</Text>
+					<XForm>
+						<PinX Unit="MM">13.976377952755904</PinX>
+						<PinY Unit="MM">3.248031496062993</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.5 Manage logistics and warehousing (10219)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10219</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="3" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="6" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="276" UniqueID="{61EA13CC-7B1E-4378-8641-5F01DFBA7CC7}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS GROUP</Text>
+					<XForm>
+						<PinX Unit="MM">13.976377952755907</PinX>
+						<PinY Unit="MM">5.984251968503939</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="278" UniqueID="{C34EA2E6-4290-42A9-A74D-B7564284B39A}" Name="Process.278" NameU="Process.278" Master="6">
+					<Text>4.5.1 Define logistics strategy (10338)</Text>
+					<XForm>
+						<PinX Unit="MM">13.976377952755904</PinX>
+						<PinY Unit="MM">4.921259842519685</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.5.1 Define logistics strategy (10338)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10338</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="280" UniqueID="{F0351052-F667-44BB-AD8A-3EF81CFA9006}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">13.976377952755906</PinX>
+						<PinY Unit="MM">5.196850393700787</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="282" UniqueID="{63049ABF-B3D8-43CA-B952-F1D6896D0114}" Name="Process.282" NameU="Process.282" Master="6">
+					<Text>4.5.2 Plan inbound material flow (10339)</Text>
+					<XForm>
+						<PinX Unit="MM">13.976377952755900</PinX>
+						<PinY Unit="MM">3.937007874015750</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.5.2 Plan inbound material flow (10339)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10339</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="284" UniqueID="{1FDD1A19-1157-4A09-8362-E53E9113E300}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">13.976377952755902</PinX>
+						<PinY Unit="MM">4.212598425196852</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="286" UniqueID="{8173AACC-470F-4208-B464-EA007757108F}" Name="Process.286" NameU="Process.286" Master="6">
+					<Text>4.5.3 Operate warehousing (10340)</Text>
+					<XForm>
+						<PinX Unit="MM">13.976377952755904</PinX>
+						<PinY Unit="MM">2.952755905511812</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.5.3 Operate warehousing (10340)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10340</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="288" UniqueID="{0197E9EF-CD1A-4B23-9AAC-A13E9DEA225F}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">13.976377952755906</PinX>
+						<PinY Unit="MM">3.228346456692914</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="290" UniqueID="{4C21A439-2D9F-4BE5-9ED0-41ACEC74C743}" Name="Process.290" NameU="Process.290" Master="6">
+					<Text>4.5.4 Operate outbound transportation (10341)</Text>
+					<XForm>
+						<PinX Unit="MM">13.976377952755904</PinX>
+						<PinY Unit="MM">1.968503937007874</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.5.4 Operate outbound transportation (10341)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10341</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="292" UniqueID="{B10A6AD9-80DB-4DE4-9FCE-0E2D0332F1C7}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">13.976377952755906</PinX>
+						<PinY Unit="MM">2.244094488188976</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="294" UniqueID="{CFC25782-B616-4C80-A55D-EF9A21E3F807}" Name="Process.294" NameU="Process.294" Master="6">
+					<Text>4.5.5 Manage returns; manage reverse logistics (10342)</Text>
+					<XForm>
+						<PinX Unit="MM">13.976377952755904</PinX>
+						<PinY Unit="MM">0.984251968503937</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">4.5.5 Manage returns; manage reverse logistics (10342)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="Status" NameU="Status">
+						<Value></Value>
+						<Label>Status</Label>
+					</Prop>
+					<Prop ID="3" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="4" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="5" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value Unit="STR">10342</Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="9" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">12/05/2013</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="296" UniqueID="{D5FC7455-5029-4345-937E-4A74F55DF702}" Name="Panel" NameU="BottomPanel">
+					<Text>PROCESS</Text>
+					<XForm>
+						<PinX Unit="MM">13.976377952755906</PinX>
+						<PinY Unit="MM">1.259842519685040</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>

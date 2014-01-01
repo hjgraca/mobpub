@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerFolder ID="4fd722ad-bdec-430f-bee2-9f2a1c275b37">
+  <iServerProperties>
+    <RepositoryName>11.0 Manage External Relationships</RepositoryName>
+    <Category>Process Folder</Category>
+    <Logo>../Images/treefolder.gif</Logo>
+    <Description />
+    <Timestamp CreatedOn="2013-02-22" CreatedBy="System Administrator" LastModifiedOn="2013-02-22" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <CustomAttributes />
+  <Issues />
+</iServerFolder>

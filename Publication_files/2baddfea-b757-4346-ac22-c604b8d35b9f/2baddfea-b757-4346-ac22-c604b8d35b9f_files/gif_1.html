@@ -1,0 +1,166 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+2baddfea-b757-4346-ac22-c604b8d35b9f.vsd
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 0;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = -0.005000;
+	viewMgr.visBBoxRight = 11.619173;
+	viewMgr.visBBoxBottom = -0.005000;
+	viewMgr.visBBoxTop = 7.288465;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_1.gif" ALT="APQC" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="5 Manage Customer Service" origTitle="5 Manage Customer Service" TITLE="5 Manage Customer Service"  target="_top" COORDS="948,209,1077,209,1078,208,1079,207,1079,116,1078,115,1077,114,948,114,947,115,946,116,946,207,947,208,948,209" onmouseover="UpdateTooltip(this,0,7,event)" onfocus="UpdateTooltip(this,0,7,event)" onclick="return OnShapeClick(0,7,event);" onkeyup="OnShapeKey(0,7,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="4 Deliver Products and Services" origTitle="4 Deliver Products and Services" TITLE="4 Deliver Products and Services"  target="_top" COORDS="816,209,944,209,946,208,946,207,946,116,946,115,944,114,816,114,814,115,814,116,814,207,814,208,816,209" onmouseover="UpdateTooltip(this,0,5,event)" onfocus="UpdateTooltip(this,0,5,event)" onclick="return OnShapeClick(0,5,event);" onkeyup="OnShapeKey(0,5,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3 Market and Sell Products and Services" origTitle="3 Market and Sell Products and Services" TITLE="3 Market and Sell Products and Services"  target="_top" COORDS="683,209,812,209,813,208,814,207,814,116,813,115,812,114,683,114,682,115,681,116,681,207,682,208,683,209" onmouseover="UpdateTooltip(this,0,3,event)" onfocus="UpdateTooltip(this,0,3,event)" onclick="return OnShapeClick(0,3,event);" onkeyup="OnShapeKey(0,3,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="2 Develop and Manage Products and Services" origTitle="2 Develop and Manage Products and Services" TITLE="2 Develop and Manage Products and Services"  target="_top" COORDS="551,209,680,209,681,208,681,207,681,116,681,115,680,114,551,114,550,115,549,116,549,207,550,208,551,209" onmouseover="UpdateTooltip(this,0,1,event)" onfocus="UpdateTooltip(this,0,1,event)" onclick="return OnShapeClick(0,1,event);" onkeyup="OnShapeKey(0,1,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="1 Develop Vision and Strategy" origTitle="1 Develop Vision and Strategy" TITLE="1 Develop Vision and Strategy"  target="_top" COORDS="419,209,547,209,548,208,549,207,549,116,548,115,547,114,419,114,417,115,417,116,417,207,417,208,419,209" onmouseover="UpdateTooltip(this,0,12,event)" onfocus="UpdateTooltip(this,0,12,event)" onclick="return OnShapeClick(0,12,event);" onkeyup="OnShapeKey(0,12,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="HOW TO USE THE APQC PCF  [Your Notes Here]" origTitle="HOW TO USE THE APQC PCF  [Your Notes Here]" TITLE="HOW TO USE THE APQC PCF  [Your Notes Here]" HREF="http://www.apqc.org/OSBCdatabase" target="_top" COORDS="27,398,371,398,374,397,377,395,378,393,379,390,379,140,378,138,377,135,374,133,371,133,27,133,24,133,22,135,20,138,19,140,19,390,20,393,22,395,24,397,27,398" onmouseover="UpdateTooltip(this,0,11,event)" onfocus="UpdateTooltip(this,0,11,event)" onclick="return OnShapeClick(0,11,event);" onkeyup="OnShapeKey(0,11,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="APQC: [Industry] Process Classification Framework" origTitle="APQC: [Industry] Process Classification Framework" TITLE="APQC: [Industry] Process Classification Framework"  target="_top" COORDS="256,27,142,27,133,27,113,27,21,27,21,71,113,71,133,71,142,71,256,71,265,71,265,27,256,27" onmouseover="UpdateTooltip(this,0,71,event)" onfocus="UpdateTooltip(this,0,71,event)" onclick="return OnShapeClick(0,71,event);" onkeyup="OnShapeKey(0,71,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="APQC: [Industry] Process Classification Framework" origTitle="APQC: [Industry] Process Classification Framework" TITLE="APQC: [Industry] Process Classification Framework"  target="_top" COORDS="21,80,21,105,302,105,302,80,21,80" onmouseover="UpdateTooltip(this,0,71,event)" onfocus="UpdateTooltip(this,0,71,event)" onclick="return OnShapeClick(0,71,event);" onkeyup="OnShapeKey(0,71,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="THE APQC PROCESS CLASSIFICATION FRAMEWORKSM  The PCF was..." origTitle="THE APQC PROCESS CLASSIFICATION FRAMEWORKSM  The PCF was..." TITLE="THE APQC PROCESS CLASSIFICATION FRAMEWORKSM  The PCF was..." HREF="http://www.apqc.org/OSBCdatabase" target="_top" COORDS="27,681,371,681,374,681,377,679,378,677,379,674,379,424,378,421,377,419,374,417,371,417,27,417,24,417,22,419,20,421,19,424,19,674,20,677,22,679,24,681,27,681" onmouseover="UpdateTooltip(this,0,56,event)" onfocus="UpdateTooltip(this,0,56,event)" onclick="return OnShapeClick(0,56,event);" onkeyup="OnShapeKey(0,56,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="OPERATING PROCESSES" origTitle="OPERATING PROCESSES" TITLE="OPERATING PROCESSES"  target="_top" COORDS="398,101,398,220,398,223,400,225,402,227,405,227,1090,227,1093,227,1095,225,1097,223,1098,220,1098,101,1097,97,1094,92,1090,88,1083,84,1076,79,1066,75,1055,71,1042,67,1028,64,1012,60,995,57,977,54,957,51,937,48,915,46,893,44,870,42,846,41,822,40,797,39,773,38,748,38,723,38,698,39,673,40,649,41,625,42,602,44,580,46,558,48,538,51,518,54,500,57,483,60,468,64,453,67,441,71,429,75,420,79,412,84,406,88,401,92,399,97,398,101" onmouseover="UpdateTooltip(this,0,54,event)" onfocus="UpdateTooltip(this,0,54,event)" onclick="return OnShapeClick(0,54,event);" onkeyup="OnShapeKey(0,54,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="12 Manage Knowledge, Improvement, and Change" origTitle="12 Manage Knowledge, Improvement, and Change" TITLE="12 Manage Knowledge, Improvement, and Change"  target="_top" COORDS="419,663,1077,663,1078,662,1079,661,1079,627,1078,625,1077,625,419,625,417,625,417,627,417,661,417,662,419,663" onmouseover="UpdateTooltip(this,0,24,event)" onfocus="UpdateTooltip(this,0,24,event)" onclick="return OnShapeClick(0,24,event);" onkeyup="OnShapeKey(0,24,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="11 Manage External Relationships" origTitle="11 Manage External Relationships" TITLE="11 Manage External Relationships"  target="_top" COORDS="419,615,1077,615,1078,615,1079,613,1079,579,1078,578,1077,577,419,577,417,578,417,579,417,613,417,615,419,615" onmouseover="UpdateTooltip(this,0,22,event)" onfocus="UpdateTooltip(this,0,22,event)" onclick="return OnShapeClick(0,22,event);" onkeyup="OnShapeKey(0,22,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="10 Manage Environmental Health and Safety (EHS)" origTitle="10 Manage Environmental Health and Safety (EHS)" TITLE="10 Manage Environmental Health and Safety (EHS)"  target="_top" COORDS="419,568,1077,568,1078,567,1079,566,1079,532,1078,531,1077,530,419,530,417,531,417,532,417,566,417,567,419,568" onmouseover="UpdateTooltip(this,0,20,event)" onfocus="UpdateTooltip(this,0,20,event)" onclick="return OnShapeClick(0,20,event);" onkeyup="OnShapeKey(0,20,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="9 Acquire, Construct, and Manage Property" origTitle="9 Acquire, Construct, and Manage Property" TITLE="9 Acquire, Construct, and Manage Property"  target="_top" COORDS="419,521,1077,521,1078,520,1079,519,1079,485,1078,483,1077,483,419,483,417,483,417,485,417,519,417,520,419,521" onmouseover="UpdateTooltip(this,0,18,event)" onfocus="UpdateTooltip(this,0,18,event)" onclick="return OnShapeClick(0,18,event);" onkeyup="OnShapeKey(0,18,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="8 Manage Financial Resources" origTitle="8 Manage Financial Resources" TITLE="8 Manage Financial Resources"  target="_top" COORDS="419,473,1077,473,1078,473,1079,471,1079,437,1078,436,1077,436,419,436,417,436,417,437,417,471,417,473,419,473" onmouseover="UpdateTooltip(this,0,16,event)" onfocus="UpdateTooltip(this,0,16,event)" onclick="return OnShapeClick(0,16,event);" onkeyup="OnShapeKey(0,16,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="7 Manage Information Technology" origTitle="7 Manage Information Technology" TITLE="7 Manage Information Technology"  target="_top" COORDS="419,426,1077,426,1078,426,1079,425,1079,391,1078,389,1077,389,419,389,417,389,417,391,417,425,417,426,419,426" onmouseover="UpdateTooltip(this,0,14,event)" onfocus="UpdateTooltip(this,0,14,event)" onclick="return OnShapeClick(0,14,event);" onkeyup="OnShapeKey(0,14,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="6 Develop and Manage Human Capital" origTitle="6 Develop and Manage Human Capital" TITLE="6 Develop and Manage Human Capital"  target="_top" COORDS="419,379,1077,379,1078,378,1079,377,1079,343,1078,342,1077,341,419,341,417,342,417,343,417,377,417,378,419,379" onmouseover="UpdateTooltip(this,0,9,event)" onfocus="UpdateTooltip(this,0,9,event)" onclick="return OnShapeClick(0,9,event);" onkeyup="OnShapeKey(0,9,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="MANAGEMENT AND SUPPORT PROCESSES" origTitle="MANAGEMENT AND SUPPORT PROCESSES" TITLE="MANAGEMENT AND SUPPORT PROCESSES"  target="_top" COORDS="398,328,398,674,398,677,400,679,402,681,405,681,1090,681,1093,681,1095,679,1097,677,1098,674,1098,328,1097,324,1094,319,1090,315,1083,311,1076,306,1066,302,1055,298,1042,294,1028,291,1012,287,995,284,977,281,957,278,937,275,915,273,893,271,870,269,846,268,822,267,797,266,773,265,748,265,723,265,698,266,673,267,649,268,625,269,602,271,580,273,558,275,538,278,518,281,500,284,483,287,468,291,453,294,441,298,429,302,420,306,412,311,406,315,401,319,399,324,398,328" onmouseover="UpdateTooltip(this,0,70,event)" onfocus="UpdateTooltip(this,0,70,event)" onclick="return OnShapeClick(0,70,event);" onkeyup="OnShapeKey(0,70,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="0,700,1117,700,1117,0,0,0,0,700" onmouseover="UpdateTooltip(this,0,72,event)" onfocus="UpdateTooltip(this,0,72,event)" onclick="return OnShapeClick(0,72,event);" onkeyup="OnShapeKey(0,72,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

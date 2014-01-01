@@ -1,0 +1,178 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+99634e42-c152-42f3-84cc-7954c34ab205.vsd
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 4;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = -0.005000;
+	viewMgr.visBBoxRight = 13.390827;
+	viewMgr.visBBoxBottom = -0.005000;
+	viewMgr.visBBoxTop = 9.847520;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_1.gif" ALT="Page-1" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.5.6 Manage sales partners and alliances (10187)" origTitle="3.5.6 Manage sales partners and alliances (10187)" TITLE="3.5.6 Manage sales partners and alliances (10187)"  target="_top" COORDS="1046,719,1044,720,1041,722,1041,725,1041,742,1041,789,1041,792,1044,794,1046,795,1224,795,1227,794,1229,792,1230,789,1230,742,1230,725,1229,722,1227,720,1224,719,1046,719" onmouseover="UpdateTooltip(this,4,113,event)" onfocus="UpdateTooltip(this,4,113,event)" onclick="return OnShapeClick(4,113,event);" onkeyup="OnShapeKey(4,113,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.5.5 Manage sales force (10186)" origTitle="3.5.5 Manage sales force (10186)" TITLE="3.5.5 Manage sales force (10186)"  target="_top" COORDS="1046,625,1044,625,1041,627,1041,630,1041,647,1041,695,1041,697,1044,699,1046,700,1224,700,1227,699,1229,697,1230,695,1230,647,1230,630,1229,627,1227,625,1224,625,1046,625" onmouseover="UpdateTooltip(this,4,109,event)" onfocus="UpdateTooltip(this,4,109,event)" onclick="return OnShapeClick(4,109,event);" onkeyup="OnShapeKey(4,109,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.5.4 Manage sales orders (10185)" origTitle="3.5.4 Manage sales orders (10185)" TITLE="3.5.4 Manage sales orders (10185)"  target="_top" COORDS="1046,530,1044,531,1041,533,1041,536,1041,553,1041,600,1041,603,1044,605,1046,606,1224,606,1227,605,1229,603,1230,600,1230,553,1230,536,1229,533,1227,531,1224,530,1046,530" onmouseover="UpdateTooltip(this,4,105,event)" onfocus="UpdateTooltip(this,4,105,event)" onclick="return OnShapeClick(4,105,event);" onkeyup="OnShapeKey(4,105,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.4.7 Develop and manage packaging strategy (10154)" origTitle="3.4.7 Develop and manage packaging strategy (10154)" TITLE="3.4.7 Develop and manage packaging strategy (10154)"  target="_top" COORDS="800,814,798,815,796,817,795,819,795,836,795,884,796,886,798,889,800,889,978,889,981,889,983,886,984,884,984,836,984,819,983,817,981,815,978,814,800,814" onmouseover="UpdateTooltip(this,4,101,event)" onfocus="UpdateTooltip(this,4,101,event)" onclick="return OnShapeClick(4,101,event);" onkeyup="OnShapeKey(4,101,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.4.6 Track customer management measures (10153)" origTitle="3.4.6 Track customer management measures (10153)" TITLE="3.4.6 Track customer management measures (10153)"  target="_top" COORDS="912,795,978,795,981,794,983,792,984,789,984,742,984,725,983,722,981,720,978,719,800,719,798,720,796,722,795,725,795,742,795,789,796,792,798,794,800,795,866,795,866,795,871,795,908,795,912,795,912,795" onmouseover="UpdateTooltip(this,4,97,event)" onfocus="UpdateTooltip(this,4,97,event)" onclick="return OnShapeClick(4,97,event);" onkeyup="OnShapeKey(4,97,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.4.5 Develop and manage promotional activities (10152)" origTitle="3.4.5 Develop and manage promotional activities (10152)" TITLE="3.4.5 Develop and manage promotional activities (10152)"  target="_top" COORDS="800,625,798,625,796,627,795,630,795,647,795,695,796,697,798,699,800,700,978,700,981,699,983,697,984,695,984,647,984,630,983,627,981,625,978,625,800,625" onmouseover="UpdateTooltip(this,4,93,event)" onfocus="UpdateTooltip(this,4,93,event)" onclick="return OnShapeClick(4,93,event);" onkeyup="OnShapeKey(4,93,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.4.4 Develop and manage pricing (10151)" origTitle="3.4.4 Develop and manage pricing (10151)" TITLE="3.4.4 Develop and manage pricing (10151)"  target="_top" COORDS="800,530,798,531,796,533,795,536,795,553,795,600,796,603,798,605,800,606,978,606,981,605,983,603,984,600,984,553,984,536,983,533,981,531,978,530,800,530" onmouseover="UpdateTooltip(this,4,89,event)" onfocus="UpdateTooltip(this,4,89,event)" onclick="return OnShapeClick(4,89,event);" onkeyup="OnShapeKey(4,89,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.4.3 Develop and manage media (10150)" origTitle="3.4.3 Develop and manage media (10150)" TITLE="3.4.3 Develop and manage media (10150)"  target="_top" COORDS="800,435,798,436,796,438,795,441,795,458,795,505,796,508,798,510,800,511,978,511,981,510,983,508,984,505,984,458,984,441,983,438,981,436,978,435,800,435" onmouseover="UpdateTooltip(this,4,49,event)" onfocus="UpdateTooltip(this,4,49,event)" onclick="return OnShapeClick(4,49,event);" onkeyup="OnShapeKey(4,49,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.4.2 Establish marketing budgets (10149)" origTitle="3.4.2 Establish marketing budgets (10149)" TITLE="3.4.2 Establish marketing budgets (10149)"  target="_top" COORDS="800,341,798,342,796,344,795,347,795,364,795,411,796,414,798,416,800,417,978,417,981,416,983,414,984,411,984,364,984,347,983,344,981,342,978,341,800,341" onmouseover="UpdateTooltip(this,4,45,event)" onfocus="UpdateTooltip(this,4,45,event)" onclick="return OnShapeClick(4,45,event);" onkeyup="OnShapeKey(4,45,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.4.1 Establish goals, objectives, and metrics for products by..." origTitle="3.4.1 Establish goals, objectives, and metrics for products by..." TITLE="3.4.1 Establish goals, objectives, and metrics for products by..."  target="_top" COORDS="943,322,951,322,954,322,954,322,978,322,981,321,983,319,984,316,984,269,984,252,983,249,981,247,978,246,800,246,798,247,796,249,795,252,795,269,795,316,796,319,798,321,800,322,824,322,824,322,836,322,836,338,897,338,902,338,939,338,943,338,943,322" onmouseover="UpdateTooltip(this,4,21,event)" onfocus="UpdateTooltip(this,4,21,event)" onclick="return OnShapeClick(4,21,event);" onkeyup="OnShapeKey(4,21,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.3.5 Establish customer management measures (10133)" origTitle="3.3.5 Establish customer management measures (10133)" TITLE="3.3.5 Establish customer management measures (10133)"  target="_top" COORDS="666,700,732,700,735,699,737,697,738,695,738,647,738,630,737,627,735,625,732,625,555,625,552,625,550,627,549,630,549,647,549,695,550,697,552,699,555,700,621,700,621,701,625,701,662,701,666,701,666,700" onmouseover="UpdateTooltip(this,4,85,event)" onfocus="UpdateTooltip(this,4,85,event)" onclick="return OnShapeClick(4,85,event);" onkeyup="OnShapeKey(4,85,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.3.4 Establish sales goals and measures (10132)" origTitle="3.3.4 Establish sales goals and measures (10132)" TITLE="3.3.4 Establish sales goals and measures (10132)"  target="_top" COORDS="555,530,552,531,550,533,549,536,549,553,549,600,550,603,552,605,555,606,732,606,735,605,737,603,738,600,738,553,738,536,737,533,735,531,732,530,555,530" onmouseover="UpdateTooltip(this,4,25,event)" onfocus="UpdateTooltip(this,4,25,event)" onclick="return OnShapeClick(4,25,event);" onkeyup="OnShapeKey(4,25,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.5.3 Manage customer sales (10184)" origTitle="3.5.3 Manage customer sales (10184)" TITLE="3.5.3 Manage customer sales (10184)"  target="_top" COORDS="1046,435,1044,436,1041,438,1041,441,1041,458,1041,505,1041,508,1044,510,1046,511,1224,511,1227,510,1229,508,1230,505,1230,458,1230,441,1229,438,1227,436,1224,435,1046,435" onmouseover="UpdateTooltip(this,4,81,event)" onfocus="UpdateTooltip(this,4,81,event)" onclick="return OnShapeClick(4,81,event);" onkeyup="OnShapeKey(4,81,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.5.2 Manage customers and accounts (10183)" origTitle="3.5.2 Manage customers and accounts (10183)" TITLE="3.5.2 Manage customers and accounts (10183)"  target="_top" COORDS="1046,341,1044,342,1041,344,1041,347,1041,364,1041,411,1041,414,1044,416,1046,417,1224,417,1227,416,1229,414,1230,411,1230,364,1230,347,1229,344,1227,342,1224,341,1046,341" onmouseover="UpdateTooltip(this,4,77,event)" onfocus="UpdateTooltip(this,4,77,event)" onclick="return OnShapeClick(4,77,event);" onkeyup="OnShapeKey(4,77,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.5.1 Generate leads (10182)" origTitle="3.5.1 Generate leads (10182)" TITLE="3.5.1 Generate leads (10182)"  target="_top" COORDS="1046,246,1044,247,1041,249,1041,252,1041,269,1041,316,1041,319,1044,321,1046,322,1224,322,1227,321,1229,319,1230,316,1230,269,1230,252,1229,249,1227,247,1224,246,1046,246" onmouseover="UpdateTooltip(this,4,73,event)" onfocus="UpdateTooltip(this,4,73,event)" onclick="return OnShapeClick(4,73,event);" onkeyup="OnShapeKey(4,73,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.5 Develop and manage sales plans (10105)" origTitle="3.5 Develop and manage sales plans (10105)" TITLE="3.5 Develop and manage sales plans (10105)"  target="_top" COORDS="1027,171,1025,171,1023,174,1022,176,1022,193,1022,903,1023,905,1025,907,1027,908,1243,908,1246,907,1248,905,1249,903,1249,193,1249,176,1248,174,1246,171,1243,171,1027,171" onmouseover="UpdateTooltip(this,4,69,event)" onfocus="UpdateTooltip(this,4,69,event)" onclick="return OnShapeClick(4,69,event);" onkeyup="OnShapeKey(4,69,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.3.3 Establish overall sales budgets (10131)" origTitle="3.3.3 Establish overall sales budgets (10131)" TITLE="3.3.3 Establish overall sales budgets (10131)"  target="_top" COORDS="555,435,552,436,550,438,549,441,549,458,549,505,550,508,552,510,555,511,732,511,735,510,737,508,738,505,738,458,738,441,737,438,735,436,732,435,555,435" onmouseover="UpdateTooltip(this,4,65,event)" onfocus="UpdateTooltip(this,4,65,event)" onclick="return OnShapeClick(4,65,event);" onkeyup="OnShapeKey(4,65,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.3.2 Develop sales partner/alliance relationships (10130)" origTitle="3.3.2 Develop sales partner/alliance relationships (10130)" TITLE="3.3.2 Develop sales partner/alliance relationships (10130)"  target="_top" COORDS="555,341,552,342,550,344,549,347,549,364,549,411,550,414,552,416,555,417,732,417,735,416,737,414,738,411,738,364,738,347,737,344,735,342,732,341,555,341" onmouseover="UpdateTooltip(this,4,61,event)" onfocus="UpdateTooltip(this,4,61,event)" onclick="return OnShapeClick(4,61,event);" onkeyup="OnShapeKey(4,61,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.3.1 Develop sales forecast (10129)" origTitle="3.3.1 Develop sales forecast (10129)" TITLE="3.3.1 Develop sales forecast (10129)"  target="_top" COORDS="555,246,552,247,550,249,549,252,549,269,549,316,550,319,552,321,555,322,732,322,735,321,737,319,738,316,738,269,738,252,737,249,735,247,732,246,555,246" onmouseover="UpdateTooltip(this,4,57,event)" onfocus="UpdateTooltip(this,4,57,event)" onclick="return OnShapeClick(4,57,event);" onkeyup="OnShapeKey(4,57,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.4 Develop and manage marketing plans (10104)" origTitle="3.4 Develop and manage marketing plans (10104)" TITLE="3.4 Develop and manage marketing plans (10104)"  target="_top" COORDS="782,171,779,171,777,174,776,176,776,193,776,903,777,905,779,907,782,908,997,908,1000,907,1002,905,1003,903,1003,193,1003,176,1002,174,1000,171,997,171,782,171" onmouseover="UpdateTooltip(this,4,53,event)" onfocus="UpdateTooltip(this,4,53,event)" onclick="return OnShapeClick(4,53,event);" onkeyup="OnShapeKey(4,53,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.3 Develop sales strategy (10103)" origTitle="3.3 Develop sales strategy (10103)" TITLE="3.3 Develop sales strategy (10103)"  target="_top" COORDS="536,171,533,171,531,174,530,176,530,193,530,903,531,905,533,907,536,908,751,908,754,907,756,905,757,903,757,193,757,176,756,174,754,171,751,171,536,171" onmouseover="UpdateTooltip(this,4,5,event)" onfocus="UpdateTooltip(this,4,5,event)" onclick="return OnShapeClick(4,5,event);" onkeyup="OnShapeKey(4,5,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.2.3 Define and manage channel strategy (10122)" origTitle="3.2.3 Define and manage channel strategy (10122)" TITLE="3.2.3 Define and manage channel strategy (10122)"  target="_top" COORDS="309,435,306,436,304,438,303,441,303,458,303,505,304,508,306,510,309,511,487,511,489,510,491,508,492,505,492,458,492,441,491,438,489,436,487,435,309,435" onmouseover="UpdateTooltip(this,4,41,event)" onfocus="UpdateTooltip(this,4,41,event)" onclick="return OnShapeClick(4,41,event);" onkeyup="OnShapeKey(4,41,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.2.2 Define pricing strategy to align to value proposition..." origTitle="3.2.2 Define pricing strategy to align to value proposition..." TITLE="3.2.2 Define pricing strategy to align to value proposition..."  target="_top" COORDS="421,417,487,417,489,416,491,414,492,411,492,364,492,347,491,344,489,342,487,341,309,341,306,342,304,344,303,347,303,364,303,411,304,414,306,416,309,417,375,417,375,417,379,417,416,417,421,417,421,417" onmouseover="UpdateTooltip(this,4,37,event)" onfocus="UpdateTooltip(this,4,37,event)" onclick="return OnShapeClick(4,37,event);" onkeyup="OnShapeKey(4,37,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.2.1 Define offering and customer value proposition (11168)" origTitle="3.2.1 Define offering and customer value proposition (11168)" TITLE="3.2.1 Define offering and customer value proposition (11168)"  target="_top" COORDS="421,322,487,322,489,321,491,319,492,316,492,269,492,252,491,249,489,247,487,246,309,246,306,247,304,249,303,252,303,269,303,316,304,319,306,321,309,322,375,322,375,322,379,322,416,322,421,322,421,322" onmouseover="UpdateTooltip(this,4,33,event)" onfocus="UpdateTooltip(this,4,33,event)" onclick="return OnShapeClick(4,33,event);" onkeyup="OnShapeKey(4,33,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.2 Develop marketing strategy (10102)" origTitle="3.2 Develop marketing strategy (10102)" TITLE="3.2 Develop marketing strategy (10102)"  target="_top" COORDS="290,171,287,171,285,174,284,176,284,193,284,903,285,905,287,907,290,908,505,908,508,907,510,905,511,903,511,193,511,176,510,174,508,171,505,171,290,171" onmouseover="UpdateTooltip(this,4,29,event)" onfocus="UpdateTooltip(this,4,29,event)" onclick="return OnShapeClick(4,29,event);" onkeyup="OnShapeKey(4,29,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.1.1 Perform customer and market intelligence analysis (10106)" origTitle="3.1.1 Perform customer and market intelligence analysis (10106)" TITLE="3.1.1 Perform customer and market intelligence analysis (10106)"  target="_top" COORDS="175,322,241,322,243,321,246,319,246,316,246,269,246,252,246,249,243,247,241,246,63,246,60,247,58,249,57,252,57,269,57,316,58,319,60,321,63,322,129,322,129,322,133,322,170,322,175,322,175,322" onmouseover="UpdateTooltip(this,4,17,event)" onfocus="UpdateTooltip(this,4,17,event)" onclick="return OnShapeClick(4,17,event);" onkeyup="OnShapeKey(4,17,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.1.2 Evaluate and prioritize market opportunities (10107)" origTitle="3.1.2 Evaluate and prioritize market opportunities (10107)" TITLE="3.1.2 Evaluate and prioritize market opportunities (10107)"  target="_top" COORDS="63,341,60,342,58,344,57,347,57,364,57,411,58,414,60,416,63,417,241,417,243,416,246,414,246,411,246,364,246,347,246,344,243,342,241,341,63,341" onmouseover="UpdateTooltip(this,4,13,event)" onfocus="UpdateTooltip(this,4,13,event)" onclick="return OnShapeClick(4,13,event);" onkeyup="OnShapeKey(4,13,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3.1 Understand markets, customers, and capabilities (10101)" origTitle="3.1 Understand markets, customers, and capabilities (10101)" TITLE="3.1 Understand markets, customers, and capabilities (10101)"  target="_top" COORDS="44,171,41,171,39,174,38,176,38,193,38,903,39,905,41,907,44,908,260,908,262,907,264,905,265,903,265,193,265,176,264,174,262,171,260,171,44,171" onmouseover="UpdateTooltip(this,4,9,event)" onfocus="UpdateTooltip(this,4,9,event)" onclick="return OnShapeClick(4,9,event);" onkeyup="OnShapeKey(4,9,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="3 Market and Sell Products and Services" origTitle="3 Market and Sell Products and Services" TITLE="3 Market and Sell Products and Services"  target="_top" COORDS="25,95,22,96,20,98,19,101,19,118,19,922,20,924,22,926,25,927,1262,927,1265,926,1267,924,1268,922,1268,118,1268,101,1267,98,1265,96,1262,95,25,95" onmouseover="UpdateTooltip(this,4,1,event)" onfocus="UpdateTooltip(this,4,1,event)" onclick="return OnShapeClick(4,1,event);" onkeyup="OnShapeKey(4,1,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="1268,57,1268,19,19,19,19,57,19,76,402,76,402,76,507,76,690,76,796,76,979,76,1085,76,1268,76,1268,57" onmouseover="UpdateTooltip(this,4,205,event)" onfocus="UpdateTooltip(this,4,205,event)" onclick="return OnShapeClick(4,205,event);" onkeyup="OnShapeKey(4,205,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="0,946,1287,946,1287,0,0,0,0,946" onmouseover="UpdateTooltip(this,4,214,event)" onfocus="UpdateTooltip(this,4,214,event)" onclick="return OnShapeClick(4,214,event);" onkeyup="OnShapeKey(4,214,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

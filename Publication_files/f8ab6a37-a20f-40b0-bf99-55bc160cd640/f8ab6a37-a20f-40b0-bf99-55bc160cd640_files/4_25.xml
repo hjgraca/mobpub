@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="25" PageID="4" ObjectID="3ace76d6-8fd1-4d89-a114-2201f68c9edf" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">50</Width>
+    <Height Unit="mm">20</Height>
+    <Left Unit="mm">210</Left>
+    <Bottom Unit="mm">140</Bottom>
+    <Right Unit="mm">260</Right>
+    <Top Unit="mm">160</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>10.5.1 Monitor compliance (11198)</RepositoryName>
+    <Description />
+    <ShapeMaster>Sub Process</ShapeMaster>
+    <Timestamp CreatedOn="2013-02-22" CreatedBy="System Administrator" LastModifiedOn="2013-02-22" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes>
+    <Attribute>
+      <Name>APQC: Identifier</Name>
+      <Description />
+      <Value>11198</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>APQC: Scope</Name>
+      <Description>Classification of Processes against APQC</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Complexity</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Cost (GBP)</Name>
+      <Description />
+      <Value>0.00</Value>
+      <Datatype>Decimal</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Criticality</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: ID</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Manual or Automated</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Maturity</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Owner</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Possible Improvements</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Strategic Importance</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Status</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+  </CustomAttributes>
+</Shape>

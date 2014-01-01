@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="214" PageID="4" ObjectID="a0fcb1a8-d879-482c-87fc-10ecf78ad156" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">60</Width>
+    <Height Unit="mm">145</Height>
+    <Left Unit="mm">270</Left>
+    <Bottom Unit="mm">60</Bottom>
+    <Right Unit="mm">330</Right>
+    <Top Unit="mm">205</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>8.7 Manage treasury operations (10734)</RepositoryName>
+    <Description />
+    <ShapeMaster>Process group</ShapeMaster>
+    <Timestamp CreatedOn="2013-02-22" CreatedBy="System Administrator" LastModifiedOn="2013-02-22" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes>
+    <Attribute>
+      <Name>APQC: Identifier</Name>
+      <Description />
+      <Value>10734</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>APQC: Scope</Name>
+      <Description>Classification of Processes against APQC</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: ID</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Owner</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+  </CustomAttributes>
+</Shape>

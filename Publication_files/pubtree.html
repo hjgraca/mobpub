@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <title>Publisher</title>
+        <link rel=stylesheet href="pubtogframe.css" type="text/css">
+        <script language="jscript" type="text/jscript" src="pubtogframe.js"></script>
+        <script language="jscript" type="text/jscript" src="puboptions.js"></script>
+        <script language="jscript" type="text/jscript"><!--
+        // Pass tree node clicks up to the parent window for actioning
+        function doTreeNodeClick(item) { if (parent.doTreeNodeClick) { parent.doTreeNodeClick(item); } }
+        // Pass expand/contract all commands from parent window to tree for actioning
+        function expandAll() { iframeTree.expandAll(); }
+        function contractAll() { iframeTree.contractAll(); }
+        function goView(viewUrl) {
+            iframeTree.navigate(viewUrl);
+        }
+        // (De)initializers
+        window.onload = function () {
+            puboptionsOnLoad();
+            pubtogframeOnLoad();
+        }
+        window.onunload = function () {
+            pubtogframeOnUnload();
+        }
+    // --></script>
+        <xml id="publicationOptions">
+            <publicationOptions>
+                <publicationOption optionName="autoCloseFrame" optionValue="no" />
+                <publicationOption optionName="minimizedCols" optionValue="0,*" />
+            </publicationOptions>
+        </xml>
+    </head>
+<body class="bodyFrameOpen">
+<div class="divFrameContents" id="frameContentsOpen">
+    <table height="100%" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr><td height="20">
+        <div class="divToolbar">
+            <div class="divRightToolbarPortion">
+                <div class="divToolbarButton" onclick="toggleFrame()">
+                        <img src="Images/closeframe.gif" class="imgCloseFrame" title="Hide tree">
+                </div>
+            </div>
+        </div>
+        <div class="divToolbar divTreeToolbar">
+            <div class="divLeftToolbarPortion">
+                <div class="divToolbarButton" onclick="expandAll()" id="tbExpandAll"><img src="Images/treeplusplus.gif" title="Expand all"></div>
+                <div class="divToolbarButton" onclick="contractAll()" id="tbCollapseAll"><img src="Images/treeminusminus.gif" title="Collapse all"></div>
+            </div>
+            <div class="divRightToolbarPortion">
+                <div class="divToolbarButton" onclick="window.navigate('pubsearch.html')" style="color: #000;">Search</div>
+                <div class="divToolbarButton" style="color: #000;"> | </div>
+                <div class="divToolbarButton"><font color="000">Switch to view:</font></div>
+                <div class="divToolbarButton" style="vertical-align: top;">
+                    <select class="selectToolbar" onchange="goView(this.value)">
+                        <option value="publication.structview.xml" selected="1">by structure</option>
+                        <option value="publication.catview.xml">by category</option>
+                        <option value="publication.groupview.xml">by group</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </td></tr>
+    <tr><td height="100%">
+        <iframe class="iframeContent" src="publication.structview.xml" frameborder="no" id="iframeTree"></iframe>
+    </td></tr>
+    </table>
+</div>
+<div class="divFrameContentsHidden" id="frameContentsClosed">
+    <div class="divFrameOpener">
+        <img src="Images/toc2.gif" onclick="toggleFrame()">
+    </div>
+</div>
+</body>
+
+</html>

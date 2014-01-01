@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="1" PageID="4" ObjectID="f6590b6d-e7f4-4be5-b04c-0de99cc93692" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">335</Width>
+    <Height Unit="mm">170</Height>
+    <Left Unit="mm">5</Left>
+    <Bottom Unit="mm">5</Bottom>
+    <Right Unit="mm">340</Right>
+    <Top Unit="mm">175</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>9 Acquire, Construct, and Manage Property (10010)</RepositoryName>
+    <Description />
+    <ShapeMaster>Process Category</ShapeMaster>
+    <Timestamp CreatedOn="2013-02-22" CreatedBy="System Administrator" LastModifiedOn="2013-02-22" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes>
+    <Attribute>
+      <Name>APQC: Identifier</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>APQC: Scope</Name>
+      <Description>Classification of Processes against APQC</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: ID</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Owner</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+  </CustomAttributes>
+</Shape>
