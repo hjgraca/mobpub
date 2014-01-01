@@ -133,7 +133,7 @@ var mobilepub = (function () {
 					    $('#imagescroller').css('width',$('#im').width());
 						$('#imagescroller').css('height',$('#im').height());
 						self.diagram.imagescroll.refresh();
-					},12);
+					},1000);
 
 				}
 			});
