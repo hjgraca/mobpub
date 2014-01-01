@@ -8,8 +8,6 @@ app.set('views', __dirname + '/');
 app.use(express.static(__dirname + '/'));
 
     app.get('/', function(req, res){
-
-        
             return res.render('index');
     });
 
@@ -18,5 +16,5 @@ app.use(express.static(__dirname + '/'));
     //     return res.render(req.params[0]);
     // });
 
-    app.listen(8080);
+    app.listen(process.env.PORT || 8080);
     console.log('Express server started on port 8080');
