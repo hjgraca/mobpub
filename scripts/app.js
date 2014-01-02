@@ -121,19 +121,22 @@ var mobilepub = (function () {
 						$('#im').attr('src',imagesrc);
 
 						$.get(diagramPath + 'gif_1.html', function(data) {
-						  var map = $(data).find("map");
+						  	var map = $(data).find("map");
 						  
 							$('#im').parent().append(map);
 							$('#im').attr("usemap", "#"+ map.attr("name"));
 						});
 					});
 
+					self.buildDiagramExtraIcons(xml);
+
 					setTimeout(function(){
 					    // set size after dom created
 					    $('#imagescroller').css('width',$('#im').width());
 						$('#imagescroller').css('height',$('#im').height());
 						self.diagram.imagescroll.refresh();
-					},12);
+
+					},1000);
 
 				}
 			});
@@ -183,6 +186,148 @@ var mobilepub = (function () {
 			};
 
 			return diagram;
+		},
+		buildDiagramExtraIcons: function(xml){
+
+			//Issues="N" DiagLinks="Y" DocLinks="N"
+			$.ajax({	
+				type: "GET",
+				url: self.diagram.currentPath + "/data.xml",
+				dataType: "xml",
+				success: function(res) {	
+					var diagData = $(res).find("VisioDocument Pages"),
+						pageSize = $(xml).find("Pages > Page Dimensions").map(function(i,e){
+										return {
+											width: {
+												unit: $(e).children("Width").attr("Unit"),
+												value: $(e).children("Width").text(),
+											},
+											height:{
+												unit: $(e).children("Height").attr("Unit"),
+												value: $(e).children("Height").text(),
+											}
+										};
+									})[0];
+
+					// search shapes with diaglinks, issues or doclinks
+					$(xml).find('Shapes Shape[DiagLinks="Y"],[Issues="Y"],[DocLinks="Y"]').each(function(){
+						var shapeId = $(this).attr("ID"), 
+							pageId = $(this).attr("PageID"),
+							isDiagLink = $(this).attr("DiagLinks") === "Y",
+							isIssues = $(this).attr("Issues") === "Y"
+							isDocLink = $(this).attr("DocLinks") === "Y";
+						
+						// get shape
+						$.ajax({
+							type: "GET",
+							url: self.diagram.currentPath + "/" + $(this).attr("Source"),
+							dataType: "xml",
+							success: function(shapexml) {				
+								
+								diagData.find("Pages Page[ID='" + pageId + "'] > Shapes > Shape[ID='"+ shapeId +"']").each(function(){
+									var x = $(this).find("XFORM > PinX").text(),
+										y = $(this).find("XFORM > PinY").text(),
+										div = '<div style="z-index:4; position: relative; opacity: 0.7; filter: alpha(opacity=85); " onclick="OnShapeClick(' + pageId +', ' + shapeId + ')"><img title="iServer diagram links available for this object" src="@imageSrc"></div>';
+
+									var dimensions = $(shapexml).find("Dimensions").map(function(i,e){
+										return {
+											width: {
+												unit: $(e).children("Width").attr("Unit"),
+												value: $(e).children("Width").text(),
+											},
+											height:{
+												unit: $(e).children("Height").attr("Unit"),
+												value: $(e).children("Height").text(),
+											},
+											left:{
+												unit: $(e).children("Left").attr("Unit"),
+												value: $(e).children("Left").text(),
+											},
+											bottom:{
+												unit: $(e).children("Bottom").attr("Unit"),
+												value: $(e).children("Bottom").text(),
+											},
+											right:{
+												unit: $(e).children("Right").attr("Unit"),
+												value: $(e).children("Right").text(),
+											},
+											top:{
+												unit: $(e).children("Top").attr("Unit"),
+												value: $(e).children("Top").text(),
+											}
+										};
+									})[0];
+
+									// ViewMgrPostZoomMDIUpdate() vml_1.js
+
+									// var xLong = self.ConvertXorYCoordinate(dimensions.left.value,  0, pageSize.width.value, imageLeft, imageRight, 0),
+        							// yLong = self.ConvertXorYCoordinate(dimensions.top.value,  0, pageSize.height.value, imageTop, imageBottom, 1);
+
+									debugger;	
+									var xLong = self.ConvertXorYCoordinate(dimensions.left.value,  0, pageSize.width.value, 0, 543, 0),
+    									yLong = self.ConvertXorYCoordinate(dimensions.top.value,  0, pageSize.height.value, 0, 384, 1),
+        								scaleX = (/*imageRight*/ 543 - 0) / pageSize.width.value,
+        								scaleY = (/*imageBottom*/ 384 - 0) / pageSize.height.value,
+        								sWidth = dimensions.width.value * scaleX,
+        								sHeight = dimensions.height.value * scaleY;
+
+										// These give values for xLong / yLong that give the CENTRE of the row/column
+										// of meta-data indicators.  Individual MDI locations are set in the loop below
+									        // if (this.showMDIsPosition == 'left') {
+									        //     yLong += Math.floor(sHeight / 2);
+									        // } else if (this.showMDIsPosition == 'right') {
+									            xLong += sWidth;
+									            yLong += Math.floor(sHeight / 2);
+									        // } else if (this.showMDIsPosition == 'top') {
+									        //     xLong += Math.floor(sWidth / 2);
+									        // } else if (this.showMDIsPosition == 'bottom') {
+									        //     xLong += Math.floor(sWidth / 2);
+									        //     yLong += sHeight;
+									        // }
+									// var x = xLong - (this.MDIndicatorDivs[i][idx].clientWidth / 2);
+					    //             var y = yLong - ((this.MDIndicatorDivs[i][idx].clientHeight * nMDIs) / 2) + MDIoffset;
+					    //             MDIoffset += this.MDIndicatorDivs[i][idx].clientHeight;
+					    //             this.MDIndicatorDivs[i][idx].style.posLeft = x
+					    //             this.MDIndicatorDivs[i][idx].style.posTop = y;
+
+									
+									if(isDiagLink){
+										div.replace('@imageSrc', "../../Images/hasdiaglinks.gif");
+									}
+
+									if(isIssues){
+										div.replace('@imageSrc', "../../Images/hasissues.gif");
+									}
+
+									if(isDocLink){
+										div.replace('@imageSrc', "../../Images/hasdoclinks.gif");
+									}
+
+									$("body").append(div);
+
+									$(div).attr('style', 'left:'+ xLong+'px; top:'+ yLong +'px; width:24px; height:24px');
+								});
+							}
+						});
+					});
+
+				}
+			});
+		},
+		ConvertXorYCoordinate: function(PosValue, OldMin, OldMax, NewMin, NewMax, MapBackwards)
+		{
+			var OldMid = (OldMax - OldMin) / 2;
+			var NewMid = (NewMax - NewMin) / 2;
+			var ConvertResult = 1 * PosValue;
+			ConvertResult = ConvertResult - (OldMin + OldMid);
+			ConvertResult = ConvertResult / OldMid;
+			if(MapBackwards != 0)
+			{
+				ConvertResult = 0 - ConvertResult;
+			}
+			ConvertResult = ConvertResult * NewMid;
+			ConvertResult = ConvertResult + (NewMin + NewMid);
+			return ConvertResult;
 		},
 		buildCategoryStruct: function(){
 			var self = this;
