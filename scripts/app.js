@@ -135,10 +135,7 @@ var mobilepub = (function () {
 					    $('#imagescroller').css('width',$('#im').width());
 						$('#imagescroller').css('height',$('#im').height());
 						self.diagram.imagescroll.refresh();
-<<<<<<< HEAD
-=======
 
->>>>>>> aaa89a3fa7d532787b217f70f3a7138a9712df93
 					},1000);
 
 				}
@@ -567,5 +564,4 @@ $(document).on("pagebeforeshow", '#searchpage',function(event, data){
 $(document).on("panelbeforeopen", '#diagraminfopanel',function(event, data){
 	self.loadDiagramInfoPanel();    
 });
-
 
