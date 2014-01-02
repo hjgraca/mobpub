@@ -462,8 +462,10 @@ var mobilepub = (function () {
 				divattr.append('</div>');
 				$("#diagraminfolist").append(divattr);
 
-				new iScroll('diagraminfowrapper');
+				//new iScroll('diagraminfowrapper');
 				// $("#diagraminfopanel").trigger("updatelayout");
+
+				mobilepub.diagram.diagWrapper.refresh();
 
 				// must clear
 				self.diagram.current = undefined;
@@ -539,7 +541,6 @@ $(document).on("pageshow", '#browsediagrampage',function(event, data){
 $(document).on("pageshow", '#diagrampage',function(event, data){
 	var parameters = $(this).data("url").split("?")[1];
 	mobilepub.loadDiagramImage(getQueryVariable(parameters, "id"));
-
 });
 
 $(document).on("pagebeforeshow", '#browsecategorypage',function(event, data){
@@ -565,3 +566,8 @@ $(document).on("panelbeforeopen", '#diagraminfopanel',function(event, data){
 	self.loadDiagramInfoPanel();    
 });
 
+$(document).on("pageshow",function(event, data){
+	if($(".wrapper").length > 0){
+		mobilepub.diagram.diagWrapper = new iScroll($(".wrapper")[0]);
+	}
+});
