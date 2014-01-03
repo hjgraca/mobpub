@@ -4,21 +4,22 @@ var mobilepub = (function () {
 			$("div[data-role=header]:visible h1").text(title);
 		},
 
-		loadSettings: function(){
-			var self = this;
+		load: function(){
 			$.getJSON("settings.json", function(data) {
-				self.settings = data;
+				mobilepub.settings = data;
 				$("#appVersion").text(data.version);
+				mobilepub.buildDiagramStruct();
+				mobilepub.buildCategoryStruct();
 			});
 		},
 		buildDiagramChildren: function(item){
-			var self = this, children = [];
+			var children = [];
 
 			item.children('Folder').each(function(){             
 	            children.push({
 					id:$(this).attr('ID'),
 					name: $(this).attr('Name'),
-					children: self.buildDiagramChildren($(this))
+					children: mobilepub.buildDiagramChildren($(this))
 				});
 	         });
 			return children;
@@ -26,24 +27,21 @@ var mobilepub = (function () {
 		diagram:{},
 		category:{},
 		buildDiagramStruct: function(){
-			var self = this;
-			
 			$.ajax({
 				type: "GET",
-				url: self.settings.publicationpath + self.settings.diagramFile,
+				url: mobilepub.settings.publicationpath + mobilepub.settings.diagramFile,
 				dataType: "xml",
 				success: function(xml) {				
-					self.diagram.folders = $(xml).find('PublicationStructure');	
-					self.diagram.init = true;
+					mobilepub.diagram.folders = $(xml).find('PublicationStructure');	
+					mobilepub.diagram.init = true;
 				}
 			});
 
 		},
 		loadDiagramPage: function(id){
 			var items =[], 
-			defaultImage = '<img class="ui-li-icon" src="/Publication_files/Images/treefolder.gif" style="top: 12px;left: 16px;">'
-			self = this;
-			
+			defaultImage = '<img class="ui-li-icon" src="/Publication_files/Images/treefolder.gif" style="top: 12px;left: 16px;">';
+
 			if(!id){
 				mobilepub.diagram.folders.find(">Folder").each(function(){
 					items.push({
@@ -80,7 +78,7 @@ var mobilepub = (function () {
 					});
 				});
 
-				self.setTitle($(current[0]).attr("Name"));
+				mobilepub.setTitle($(current[0]).attr("Name"));
 			}
 
 			_.each(items, function(val){
@@ -96,12 +94,10 @@ var mobilepub = (function () {
 
 		},
 		loadDiagramImage: function(id){
-			var self = this;
-
-			var path = self.settings.publicationpath + id + self.settings.diagramImageFile,
-				diagramPath = self.settings.publicationpath + id + '/' + id + '_files/';
-			self.diagram.currentPath = diagramPath;
-			self.diagram.imagescroll = new iScroll('imagewrapper', { zoom:true });	
+			var path = mobilepub.settings.publicationpath + id + mobilepub.settings.diagramImageFile,
+				diagramPath = mobilepub.settings.publicationpath + id + '/' + id + '_files/';
+			mobilepub.diagram.currentPath = diagramPath;
+			mobilepub.diagram.imagescroll = new iScroll('imagewrapper', { zoom:true });	
 
 			$.ajax({
 				type: "GET",
@@ -110,9 +106,9 @@ var mobilepub = (function () {
 				success: function(xml) {
 					$(xml).find('iServerDiagram').each(function(){
 
-						self.diagram.base = self.buildDiagramInfo(xml);
+						mobilepub.diagram.base = mobilepub.buildDiagramInfo(xml);
 
-						self.setTitle($(xml).find('RepositoryName').text());
+						mobilepub.setTitle($(xml).find('RepositoryName').text());
 
 						//add diagram
 						var imagesrc = diagramPath + 'gif_1.gif';
@@ -127,13 +123,13 @@ var mobilepub = (function () {
 						});
 					});
 
-					self.buildDiagramExtraIcons(xml);
+					mobilepub.buildDiagramExtraIcons(xml);
 
 					setTimeout(function(){
 					    // set size after dom created
 					    $('#imagescroller').css('width',$('#im').width());
 						$('#imagescroller').css('height',$('#im').height());
-						self.diagram.imagescroll.refresh();
+						mobilepub.diagram.imagescroll.refresh();
 
 					},1000);
 
@@ -189,7 +185,7 @@ var mobilepub = (function () {
 		buildDiagramExtraIcons: function(xml){
 			$.ajax({	
 				type: "GET",
-				url: self.diagram.currentPath + "/data.xml",
+				url: mobilepub.diagram.currentPath + "/data.xml",
 				dataType: "xml",
 				success: function(res) {	
 					var diagData = $(res).find("VisioDocument Pages"),
@@ -218,7 +214,7 @@ var mobilepub = (function () {
 						// get shape
 						$.ajax({
 							type: "GET",
-							url: self.diagram.currentPath + "/" + source,
+							url: mobilepub.diagram.currentPath + "/" + source,
 							dataType: "xml",
 							success: function(shapexml) {				
 
@@ -259,8 +255,8 @@ var mobilepub = (function () {
 									// ViewMgrPostZoomMDIUpdate() vml_1.js
 									var imageRight = $("#im").width(),
 										imageBottom = $("#im").height(),
-										xLong = self.ConvertXorYCoordinate(dimensions.left.value,  0, pageSize.width.value, 0, imageRight, 0),
-    									yLong = self.ConvertXorYCoordinate(dimensions.top.value,  0, pageSize.height.value, 0, imageBottom, 1),
+										xLong = mobilepub.ConvertXorYCoordinate(dimensions.left.value,  0, pageSize.width.value, 0, imageRight, 0),
+    									yLong = mobilepub.ConvertXorYCoordinate(dimensions.top.value,  0, pageSize.height.value, 0, imageBottom, 1),
         								scaleX = imageRight / pageSize.width.value,
         								scaleY = imageBottom / pageSize.height.value,
         								sWidth = dimensions.width.value * scaleX,
@@ -287,15 +283,15 @@ var mobilepub = (function () {
 
 									
 									if(isDiagLink){
-										$(div).find("img").attr("src", self.settings.imagesFolder + "hasdiaglinks.gif");
+										$(div).find("img").attr("src", mobilepub.settings.imagesFolder + "hasdiaglinks.gif");
 									}
 
 									if(isIssues){
-										$(div).find("img").attr("src", self.settings.imagesFolder + "hasissues.gif");
+										$(div).find("img").attr("src", mobilepub.settings.imagesFolder + "hasissues.gif");
 									}
 
 									if(isDocLink){
-										$(div).find("img").attr("src", self.settings.imagesFolder + "hasdoclinks.gif");
+										$(div).find("img").attr("src", mobilepub.settings.imagesFolder + "hasdoclinks.gif");
 									}
 									$(div).css({"top": yLong, "left": xLong - 24});
 									$("#imagescroller").prepend(div);
@@ -324,23 +320,19 @@ var mobilepub = (function () {
 			return ConvertResult;
 		},
 		buildCategoryStruct: function(){
-			var self = this;
-			
 			$.ajax({
 				type: "GET",
-				url: self.settings.publicationpath + self.settings.categoryFile,
+				url: mobilepub.settings.publicationpath + mobilepub.settings.categoryFile,
 				dataType: "xml",
 				success: function(xml) {				
-					self.category.folders = $(xml).find('PublicationStructure');
-
-					self.category.init = true;
+					mobilepub.category.folders = $(xml).find('PublicationStructure');
+					mobilepub.category.init = true;
 				}
 			});
 		},
 		loadCategoryPage: function(id, name){
 			var items =[], 
-			defaultImage = '<img class="ui-li-icon" src="/Publication_files/Images/treefolder.gif" style="top: 12px;left: 16px;">'
-			self = this;
+			defaultImage = '<img class="ui-li-icon" src="/Publication_files/Images/treefolder.gif" style="top: 12px;left: 16px;">';
 			
 			if(!id && !name){
 				mobilepub.category.folders.find(">Folder").each(function(){
@@ -384,7 +376,7 @@ var mobilepub = (function () {
 					});
 				});
 
-				self.setTitle($(current[0]).attr("Name"));
+				mobilepub.setTitle($(current[0]).attr("Name"));
 			}
 
 			_.each(items, function(val){
@@ -402,33 +394,33 @@ var mobilepub = (function () {
 
 				$("#diagraminfolist").empty();
 
-				if(!self.diagram.current){
-					self.diagram.current = self.diagram.base;
+				if(!mobilepub.diagram.current){
+					mobilepub.diagram.current = mobilepub.diagram.base;
 				}
 
 				// add properties
 				var props =[];
 				props.push({
 					name: "Repository Name",
-					value: self.diagram.current.properties.repositoryName 
+					value: mobilepub.diagram.current.properties.repositoryName 
 				},{
 					name: "Category",
-					value: self.diagram.current.properties.category
+					value: mobilepub.diagram.current.properties.category
 				},{
 					name: "Description",
-					value: self.diagram.current.properties.description
+					value: mobilepub.diagram.current.properties.description
 				},{
 					name: "Created On",
-					value: self.diagram.current.properties.timestamp.createdOn
+					value: mobilepub.diagram.current.properties.timestamp.createdOn
 				},{
 					name: "Created By",
-					value: self.diagram.current.properties.timestamp.createdBy 
+					value: mobilepub.diagram.current.properties.timestamp.createdBy 
 				},{
 					name: "LastModified On",
-					value: self.diagram.current.properties.timestamp.lastModifiedOn 
+					value: mobilepub.diagram.current.properties.timestamp.lastModifiedOn 
 				},{
 					name: "LastModified By",
-					value: self.diagram.current.properties.timestamp.lastModifiedBy 
+					value: mobilepub.diagram.current.properties.timestamp.lastModifiedBy 
 				});
 
 				$("#diagraminfolist").append('<h3>Properties</h3>');
@@ -446,7 +438,7 @@ var mobilepub = (function () {
 				$("#diagraminfolist").append('<h3>Attributes</h3>');
 				var divattr = $('<div class="ui-grid-a">');
 
-				_.each(self.diagram.current.attributes, function(val){
+				_.each(mobilepub.diagram.current.attributes, function(val){
 
 					divattr.append('<div class="ui-block-a">'+ val.name +'</div>')
 					.append('<div class="ui-block-b"><div class="ui-bar-a">'+ val.value +'</div></div>');
@@ -462,7 +454,7 @@ var mobilepub = (function () {
 				mobilepub.diagram.diagWrapper.refresh();
 
 				// must clear
-				self.diagram.current = undefined;
+				mobilepub.diagram.current = undefined;
 		},
 		showShapeInfo: function(path){
 			$.ajax({
@@ -470,7 +462,7 @@ var mobilepub = (function () {
 				url: path,
 				dataType: "xml",
 				success: function(xml) {
-					self.diagram.current = self.buildDiagramInfo(xml);
+					mobilepub.diagram.current = mobilepub.buildDiagramInfo(xml);
 					$("#diagraminfopanel").panel("open");
 				}
 			});
@@ -480,7 +472,7 @@ var mobilepub = (function () {
 
 			$.ajax({
 				type: "GET",
-				url: self.diagram.currentPath + source,
+				url: mobilepub.diagram.currentPath + source,
 				dataType: "xml",
 				success: function(xml) {
 					var docId;
@@ -504,7 +496,7 @@ var mobilepub = (function () {
 })();
 
 function OnShapeClick(a,b,evt){
-			var path = self.diagram.currentPath + a + "_" + b + '.xml';
+			var path = mobilepub.diagram.currentPath + a + "_" + b + '.xml';
 			mobilepub.showShapeInfo(path);
 		};
 function UpdateTooltip(){
@@ -529,15 +521,14 @@ if(!query){
 
 $(document).on("mobileinit", function(event){ 
 	// load settings
-	mobilepub.loadSettings();
-	
+	mobilepub.load();
 });
 
-$(document).on("pagebeforeshow", '#browsediagrampage',function(event, data){
-	if(!mobilepub.diagram.init){
-		mobilepub.buildDiagramStruct();
-	}
-});
+// $(document).on("pagebeforeshow", '#browsediagrampage',function(event, data){
+// 	// if(!mobilepub.diagram.init){
+// 	// 	mobilepub.buildDiagramStruct();
+// 	// }
+// });
 
 $(document).on("pageshow", '#browsediagrampage',function(event, data){
 	var parameters = $(this).data("url").split("?")[1];
@@ -549,12 +540,11 @@ $(document).on("pageshow", '#diagrampage',function(event, data){
 	mobilepub.loadDiagramImage(getQueryVariable(parameters, "id"));
 });
 
-$(document).on("pagebeforeshow", '#browsecategorypage',function(event, data){
-    if(!mobilepub.category.init){
-		mobilepub.buildCategoryStruct();
-	}
-});
-
+// $(document).on("pagebeforeshow", '#browsecategorypage',function(event, data){
+//     if(!mobilepub.category.init){
+// 		mobilepub.buildCategoryStruct();
+// 	}
+// });
 
 $(document).on("pageshow", '#browsecategorypage',function(event, data){
 	var parameters = $(this).data("url").split("?")[1];
@@ -574,7 +564,7 @@ $(document).on("pagebeforeshow", '#setuppage',function(event, data){
 });
 
 $(document).on("panelbeforeopen", '#diagraminfopanel',function(event, data){
-	self.loadDiagramInfoPanel();    
+	mobilepub.loadDiagramInfoPanel();    
 });
 
 $(document).on("pageshow",function(event, data){
