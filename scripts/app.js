@@ -8,6 +8,7 @@ var mobilepub = (function () {
 			var self = this;
 			$.getJSON("settings.json", function(data) {
 				self.settings = data;
+				$("#appVersion").text(data.version);
 			});
 		},
 		buildDiagramChildren: function(item){

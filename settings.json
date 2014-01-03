@@ -1,6 +1,6 @@
 {
   "name": "Mobile Publisher",
-  "version": "0.0.0",
+  "version": "0.7.1",
   "description": "Mobile Publisher",
   "main": "app.js",
   "dependencies": {
