@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerDiagram ID="9c4cb8eb-5ede-453b-a216-6f76f1e20efd">
+  <iServerProperties>
+    <RepositoryName>Index of Service Operation Checklists</RepositoryName>
+    <Category>ITIL Process Model</Category>
+    <Logo>../Images/visio.gif</Logo>
+    <Ext>.html</Ext>
+    <Description>An index of all the checklists within the Service Operation discipline.</Description>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+    <Owner UserID="" Name="" Email="" />
+    <Navigation>
+      <TargetFrame repository_open_document="_top" repository_open_diagram="_top" repository_link_document="_top" repository_link_diagram="_top" repository_link_shape="_top" diagram_link_document="_top" diagram_link_diagram="_top" diagram_link_shape="_top" />
+      <DocumentFrame enabled="false" height="30%" />
+      <PopupMenu first_tier_links="5" />
+      <VisioHyperlinks publish="false" />
+      <Indicators ShowDocLinks="true" ShowDiagLinks="true" ShowIssues="true" Positioning="right" />
+    </Navigation>
+    <Pages Count="1">
+      <Page ID="0">
+        <Dimensions>
+          <Height Unit="mm">297</Height>
+          <Width Unit="mm">420</Width>
+        </Dimensions>
+      </Page>
+    </Pages>
+  </iServerProperties>
+  <CustomAttributes />
+  <Issues />
+  <Relations />
+  <Shapes>
+    <Shape ID="32" PageID="0" Source="0_32.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="134" PageID="0" Source="0_134.xml" Issues="False" DiagLinks="False" DocLinks="True" />
+    <Shape ID="149" PageID="0" Source="0_149.xml" Issues="False" DiagLinks="False" DocLinks="True" />
+    <Shape ID="7" PageID="0" Source="0_7.xml" Issues="True" DiagLinks="True" DocLinks="False" />
+    <Shape ID="68" PageID="0" Source="0_68.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="144" PageID="0" Source="0_144.xml" Issues="False" DiagLinks="False" DocLinks="True" />
+    <Shape ID="80" PageID="0" Source="0_80.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="119" PageID="0" Source="0_119.xml" Issues="False" DiagLinks="False" DocLinks="True" />
+    <Shape ID="104" PageID="0" Source="0_104.xml" Issues="False" DiagLinks="False" DocLinks="True" />
+    <Shape ID="56" PageID="0" Source="0_56.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="124" PageID="0" Source="0_124.xml" Issues="False" DiagLinks="False" DocLinks="True" />
+    <Shape ID="109" PageID="0" Source="0_109.xml" Issues="False" DiagLinks="False" DocLinks="True" />
+    <Shape ID="139" PageID="0" Source="0_139.xml" Issues="False" DiagLinks="False" DocLinks="True" />
+    <Shape ID="20" PageID="0" Source="0_20.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="114" PageID="0" Source="0_114.xml" Issues="False" DiagLinks="False" DocLinks="True" />
+    <Shape ID="92" PageID="0" Source="0_92.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="44" PageID="0" Source="0_44.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="129" PageID="0" Source="0_129.xml" Issues="False" DiagLinks="False" DocLinks="True" />
+  </Shapes>
+</iServerDiagram>

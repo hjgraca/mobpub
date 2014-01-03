@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="25" PageID="4" ObjectID="2d8971b4-34f7-4c44-a1f6-e46b1c5dde12" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">143.1827</Left>
+    <Bottom Unit="mm">261.9167</Bottom>
+    <Right Unit="mm">168.1827</Right>
+    <Top Unit="mm">270.4167</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Capacity Plan</RepositoryName>
+    <Description>A Capacity Plan is used to manage the resources required to deliver IT services. The plan contains scenarios for different predictions of business demand, and costed options to deliver the agreed service level targets.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

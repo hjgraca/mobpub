@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="39" PageID="0" ObjectID="d6bc9d81-79d4-40b3-b2f8-4b63150dc26f" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">7.5</Width>
+    <Height Unit="mm">7.5</Height>
+    <Left Unit="mm">49.18226</Left>
+    <Bottom Unit="mm">214.069</Bottom>
+    <Right Unit="mm">56.68226</Right>
+    <Top Unit="mm">221.569</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Incident is handled with standard procedure</RepositoryName>
+    <Description />
+    <ShapeMaster>Start Event</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes>
+    <Attribute>
+      <Name>BPMN: Start Event Trigger</Name>
+      <Description />
+      <Value>None</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+  </CustomAttributes>
+</Shape>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerDocument ID="7359a23e-9d8f-4c28-b69a-c07a7d9e5840">
+  <iServerProperties>
+    <RepositoryName>Known Error Database</RepositoryName>
+    <Category>Microsoft Word Document</Category>
+    <Logo>../Images/word.gif</Logo>
+    <Ext>.doc</Ext>
+    <Description />
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+    <Owner UserID="" Name="" Email="" />
+    <Navigation>
+      <TargetFrame repository_open_document="_top" repository_open_diagram="_top" repository_link_document="_top" repository_link_diagram="_top" repository_link_shape="_top" diagram_link_document="_top" diagram_link_diagram="_top" diagram_link_shape="_top" />
+      <DocumentFrame enabled="false" height="30%" />
+      <PopupMenu first_tier_links="5" />
+      <VisioHyperlinks publish="false" />
+      <Indicators ShowDocLinks="true" ShowDiagLinks="true" ShowIssues="true" Positioning="right" />
+    </Navigation>
+  </iServerProperties>
+  <CustomAttributes />
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates from</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Data object</Category>
+        <Name>Checklist Known Error Database</Name>
+        <Target DocumentID="4ccd08bb-2ae5-4296-a627-0211d8f30c8d" DocumentName="Problem Closure and Evaluation" PageID="0" ShapeID="1" />
+        <Target DocumentID="79801fb3-e99c-499a-a992-556d6b3d95a9" DocumentName="Problem Management Reporting" PageID="0" ShapeID="18" />
+        <Target DocumentID="9c4cb8eb-5ede-453b-a216-6f76f1e20efd" DocumentName="Index of Service Operation Checklists" PageID="0" ShapeID="144" />
+        <Target DocumentID="df3e5052-4000-4850-a0cc-79772f5b5488" DocumentName="Problem Identification and Categorization" PageID="0" ShapeID="464" />
+        <Target DocumentID="51745d31-ccdd-46d4-b4aa-ad13f6af672d" DocumentName="Problem Diagnosis and Resolution" PageID="0" ShapeID="21" />
+        <Target DocumentID="9be31e17-1977-43fe-bc17-c09bc24bc1bf" DocumentName="Problem and Error Control" PageID="0" ShapeID="118" />
+        <Target DocumentID="ba420e7d-e2a7-4c33-a934-f67c483f0a2d" DocumentName="Major Problem Review" PageID="0" ShapeID="21" />
+      </Destination>
+    </Relation>
+  </Relations>
+</iServerDocument>

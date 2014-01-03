@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="21" PageID="0" ObjectID="c857387d-a399-4d53-9dca-74af9e698066" Issues="False" DiagLinks="False" DocLinks="True" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">319.1958</Left>
+    <Bottom Unit="mm">232.8344</Bottom>
+    <Right Unit="mm">344.1958</Right>
+    <Top Unit="mm">241.3344</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Checklist Known Error Database</RepositoryName>
+    <Description>The Known Error Database (KEDB) is created by Problem Management and used by Incident and Problem Management to manage all Known Error Records.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates to</Description>
+      <Destination>
+        <ApplicationType>MSWord</ApplicationType>
+        <Ext>.doc</Ext>
+        <Category />
+        <Name>Known Error Database</Name>
+        <Target DocumentID="7359a23e-9d8f-4c28-b69a-c07a7d9e5840" DocumentName="Known Error Database" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

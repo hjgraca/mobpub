@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="19" PageID="0" ObjectID="1c76de07-41b8-47e5-b358-740331289821" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">112.5</Left>
+    <Bottom Unit="mm">162.75</Bottom>
+    <Right Unit="mm">137.5</Right>
+    <Top Unit="mm">171.25</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Service Request</RepositoryName>
+    <Description>A request from a user for information, or advice, or for a standard change or for access to an IT service. For example to reset a password, or to provide standard IT services for a new user. Service Requests are usually handled by a service desk or a requ</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

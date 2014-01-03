@@ -4,6 +4,7 @@
 <xsl:template match="/">
 <html>
     <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
         <title>Publisher</title>
         <link rel="stylesheet" href="pubinfo.css" type="text/css" />
     </head>

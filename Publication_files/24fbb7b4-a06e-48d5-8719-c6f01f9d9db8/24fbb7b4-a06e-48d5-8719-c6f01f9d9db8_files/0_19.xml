@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="19" PageID="0" ObjectID="7a70dad4-da7c-4830-a6d6-990b73a5bd06" Issues="False" DiagLinks="True" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">364.658</Width>
+    <Height Unit="mm">58</Height>
+    <Left Unit="mm">15</Left>
+    <Bottom Unit="mm">29.2615</Bottom>
+    <Right Unit="mm">379.658</Right>
+    <Top Unit="mm">87.2615</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Incident Manager</RepositoryName>
+    <Description>The Incident Manager is responsible for the effective implementation of the Incident Management process and carries out the
+corresponding reporting. He represents the first stage of escalation for Incidents, should these not be resolvable within the agreed
+Service Levels.</Description>
+    <ShapeMaster>Role</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>RACI: Responsible</LinkType>
+      <Reason />
+      <Description>R</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Process</Category>
+        <Name>LINK TO SEVERAL OBJECTS</Name>
+        <Target DocumentID="27d98237-5c24-4691-88a6-6fce103cbf9f" DocumentName="ITIL v3 Process Map - Front page" PageID="0" ShapeID="92" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

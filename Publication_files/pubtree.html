@@ -1,10 +1,11 @@
 <html>
-<head>
-    <title>Publisher</title>
-    <link rel=stylesheet href="pubtogframe.css" type="text/css">
-    <script language="jscript" type="text/jscript" src="pubtogframe.js"></script>
-    <script language="jscript" type="text/jscript" src="puboptions.js"></script>
-    <script language="jscript" type="text/jscript"><!--
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <title>Publisher</title>
+        <link rel=stylesheet href="pubtogframe.css" type="text/css">
+        <script language="jscript" type="text/jscript" src="pubtogframe.js"></script>
+        <script language="jscript" type="text/jscript" src="puboptions.js"></script>
+        <script language="jscript" type="text/jscript"><!--
         // Pass tree node clicks up to the parent window for actioning
         function doTreeNodeClick(item) { if (parent.doTreeNodeClick) { parent.doTreeNodeClick(item); } }
         // Pass expand/contract all commands from parent window to tree for actioning
@@ -22,13 +23,13 @@
             pubtogframeOnUnload();
         }
     // --></script>
-    <xml id="publicationOptions">
-        <publicationOptions>
-            <publicationOption optionName="autoCloseFrame" optionValue="no" />
-            <publicationOption optionName="minimizedCols" optionValue="0,*" />
-        </publicationOptions>
-    </xml>
-</head>
+        <xml id="publicationOptions">
+            <publicationOptions>
+                <publicationOption optionName="autoCloseFrame" optionValue="no" />
+                <publicationOption optionName="minimizedCols" optionValue="0,*" />
+            </publicationOptions>
+        </xml>
+    </head>
 <body class="bodyFrameOpen">
 <div class="divFrameContents" id="frameContentsOpen">
     <table height="100%" width="100%" border="0" cellpadding="0" cellspacing="0">

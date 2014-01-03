@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="538" PageID="4" ObjectID="aa1d68f9-9249-48c3-bf89-2ac09ba77ed4" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">125.9335</Left>
+    <Bottom Unit="mm">50.87187</Bottom>
+    <Right Unit="mm">150.9335</Right>
+    <Top Unit="mm">59.37187</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Projected Service Outage (PSO)</RepositoryName>
+    <Description>The Projected Service Outage (PSO) document lists any expected deviations from the service availability agreed in SLAs.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="467" PageID="4" ObjectID="8fef1d3e-41fb-4eb6-b44f-a2fac77d170c" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">120.9426</Left>
+    <Bottom Unit="mm">59.74623</Bottom>
+    <Right Unit="mm">145.9427</Right>
+    <Top Unit="mm">68.24623</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Index of Disaster-Relevant Information</RepositoryName>
+    <Description>A catalogue of all information that is relevant in the event of disasters. This document is maintained and circulated by IT Service Continuity Management to all members of IT staff with responsibilities for fighting disasters.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

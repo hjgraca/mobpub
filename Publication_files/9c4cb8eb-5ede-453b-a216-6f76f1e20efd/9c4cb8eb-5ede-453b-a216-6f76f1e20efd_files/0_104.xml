@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="104" PageID="0" ObjectID="27cd643f-6880-4fa4-ae82-8aa907886fad" Issues="False" DiagLinks="False" DocLinks="True" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">44.5</Left>
+    <Bottom Unit="mm">131.75</Bottom>
+    <Right Unit="mm">69.5</Right>
+    <Top Unit="mm">140.25</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Checklist Event Record</RepositoryName>
+    <Description>A change of state which has significance for the management of a Configuration Item or service. The term Event is also used to mean an alert or notification created by any IT service, Configuration Item or monitoring tool. Events typically require IT operations personnel to take actions, and often lead to Incidents being logged.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates to</Description>
+      <Destination>
+        <ApplicationType>MSWord</ApplicationType>
+        <Ext>.doc</Ext>
+        <Category />
+        <Name>Event Record</Name>
+        <Target DocumentID="ae753d71-ae01-4c4e-9a93-7bf02010f114" DocumentName="Event Record" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

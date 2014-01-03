@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="54" PageID="0" ObjectID="5f40c9ba-af6b-4e1f-bdd7-e0c26108b938" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">112.5</Left>
+    <Bottom Unit="mm">149.25</Bottom>
+    <Right Unit="mm">137.5</Right>
+    <Top Unit="mm">157.75</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Service Request Status Information</RepositoryName>
+    <Description>A message containing the present status of a Service Request, usually sent to a user who earlier requested a service.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

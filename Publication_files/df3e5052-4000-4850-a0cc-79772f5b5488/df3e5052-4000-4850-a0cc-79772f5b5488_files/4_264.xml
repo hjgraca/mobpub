@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="264" PageID="4" ObjectID="2906169b-5b7b-4660-8421-8e6285557856" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">131.9868</Left>
+    <Bottom Unit="mm">146.8513</Bottom>
+    <Right Unit="mm">156.9868</Right>
+    <Top Unit="mm">155.3513</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>CMS/ CMDB</RepositoryName>
+    <Description>The Configuration Management System (CMS) is a coherent logical model of the IT organization’s infrastructure, typically made up of several Configuration Management Databases (CMDBs) as physical sub-systems. It is used to store information on all Configur</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

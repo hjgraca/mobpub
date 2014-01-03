@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="360" PageID="4" ObjectID="dd32de16-3ff9-4942-abfe-3b7049789124" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">121.4086</Left>
+    <Bottom Unit="mm">147.6847</Bottom>
+    <Right Unit="mm">146.4086</Right>
+    <Top Unit="mm">156.1847</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Workaround</RepositoryName>
+    <Description>Reducing or eliminating the impact of an Incident or Problem for which a full resolution is not yet available, for example by restarting a failed Configuration Item. Workarounds for Problems are documented in Known Error records.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

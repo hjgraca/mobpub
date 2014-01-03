@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="40" PageID="4" ObjectID="b3e2649f-1535-4713-a4f5-2b8ec70aa192" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">143.5167</Left>
+    <Bottom Unit="mm">357.434</Bottom>
+    <Right Unit="mm">168.5167</Right>
+    <Top Unit="mm">365.934</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Service Catalogue</RepositoryName>
+    <Description>A database or structured document with information about all live services, including those available for deployment. The Service Catalogue is the only part of the Service Portfolio published to Customers, and is used to support the sale and delivery of I</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

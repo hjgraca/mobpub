@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="40" PageID="0" ObjectID="bacf5548-6690-4c1f-8fb0-03b2fe6fdf36" Issues="False" DiagLinks="True" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">391.6364</Width>
+    <Height Unit="mm">208</Height>
+    <Left Unit="mm">20.56938</Left>
+    <Bottom Unit="mm">10.98438</Bottom>
+    <Right Unit="mm">412.2058</Right>
+    <Top Unit="mm">218.9844</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Problem Manager</RepositoryName>
+    <Description>The Problem Manager is responsible for managing the lifecycle of all Problems. His primary objectives are to prevent Incidents from
+happening, and to minimize the impact of Incidents that cannot be prevented. To this purpose he maintains information about Known
+Errors and Workarounds.</Description>
+    <ShapeMaster>Role</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>RACI: Responsible</LinkType>
+      <Reason />
+      <Description>R</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Process</Category>
+        <Name>LINK TO SEVERAL OBJECTS</Name>
+        <Target DocumentID="27d98237-5c24-4691-88a6-6fce103cbf9f" DocumentName="ITIL v3 Process Map - Front page" PageID="0" ShapeID="92" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

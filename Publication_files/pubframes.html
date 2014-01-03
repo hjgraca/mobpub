@@ -1,9 +1,10 @@
 <html>
-<head>
-    <title>Orbus Publication</title>
-    <script language="jscript" type="text/jscript" src="pubframes.js"></script>
-    <script language="jscript" type="text/jscript" src="puboptions.js"></script>
-    <script language="jscript" type="text/jscript"><!--
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <title>Orbus Publication</title>
+        <script language="jscript" type="text/jscript" src="pubframes.js"></script>
+        <script language="jscript" type="text/jscript" src="puboptions.js"></script>
+        <script language="jscript" type="text/jscript"><!--
         window.onload = function () {
             if (!(navigator.userAgent.toLowerCase().indexOf("msie") + 1)) {
                 window.navigate("puberror.html");
@@ -13,18 +14,18 @@
         window.onunload = function() {
         }
     --></script>
-    <xml id="publicationOptions">
-        <publicationOptions>
-            <publicationOption optionName="reusePopups" optionValue="yes" />
-            <publicationOption optionName="popupFeatures" optionValue="resizable=yes,toolbar=yes,menubar=no,location=no,scrollbars=yes" />
-            <publicationOption optionName="popupDiagramLinks" optionValue="yes" />
-            <publicationOption optionName="popupDocumentLinks" optionValue="no" />
-            <publicationOption optionName="popupShapeLinks" optionValue="no" />
-        </publicationOptions>
-    </xml>
-</head>
+        <xml id="publicationOptions">
+            <publicationOptions>
+                <publicationOption optionName="reusePopups" optionValue="yes" />
+                <publicationOption optionName="popupFeatures" optionValue="resizable=yes,toolbar=yes,menubar=no,location=no,scrollbars=yes" />
+                <publicationOption optionName="popupDiagramLinks" optionValue="yes" />
+                <publicationOption optionName="popupDocumentLinks" optionValue="no" />
+                <publicationOption optionName="popupShapeLinks" optionValue="no" />
+            </publicationOptions>
+        </xml>
+    </head>
 <frameset id="frmstPublication" cols="30%,*" frameborder="1" border="1" framespacing="1">
-    <frame id="frmTree" scrolling="no" src="pubtree.html" border="0" frameborder="no" bordercolor="#cccccc">
-    <frame id="frmInfo" src="publicationproperties.xml" border="0" frameborder="no" bordercolor="#cccccc">
+    <frame id="frmTree" scrolling="no" src="pubtree.html" border="0" frameborder="no" bordercolor="#2255cc">
+    <frame id="frmInfo" src="publicationproperties.xml" border="0" frameborder="no" bordercolor="#2255cc">
 </frameset>
 </html>

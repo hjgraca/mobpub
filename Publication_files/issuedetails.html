@@ -1,82 +1,83 @@
 <html>
 
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>iServer Publisher: Issue Details</title>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+        <title>iServer Publisher: Issue Details</title>
 
-<link rel="stylesheet" type="text/css" href="publication.css">
+        <link rel="stylesheet" type="text/css" href="publication.css">
 
-<SCRIPT LANGUAGE="JavaScript">
+        <SCRIPT LANGUAGE="JavaScript">
 
-function getIssueDetails()
-{
-	var parentWindow = window.opener;
-	if (parentWindow)
-	{
-		if (!parentWindow.closed)
-		{
-			var Issue = parentWindow.iServerData.CurrentIssue;
-			if (!Issue)
-			{
-				alert("An error occurred when loading this Issue. Please try again");
-				window.close();
+            function getIssueDetails()
+            {
+                var parentWindow = window.opener;
+                if (parentWindow)
+                {
+                    if (!parentWindow.closed)
+                    {
+                        var Issue = parentWindow.iServerData.CurrentIssue;
+                        if (!Issue)
+                        {
+                            alert("An error occurred when loading this Issue. Please try again");
+                            window.close();
 
-			} else {
+                        } else {
 
-				IssueDetailsForm.IssueName.value = Issue.Name;
-				IssueDetailsForm.IssueDescription.value = Issue.Description;
-				IssueDetailsForm.IssueCategory.value = Issue.Category;
-				IssueDetailsForm.IssueActionType.value = Issue.ActionType;
-				IssueDetailsForm.IssuePriority.value = Issue.Priority;
-				IssueDetailsForm.IssueStatus.value = Issue.Status;
-				IssueDetailsForm.IssueIsClosed.value = Issue.Closed;
-				IssueDetailsForm.IssueCreatedOn.value = Issue.Timestamp.CreatedOn;
-				IssueDetailsForm.IssueCreatedBy.value = Issue.Timestamp.CreatedBy;
-				IssueDetailsForm.IssueLastModifiedOn.value = Issue.Timestamp.LastModifiedOn;
-				IssueDetailsForm.IssueLastModifiedBy.value = Issue.Timestamp.LastModifiedBy;
+                            IssueDetailsForm.IssueName.value = Issue.Name;
+                            IssueDetailsForm.IssueDescription.value = Issue.Description;
+                            IssueDetailsForm.IssueCategory.value = Issue.Category;
+                            IssueDetailsForm.IssueActionType.value = Issue.ActionType;
+                            IssueDetailsForm.IssuePriority.value = Issue.Priority;
+                            IssueDetailsForm.IssueStatus.value = Issue.Status;
+                            IssueDetailsForm.IssueIsClosed.value = Issue.Closed;
+                            IssueDetailsForm.IssueCreatedOn.value = Issue.Timestamp.CreatedOn;
+                            IssueDetailsForm.IssueCreatedBy.value = Issue.Timestamp.CreatedBy;
+                            IssueDetailsForm.IssueLastModifiedOn.value = Issue.Timestamp.LastModifiedOn;
+                            IssueDetailsForm.IssueLastModifiedBy.value = Issue.Timestamp.LastModifiedBy;
 
-				if (Issue.InformationUsers.length == 0)
-				{
-					IssueDetailsForm.IssueInformationUsers.options[0].text = "No Information Users";
-				} else {
-					for (var count = 0; count < Issue.InformationUsers.length; count++)
-					{
-						comboOpt = document.createElement("OPTION");
-						comboOpt.value = Issue.InformationUsers[count].Name;
-						comboOpt.text = Issue.InformationUsers[count].Name;
-						IssueDetailsForm.IssueInformationUsers.add(comboOpt, IssueDetailsForm.IssueInformationUsers.options.length);
-					}
-				}
+                            if (Issue.InformationUsers.length == 0)
+                            {
+                                IssueDetailsForm.IssueInformationUsers.options[0].text = "No Information Users";
+                            } else {
+                                for (var count = 0; count < Issue.InformationUsers.length; count++)
+                                {
+                                    comboOpt = document.createElement("OPTION");
+                                    comboOpt.value = Issue.InformationUsers[count].Name;
+                                    comboOpt.text = Issue.InformationUsers[count].Name;
+                                    IssueDetailsForm.IssueInformationUsers.add(comboOpt, IssueDetailsForm.IssueInformationUsers.options.length);
+                                }
+                            }
 
-				if (Issue.ActionUsers.length == 0)
-				{
-					IssueDetailsForm.IssueActionUsers.options[0].text = "No Action Users";
-				} else {
-					for (var count = 0; count < Issue.ActionUsers.length; count++)
-					{
-						comboOpt = document.createElement("OPTION");
-						comboOpt.value = Issue.ActionUsers[count].Name;
-						comboOpt.text = Issue.ActionUsers[count].Name;
-						IssueDetailsForm.IssueActionUsers.add(comboOpt, IssueDetailsForm.IssueActionUsers.options.length);
-					}
-				}
-			}
+                            if (Issue.ActionUsers.length == 0)
+                            {
+                                IssueDetailsForm.IssueActionUsers.options[0].text = "No Action Users";
+                            } else {
+                                for (var count = 0; count < Issue.ActionUsers.length; count++)
+                                {
+                                    comboOpt = document.createElement("OPTION");
+                                    comboOpt.value = Issue.ActionUsers[count].Name;
+                                    comboOpt.text = Issue.ActionUsers[count].Name;
+                                    IssueDetailsForm.IssueActionUsers.add(comboOpt, IssueDetailsForm.IssueActionUsers.options.length);
+                                }
+                            }
+                        }
 
-		} else {
+                    } else {
 
-			alert("The parent diagram window has been closed so the issue can not be displayed");
-			window.close();
-		}
-	}else
-	{
-			alert("This file cannot be loaded on its own. Press OK to close.");
-			window.close();
-	}
-}
+                        alert("The parent diagram window has been closed so the issue can not be displayed");
+                        window.close();
+                    }
+                }else
+                {
+                    alert("This file cannot be loaded on its own. Press OK to close.");
+                    window.close();
+                }
+            }
 
-</SCRIPT>
+        </SCRIPT>
 
-</head>
+    </head>
 
 <body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" onload="getIssueDetails()">
 

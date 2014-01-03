@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="220" PageID="0" ObjectID="8e716635-f00a-48a2-ad86-cb4e446cc999" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">12.5</Width>
+    <Height Unit="mm">12.5</Height>
+    <Left Unit="mm">427.4238</Left>
+    <Bottom Unit="mm">312.3225</Bottom>
+    <Right Unit="mm">439.9238</Right>
+    <Top Unit="mm">324.8225</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Gateway</RepositoryName>
+    <Description />
+    <ShapeMaster>Gateway</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

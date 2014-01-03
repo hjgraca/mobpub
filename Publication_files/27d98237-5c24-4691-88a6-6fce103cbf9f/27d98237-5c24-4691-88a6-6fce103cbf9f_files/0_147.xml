@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="147" PageID="0" ObjectID="29d88707-8a35-4529-a957-4b3919ffa4ff" Issues="False" DiagLinks="False" DocLinks="True" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">110.4316</Width>
+    <Height Unit="mm">16.95012</Height>
+    <Left Unit="mm">99.56836</Left>
+    <Bottom Unit="mm">111.6675</Bottom>
+    <Right Unit="mm">210</Right>
+    <Top Unit="mm">128.6176</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>LINK TO DOCUMENT BOOKMARK</RepositoryName>
+    <Description />
+    <ShapeMaster>Navigation Shape</ShapeMaster>
+    <Timestamp CreatedOn="2014-01-03" CreatedBy="System Administrator" LastModifiedOn="2014-01-03" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates to</Description>
+      <Destination>
+        <ApplicationType>MSWordBookmark</ApplicationType>
+        <Ext>.doc</Ext>
+        <Category>Microsoft Word Document Bookmark</Category>
+        <Name>Bookmark_example</Name>
+        <Target DocumentID="f59926dc-21e0-41d4-a77f-d3c42266fe43" DocumentName="Incident Record" BookmarkName="Bookmark_example" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

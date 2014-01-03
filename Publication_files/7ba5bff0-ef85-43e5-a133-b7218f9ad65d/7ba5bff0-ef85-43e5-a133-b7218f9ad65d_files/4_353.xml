@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="353" PageID="4" ObjectID="94ce1bf1-6620-4e84-b131-3678fb317fe7" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">108.5741</Left>
+    <Bottom Unit="mm">125.5132</Bottom>
+    <Right Unit="mm">133.5741</Right>
+    <Top Unit="mm">134.0132</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Change Schedule</RepositoryName>
+    <Description>A Document that lists all approved Changes and their planned implementation dates. A Change Schedule is sometimes called a Forward Schedule of Change.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

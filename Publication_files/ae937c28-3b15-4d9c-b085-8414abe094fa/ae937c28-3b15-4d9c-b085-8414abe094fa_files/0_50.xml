@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="50" PageID="0" ObjectID="218191be-d95a-4ac0-a193-a54ea6f3dcbd" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">7.5</Width>
+    <Height Unit="mm">7.5</Height>
+    <Left Unit="mm">432.942</Left>
+    <Bottom Unit="mm">214.1061</Bottom>
+    <Right Unit="mm">440.442</Right>
+    <Top Unit="mm">221.6061</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Incident transferred to 2nd Level Support</RepositoryName>
+    <Description />
+    <ShapeMaster>End Event</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes>
+    <Attribute>
+      <Name>BPMN: End Event Result</Name>
+      <Description />
+      <Value>None</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+  </CustomAttributes>
+</Shape>

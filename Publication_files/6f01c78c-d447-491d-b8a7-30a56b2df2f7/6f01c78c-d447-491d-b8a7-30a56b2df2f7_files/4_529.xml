@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="529" PageID="4" ObjectID="9d39f3f3-ca5f-474f-985b-7f1eaf4f8f86" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">125.9335</Left>
+    <Bottom Unit="mm">82.37187</Bottom>
+    <Right Unit="mm">150.9335</Right>
+    <Top Unit="mm">90.87187</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>End-User Documentation</RepositoryName>
+    <Description>A document for end-users, describing how to use an application or system.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerDocument ID="cfb122c0-1b3d-42c2-b311-1cb33893bfbb">
+  <iServerProperties>
+    <RepositoryName>User Identity Record</RepositoryName>
+    <Category>Microsoft Word Document</Category>
+    <Logo>../Images/word.gif</Logo>
+    <Ext>.doc</Ext>
+    <Description />
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+    <Owner UserID="" Name="" Email="" />
+    <Navigation>
+      <TargetFrame repository_open_document="_top" repository_open_diagram="_top" repository_link_document="_top" repository_link_diagram="_top" repository_link_shape="_top" diagram_link_document="_top" diagram_link_diagram="_top" diagram_link_shape="_top" />
+      <DocumentFrame enabled="false" height="30%" />
+      <PopupMenu first_tier_links="5" />
+      <VisioHyperlinks publish="false" />
+      <Indicators ShowDocLinks="true" ShowDiagLinks="true" ShowIssues="true" Positioning="right" />
+    </Navigation>
+  </iServerProperties>
+  <CustomAttributes />
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates from</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Data object</Category>
+        <Name>Checklist User Identity Record</Name>
+        <Target DocumentID="9c4cb8eb-5ede-453b-a216-6f76f1e20efd" DocumentName="Index of Service Operation Checklists" PageID="0" ShapeID="134" />
+      </Destination>
+    </Relation>
+  </Relations>
+</iServerDocument>

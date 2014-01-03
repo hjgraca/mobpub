@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="63" PageID="0" ObjectID="8eb25cea-aff5-48cf-94aa-f51d81cca22e" Issues="False" DiagLinks="True" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">500</Width>
+    <Height Unit="mm">40</Height>
+    <Left Unit="mm">15</Left>
+    <Bottom Unit="mm">265.7167</Bottom>
+    <Right Unit="mm">515</Right>
+    <Top Unit="mm">305.7167</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>1st Level Support</RepositoryName>
+    <Description>The responsibility of 1st Level Support is to register and classify received Incidents and to undertake an immediate effort in order to
+restore a failed IT service as quickly as possible. If no ad-hoc solution can be achieved, 1st Level Support will transfer the Incident
+to expert technical support groups (2nd Level Support). 1st Level Support also keeps users informed about their Incidents' status at
+agreed intervals.</Description>
+    <ShapeMaster>Role</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>RACI: Responsible</LinkType>
+      <Reason />
+      <Description>R</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Process</Category>
+        <Name>LINK TO SEVERAL OBJECTS</Name>
+        <Target DocumentID="27d98237-5c24-4691-88a6-6fce103cbf9f" DocumentName="ITIL v3 Process Map - Front page" PageID="0" ShapeID="92" />
+      </Destination>
+    </Relation>
+    <Relation>
+      <LinkType>RACI: Responsible</LinkType>
+      <Reason />
+      <Description>R</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Process</Category>
+        <Name>LINK TO OBJECT (REUSED IN MANY PLACES)</Name>
+        <Target DocumentID="27d98237-5c24-4691-88a6-6fce103cbf9f" DocumentName="ITIL v3 Process Map - Front page" PageID="0" ShapeID="180" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

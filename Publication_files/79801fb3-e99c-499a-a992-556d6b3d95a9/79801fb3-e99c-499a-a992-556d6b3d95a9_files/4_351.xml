@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="351" PageID="4" ObjectID="6e0dcc79-8825-46bf-93c9-ebe1d6042830" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">244.3365</Left>
+    <Bottom Unit="mm">123.4283</Bottom>
+    <Right Unit="mm">269.3365</Right>
+    <Top Unit="mm">131.9283</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Problem Management Report</RepositoryName>
+    <Description>A report supplying Problem-related information to the other Service Management processes.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

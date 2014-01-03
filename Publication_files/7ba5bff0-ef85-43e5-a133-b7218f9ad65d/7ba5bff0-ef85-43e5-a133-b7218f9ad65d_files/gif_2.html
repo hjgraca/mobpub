@@ -1,0 +1,192 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+7ba5bff0-ef85-43e5-a133-b7218f9ad65d.vsd
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 4;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = -0.005208;
+	viewMgr.visBBoxRight = 14.982504;
+	viewMgr.visBBoxBottom = -0.005208;
+	viewMgr.visBBoxTop = 11.189645;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_2.gif" ALT="Inputs and Outputs" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="1101,777,1184,777,1187,776,1189,774,1190,771,1190,718,1189,715,1187,713,1184,712,1101,712,1098,713,1096,715,1095,718,1095,771,1096,774,1098,776,1101,777" onmouseover="UpdateTooltip(this,4,43,event)" onfocus="UpdateTooltip(this,4,43,event)" onclick="return OnShapeClick(4,43,event);" onkeyup="OnShapeKey(4,43,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="1097,667,1180,667,1183,666,1185,664,1186,661,1186,609,1185,606,1183,604,1180,603,1097,603,1094,604,1092,606,1091,609,1091,661,1092,664,1094,666,1097,667" onmouseover="UpdateTooltip(this,4,31,event)" onfocus="UpdateTooltip(this,4,31,event)" onclick="return OnShapeClick(4,31,event);" onkeyup="OnShapeKey(4,31,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="1097,576,1180,576,1183,575,1185,573,1186,570,1186,518,1185,515,1183,513,1180,512,1097,512,1094,513,1092,515,1091,518,1091,570,1092,573,1094,575,1097,576" onmouseover="UpdateTooltip(this,4,19,event)" onfocus="UpdateTooltip(this,4,19,event)" onclick="return OnShapeClick(4,19,event);" onkeyup="OnShapeKey(4,19,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="1097,486,1180,486,1183,485,1185,483,1186,480,1186,427,1185,424,1183,422,1180,421,1097,421,1094,422,1092,424,1091,427,1091,480,1092,483,1094,485,1097,486" onmouseover="UpdateTooltip(this,4,7,event)" onfocus="UpdateTooltip(this,4,7,event)" onclick="return OnShapeClick(4,7,event);" onkeyup="OnShapeKey(4,7,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="682,575,765,575,768,575,770,572,771,569,771,517,770,514,768,512,765,511,682,511,679,512,677,514,676,517,676,569,677,572,679,575,682,575" onmouseover="UpdateTooltip(this,4,498,event)" onfocus="UpdateTooltip(this,4,498,event)" onclick="return OnShapeClick(4,498,event);" onkeyup="OnShapeKey(4,498,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="266,1016,348,1016,351,1015,353,1013,354,1010,354,957,353,954,351,952,348,951,266,951,263,952,261,954,260,957,260,1010,261,1013,263,1015,266,1016" onmouseover="UpdateTooltip(this,4,486,event)" onfocus="UpdateTooltip(this,4,486,event)" onclick="return OnShapeClick(4,486,event);" onkeyup="OnShapeKey(4,486,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="266,925,348,925,351,924,353,922,354,919,354,867,353,864,351,862,348,861,266,861,263,862,261,864,260,867,260,919,261,922,263,924,266,925" onmouseover="UpdateTooltip(this,4,474,event)" onfocus="UpdateTooltip(this,4,474,event)" onclick="return OnShapeClick(4,474,event);" onkeyup="OnShapeKey(4,474,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="266,728,348,728,351,728,353,725,354,722,354,670,353,667,351,665,348,664,266,664,263,665,261,667,260,670,260,722,261,725,263,728,266,728" onmouseover="UpdateTooltip(this,4,462,event)" onfocus="UpdateTooltip(this,4,462,event)" onclick="return OnShapeClick(4,462,event);" onkeyup="OnShapeKey(4,462,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="266,404,348,404,351,404,353,401,354,398,354,346,353,343,351,341,348,340,266,340,263,341,261,343,260,346,260,398,261,401,263,404,266,404" onmouseover="UpdateTooltip(this,4,450,event)" onfocus="UpdateTooltip(this,4,450,event)" onclick="return OnShapeClick(4,450,event);" onkeyup="OnShapeKey(4,450,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Support Request" origTitle="Support Request" TITLE="Support Request"  target="_top" COORDS="497,924,411,924,411,956,505,956,505,932,497,924" onmouseover="UpdateTooltip(this,4,392,event)" onfocus="UpdateTooltip(this,4,392,event)" onclick="return OnShapeClick(4,392,event);" onkeyup="OnShapeKey(4,392,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Test Report" origTitle="Test Report" TITLE="Test Report"  target="_top" COORDS="497,846,411,846,411,878,505,878,505,854,497,846" onmouseover="UpdateTooltip(this,4,389,event)" onfocus="UpdateTooltip(this,4,389,event)" onclick="return OnShapeClick(4,389,event);" onkeyup="OnShapeKey(4,389,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Installation Work Order" origTitle="Installation Work Order" TITLE="Installation Work Order"  target="_top" COORDS="497,806,411,806,411,838,505,838,505,814,497,806" onmouseover="UpdateTooltip(this,4,386,event)" onfocus="UpdateTooltip(this,4,386,event)" onclick="return OnShapeClick(4,386,event);" onkeyup="OnShapeKey(4,386,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Suggested Changes to SLAs, OLAs and UCs" origTitle="Suggested Changes to SLAs, OLAs and UCs" TITLE="Suggested Changes to SLAs, OLAs and UCs"  target="_top" COORDS="1030,753,1027,749,940,749,940,781,1035,781,1035,757,1031,754,1031,753,1030,753" onmouseover="UpdateTooltip(this,4,383,event)" onfocus="UpdateTooltip(this,4,383,event)" onclick="return OnShapeClick(4,383,event);" onkeyup="OnShapeKey(4,383,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Development Work Order" origTitle="Development Work Order" TITLE="Development Work Order"  target="_top" COORDS="497,766,411,766,411,798,505,798,505,774,497,766" onmouseover="UpdateTooltip(this,4,380,event)" onfocus="UpdateTooltip(this,4,380,event)" onclick="return OnShapeClick(4,380,event);" onkeyup="OnShapeKey(4,380,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Suggested Process Improvement" origTitle="Suggested Process Improvement" TITLE="Suggested Process Improvement"  target="_top" COORDS="1027,710,940,710,940,742,1035,742,1035,718,1027,710" onmouseover="UpdateTooltip(this,4,377,event)" onfocus="UpdateTooltip(this,4,377,event)" onclick="return OnShapeClick(4,377,event);" onkeyup="OnShapeKey(4,377,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Support Request" origTitle="Support Request" TITLE="Support Request"  target="_top" COORDS="497,727,411,727,411,759,505,759,505,735,497,727" onmouseover="UpdateTooltip(this,4,374,event)" onfocus="UpdateTooltip(this,4,374,event)" onclick="return OnShapeClick(4,374,event);" onkeyup="OnShapeKey(4,374,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Operational Documentation" origTitle="Operational Documentation" TITLE="Operational Documentation"  target="_top" COORDS="1027,658,940,658,940,691,1035,691,1035,667,1027,658" onmouseover="UpdateTooltip(this,4,371,event)" onfocus="UpdateTooltip(this,4,371,event)" onclick="return OnShapeClick(4,371,event);" onkeyup="OnShapeKey(4,371,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Definitive Media Library (DML)" origTitle="Definitive Media Library (DML)" TITLE="Definitive Media Library (DML)"  target="_top" COORDS="497,687,411,687,411,719,505,719,505,695,497,687" onmouseover="UpdateTooltip(this,4,368,event)" onfocus="UpdateTooltip(this,4,368,event)" onclick="return OnShapeClick(4,368,event);" onkeyup="OnShapeKey(4,368,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="End-User Documentation" origTitle="End-User Documentation" TITLE="End-User Documentation"  target="_top" COORDS="1027,619,940,619,940,651,1035,651,1035,627,1027,619" onmouseover="UpdateTooltip(this,4,365,event)" onfocus="UpdateTooltip(this,4,365,event)" onclick="return OnShapeClick(4,365,event);" onkeyup="OnShapeKey(4,365,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="CMS/ CMDB" origTitle="CMS/ CMDB" TITLE="CMS/ CMDB"  target="_top" COORDS="497,647,411,647,411,679,505,679,505,655,497,647" onmouseover="UpdateTooltip(this,4,362,event)" onfocus="UpdateTooltip(this,4,362,event)" onclick="return OnShapeClick(4,362,event);" onkeyup="OnShapeKey(4,362,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Development/ Install. QA Documentation" origTitle="Development/ Install. QA Documentation" TITLE="Development/ Install. QA Documentation"  target="_top" COORDS="1030,583,1027,579,940,579,940,611,1035,611,1035,587,1031,583,1031,583,1030,583" onmouseover="UpdateTooltip(this,4,359,event)" onfocus="UpdateTooltip(this,4,359,event)" onclick="return OnShapeClick(4,359,event);" onkeyup="OnShapeKey(4,359,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Service Transition Report" origTitle="Service Transition Report" TITLE="Service Transition Report"  target="_top" COORDS="497,607,411,607,411,640,505,640,505,615,497,607" onmouseover="UpdateTooltip(this,4,356,event)" onfocus="UpdateTooltip(this,4,356,event)" onclick="return OnShapeClick(4,356,event);" onkeyup="OnShapeKey(4,356,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Change Schedule" origTitle="Change Schedule" TITLE="Change Schedule"  target="_top" COORDS="497,568,411,568,411,600,505,600,505,576,497,568" onmouseover="UpdateTooltip(this,4,353,event)" onfocus="UpdateTooltip(this,4,353,event)" onclick="return OnShapeClick(4,353,event);" onkeyup="OnShapeKey(4,353,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Purchase Request" origTitle="Purchase Request" TITLE="Purchase Request"  target="_top" COORDS="1027,528,940,528,940,560,1035,560,1035,536,1027,528" onmouseover="UpdateTooltip(this,4,350,event)" onfocus="UpdateTooltip(this,4,350,event)" onclick="return OnShapeClick(4,350,event);" onkeyup="OnShapeKey(4,350,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Operational Documentation" origTitle="Operational Documentation" TITLE="Operational Documentation"  target="_top" COORDS="497,528,411,528,411,560,505,560,505,536,497,528" onmouseover="UpdateTooltip(this,4,347,event)" onfocus="UpdateTooltip(this,4,347,event)" onclick="return OnShapeClick(4,347,event);" onkeyup="OnShapeKey(4,347,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Suggested Workaround" origTitle="Suggested Workaround" TITLE="Suggested Workaround"  target="_top" COORDS="1027,477,940,477,940,509,1035,509,1035,485,1027,477" onmouseover="UpdateTooltip(this,4,344,event)" onfocus="UpdateTooltip(this,4,344,event)" onclick="return OnShapeClick(4,344,event);" onkeyup="OnShapeKey(4,344,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="IT Security Policy" origTitle="IT Security Policy" TITLE="IT Security Policy"  target="_top" COORDS="497,481,411,481,411,513,505,513,505,489,497,481" onmouseover="UpdateTooltip(this,4,341,event)" onfocus="UpdateTooltip(this,4,341,event)" onclick="return OnShapeClick(4,341,event);" onkeyup="OnShapeKey(4,341,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Suggested Known Error" origTitle="Suggested Known Error" TITLE="Suggested Known Error"  target="_top" COORDS="1027,437,940,437,940,469,1035,469,1035,445,1027,437" onmouseover="UpdateTooltip(this,4,338,event)" onfocus="UpdateTooltip(this,4,338,event)" onclick="return OnShapeClick(4,338,event);" onkeyup="OnShapeKey(4,338,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="IT Security Strategy" origTitle="IT Security Strategy" TITLE="IT Security Strategy"  target="_top" COORDS="497,441,411,441,411,473,505,473,505,449,497,441" onmouseover="UpdateTooltip(this,4,335,event)" onfocus="UpdateTooltip(this,4,335,event)" onclick="return OnShapeClick(4,335,event);" onkeyup="OnShapeKey(4,335,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Suggested Problem" origTitle="Suggested Problem" TITLE="Suggested Problem"  target="_top" COORDS="1027,398,940,398,940,430,1035,430,1035,406,1027,398" onmouseover="UpdateTooltip(this,4,332,event)" onfocus="UpdateTooltip(this,4,332,event)" onclick="return OnShapeClick(4,332,event);" onkeyup="OnShapeKey(4,332,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Avail./ ITSCM/ Security Testing Schedule" origTitle="Avail./ ITSCM/ Security Testing Schedule" TITLE="Avail./ ITSCM/ Security Testing Schedule"  target="_top" COORDS="475,434,505,434,505,409,497,401,487,401,487,399,482,399,458,399,449,399,431,399,431,401,411,401,411,434,441,434,441,434,475,434,475,434" onmouseover="UpdateTooltip(this,4,329,event)" onfocus="UpdateTooltip(this,4,329,event)" onclick="return OnShapeClick(4,329,event);" onkeyup="OnShapeKey(4,329,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Notification of Service Failure" origTitle="Notification of Service Failure" TITLE="Notification of Service Failure"  target="_top" COORDS="1027,347,940,347,940,379,1035,379,1035,355,1027,347" onmouseover="UpdateTooltip(this,4,326,event)" onfocus="UpdateTooltip(this,4,326,event)" onclick="return OnShapeClick(4,326,event);" onkeyup="OnShapeKey(4,326,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="IT Service Continuity Strategy" origTitle="IT Service Continuity Strategy" TITLE="IT Service Continuity Strategy"  target="_top" COORDS="497,362,411,362,411,394,505,394,505,370,497,362" onmouseover="UpdateTooltip(this,4,323,event)" onfocus="UpdateTooltip(this,4,323,event)" onclick="return OnShapeClick(4,323,event);" onkeyup="OnShapeKey(4,323,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Availability Plan" origTitle="Availability Plan" TITLE="Availability Plan"  target="_top" COORDS="497,322,411,322,411,354,505,354,505,330,497,322" onmouseover="UpdateTooltip(this,4,320,event)" onfocus="UpdateTooltip(this,4,320,event)" onclick="return OnShapeClick(4,320,event);" onkeyup="OnShapeKey(4,320,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Maintenance Plan/ SOP" origTitle="Maintenance Plan/ SOP" TITLE="Maintenance Plan/ SOP"  target="_top" COORDS="497,282,411,282,411,315,505,315,505,290,497,282" onmouseover="UpdateTooltip(this,4,317,event)" onfocus="UpdateTooltip(this,4,317,event)" onclick="return OnShapeClick(4,317,event);" onkeyup="OnShapeKey(4,317,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="SLA/ OLA/ UC Catalogue and Structure" origTitle="SLA/ OLA/ UC Catalogue and Structure" TITLE="SLA/ OLA/ UC Catalogue and Structure"  target="_top" COORDS="476,275,505,275,505,251,497,243,486,243,486,241,473,241,467,241,452,241,446,241,432,241,432,243,411,243,411,275,440,275,440,276,476,276,476,275" onmouseover="UpdateTooltip(this,4,314,event)" onfocus="UpdateTooltip(this,4,314,event)" onclick="return OnShapeClick(4,314,event);" onkeyup="OnShapeKey(4,314,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Process Objective:  To monitor and control the IT services and..." origTitle="Process Objective:  To monitor and control the IT services and..." TITLE="Process Objective:  To monitor and control the IT services and..."  target="_top" COORDS="692,708,729,708,733,708,774,708,774,699,781,699,785,699,803,699,803,689,805,689,805,678,785,678,785,670,805,670,805,659,783,659,783,651,797,651,797,640,709,640,709,630,705,630,648,630,648,640,648,641,648,649,648,651,648,659,648,660,648,669,648,670,648,678,648,679,648,688,648,689,648,697,648,699,648,707,648,708,648,718,690,718,692,718,692,708" onmouseover="UpdateTooltip(this,4,313,event)" onfocus="UpdateTooltip(this,4,313,event)" onclick="return OnShapeClick(4,313,event);" onkeyup="OnShapeKey(4,313,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="1417,61,22,61,22,69,1417,69,1417,61" onmouseover="UpdateTooltip(this,4,2,event)" onfocus="UpdateTooltip(this,4,2,event)" onclick="return OnShapeClick(4,2,event);" onkeyup="OnShapeKey(4,2,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="22,18,22,61,407,61,407,18,22,18" onmouseover="UpdateTooltip(this,4,2,event)" onfocus="UpdateTooltip(this,4,2,event)" onclick="return OnShapeClick(4,2,event);" onkeyup="OnShapeKey(4,2,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="22,74,22,90,129,90,129,74,22,74" onmouseover="UpdateTooltip(this,4,2,event)" onfocus="UpdateTooltip(this,4,2,event)" onclick="return OnShapeClick(4,2,event);" onkeyup="OnShapeKey(4,2,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="250,119,247,119,238,119,236,119,227,119,227,109,217,109,215,109,206,109,204,109,173,109,171,109,162,109,159,109,150,109,138,109,136,109,58,109,58,99,53,99,22,99,22,109,22,110,22,119,22,120,22,130,84,130,89,130,168,130,170,130,182,130,191,130,194,130,203,130,205,130,236,130,238,130,247,130,250,130,259,130,259,119,250,119" onmouseover="UpdateTooltip(this,4,2,event)" onfocus="UpdateTooltip(this,4,2,event)" onclick="return OnShapeClick(4,2,event);" onkeyup="OnShapeKey(4,2,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="371,74,371,90,435,90,435,74,371,74" onmouseover="UpdateTooltip(this,4,2,event)" onfocus="UpdateTooltip(this,4,2,event)" onclick="return OnShapeClick(4,2,event);" onkeyup="OnShapeKey(4,2,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="663,128,731,128,737,128,884,128,891,128,1039,128,1046,128,1046,114,1060,114,1060,98,969,98,965,98,955,98,951,98,668,98,662,98,371,98,371,112,371,114,371,126,371,128,371,142,524,142,530,142,659,142,663,142,663,128" onmouseover="UpdateTooltip(this,4,2,event)" onfocus="UpdateTooltip(this,4,2,event)" onclick="return OnShapeClick(4,2,event);" onkeyup="OnShapeKey(4,2,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="34,1055,1398,1055,1403,1054,1407,1052,1411,1048,1413,1044,1413,1039,1413,199,1413,195,1411,190,1407,187,1403,185,1398,184,34,184,29,185,25,187,21,190,19,195,19,199,19,1039,19,1044,21,1048,25,1052,29,1054,34,1055" onmouseover="UpdateTooltip(this,4,1,event)" onfocus="UpdateTooltip(this,4,1,event)" onclick="return OnShapeClick(4,1,event);" onkeyup="OnShapeKey(4,1,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="" origTitle="" TITLE=""  target="_top" COORDS="1,1074,1438,1074,1438,1,1,1,1,1074" onmouseover="UpdateTooltip(this,4,510,event)" onfocus="UpdateTooltip(this,4,510,event)" onclick="return OnShapeClick(4,510,event);" onkeyup="OnShapeKey(4,510,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>

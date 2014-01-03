@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="76" PageID="4" ObjectID="f3153da8-357e-4c59-a3b5-eeca78795069" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">557.35</Left>
+    <Bottom Unit="mm">250.934</Bottom>
+    <Right Unit="mm">582.35</Right>
+    <Top Unit="mm">259.434</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Request for Change (RFC)</RepositoryName>
+    <Description>A formal request for a Change to be implemented. An RFC includes details of the proposed Change, and may be recorded on paper or electronically. The term RFC is often misused to mean a Change Record, or the Change in itself.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

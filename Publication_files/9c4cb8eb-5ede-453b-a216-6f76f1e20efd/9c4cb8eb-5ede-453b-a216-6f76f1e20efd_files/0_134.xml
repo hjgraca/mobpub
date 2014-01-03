@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="134" PageID="0" ObjectID="b6399dbe-7f1e-4ed3-8f72-310283988583" Issues="False" DiagLinks="False" DocLinks="True" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">146.5</Left>
+    <Bottom Unit="mm">131.75</Bottom>
+    <Right Unit="mm">171.5</Right>
+    <Top Unit="mm">140.25</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Checklist User Identity Record</RepositoryName>
+    <Description>A set of data with all the details identifying a user or person. It is used to grant rights to that user or person.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates to</Description>
+      <Destination>
+        <ApplicationType>MSWord</ApplicationType>
+        <Ext>.doc</Ext>
+        <Category />
+        <Name>User Identity Record</Name>
+        <Target DocumentID="cfb122c0-1b3d-42c2-b311-1cb33893bfbb" DocumentName="User Identity Record" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

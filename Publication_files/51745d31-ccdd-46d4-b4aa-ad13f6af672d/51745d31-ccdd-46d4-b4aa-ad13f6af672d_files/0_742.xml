@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="742" PageID="0" ObjectID="e459c283-39e6-4b21-bb29-a63ba2012c60" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">7.5</Width>
+    <Height Unit="mm">7.5</Height>
+    <Left Unit="mm">487.8175</Left>
+    <Bottom Unit="mm">213.6934</Bottom>
+    <Right Unit="mm">495.3175</Right>
+    <Top Unit="mm">221.1934</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Problem solved</RepositoryName>
+    <Description />
+    <ShapeMaster>End Event</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes>
+    <Attribute>
+      <Name>BPMN: End Event Result</Name>
+      <Description />
+      <Value>None</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+  </CustomAttributes>
+</Shape>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="6" PageID="0" ObjectID="c5281d58-90b5-4b3a-a190-f39c3388b501" Issues="False" DiagLinks="True" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">277</Width>
+    <Height Unit="mm">40</Height>
+    <Left Unit="mm">15</Left>
+    <Bottom Unit="mm">130</Bottom>
+    <Right Unit="mm">292</Right>
+    <Top Unit="mm">170</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Link to role</RepositoryName>
+    <Description />
+    <ShapeMaster>Role</ShapeMaster>
+    <Timestamp CreatedOn="2014-01-03" CreatedBy="System Administrator" LastModifiedOn="2014-01-03" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>RACI: Responsible</LinkType>
+      <Reason />
+      <Description>R</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Process</Category>
+        <Name>LINK TO OBJECT (REUSED IN ONE PLACE)</Name>
+        <Target DocumentID="27d98237-5c24-4691-88a6-6fce103cbf9f" DocumentName="ITIL v3 Process Map - Front page" PageID="0" ShapeID="1" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

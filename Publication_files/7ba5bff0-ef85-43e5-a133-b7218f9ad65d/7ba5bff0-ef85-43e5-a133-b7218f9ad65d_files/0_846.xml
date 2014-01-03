@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="846" PageID="0" ObjectID="02eb0445-95e1-4116-a3f9-6e9f0f65f19b" Issues="False" DiagLinks="True" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">36.5</Width>
+    <Height Unit="mm">16.2</Height>
+    <Left Unit="mm">298.761</Left>
+    <Bottom Unit="mm">217.9</Bottom>
+    <Right Unit="mm">335.261</Right>
+    <Top Unit="mm">234.1</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Service Operation</RepositoryName>
+    <Description />
+    <ShapeMaster>Navigation Shape</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates to</Description>
+      <Destination>
+        <ApplicationType>MSVisioDiagram</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>ITIL Process Model</Category>
+        <Name>Service Operation</Name>
+        <Target DocumentID="a491937d-1fe9-470b-bc07-80b96cb44e96" DocumentName="Service Operation" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

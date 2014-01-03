@@ -1,0 +1,3294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+	<DocumentProperties>
+		<Title></Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="0" Name="Process Details" NameU="Event Shapes">
+			<Layer IX="0">
+				<Name>Flowchart</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name>Connector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="2">
+				<Name>Data Store</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="3">
+				<Name>Background</Name>
+				<NameUniv>Background</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="4">
+				<Name>Principle</Name>
+				<NameUniv>Principle</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="5">
+				<Name>Measure</Name>
+				<NameUniv>Measure</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="6">
+				<Name>Requirement</Name>
+				<NameUniv>Requirement</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="7">
+				<Name>Control</Name>
+				<NameUniv>Control</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="8">
+				<Name>Risk</Name>
+				<NameUniv>Risk</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="9">
+				<Name>Process</Name>
+				<NameUniv>Process</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="10">
+				<Name>Work Package</Name>
+				<NameUniv>Work Package</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="11">
+				<Name>Improvement</Name>
+				<NameUniv>Improvement</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="12">
+				<Name></Name>
+				<NameUniv></NameUniv>
+				<Visible>0</Visible>
+			</Layer>
+			<Value Unit="STR">IT Operations Management</Value>
+			<Label>Repository Name</Label>
+			<Value></Value>
+			<Label>User Version No</Label>
+			<Value Unit="STR">System Administrator</Value>
+			<Label>Created By</Label>
+			<Value Unit="STR">28/03/2013 22:29:26</Value>
+			<Label>Date Last Modified</Label>
+			<Value Unit="STR">System Administrator</Value>
+			<Label>Last Modified By</Label>
+			<Value Unit="STR">28/03/2013 10:37:49</Value>
+			<Label>Date Created</Label>
+			<Value Unit="STR">ITIL Process Model</Value>
+			<Label>Object Category</Label>
+			<Value Unit="STR">To monitor and control the IT services and infrastructure. The process IT Operations Management executes day-to-day routine tasks related to the operation of infrastructure components and applications. This includes job scheduling, backup and restore activities, print and output management, and routine maintenance.</Value>
+			<Label>Description</Label>
+			<Value Unit="STR">2</Value>
+			<Label>System Version No</Label>
+			<Shapes>
+				<Shape ID="850" UniqueID="{6281619B-5208-4999-A0B5-D817BE1A9A61}" Name="Sheet.850" NameU="Sheet.850">
+					<XForm>
+						<PinX Unit="MM">7.517013779527559</PinX>
+						<PinY Unit="MM">5.002027559055119</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="15" UniqueID="{E6BE54DF-6BAE-414B-9FB6-6C7989D32C48}" Name="Lane (Role)" NameU="Role" Master="13">
+					<Text>IT Operator</Text>
+					<XForm>
+						<PinX Unit="MM">7.713864173228346</PinX>
+						<PinY Unit="MM">5.258799212598428</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember></LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">IT Operator</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">IT Operators are the staff who perform the day-to-day operational activities. Typical responsibilities include: Performing backups,
+ensuring that scheduled jobs are performed, installing standard equipment in the data centre.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="4" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="1" UniqueID="{797F5DB7-C3F1-4CCC-9A80-377C57D33CFF}" Name="Header Shape" NameU="Header Shape" Master="2">
+					<XForm>
+						<PinX Unit="MM">7.517013779527559</PinX>
+						<PinY Unit="MM">5.002027559055119</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="6" UniqueID="{04B20CC2-3E79-4608-8430-04D99F4CB0F3}" Name="Sheet.6" NameU="Sheet.6">
+					<Text>ITIL does not provide a detailed explanation of all aspects of IT Operations, as the activities to be carried out will depend on the specific applications and infrastructure components in use.</Text>
+					<XForm>
+						<PinX Unit="MM">3.898071579724407</PinX>
+						<PinY Unit="MM">1.769626760183642</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="7" UniqueID="{E459D5ED-F80E-442D-A1D5-AB59CBC0F162}" Name="Sheet.7" NameU="Sheet.7">
+					<Text>
+Rather, it highlights the most important activities and assists in identifying importent interfaces with other Service Management processes.
+</Text>
+					<XForm>
+						<PinX Unit="MM">3.907914099409449</PinX>
+						<PinY Unit="MM">1.405453531837182</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="8" UniqueID="{8EE4A4F8-0BB0-4B74-9490-9FA723382B40}" Name="Annotation.46" NameU="Annotation.46" Master="4">
+					<Text>operation and maintenance of printers
+generating information in printed or electronic form
+provide archives for the printed and electronic materials</Text>
+					<XForm>
+						<PinX Unit="MM">4.482717249015716</PinX>
+						<PinY Unit="MM">3.789524028884425</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="11" UniqueID="{DA36E397-982D-46D1-9534-FD364F8F922B}" Name="Annotation.53" NameU="Annotation.53" Master="4">
+					<Text>maintenance of middleware systems 
+define and maintain information about how applications are linked through middleware</Text>
+					<XForm>
+						<PinX Unit="MM">5.801614886810986</PinX>
+						<PinY Unit="MM">3.789524028884433</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="14" UniqueID="{A1F8091F-83C2-4A01-9E25-7C33E847EF07}" Name="Sheet.14" NameU="Sheet.14">
+					<Text>Additional Notes:</Text>
+					<XForm>
+						<PinX Unit="MM">1.348858981299213</PinX>
+						<PinY Unit="MM">1.838524397978916</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="429" UniqueID="{25BA5F7B-7859-47C6-A58D-4DB5DBBF9F3A}" Name="Annotation.24" NameU="Annotation.24" Master="4">
+					<Text>define daily, weekly, monthly and ad-hoc schedules to run batch jobs 
+monitor succesful job execution
+instigate corrective action in case of failures</Text>
+					<XForm>
+						<PinX Unit="MM">4.482717249015677</PinX>
+						<PinY Unit="MM">5.994248438333244</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="432" UniqueID="{66E8C856-BC3D-4742-A215-D5DF6F42463C}" Name="Annotation.43" NameU="Annotation.43" Master="4">
+					<Text>installation of new network components 
+network operating system maintenance 
+monitoring and rerouting of network traffic
+manage remote access facilities</Text>
+					<XForm>
+						<PinX Unit="MM">5.801614886810958</PinX>
+						<PinY Unit="MM">5.956831484593094</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="435" UniqueID="{3CF64A7E-E2B1-4FD1-8EFE-A852C25A5D76}" Name="Annotation.50" NameU="Annotation.50" Master="4">
+					<Text>implementation and maintenance of websites
+maintenance of web development and management applications</Text>
+					<XForm>
+						<PinX Unit="MM">8.419725123031471</PinX>
+						<PinY Unit="MM">3.948957468845055</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="438" UniqueID="{FBC5EDC6-AB4E-40EB-ADDB-083983EA43FA}" Name="Annotation.56" NameU="Annotation.56" Master="4">
+					<Text>manage the rights of users/ user groups to access resources
+maintenance of tools to manage directory services</Text>
+					<XForm>
+						<PinX Unit="MM">7.120512524606237</PinX>
+						<PinY Unit="MM">6.151728753293874</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="441" UniqueID="{1F94A9E6-819A-45B7-BAC2-3A576C190AE7}" Name="Annotation.246" NameU="Annotation.246" Master="4">
+					<Text>operating system maintenance 
+installation of new servers
+licence management</Text>
+					<XForm>
+						<PinX Unit="MM">1.844921973425127</PinX>
+						<PinY Unit="MM">6.157485323704426</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="444" UniqueID="{8FA3529C-92E0-497F-9E7F-D063A2A552F5}" Name="Annotation.249" NameU="Annotation.249" Master="4">
+					<Text>data-storage software maintenance
+data archiving 
+retrieval of archived data</Text>
+					<XForm>
+						<PinX Unit="MM">1.844921973425156</PinX>
+						<PinY Unit="MM">3.988327547585213</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="447" UniqueID="{BAE1B5D5-559F-4316-A2B5-B8B621659248}" Name="Annotation.252" NameU="Annotation.252" Master="4">
+					<Text>application system maintenance 
+installation of new applications
+licence management</Text>
+					<XForm>
+						<PinX Unit="MM">9.738622760826742</PinX>
+						<PinY Unit="MM">6.157485323704426</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="450" UniqueID="{1A1CEE4B-714A-4D6D-99C4-2F54CBFA1A91}" Name="Annotation.255" NameU="Annotation.255" Master="4">
+					<Text>maintenance of standard desktop images
+deploy releases, upgrades and patches</Text>
+					<XForm>
+						<PinX Unit="MM">7.120512524606268</PinX>
+						<PinY Unit="MM">3.986374422585220</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="453" UniqueID="{D2468770-1C22-45D0-9AC6-B10E44BC177F}" Name="Annotation.258" NameU="Annotation.258" Master="4">
+					<Text>ongoing administration of database objects 
+database tuning and indexing</Text>
+					<XForm>
+						<PinX Unit="MM">8.419725123031439</PinX>
+						<PinY Unit="MM">6.208141451634104</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="456" UniqueID="{2AF5F633-C937-4F94-9F96-238847419F80}" Name="Annotation.261" NameU="Annotation.261" Master="4">
+					<Text>storage of data in remote locations
+restoration of data after loss or corruption</Text>
+					<XForm>
+						<PinX Unit="MM">3.168740871062956</PinX>
+						<PinY Unit="MM">3.986374422585220</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="459" UniqueID="{553715B2-DB92-42BC-8592-D857ACFF4239}" Name="Annotation.264" NameU="Annotation.264" Master="4">
+					<Text>operating system maintenance
+writing job scripts
+routine hardware maintenance</Text>
+					<XForm>
+						<PinX Unit="MM">3.168740871062926</PinX>
+						<PinY Unit="MM">6.074941720813559</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="18" UniqueID="{3D0E2455-1DC6-4D1B-9FB2-51D5540AE2B1}" Name="Task" NameU="activity.14" Master="14">
+					<Text>Server Management</Text>
+					<XForm>
+						<PinX Unit="MM">2.259292052165327</PinX>
+						<PinY Unit="MM">6.946398413726946</PinY>
+					</XForm>
+					<Prop ID="6" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="9" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Server Management</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="15" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="16" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="7" Name="TaskType" NameU="TaskType">
+						<Value Unit="STR">None</Value>
+						<Label>BPMN: Task Type</Label>
+					</Prop>
+					<Prop ID="2" Name="ShowLoop" NameU="ShowLoop">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Normal</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="490" UniqueID="{E02256B1-8D58-40D5-9BC5-796E89E548B1}" Name="Task.490" NameU="activity.490" Master="14">
+					<Text>Mainframe Management</Text>
+					<XForm>
+						<PinX Unit="MM">3.578189689960595</PinX>
+						<PinY Unit="MM">6.946398413726946</PinY>
+					</XForm>
+					<Prop ID="6" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="9" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Mainframe Management</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="15" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="16" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="7" Name="TaskType" NameU="TaskType">
+						<Value Unit="STR">None</Value>
+						<Label>BPMN: Task Type</Label>
+					</Prop>
+					<Prop ID="2" Name="ShowLoop" NameU="ShowLoop">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Normal</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="518" UniqueID="{D18BE5B7-D155-4C02-BC60-6D2748A029C2}" Name="Task.518" NameU="activity.518" Master="14">
+					<Text>Job Scheduling</Text>
+					<XForm>
+						<PinX Unit="MM">4.892166067913346</PinX>
+						<PinY Unit="MM">6.946398413726946</PinY>
+					</XForm>
+					<Prop ID="6" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="9" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Job Scheduling</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="15" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="16" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="7" Name="TaskType" NameU="TaskType">
+						<Value Unit="STR">None</Value>
+						<Label>BPMN: Task Type</Label>
+					</Prop>
+					<Prop ID="2" Name="ShowLoop" NameU="ShowLoop">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Normal</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="546" UniqueID="{E7948B20-CDC2-4995-B359-3B61DDAE3CC1}" Name="Task.546" NameU="Task.546" Master="14">
+					<Text>Directory Services Management</Text>
+					<XForm>
+						<PinX Unit="MM">7.529961343503905</PinX>
+						<PinY Unit="MM">6.946398413726946</PinY>
+					</XForm>
+					<Prop ID="6" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="9" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Directory Services Management</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="15" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="16" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="7" Name="TaskType" NameU="TaskType">
+						<Value Unit="STR">None</Value>
+						<Label>BPMN: Task Type</Label>
+					</Prop>
+					<Prop ID="2" Name="ShowLoop" NameU="ShowLoop">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Normal</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="574" UniqueID="{639EB970-1F05-422B-AA3D-5BCD7CF0BDA1}" Name="Task.574" NameU="Task.574" Master="14">
+					<Text>Network Management</Text>
+					<XForm>
+						<PinX Unit="MM">6.211063705708626</PinX>
+						<PinY Unit="MM">6.946398413726946</PinY>
+					</XForm>
+					<Prop ID="6" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="9" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Network Management</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="15" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="16" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="7" Name="TaskType" NameU="TaskType">
+						<Value Unit="STR">None</Value>
+						<Label>BPMN: Task Type</Label>
+					</Prop>
+					<Prop ID="2" Name="ShowLoop" NameU="ShowLoop">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Normal</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="602" UniqueID="{68F4E63D-7E08-43CB-BFB4-B0A08E241D63}" Name="Task.602" NameU="Task.602" Master="14">
+					<Text>Database Administration</Text>
+					<XForm>
+						<PinX Unit="MM">8.829173941929110</PinX>
+						<PinY Unit="MM">6.946398413726946</PinY>
+					</XForm>
+					<Prop ID="6" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="9" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Database Administration</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="15" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="16" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="7" Name="TaskType" NameU="TaskType">
+						<Value Unit="STR">None</Value>
+						<Label>BPMN: Task Type</Label>
+					</Prop>
+					<Prop ID="2" Name="ShowLoop" NameU="ShowLoop">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Normal</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="630" UniqueID="{165DF313-D2A5-48B5-BBB4-CFCA069E91F5}" Name="Task.630" NameU="Task.630" Master="14">
+					<Text>Application Operation</Text>
+					<XForm>
+						<PinX Unit="MM">10.148071579724412</PinX>
+						<PinY Unit="MM">6.946398413726946</PinY>
+					</XForm>
+					<Prop ID="6" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="9" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Application Operation</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="15" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="16" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="7" Name="TaskType" NameU="TaskType">
+						<Value Unit="STR">None</Value>
+						<Label>BPMN: Task Type</Label>
+					</Prop>
+					<Prop ID="2" Name="ShowLoop" NameU="ShowLoop">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Normal</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="658" UniqueID="{473E745C-5DA2-466C-9244-C73D26E1B66D}" Name="Task.658" NameU="Task.658" Master="14">
+					<Text>Internet/ Web Management</Text>
+					<XForm>
+						<PinX Unit="MM">8.829173941929110</PinX>
+						<PinY Unit="MM">4.761359043648199</PinY>
+					</XForm>
+					<Prop ID="6" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="9" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Internet/ Web Management</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="15" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="16" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="7" Name="TaskType" NameU="TaskType">
+						<Value Unit="STR">None</Value>
+						<Label>BPMN: Task Type</Label>
+					</Prop>
+					<Prop ID="2" Name="ShowLoop" NameU="ShowLoop">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Normal</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="686" UniqueID="{87E8F288-E2B5-433C-B52D-5A39D573F450}" Name="Task.686" NameU="Task.686" Master="14">
+					<Text>Desktop Support</Text>
+					<XForm>
+						<PinX Unit="MM">7.529961343503903</PinX>
+						<PinY Unit="MM">4.761359043648199</PinY>
+					</XForm>
+					<Prop ID="6" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="9" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Desktop Support</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="15" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="16" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="7" Name="TaskType" NameU="TaskType">
+						<Value Unit="STR">None</Value>
+						<Label>BPMN: Task Type</Label>
+					</Prop>
+					<Prop ID="2" Name="ShowLoop" NameU="ShowLoop">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Normal</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="714" UniqueID="{C2C101F1-F73C-4688-8E1F-4E76835EC4D5}" Name="Task.714" NameU="Task.714" Master="14">
+					<Text>Middleware Management</Text>
+					<XForm>
+						<PinX Unit="MM">6.211063705708625</PinX>
+						<PinY Unit="MM">4.761359043648199</PinY>
+					</XForm>
+					<Prop ID="6" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="9" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Middleware Management</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="15" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="16" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="7" Name="TaskType" NameU="TaskType">
+						<Value Unit="STR">None</Value>
+						<Label>BPMN: Task Type</Label>
+					</Prop>
+					<Prop ID="2" Name="ShowLoop" NameU="ShowLoop">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Normal</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="742" UniqueID="{2CF8569E-5CF9-4AAB-B7BA-99D1764C3790}" Name="Task.742" NameU="Task.742" Master="14">
+					<Text>Print and Output Management</Text>
+					<XForm>
+						<PinX Unit="MM">4.897087327755886</PinX>
+						<PinY Unit="MM">4.761359043648199</PinY>
+					</XForm>
+					<Prop ID="6" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="9" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Print and Output Management</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="15" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="16" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="7" Name="TaskType" NameU="TaskType">
+						<Value Unit="STR">None</Value>
+						<Label>BPMN: Task Type</Label>
+					</Prop>
+					<Prop ID="2" Name="ShowLoop" NameU="ShowLoop">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Normal</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="770" UniqueID="{1E6CDD1B-F9EE-4936-9436-DD5E92006D33}" Name="Task.770" NameU="Task.770" Master="14">
+					<Text>Backup and Restore</Text>
+					<XForm>
+						<PinX Unit="MM">3.578189689960595</PinX>
+						<PinY Unit="MM">4.761359043648199</PinY>
+					</XForm>
+					<Prop ID="6" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="9" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Backup and Restore</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="15" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="16" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="7" Name="TaskType" NameU="TaskType">
+						<Value Unit="STR">None</Value>
+						<Label>BPMN: Task Type</Label>
+					</Prop>
+					<Prop ID="2" Name="ShowLoop" NameU="ShowLoop">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Normal</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="798" UniqueID="{AB516255-3A43-4CAD-ABAA-27387F912B36}" Name="Task.798" NameU="Task.798" Master="14">
+					<Text>Storage and Archive</Text>
+					<XForm>
+						<PinX Unit="MM">2.259292052165327</PinX>
+						<PinY Unit="MM">4.761359043648199</PinY>
+					</XForm>
+					<Prop ID="6" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="9" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Storage and Archive</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="15" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="16" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="7" Name="TaskType" NameU="TaskType">
+						<Value Unit="STR">None</Value>
+						<Label>BPMN: Task Type</Label>
+					</Prop>
+					<Prop ID="2" Name="ShowLoop" NameU="ShowLoop">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Normal</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="842" UniqueID="{396817E0-59D6-4B1D-B28D-21FECFE14735}" Name="Navigation (Back up to).842" NameU="Navigation (Back up to).842" Master="12">
+					<Text>Index of Service Operation Processes</Text>
+					<XForm>
+						<PinX Unit="MM">14.055551894685042</PinX>
+						<PinY Unit="MM">8.897637795275594</PinY>
+					</XForm>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Index of Service Operation Processes</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="4" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="846" UniqueID="{6E076AE4-8A71-48AE-BC40-2721FFA5C610}" Name="Navigation (Back up to).846" NameU="Navigation (Back up to).846" Master="12">
+					<Text>Service Operation</Text>
+					<XForm>
+						<PinX Unit="MM">12.480748745078740</PinX>
+						<PinY Unit="MM">8.897637795275593</PinY>
+					</XForm>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Service Operation</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="4" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="4" Name="Inputs and Outputs" NameU="Inputs and Outputs">
+			<Layer IX="0">
+				<Name>Background</Name>
+				<NameUniv>Background</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name>Connector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="2">
+				<Name></Name>
+				<NameUniv></NameUniv>
+				<Visible>0</Visible>
+			</Layer>
+			<Value Unit="STR">IT Operations Management</Value>
+			<Label>Repository Name</Label>
+			<Value Unit="STR">ITIL Process Model</Value>
+			<Label>Object Category</Label>
+			<Value Unit="STR">To monitor and control the IT services and infrastructure. The process IT Operations Management executes day-to-day routine tasks related to the operation of infrastructure components and applications. This includes job scheduling, backup and restore activities, print and output management, and routine maintenance.</Value>
+			<Label>Description</Label>
+			<Value Unit="STR">2</Value>
+			<Label>System Version No</Label>
+			<Value></Value>
+			<Label>User Version No</Label>
+			<Value Unit="STR">System Administrator</Value>
+			<Label>Created By</Label>
+			<Value Unit="STR">28/03/2013 10:37:49</Value>
+			<Label>Date Created</Label>
+			<Value Unit="STR">System Administrator</Value>
+			<Label>Last Modified By</Label>
+			<Value Unit="STR">28/03/2013 22:29:26</Value>
+			<Label>Date Last Modified</Label>
+			<Shapes>
+				<Shape ID="510" UniqueID="{7B9F3C7C-1C90-4C19-BE60-4CC521015F34}" Name="Sheet.510" NameU="Sheet.510">
+					<XForm>
+						<PinX Unit="MM">7.488647637795276</PinX>
+						<PinY Unit="MM">5.592218503937008</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="1" UniqueID="{0AC0B101-E6A6-41F3-8A8E-2DE57EA80AB2}" Name="Input and Output Group" NameU="Input and Output Group" Master="8">
+					<XForm>
+						<PinX Unit="MM">7.452193475815523</PinX>
+						<PinY Unit="MM">4.738835161229824</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="2" UniqueID="{0F03AD1F-0E90-4520-9295-C5C9FB983E57}" Name="Header Shape" NameU="Header Shape" Master="2">
+					<XForm>
+						<PinX Unit="MM">7.488647637795276</PinX>
+						<PinY Unit="MM">5.592218503937008</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="313" UniqueID="{C38C4DCD-9806-44F7-825D-8EBB920EC8B2}" Name="Sheet.313" NameU="Sheet.313">
+					<Text>Process Objective: 
+To monitor and control the IT services and IT  infrastructure. The process IT Operations Management executes day-to-day routine tasks related to the  operation of infrastructure components and  applications. This includes job scheduling, backup and  restore activities, print and output management, and  routine maintenance.</Text>
+					<XForm>
+						<PinX Unit="MM">7.581631796025516</PinX>
+						<PinY Unit="MM">4.163907011623522</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="314" UniqueID="{7AF22A23-4CA4-427B-84D3-02A2C3F87F3F}" Name="Data object.25" NameU="Data object.25" Master="10">
+					<Text>SLA/ OLA/ UC Catalogue and Structure</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">8.494615673040862</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A structured index of Service Level Agreements, Operational Level Agreement and Underpinning Contracts. Depending on the approach for structuring the agreements there might be multiple layers of agreements, from generic ones covering general SLM issues to specific ones for particular services/ service components and customers.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Service Level Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">SLA/ OLA/ UC Catalogue and Structure</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A structured index of Service Level Agreements, Operational Level Agreement and Underpinning Contracts. Depending on the approach for structuring the agreements there might be multiple layers of agreements, from generic ones covering general SLM issues to</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="317" UniqueID="{3C4DBAED-F0CA-4AD0-9A62-0775875E36E9}" Name="Data object.491" NameU="Data object.491" Master="10">
+					<Text>Maintenance Plan/ SOP</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">8.081229846269164</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A plan produced by Availability Management to define frequency and scope of preventative maintenance for service-critical applications and infrastructure components under control of Availability Management. Maintenance Plans are sometimes known as Standard Operating Procedures.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Availability Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Maintenance Plan/ SOP</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A plan produced by Availability Management to define frequency and scope of preventative maintenance for service-critical applications and infrastructure components under control of Availability Management. Maintenance Plans are sometimes known as Standar</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="320" UniqueID="{199D7437-4B5E-43C2-BED4-B41239396180}" Name="Data object.494" NameU="Data object.494" Master="10">
+					<Text>Availability Plan</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">7.667844019497564</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">The Availability Plan contains detailed information about initiatives aimed at improving service and/ or component availability.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Availability Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Availability Plan</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">The Availability Plan contains detailed information about initiatives aimed at improving service and/ or component availability.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="323" UniqueID="{77817DE1-C530-46F3-BCBB-71B28C963404}" Name="Data object.497" NameU="Data object.497" Master="10">
+					<Text>IT Service Continuity Strategy</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">7.254458192725863</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">The IT Service Continuity Strategy contains an outline of the approach to ensure the continuity of services in the case of disaster events. It includes a list of Vital Business Functions and applied risk reduction or recovery options. The IT Service Continuity Strategy should be based on a Business Continuity Strategy.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">IT Service Continuity Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">IT Service Continuity Strategy</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">The IT Service Continuity Strategy contains an outline of the approach to ensure the continuity of services in the case of disaster events. It includes a list of Vital Business Functions and applied risk reduction or recovery options. The IT Service Conti</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="326" UniqueID="{DF197247-D43F-43F5-89F7-35C322480339}" Name="Data object.500" NameU="Data object.500" Master="10">
+					<Text>Notification of Service Failure</Text>
+					<XForm>
+						<PinX Unit="MM">10.278505811773510</PinX>
+						<PinY Unit="MM">7.411938507686447</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">The reporting of a service failure to the Service Desk, for example by a user via telephone or e-mail, or by a system monitoring tool.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Incident Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Notification of Service Failure</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">The reporting of a service failure to the Service Desk, for example by a user via telephone or e-mail, or by a system monitoring tool.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="329" UniqueID="{AE13D942-82E2-44FB-ADF2-22C9EE778DB3}" Name="Data object.503" NameU="Data object.503" Master="10">
+					<Text>Avail./ ITSCM/ Security Testing Schedule</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">6.841072365954261</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A schedule for the regular testing of all availability, continuity and security mechanisms, jointly maintained by Availability, IT Service Continuity and IT Security Management.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Availability/ IT Service Continuity/ IT Security Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Avail./ ITSCM/ Security Testing Schedule</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A schedule for the regular testing of all availability, continuity and security mechanisms, jointly maintained by Availability, IT Service Continuity and IT Security Management.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="332" UniqueID="{07AE1A74-FE44-4C24-9039-EDB1C69FAB5A}" Name="Data object.506" NameU="Data object.506" Master="10">
+					<Text>Suggested Problem</Text>
+					<XForm>
+						<PinX Unit="MM">10.278505811773510</PinX>
+						<PinY Unit="MM">6.880442444694346</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A notification about a suspected Problem, handed over to Problem Management for further investigation.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Problem Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Suggested Problem</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A notification about a suspected Problem, handed over to Problem Management for further investigation.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="335" UniqueID="{4871A1C5-CB9C-4065-B339-6EBA90E80181}" Name="Data object.509" NameU="Data object.509" Master="10">
+					<Text>IT Security Strategy</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">6.427686539182563</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">The IT Security Strategy contains an outline of the approach to ensure the security of IT services and systems. It includes a list of security-related risks and existing or planned Security Controls to address those risks.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">IT Security Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">IT Security Strategy</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">The IT Security Strategy contains an outline of the approach to ensure the security of IT services and systems. It includes a list of security-related risks and existing or planned Security Controls to address those risks.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="338" UniqueID="{08529EA3-6701-45FD-B230-7A2D2682363C}" Name="Data object.512" NameU="Data object.512" Master="10">
+					<Text>Suggested Known Error</Text>
+					<XForm>
+						<PinX Unit="MM">10.278505811773510</PinX>
+						<PinY Unit="MM">6.467056617922747</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A suggestion to create a new entry in the Known Error Database, for example raised by the Service Desk or by Release Management. Known Errors are managed throughout their lifecycle by Problem Management.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Problem Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Suggested Known Error</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A suggestion to create a new entry in the Known Error Database, for example raised by the Service Desk or by Release Management. Known Errors are managed throughout their lifecycle by Problem Management.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="341" UniqueID="{8F0E940B-86BC-4051-B6C3-97A03CC705FE}" Name="Data object.515" NameU="Data object.515" Master="10">
+					<Text>IT Security Policy</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">6.014300712410964</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">IT Security Policies set binding rules for the use of services and systems with the aim of improving IT security. </Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">IT Security Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">IT Security Policy</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">IT Security Policies set binding rules for the use of services and systems with the aim of improving IT security.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="344" UniqueID="{B4563B36-612E-4494-9C77-1F5E9115289E}" Name="Data object.518" NameU="Data object.518" Master="10">
+					<Text>Suggested Workaround</Text>
+					<XForm>
+						<PinX Unit="MM">10.278505811773510</PinX>
+						<PinY Unit="MM">6.053670791151045</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A suggestion to enter a new Workaround in the Known Error Database, for example raised by the Service Desk or by Release Management. Workarounds are managed throughout their lifecycle by Problem Management.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Problem Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Suggested Workaround</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A suggestion to enter a new Workaround in the Known Error Database, for example raised by the Service Desk or by Release Management. Workarounds are managed throughout their lifecycle by Problem Management.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="347" UniqueID="{3464B7FA-76E3-46CB-A70F-EC3EC5FFCDCD}" Name="Data object.521" NameU="Data object.521" Master="10">
+					<Text>Operational Documentation</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">5.522174728158962</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A document describing the procedures required to run and maintain an application or infrastructure component.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Application Development and Customization</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Operational Documentation</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A document describing the procedures required to run and maintain an application or infrastructure component.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="350" UniqueID="{66262D32-3F83-4DC5-B436-39F8C343F041}" Name="Data object.524" NameU="Data object.524" Master="10">
+					<Text>Purchase Request</Text>
+					<XForm>
+						<PinX Unit="MM">10.278505811773510</PinX>
+						<PinY Unit="MM">5.522174728158944</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A request to purchase a service or a product from an external supplier, issued for example from Release Management during Service Build. Processing of a Purchase Request will generally proceed only if the requester also holds an approved budget for the purchase.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Supplier Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Purchase Request</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A request to purchase a service or a product from an external supplier, issued for example from Release Management during Service Build. Processing of a Purchase Request will generally proceed only if the requester also holds an approved budget for the pu</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="353" UniqueID="{51B00CD4-E6DC-46F9-8260-FA3F4819A62B}" Name="Data object.527" NameU="Data object.527" Master="10">
+					<Text>Change Schedule</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">5.108788901387262</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A Document that lists all approved Changes and their planned implementation dates. A Change Schedule is sometimes called a Forward Schedule of Change.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Change Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Change Schedule</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A Document that lists all approved Changes and their planned implementation dates. A Change Schedule is sometimes called a Forward Schedule of Change.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="356" UniqueID="{27C82CB4-A196-4947-81C6-71817FB8D1EB}" Name="Data object.530" NameU="Data object.530" Master="10">
+					<Text>Service Transition Report</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">4.695403074615662</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">The Service Transition Report is an overall summary of all planned or ongoing Service Transition projects for deploying major Releases, listing key project data like milestones and current project status.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Project Management (Transition Planning and Support)</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Service Transition Report</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">The Service Transition Report is an overall summary of all planned or ongoing Service Transition projects for deploying major Releases, listing key project data like milestones and current project status.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="359" UniqueID="{F922D546-107D-4D1C-8B13-95EC1D93300E}" Name="Data object.533" NameU="Data object.533" Master="10">
+					<Text>Development/ Install. QA Documentation</Text>
+					<XForm>
+						<PinX Unit="MM">10.278505811773510</PinX>
+						<PinY Unit="MM">4.990678665166845</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A documentation of tests and quality assurance measures applied during the development or installation of applications, systems and other infrastructure components (e.g. component tests, code walk-throughs, ...). A complete Development/ Installation QA Documentation testifies that the required QA measures were applied prior to handing a Release component over to Release Management.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Service Validation and Testing</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Development/ Install. QA Documentation</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A documentation of tests and quality assurance measures applied during the development or installation of applications, systems and other infrastructure components (e.g. component tests, code walk-throughs, ...). A complete Development/ Installation QA Do</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="362" UniqueID="{D68F512A-CB27-4DE3-AD5D-FE6AFA646FB6}" Name="Data object.536" NameU="Data object.536" Master="10">
+					<Text>CMS/ CMDB</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">4.282017247843962</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">The Configuration Management System (CMS) is a coherent logical model of the IT organization’s infrastructure, typically made up of several Configuration Management Databases (CMDBs) as physical sub-systems. It is used to store information on all Configuration Items (CIs) under the control of Configuration Management. </Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Service Asset and Configuration Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">CMS/ CMDB</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">The Configuration Management System (CMS) is a coherent logical model of the IT organization’s infrastructure, typically made up of several Configuration Management Databases (CMDBs) as physical sub-systems. It is used to store information on all Configur</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="365" UniqueID="{F98167E5-FCB1-4210-9143-9433C9E47620}" Name="Data object.539" NameU="Data object.539" Master="10">
+					<Text>End-User Documentation</Text>
+					<XForm>
+						<PinX Unit="MM">10.278505811773510</PinX>
+						<PinY Unit="MM">4.577292838395145</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A document for end-users, describing how to use an application or system.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Application Development and Customization</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">End-User Documentation</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A document for end-users, describing how to use an application or system.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="368" UniqueID="{3917E91A-ECBF-499B-BF9D-19F9F5061CC0}" Name="Data object.542" NameU="Data object.542" Master="10">
+					<Text>Definitive Media Library (DML)</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">3.868631421072362</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">One or more locations in which the definitive and approved versions of all software Configuration Items are securely stored. The DML may also contain associated CIs such as licenses and documentation. The DML is a single logical storage area even if there are multiple locations. All software in the DML is under the control of Change and Release Management and is recorded in the Configuration Management System. Only software from the DML is acceptable for use in a Release.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Service Asset and Configuration Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Definitive Media Library (DML)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">One or more locations in which the definitive and approved versions of all software Configuration Items are securely stored. The DML may also contain associated CIs such as licenses and documentation. The DML is a single logical storage area even if there</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="371" UniqueID="{A40A3EF7-10FC-44B7-B2F8-C1917EA12C3F}" Name="Data object.545" NameU="Data object.545" Master="10">
+					<Text>Operational Documentation</Text>
+					<XForm>
+						<PinX Unit="MM">10.278505811773510</PinX>
+						<PinY Unit="MM">4.163907011623445</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A document describing the procedures required to run and maintain an application or infrastructure component.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Application Development and Customization</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Operational Documentation</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A document describing the procedures required to run and maintain an application or infrastructure component.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="374" UniqueID="{9BB2C70B-8915-40C0-AA1B-443723983B50}" Name="Data object.548" NameU="Data object.548" Master="10">
+					<Text>Support Request</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">3.455245594300662</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A request to support the resolution of an Incident or Problem, usually issued from the Incident or Problem Management processes when further assistance is needed from technical experts.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Incident Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Support Request</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A request to support the resolution of an Incident or Problem, usually issued from the Incident or Problem Management processes when further assistance is needed from technical experts.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="377" UniqueID="{65D0A1C9-984E-4935-AA6B-01B3D39EA321}" Name="Data object.551" NameU="Data object.551" Master="10">
+					<Text>Suggested Process Improvement</Text>
+					<XForm>
+						<PinX Unit="MM">10.278505811773510</PinX>
+						<PinY Unit="MM">3.632410948631346</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">Suggestion for improving Service Management processes, handed over to the Continual Service Improvement process. Suggestions for process improvements may originate from anywhere within the IT organization.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Process Evaluation</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Suggested Process Improvement</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">Suggestion for improving Service Management processes, handed over to the Continual Service Improvement process. Suggestions for process improvements may originate from anywhere within the IT organization.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="380" UniqueID="{F49C4E0A-3DEE-4A3B-90DA-43D05FC6F41B}" Name="Data object.554" NameU="Data object.554" Master="10">
+					<Text>Development Work Order</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">3.041859767529063</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A Work Order for the development or customization of an application or system, typically issued from Release Management.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Release and Deployment Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Development Work Order</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A Work Order for the development or customization of an application or system, typically issued from Release Management.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="383" UniqueID="{C17F8C74-5DBD-4FED-8CF5-9D1C0528A5CB}" Name="Data object.557" NameU="Data object.557" Master="10">
+					<Text>Suggested Changes to SLAs, OLAs and UCs</Text>
+					<XForm>
+						<PinX Unit="MM">10.278505811773510</PinX>
+						<PinY Unit="MM">3.219025121859746</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">Suggestions for improving service quality or economics, handed over from other Service Management processes to the Continual Service Improvement process. Suggestions to improve services may originate from anywhere within or outside of the IT organization.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Service Evaluation</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Suggested Changes to SLAs, OLAs and UCs</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">Suggestions for improving service quality or economics, handed over from other Service Management processes to the Continual Service Improvement process. Suggestions to improve services may originate from anywhere within or outside of the IT organization.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="386" UniqueID="{23660DC1-792C-4E1E-81D6-C97CBEF96E1C}" Name="Data object.560" NameU="Data object.560" Master="10">
+					<Text>Installation Work Order</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">2.628473940757363</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A Work Order for the installation of an application, system or infrastructure component, typically issued from Release Management.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Release and Deployment Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Installation Work Order</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A Work Order for the installation of an application, system or infrastructure component, typically issued from Release Management.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="389" UniqueID="{7DA87E6E-E560-4925-8733-FE6780393B1A}" Name="Data object.563" NameU="Data object.563" Master="10">
+					<Text>Test Report</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">2.215088113985733</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A Test Report summarizes the results of testing and assessment activities, documenting that the assessed Release components successfully passed a validation stage.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Service Validation and Testing</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Test Report</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A Test Report summarizes the results of testing and assessment activities, documenting that the assessed Release components successfully passed a validation stage.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="392" UniqueID="{17CE5007-86F0-4F8C-91CB-AAF44C6B407C}" Name="Data object.566" NameU="Data object.566" Master="10">
+					<Text>Support Request</Text>
+					<XForm>
+						<PinX Unit="MM">4.766694788151509</PinX>
+						<PinY Unit="MM">1.398158980127464</PinY>
+					</XForm>
+					<Prop ID="1" Name="Name" NameU="Name">
+						<Value Unit="STR">0.0000</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="2" Name="Note" NameU="Note">
+						<Value Unit="STR">A request to support the resolution of an Incident or Problem, usually issued from the Incident or Problem Management processes when further assistance is needed from technical experts.</Value>
+						<Label>Note</Label>
+					</Prop>
+					<Prop ID="3" Name="ID" NameU="ID">
+						<Value></Value>
+						<Label>ID</Label>
+					</Prop>
+					<Prop ID="4" Name="AssignedTo" NameU="AssignedTo">
+						<Value Unit="STR">Incident Management</Value>
+						<Label>AssignedTo</Label>
+					</Prop>
+					<Prop ID="5" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Support Request</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="6" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">A request to support the resolution of an Incident or Problem, usually issued from the Incident or Problem Management processes when further assistance is needed from technical experts.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="8" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="395" UniqueID="{4939AD33-FDDD-40FB-B70D-EE5F6A2B6A24}" Name="Association.26" NameU="Association.26" Master="11">
+					<XForm>
+						<PinX Unit="MM">8.903177259092638</PinX>
+						<PinY Unit="MM">6.474655043119551</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="396" UniqueID="{DCC6AB70-A4D6-46E9-913B-D73936273377}" Name="Association.576" NameU="Association.576" Master="11">
+					<XForm>
+						<PinX Unit="MM">8.903177259092638</PinX>
+						<PinY Unit="MM">6.208907011623500</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="397" UniqueID="{1BDC6C2B-0065-4120-A2B1-B62AEB2FF101}" Name="Association.577" NameU="Association.577" Master="11">
+					<XForm>
+						<PinX Unit="MM">8.903177259092638</PinX>
+						<PinY Unit="MM">6.002214098237701</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="398" UniqueID="{A3A533EF-2EC2-4AAE-9DAD-40F1FC2B3BC3}" Name="Association.578" NameU="Association.578" Master="11">
+					<XForm>
+						<PinX Unit="MM">8.903177259092638</PinX>
+						<PinY Unit="MM">5.795521184851850</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="399" UniqueID="{5F3F6012-E970-4584-9B81-F6455A4D6995}" Name="Association.579" NameU="Association.579" Master="11">
+					<XForm>
+						<PinX Unit="MM">8.903177259092638</PinX>
+						<PinY Unit="MM">5.529773153355800</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="400" UniqueID="{FB22B31D-AF02-4848-A597-E255492C19C8}" Name="Association.580" NameU="Association.580" Master="11">
+					<XForm>
+						<PinX Unit="MM">8.903177259092638</PinX>
+						<PinY Unit="MM">5.264025121859751</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="401" UniqueID="{12F9A1E0-D03A-40BA-91DA-82ACADF803B7}" Name="Association.581" NameU="Association.581" Master="11">
+					<XForm>
+						<PinX Unit="MM">8.903177259092638</PinX>
+						<PinY Unit="MM">5.057332208473900</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="402" UniqueID="{B66D59BA-27B0-4922-A52A-08286587456C}" Name="Association.582" NameU="Association.582" Master="11">
+					<XForm>
+						<PinX Unit="MM">8.903177259092638</PinX>
+						<PinY Unit="MM">4.850639295088051</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="403" UniqueID="{AFBBA46E-D9DB-48C5-9AC8-4B808862577D}" Name="Association.583" NameU="Association.583" Master="11">
+					<XForm>
+						<PinX Unit="MM">8.903177259092638</PinX>
+						<PinY Unit="MM">4.584891263592001</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="404" UniqueID="{3B960D52-D294-4961-8408-2EF9C1D91029}" Name="Association.584" NameU="Association.584" Master="11">
+					<XForm>
+						<PinX Unit="MM">8.903177259092638</PinX>
+						<PinY Unit="MM">4.584891263592001</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="405" UniqueID="{62399EAC-1578-4F34-9B0E-B63244D5A3F3}" Name="Association.585" NameU="Association.585" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348360</PinX>
+						<PinY Unit="MM">7.699655043119573</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="406" UniqueID="{D5BA1F6C-4457-4850-AD26-A87314ABBE60}" Name="Association.586" NameU="Association.586" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348360</PinX>
+						<PinY Unit="MM">7.906347956505423</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="407" UniqueID="{7ADA0F0B-2A4A-493A-AF90-9D83246012A2}" Name="Association.587" NameU="Association.587" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348360</PinX>
+						<PinY Unit="MM">7.492962129733774</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="408" UniqueID="{219541C7-6934-4D15-B91F-BB466B956060}" Name="Association.588" NameU="Association.588" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348360</PinX>
+						<PinY Unit="MM">7.286269216347924</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="409" UniqueID="{D0D9C12A-917F-4B42-AD24-4F902F2C4366}" Name="Association.589" NameU="Association.589" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348360</PinX>
+						<PinY Unit="MM">7.079576302962122</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="410" UniqueID="{9474244C-F118-4CFB-A20E-F5299F295586}" Name="Association.590" NameU="Association.590" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348360</PinX>
+						<PinY Unit="MM">6.872883389576272</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="411" UniqueID="{B1CEB513-518C-4548-89C4-B643E70ADA93}" Name="Association.591" NameU="Association.591" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348360</PinX>
+						<PinY Unit="MM">6.666190476190473</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="412" UniqueID="{482BC014-501F-4686-A395-A9A0FF02A8F6}" Name="Association.592" NameU="Association.592" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">6.809300712410909</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="413" UniqueID="{88F6A05E-DC2D-4E07-BAD4-508E39620412}" Name="Association.593" NameU="Association.593" Master="11">
+					<XForm>
+						<PinX Unit="MM">11.065907386576660</PinX>
+						<PinY Unit="MM">6.263040869891205</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="414" UniqueID="{9290CF28-7400-4AC6-BA47-114CE5E7E80E}" Name="Association.594" NameU="Association.594" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">7.015993625796760</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="415" UniqueID="{E80B53CD-1920-4417-BE79-0BD439132D06}" Name="Association.595" NameU="Association.595" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">6.602607799025110</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="416" UniqueID="{E624B991-0992-45E9-9CC3-9623A1B5025B}" Name="Association.596" NameU="Association.596" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">6.395914885639259</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="417" UniqueID="{8D63324D-3671-4BA4-AA9D-A2A416355237}" Name="Association.597" NameU="Association.597" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">6.189221972253458</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="418" UniqueID="{F4803B94-DC65-4310-9E9D-50C4F024D769}" Name="Association.598" NameU="Association.598" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">5.982529058867609</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="419" UniqueID="{CDCCA8BF-792E-4C8B-9F0C-3E578741270B}" Name="Association.599" NameU="Association.599" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">5.529773153355810</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="420" UniqueID="{48076FAF-99BA-466E-88ED-5D2E432DC1D3}" Name="Association.600" NameU="Association.600" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">5.323080239969960</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="421" UniqueID="{FB58F954-96B7-4DAB-B24A-23B544CAACFD}" Name="Association.601" NameU="Association.601" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348359</PinX>
+						<PinY Unit="MM">4.525836145481772</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="422" UniqueID="{814C4B35-459D-415F-A2B0-E73BCFC945D8}" Name="Association.602" NameU="Association.602" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348359</PinX>
+						<PinY Unit="MM">4.732529058867623</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="423" UniqueID="{F850AE81-919B-42BD-B9AF-DADAB7CA3708}" Name="Association.603" NameU="Association.603" Master="11">
+					<XForm>
+						<PinX Unit="MM">4.041793213348359</PinX>
+						<PinY Unit="MM">4.319143232095972</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="424" UniqueID="{11E4127F-B7C8-4C66-96E2-27B23FBD137C}" Name="Association.604" NameU="Association.604" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348359</PinX>
+						<PinY Unit="MM">4.112450318710122</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="425" UniqueID="{3B85702F-7CAA-41CD-AB2C-62B92CB6D667}" Name="Association.605" NameU="Association.605" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348359</PinX>
+						<PinY Unit="MM">3.905757405324322</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="426" UniqueID="{1D37F592-BC85-435A-9F99-30798CF10E66}" Name="Association.606" NameU="Association.606" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348359</PinX>
+						<PinY Unit="MM">3.699064491938472</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="427" UniqueID="{2E7289D9-0392-4C39-A480-4650DFA6F93E}" Name="Association.607" NameU="Association.607" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348359</PinX>
+						<PinY Unit="MM">3.492371578552673</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="428" UniqueID="{61EC1E99-AFCC-4C02-9C40-A2A06DB428DB}" Name="Association.608" NameU="Association.608" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348359</PinX>
+						<PinY Unit="MM">3.285678665166823</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="429" UniqueID="{9C77CB77-0B25-4F14-977C-F0F61DC75712}" Name="Association.609" NameU="Association.609" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348359</PinX>
+						<PinY Unit="MM">3.078985751781008</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="430" UniqueID="{2E9F830C-33D9-43CA-AD1E-2BEC5105356B}" Name="Association.610" NameU="Association.610" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">5.116387326584158</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="431" UniqueID="{3500F6DB-DB57-4222-B229-0D40BDFD3CA9}" Name="Association.611" NameU="Association.611" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">4.909694413198309</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="432" UniqueID="{EF801892-22DE-4AD8-8704-A9BD5A507DE2}" Name="Association.612" NameU="Association.612" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">4.703001499812510</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="433" UniqueID="{69C9D36A-624E-4E7F-8F6B-E4CD3DB4AC88}" Name="Association.613" NameU="Association.613" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">4.496308586426659</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="434" UniqueID="{0DC13897-AD2F-432C-B5B8-5CA108C3866B}" Name="Association.614" NameU="Association.614" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">4.289615673040860</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="435" UniqueID="{F6A3EEB2-B77A-4688-9586-5946F7C1BA15}" Name="Association.615" NameU="Association.615" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">4.082922759655011</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="436" UniqueID="{805B8FD8-8255-4366-A9A9-86CAC052F63D}" Name="Association.616" NameU="Association.616" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">3.876229846269195</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="437" UniqueID="{2F4DB0B0-DE8D-4602-A293-82906A6982B2}" Name="Association.617" NameU="Association.617" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">3.876229846269195</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="438" UniqueID="{C0AD69C8-DD27-45F4-8556-62CAE5DDFDCF}" Name="Association.618" NameU="Association.618" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">3.467765279340060</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="439" UniqueID="{18C84BCC-341A-437E-9BBB-5350E8A276C0}" Name="Association.619" NameU="Association.619" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348359</PinX>
+						<PinY Unit="MM">1.646899137607778</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="440" UniqueID="{1C961CA3-7FDE-4220-BEA2-59C718A7F753}" Name="Association.620" NameU="Association.620" Master="11">
+					<XForm>
+						<PinX Unit="MM">3.979293213348359</PinX>
+						<PinY Unit="MM">1.174458192725888</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="441" UniqueID="{C62D32BF-9B77-402C-991F-C1F0019DC302}" Name="Association.621" NameU="Association.621" Master="11">
+					<XForm>
+						<PinX Unit="MM">11.065907386576660</PinX>
+						<PinY Unit="MM">6.676426696662855</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="442" UniqueID="{9E42914F-0EF4-4B04-82AF-9333E2DE1743}" Name="Association.622" NameU="Association.622" Master="11">
+					<XForm>
+						<PinX Unit="MM">11.065907386576660</PinX>
+						<PinY Unit="MM">6.469733783277057</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="443" UniqueID="{B87F9969-A813-4152-ADC4-74B65F4A9D96}" Name="Association.623" NameU="Association.623" Master="11">
+					<XForm>
+						<PinX Unit="MM">6.147271747281637</PinX>
+						<PinY Unit="MM">5.775836145481810</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="444" UniqueID="{3D640DC1-4CA3-4A93-80BB-6EF6D1470F62}" Name="Association.624" NameU="Association.624" Master="11">
+					<XForm>
+						<PinX Unit="MM">11.065907386576660</PinX>
+						<PinY Unit="MM">5.524851893513267</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="445" UniqueID="{F633301D-4FEC-4200-BB5A-B2F97A58C573}" Name="Association.625" NameU="Association.625" Master="11">
+					<XForm>
+						<PinX Unit="MM">11.065907386576660</PinX>
+						<PinY Unit="MM">4.786662917135326</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="446" UniqueID="{E833DEB6-335A-403D-B551-31D571F17B62}" Name="Association.626" NameU="Association.626" Master="11">
+					<XForm>
+						<PinX Unit="MM">11.065907386576660</PinX>
+						<PinY Unit="MM">4.579970003749477</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="447" UniqueID="{FF6B4FF9-853C-45D1-81FE-150D3293FE1C}" Name="Association.627" NameU="Association.627" Master="11">
+					<XForm>
+						<PinX Unit="MM">11.065907386576660</PinX>
+						<PinY Unit="MM">4.373277090363626</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="448" UniqueID="{10EA89AB-DF2B-435A-A2BB-9DE0885B9E0A}" Name="Association.628" NameU="Association.628" Master="11">
+					<XForm>
+						<PinX Unit="MM">11.085592425946750</PinX>
+						<PinY Unit="MM">3.536662917135295</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="449" UniqueID="{8DD3D34E-4982-4C4F-B8BE-E9DB24590FD8}" Name="Association.629" NameU="Association.629" Master="11">
+					<XForm>
+						<PinX Unit="MM">11.085592425946750</PinX>
+						<PinY Unit="MM">3.329970003749494</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="450" UniqueID="{AAA3C991-F302-4A7B-B185-DEB04BE0FBCF}" Name="Process" NameU="Process" Master="5">
+					<Text>Service Design</Text>
+					<XForm>
+						<PinX Unit="MM">3.191891638545210</PinX>
+						<PinY Unit="MM">7.312725909261321</PinY>
+					</XForm>
+					<Prop ID="9" Name="SubProcesstype" NameU="SubProcesstype">
+						<Value Unit="STR">Embedded</Value>
+						<Label>Sub Process Type</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Service Design</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">To design new IT services. Its scope includes the design of new services, as well as changes and improvements to existing ones.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="Category_General_" NameU="Category_General_">
+						<Value></Value>
+						<Label>Category (General)</Label>
+					</Prop>
+					<Prop ID="15" Name="Standard_creation_date" NameU="Standard_creation_date">
+						<Value></Value>
+						<Label>Standard creation date</Label>
+					</Prop>
+					<Prop ID="16" Name="Retire_date" NameU="Retire_date">
+						<Value></Value>
+						<Label>Retire date</Label>
+					</Prop>
+					<Prop ID="17" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="18" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="19" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="20" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="21" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="6" Name="CollapsedOrExpanded" NameU="CollapsedOrExpanded">
+						<Value Unit="STR">Collapsed</Value>
+						<Label>Collapsed or Expanded</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="462" UniqueID="{8D397C23-B70D-45BE-84F7-37F2A250CD60}" Name="Process.462" NameU="Process.462" Master="5">
+					<Text>Service Transition</Text>
+					<XForm>
+						<PinX Unit="MM">3.191891638545209</PinX>
+						<PinY Unit="MM">3.937529058867622</PinY>
+					</XForm>
+					<Prop ID="9" Name="SubProcesstype" NameU="SubProcesstype">
+						<Value Unit="STR">Embedded</Value>
+						<Label>Sub Process Type</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Service Transition</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">To build and deploy IT services. This process also makes sure that changes to services and Service Management processes are carried out in a coordinated way.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="Category_General_" NameU="Category_General_">
+						<Value></Value>
+						<Label>Category (General)</Label>
+					</Prop>
+					<Prop ID="15" Name="Standard_creation_date" NameU="Standard_creation_date">
+						<Value></Value>
+						<Label>Standard creation date</Label>
+					</Prop>
+					<Prop ID="16" Name="Retire_date" NameU="Retire_date">
+						<Value></Value>
+						<Label>Retire date</Label>
+					</Prop>
+					<Prop ID="17" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="18" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="19" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="20" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="21" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="6" Name="CollapsedOrExpanded" NameU="CollapsedOrExpanded">
+						<Value Unit="STR">Collapsed</Value>
+						<Label>Collapsed or Expanded</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="474" UniqueID="{D08EC773-C781-4772-B25B-6AB7A65A8CA9}" Name="Process.474" NameU="Process.474" Master="5">
+					<Text>Incident Management</Text>
+					<XForm>
+						<PinX Unit="MM">3.191891638545209</PinX>
+						<PinY Unit="MM">1.890284964379431</PinY>
+					</XForm>
+					<Prop ID="9" Name="SubProcesstype" NameU="SubProcesstype">
+						<Value Unit="STR">Embedded</Value>
+						<Label>Sub Process Type</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Incident Management</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">To manage the lifecycle of all Incidents. The primary objective of Incident Management is to return the IT service to users as quickly as possible.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="Category_General_" NameU="Category_General_">
+						<Value></Value>
+						<Label>Category (General)</Label>
+					</Prop>
+					<Prop ID="15" Name="Standard_creation_date" NameU="Standard_creation_date">
+						<Value></Value>
+						<Label>Standard creation date</Label>
+					</Prop>
+					<Prop ID="16" Name="Retire_date" NameU="Retire_date">
+						<Value></Value>
+						<Label>Retire date</Label>
+					</Prop>
+					<Prop ID="17" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="18" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="19" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="20" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="21" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="6" Name="CollapsedOrExpanded" NameU="CollapsedOrExpanded">
+						<Value Unit="STR">Collapsed</Value>
+						<Label>Collapsed or Expanded</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="486" UniqueID="{DDB789D3-8ED8-4431-9718-B29C7C25B3CA}" Name="Process.486" NameU="Process.486" Master="5">
+					<Text>Problem Management</Text>
+					<XForm>
+						<PinX Unit="MM">3.191891638545209</PinX>
+						<PinY Unit="MM">0.945403074615651</PinY>
+					</XForm>
+					<Prop ID="9" Name="SubProcesstype" NameU="SubProcesstype">
+						<Value Unit="STR">Embedded</Value>
+						<Label>Sub Process Type</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Problem Management</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">To manage the lifecycle of all Problems. The primary objectives of Problem Management are to prevent Incidents from happening, and to minimize the impact of incidents that cannot be prevented. Proactive Problem Management analyzes Incident Records, and uses data collected by other IT Service Management processes to identify trends or significant Problems.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="Category_General_" NameU="Category_General_">
+						<Value></Value>
+						<Label>Category (General)</Label>
+					</Prop>
+					<Prop ID="15" Name="Standard_creation_date" NameU="Standard_creation_date">
+						<Value></Value>
+						<Label>Standard creation date</Label>
+					</Prop>
+					<Prop ID="16" Name="Retire_date" NameU="Retire_date">
+						<Value></Value>
+						<Label>Retire date</Label>
+					</Prop>
+					<Prop ID="17" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="18" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="19" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="20" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="21" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="6" Name="CollapsedOrExpanded" NameU="CollapsedOrExpanded">
+						<Value Unit="STR">Collapsed</Value>
+						<Label>Collapsed or Expanded</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="498" UniqueID="{80EE72EB-03F8-455F-8477-A0098E175970}" Name="Process.498" NameU="Process.498" Master="5">
+					<Text>IT Operations Management</Text>
+					<XForm>
+						<PinX Unit="MM">7.527848706411767</PinX>
+						<PinY Unit="MM">5.532017247843996</PinY>
+					</XForm>
+					<Prop ID="9" Name="SubProcesstype" NameU="SubProcesstype">
+						<Value Unit="STR">Embedded</Value>
+						<Label>Sub Process Type</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">IT Operations Management</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">To monitor and control the IT services and infrastructure. The process IT Operations Management executes day-to-day routine tasks related to the operation of infrastructure components and applications. This includes job scheduling, backup and restore activities, print and output management, and routine maintenance.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="Category_General_" NameU="Category_General_">
+						<Value></Value>
+						<Label>Category (General)</Label>
+					</Prop>
+					<Prop ID="15" Name="Standard_creation_date" NameU="Standard_creation_date">
+						<Value></Value>
+						<Label>Standard creation date</Label>
+					</Prop>
+					<Prop ID="16" Name="Retire_date" NameU="Retire_date">
+						<Value></Value>
+						<Label>Retire date</Label>
+					</Prop>
+					<Prop ID="17" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="18" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="19" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="20" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="21" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="6" Name="CollapsedOrExpanded" NameU="CollapsedOrExpanded">
+						<Value Unit="STR">Collapsed</Value>
+						<Label>Collapsed or Expanded</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="7" UniqueID="{30CD8852-83BA-4A58-B3AB-A2B6560A0053}" Name="Process.7" NameU="Process.7" Master="5">
+					<Text>Problem Management</Text>
+					<XForm>
+						<PinX Unit="MM">11.853308961379810</PinX>
+						<PinY Unit="MM">6.467056617922705</PinY>
+					</XForm>
+					<Prop ID="9" Name="SubProcesstype" NameU="SubProcesstype">
+						<Value Unit="STR">Embedded</Value>
+						<Label>Sub Process Type</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Problem Management</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">To manage the lifecycle of all Problems. The primary objectives of Problem Management are to prevent Incidents from happening, and to minimize the impact of incidents that cannot be prevented. Proactive Problem Management analyzes Incident Records, and uses data collected by other IT Service Management processes to identify trends or significant Problems.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="Category_General_" NameU="Category_General_">
+						<Value></Value>
+						<Label>Category (General)</Label>
+					</Prop>
+					<Prop ID="15" Name="Standard_creation_date" NameU="Standard_creation_date">
+						<Value></Value>
+						<Label>Standard creation date</Label>
+					</Prop>
+					<Prop ID="16" Name="Retire_date" NameU="Retire_date">
+						<Value></Value>
+						<Label>Retire date</Label>
+					</Prop>
+					<Prop ID="17" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="18" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="19" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="20" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="21" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="6" Name="CollapsedOrExpanded" NameU="CollapsedOrExpanded">
+						<Value Unit="STR">Collapsed</Value>
+						<Label>Collapsed or Expanded</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="19" UniqueID="{2F15D6B2-A008-4865-B19A-AE94D52F2944}" Name="Process.19" NameU="Process.19" Master="5">
+					<Text>Service Design</Text>
+					<XForm>
+						<PinX Unit="MM">11.853308961379810</PinX>
+						<PinY Unit="MM">5.522174728158927</PinY>
+					</XForm>
+					<Prop ID="9" Name="SubProcesstype" NameU="SubProcesstype">
+						<Value Unit="STR">Embedded</Value>
+						<Label>Sub Process Type</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Service Design</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">To design new IT services. Its scope includes the design of new services, as well as changes and improvements to existing ones.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="Category_General_" NameU="Category_General_">
+						<Value></Value>
+						<Label>Category (General)</Label>
+					</Prop>
+					<Prop ID="15" Name="Standard_creation_date" NameU="Standard_creation_date">
+						<Value></Value>
+						<Label>Standard creation date</Label>
+					</Prop>
+					<Prop ID="16" Name="Retire_date" NameU="Retire_date">
+						<Value></Value>
+						<Label>Retire date</Label>
+					</Prop>
+					<Prop ID="17" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="18" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="19" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="20" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="21" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="6" Name="CollapsedOrExpanded" NameU="CollapsedOrExpanded">
+						<Value Unit="STR">Collapsed</Value>
+						<Label>Collapsed or Expanded</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="31" UniqueID="{5FC15A40-1636-434B-A5A9-B701FDA44527}" Name="Process.31" NameU="Process.31" Master="5">
+					<Text>Service Transition</Text>
+					<XForm>
+						<PinX Unit="MM">11.853308961379810</PinX>
+						<PinY Unit="MM">4.577292838395145</PinY>
+					</XForm>
+					<Prop ID="9" Name="SubProcesstype" NameU="SubProcesstype">
+						<Value Unit="STR">Embedded</Value>
+						<Label>Sub Process Type</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Service Transition</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">To build and deploy IT services. This process also makes sure that changes to services and Service Management processes are carried out in a coordinated way.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="Category_General_" NameU="Category_General_">
+						<Value></Value>
+						<Label>Category (General)</Label>
+					</Prop>
+					<Prop ID="15" Name="Standard_creation_date" NameU="Standard_creation_date">
+						<Value></Value>
+						<Label>Standard creation date</Label>
+					</Prop>
+					<Prop ID="16" Name="Retire_date" NameU="Retire_date">
+						<Value></Value>
+						<Label>Retire date</Label>
+					</Prop>
+					<Prop ID="17" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="18" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="19" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="20" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="21" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="6" Name="CollapsedOrExpanded" NameU="CollapsedOrExpanded">
+						<Value Unit="STR">Collapsed</Value>
+						<Label>Collapsed or Expanded</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="43" UniqueID="{E21FD7A7-F5E7-489C-9BCD-745599943839}" Name="Process.43" NameU="Process.43" Master="5">
+					<Text>Continual Service Improvement</Text>
+					<XForm>
+						<PinX Unit="MM">11.892679040119988</PinX>
+						<PinY Unit="MM">3.435560554930582</PinY>
+					</XForm>
+					<Prop ID="9" Name="SubProcesstype" NameU="SubProcesstype">
+						<Value Unit="STR">Embedded</Value>
+						<Label>Sub Process Type</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Continual Service Improvement</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">To use methods from quality management in order to learn from past successes and failures. The CSI process implements a closed-loop feedback system as specified in ISO 20000 as a means to continually improve the effectiveness and efficiency of IT services and processes.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="Category_General_" NameU="Category_General_">
+						<Value></Value>
+						<Label>Category (General)</Label>
+					</Prop>
+					<Prop ID="15" Name="Standard_creation_date" NameU="Standard_creation_date">
+						<Value></Value>
+						<Label>Standard creation date</Label>
+					</Prop>
+					<Prop ID="16" Name="Retire_date" NameU="Retire_date">
+						<Value></Value>
+						<Label>Retire date</Label>
+					</Prop>
+					<Prop ID="17" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="18" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="19" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="20" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="21" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="6" Name="CollapsedOrExpanded" NameU="CollapsedOrExpanded">
+						<Value Unit="STR">Collapsed</Value>
+						<Label>Collapsed or Expanded</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>

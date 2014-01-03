@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="91" PageID="0" ObjectID="b9624794-5b42-4db4-b822-2e20f145d43b" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="1">
+  <Dimensions>
+    <Width Unit="mm">7.43202</Width>
+    <Height Unit="mm">-5</Height>
+    <Left Unit="mm">157.5</Left>
+    <Bottom Unit="mm">220.3375</Bottom>
+    <Right Unit="mm">164.932</Right>
+    <Top Unit="mm">215.3375</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName />
+    <Description />
+    <ShapeMaster>BPMN: Sequence Flow</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

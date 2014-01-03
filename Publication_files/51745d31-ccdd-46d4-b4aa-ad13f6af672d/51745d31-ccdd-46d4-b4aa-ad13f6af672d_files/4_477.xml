@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="477" PageID="4" ObjectID="08a0dd14-7792-4363-9274-c82a6b6f2d93" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">287.2284</Left>
+    <Bottom Unit="mm">135.6112</Bottom>
+    <Right Unit="mm">312.2284</Right>
+    <Top Unit="mm">144.1112</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Budget Request</RepositoryName>
+    <Description>A request for a budget, typically issued from any of the Service Management processes at the same time when compiling a Request for Change. An approved Budget Request means that the required financial resources for implementing a Change are approved by Fi</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

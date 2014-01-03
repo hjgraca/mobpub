@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+	<DocumentProperties>
+		<Title>BPMN 2 Model</Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="0" Name="ITIL v3 Process Map - Front Page" NameU="Event Shapes">
+			<Layer IX="0">
+				<Name>Flowchart</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name>Connector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="2">
+				<Name>Data Store</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="3">
+				<Name>Background</Name>
+				<NameUniv>Background</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="4">
+				<Name>Principle</Name>
+				<NameUniv>Principle</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="5">
+				<Name>Measure</Name>
+				<NameUniv>Measure</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="6">
+				<Name>Requirement</Name>
+				<NameUniv>Requirement</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="7">
+				<Name>Control</Name>
+				<NameUniv>Control</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="8">
+				<Name>Risk</Name>
+				<NameUniv>Risk</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="9">
+				<Name>Process</Name>
+				<NameUniv>Process</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="10">
+				<Name>Work Package</Name>
+				<NameUniv>Work Package</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="11">
+				<Name>Improvement</Name>
+				<NameUniv>Improvement</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="12">
+				<Name>Bands</Name>
+				<NameUniv>Bands</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="13">
+				<Name></Name>
+				<NameUniv></NameUniv>
+				<Visible>0</Visible>
+			</Layer>
+			<Value Unit="STR">ITIL v3 Process Map - Front page</Value>
+			<Label>Repository Name</Label>
+			<Value Unit="STR">0.0000</Value>
+			<Label>User Version No</Label>
+			<Value Unit="STR">0.0000</Value>
+			<Label>Created By</Label>
+			<Value Unit="STR">03/01/2014 14:57:09</Value>
+			<Label>Date Last Modified</Label>
+			<Value Unit="STR">0.0000</Value>
+			<Label>Last Modified By</Label>
+			<Value Unit="STR">28/03/2013 10:39:00</Value>
+			<Label>Date Created</Label>
+			<Value Unit="STR">ITIL Process Model</Value>
+			<Label>Object Category</Label>
+			<Value Unit="STR">The ITIL Front Page - an Entry Point into the iServer ITIL Reference Library and ITIL Processes</Value>
+			<Label>Description</Label>
+			<Value Unit="STR">5</Value>
+			<Label>System Version No</Label>
+			<Shapes>
+				<Shape ID="95" UniqueID="{8981CC80-4866-4162-BBA3-5F63F799FC59}" Name="Sheet.95" NameU="Sheet.95">
+					<XForm>
+						<PinX Unit="IN">7.972440944881889</PinX>
+						<PinY Unit="IN">5.354330708661418</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="96" UniqueID="{A9863792-ACBD-4BB1-B7E0-55048C8E2C88}" Name="Sheet.96" NameU="Sheet.96">
+					<Text>ITIL v3 Process Map - Front page</Text>
+					<XForm>
+						<PinX Unit="IN">6.652698023559939</PinX>
+						<PinY Unit="IN">10.288512015042215</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="98" UniqueID="{9D38BD86-0FF4-4D97-B23C-A51E403A9D7D}" Name="Sheet.98" NameU="Sheet.98">
+					<Text>ITIL Process Model
+
+Version: 0
+Created: 0 on 28/03/2013 10:39:00
+Last Modified By: 0 on 03/01/2014 14:57:09</Text>
+					<XForm>
+						<PinX Unit="IN">2.357329452065053</PinX>
+						<PinY Unit="IN">9.368167389357151</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="99" UniqueID="{F057B57A-91DB-4C75-9BD7-3B4D3A531662}" Name="Sheet.99" NameU="Sheet.99">
+					<Text>Description
+
+The ITIL Front Page - an Entry Point into the iServer ITIL Reference Library and ITIL Processes</Text>
+					<XForm>
+						<PinX Unit="IN">7.957209570793681</PinX>
+						<PinY Unit="IN">9.365315615682235</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>3</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="197" UniqueID="{CF640A80-92B4-4513-9214-53815280D28D}" Name="Sheet.197" NameU="Sheet.197">
+					<XForm>
+						<PinX Unit="MM">7.972440944881889</PinX>
+						<PinY Unit="MM">5.354330708661418</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="21" UniqueID="{BD7546D3-85DF-4596-9DC5-7426767ADF20}" Name="Center Box.21" NameU="Center Box.21">
+					<Text>TEST CASES: DATA</Text>
+					<XForm>
+						<PinX Unit="MM">8.464566929133857</PinX>
+						<PinY Unit="MM">1.558309391551934</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>12</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="20" UniqueID="{C928EE87-B664-414E-B8DA-F0E06481111B}" Name="Center Box.20" NameU="Center Box.20">
+					<Text>TEST CASES: NAVIGATION</Text>
+					<XForm>
+						<PinX Unit="MM">8.464566929133859</PinX>
+						<PinY Unit="MM">5.787401574803150</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>12</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="81" UniqueID="{BEDE598C-40E1-413B-9509-6066907A9AC1}" Name="Center Box.53" NameU="Center Box.53">
+					<Text>DEMO PATH:</Text>
+					<XForm>
+						<PinX Unit="MM">1.681840551181107</PinX>
+						<PinY Unit="MM">7.223918482462634</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>12</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="56" UniqueID="{C3A24581-0E25-4B83-911A-FAF3D36B1143}" Name="Sub Process.56" NameU="Process.56" Master="6">
+					<Text>Service Operation</Text>
+					<XForm>
+						<PinX Unit="MM">1.594488188976378</PinX>
+						<PinY Unit="MM">7.323232984968648</PinY>
+					</XForm>
+					<Prop ID="9" Name="SubProcesstype" NameU="SubProcesstype">
+						<Value Unit="STR">Embedded</Value>
+						<Label>Sub Process Type</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">Service Operation</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">Process Objective: To make sure that IT services are delivered effectively and efficiently. This includes fulfilling user requests, resolving service failures, fixing problems, as well as carrying out routine operational tasks.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="Standard_creation_date" NameU="Standard_creation_date">
+						<Value></Value>
+						<Label>Standard creation date</Label>
+					</Prop>
+					<Prop ID="15" Name="Retire_date" NameU="Retire_date">
+						<Value></Value>
+						<Label>Retire date</Label>
+					</Prop>
+					<Prop ID="16" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="17" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="18" Name="Category_General_" NameU="Category_General_">
+						<Value></Value>
+						<Label>Category (General)</Label>
+					</Prop>
+					<Prop ID="19" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="20" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="21" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="6" Name="CollapsedOrExpanded" NameU="CollapsedOrExpanded">
+						<Value Unit="STR">Collapsed</Value>
+						<Label>Collapsed or Expanded</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="123" UniqueID="{42D8CD9B-BA8D-4042-A1D4-76A886AEB00E}" Name="Navigation Shape.123" NameU="Navigation Shape.123" Master="5">
+					<Text>VISIO HYPERLINK
+www.orbussoftware.com</Text>
+					<XForm>
+						<PinX Unit="MM">6.093865395221100</PinX>
+						<PinY Unit="MM">6.614080601289551</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address>http://www.orbussoftware.com</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+										<HLURL:AbsoluteURL>http://www.orbussoftware.com</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">VISIO HYPERLINK
+www.orbussoftware.com</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="4" Name="sys_ShapeText" NameU="sys_ShapeText">
+						<Value Unit="STR">VISIO HYPERLINK
+www.orbussoftware.com</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="5" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="147" UniqueID="{F99EB420-E160-4317-B76D-9301F37884EE}" Name="Navigation Shape.147" NameU="Navigation Shape.147" Master="5">
+					<Text>LINK TO DOCUMENT BOOKMARK</Text>
+					<XForm>
+						<PinX Unit="MM">6.093865395221100</PinX>
+						<PinY Unit="MM">4.730023163923343</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address>http://www.orbussoftware.com</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+										<HLURL:AbsoluteURL>http://www.orbussoftware.com</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">LINK TO DOCUMENT BOOKMARK</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="4" Name="sys_ShapeText" NameU="sys_ShapeText">
+						<Value Unit="STR">LINK TO DOCUMENT BOOKMARK</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="5" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="174" UniqueID="{0193E5BA-EE04-4C15-8C96-FBE6FB2D4E41}" Name="Sheet.174" NameU="Sheet.174">
+					<Text>Mobile Publisher Navigation Test Cases</Text>
+					<XForm>
+						<PinX Unit="MM">13.287401574803146</PinX>
+						<PinY Unit="MM">9.153543307086615</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="177" UniqueID="{220F330D-DAD5-40BF-8811-7BC9EFF5827A}" Name="Navigation Shape.177" NameU="Navigation Shape.177" Master="5">
+					<Text>LINK TO WORD DOCUMENT</Text>
+					<XForm>
+						<PinX Unit="MM">6.093865395221100</PinX>
+						<PinY Unit="MM">5.671560916250181</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address>http://www.orbussoftware.com</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+										<HLURL:AbsoluteURL>http://www.orbussoftware.com</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">LINK TO WORD DOCUMENT</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="4" Name="sys_ShapeText" NameU="sys_ShapeText">
+						<Value></Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="5" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="179" UniqueID="{6972BAE6-AC79-49D2-A41E-7790F70A4A76}" Name="Navigation Shape.179" NameU="Navigation Shape.179" Master="5">
+					<Text>LINK TO DIAGRAM</Text>
+					<XForm>
+						<PinX Unit="MM">6.093865395221100</PinX>
+						<PinY Unit="MM">7.537406213315107</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address>http://www.orbussoftware.com</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+										<HLURL:AbsoluteURL>http://www.orbussoftware.com</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">LINK TO DIAGRAM</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="4" Name="sys_ShapeText" NameU="sys_ShapeText">
+						<Value></Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="5" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="180" UniqueID="{44E762DE-07E1-4C89-B68E-63B537DDBC6F}" Name="Sub Process.180" NameU="Process.180" Master="6">
+					<Text>LINK TO OBJECT (REUSED IN MANY PLACES)</Text>
+					<XForm>
+						<PinX Unit="MM">10.831020058294961</PinX>
+						<PinY Unit="MM">7.557582219041448</PinY>
+					</XForm>
+					<Prop ID="9" Name="SubProcesstype" NameU="SubProcesstype">
+						<Value Unit="STR">Embedded</Value>
+						<Label>Sub Process Type</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">LINK TO OBJECT (REUSED IN MANY PLACES)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">To use methods from quality management in order to learn from past successes and failures. The CSI process implements a closed-loop feedback system as specified in ISO 20000 as a means to continually improve the effectiveness and efficiency of IT services and processes.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="Standard_creation_date" NameU="Standard_creation_date">
+						<Value></Value>
+						<Label>Standard creation date</Label>
+					</Prop>
+					<Prop ID="15" Name="Retire_date" NameU="Retire_date">
+						<Value></Value>
+						<Label>Retire date</Label>
+					</Prop>
+					<Prop ID="16" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="17" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="18" Name="Category_General_" NameU="Category_General_">
+						<Value></Value>
+						<Label>Category (General)</Label>
+					</Prop>
+					<Prop ID="19" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="20" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="21" Name="sys_ShapeText" NameU="sys_ShapeText">
+						<Value Unit="STR">LINK TO OBJECT (REUSED IN MANY PLACES)</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="22" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="6" Name="CollapsedOrExpanded" NameU="CollapsedOrExpanded">
+						<Value Unit="STR">Collapsed</Value>
+						<Label>Collapsed or Expanded</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="196" UniqueID="{9D3F5129-6CE0-4018-BFE7-E16E49DA009C}" Name="Sheet.196" NameU="Sheet.196">
+					<Text>The diagram is also linked to a document</Text>
+					<XForm>
+						<PinX Unit="MM">1.753050338053980</PinX>
+						<PinY Unit="MM">5.118017609163568</PinY>
+					</XForm>
+					<Prop ID="1" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="1" UniqueID="{3BCE5AB5-F8F4-4E64-9340-844EF80C53BE}" Name="Sub Process.1" NameU="Process.1" Master="6">
+					<Text>LINK TO OBJECT (REUSED IN ONE PLACE)</Text>
+					<XForm>
+						<PinX Unit="MM">10.831020058294961</PinX>
+						<PinY Unit="MM">6.634256607015894</PinY>
+					</XForm>
+					<Prop ID="9" Name="SubProcesstype" NameU="SubProcesstype">
+						<Value Unit="STR">Embedded</Value>
+						<Label>Sub Process Type</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">LINK TO OBJECT (REUSED IN ONE PLACE)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">To use methods from quality management in order to learn from past successes and failures. The CSI process implements a closed-loop feedback system as specified in ISO 20000 as a means to continually improve the effectiveness and efficiency of IT services and processes.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="Standard_creation_date" NameU="Standard_creation_date">
+						<Value></Value>
+						<Label>Standard creation date</Label>
+					</Prop>
+					<Prop ID="15" Name="Retire_date" NameU="Retire_date">
+						<Value></Value>
+						<Label>Retire date</Label>
+					</Prop>
+					<Prop ID="16" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="17" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="18" Name="Category_General_" NameU="Category_General_">
+						<Value></Value>
+						<Label>Category (General)</Label>
+					</Prop>
+					<Prop ID="19" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="20" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="21" Name="sys_ShapeText" NameU="sys_ShapeText">
+						<Value></Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="22" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="6" Name="CollapsedOrExpanded" NameU="CollapsedOrExpanded">
+						<Value Unit="STR">Collapsed</Value>
+						<Label>Collapsed or Expanded</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="14" UniqueID="{1FB1358A-51BA-45D3-AEF8-DB5A269CCDB4}" Name="Sub Process.14" NameU="Process.14" Master="6">
+					<Text>LINK TO OBJECT (ON NON DEFAULT PAGE)</Text>
+					<XForm>
+						<PinX Unit="MM">10.831020058294961</PinX>
+						<PinY Unit="MM">5.710930994990340</PinY>
+					</XForm>
+					<Prop ID="9" Name="SubProcesstype" NameU="SubProcesstype">
+						<Value Unit="STR">Embedded</Value>
+						<Label>Sub Process Type</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">LINK TO OBJECT (ON NON DEFAULT PAGE)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">To use methods from quality management in order to learn from past successes and failures. The CSI process implements a closed-loop feedback system as specified in ISO 20000 as a means to continually improve the effectiveness and efficiency of IT services and processes.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="Standard_creation_date" NameU="Standard_creation_date">
+						<Value></Value>
+						<Label>Standard creation date</Label>
+					</Prop>
+					<Prop ID="15" Name="Retire_date" NameU="Retire_date">
+						<Value></Value>
+						<Label>Retire date</Label>
+					</Prop>
+					<Prop ID="16" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="17" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="18" Name="Category_General_" NameU="Category_General_">
+						<Value></Value>
+						<Label>Category (General)</Label>
+					</Prop>
+					<Prop ID="19" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="20" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="21" Name="sys_ShapeText" NameU="sys_ShapeText">
+						<Value></Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="22" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="6" Name="CollapsedOrExpanded" NameU="CollapsedOrExpanded">
+						<Value Unit="STR">Collapsed</Value>
+						<Label>Collapsed or Expanded</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="88" UniqueID="{39466812-16D3-4943-B095-929D7339463E}" Name="Navigation Shape.88" NameU="Navigation Shape.88" Master="5">
+					<Text>LINK TO SEVERAL DIAGRAMS AND DOCS</Text>
+					<XForm>
+						<PinX Unit="MM">6.093865395221100</PinX>
+						<PinY Unit="MM">3.743992584108166</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address>http://www.orbussoftware.com</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+										<HLURL:AbsoluteURL>http://www.orbussoftware.com</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">LINK TO SEVERAL DIAGRAMS AND DOCS</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="4" Name="sys_ShapeText" NameU="sys_ShapeText">
+						<Value></Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="5" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="92" UniqueID="{4D7D01C0-E0BB-41B8-B5D6-721D22DD24D8}" Name="Sub Process.92" NameU="Process.92" Master="6">
+					<Text>LINK TO SEVERAL OBJECTS</Text>
+					<XForm>
+						<PinX Unit="MM">10.831020058294961</PinX>
+						<PinY Unit="MM">4.764177866858415</PinY>
+					</XForm>
+					<Prop ID="9" Name="SubProcesstype" NameU="SubProcesstype">
+						<Value Unit="STR">Embedded</Value>
+						<Label>Sub Process Type</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">LINK TO SEVERAL OBJECTS</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">To use methods from quality management in order to learn from past successes and failures. The CSI process implements a closed-loop feedback system as specified in ISO 20000 as a means to continually improve the effectiveness and efficiency of IT services and processes.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="Standard_creation_date" NameU="Standard_creation_date">
+						<Value></Value>
+						<Label>Standard creation date</Label>
+					</Prop>
+					<Prop ID="15" Name="Retire_date" NameU="Retire_date">
+						<Value></Value>
+						<Label>Retire date</Label>
+					</Prop>
+					<Prop ID="16" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="17" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value></Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="18" Name="Category_General_" NameU="Category_General_">
+						<Value></Value>
+						<Label>Category (General)</Label>
+					</Prop>
+					<Prop ID="19" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value></Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="20" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value></Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="21" Name="sys_ShapeText" NameU="sys_ShapeText">
+						<Value></Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="22" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="6" Name="CollapsedOrExpanded" NameU="CollapsedOrExpanded">
+						<Value Unit="STR">Collapsed</Value>
+						<Label>Collapsed or Expanded</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="113" UniqueID="{561AB169-452B-496B-A1DE-DD1FECBF3C97}" Name="Navigation Shape.113" NameU="Navigation Shape.113" Master="5">
+					<Text>HAS AN ISSUE</Text>
+					<XForm>
+						<PinX Unit="MM">5.247408702307715</PinX>
+						<PinY Unit="MM">1.558309391551933</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address>http://www.orbussoftware.com</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+										<HLURL:AbsoluteURL>http://www.orbussoftware.com</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">HAS AN ISSUE</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="4" Name="sys_ShapeText" NameU="sys_ShapeText">
+						<Value></Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="5" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="115" UniqueID="{06C180E6-E791-44DC-8B83-8A23E7C03C98}" Name="Navigation Shape.115" NameU="Navigation Shape.115" Master="5">
+					<Text>HAS TWO ISSUES</Text>
+					<XForm>
+						<PinX Unit="MM">7.963944135378581</PinX>
+						<PinY Unit="MM">1.558309391551933</PinY>
+					</XForm>
+					<Scratch>
+						<B>
+							<SolutionXML>
+								<HLURL:Hyperlinks xmlns:HLURL="urn:schemas-microsoft-com:office:visio:dghlinkext">
+									<HLURL:Hyperlink ID="1">
+										<HLURL:Description></HLURL:Description>
+										<HLURL:Address>http://www.orbussoftware.com</HLURL:Address>
+										<HLURL:SubAddress></HLURL:SubAddress>
+										<HLURL:ExtraInfo></HLURL:ExtraInfo>
+										<HLURL:Default>0</HLURL:Default>
+										<HLURL:NewWindow>0</HLURL:NewWindow>
+										<HLURL:AbsoluteURL>http://www.orbussoftware.com</HLURL:AbsoluteURL>
+									</HLURL:Hyperlink>
+								</HLURL:Hyperlinks>
+							</SolutionXML>
+						</B>
+					</Scratch>
+					<Prop ID="1" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">HAS TWO ISSUES</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="2" Name="sys_Description" NameU="sys_Description">
+						<Value></Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="4" Name="sys_ShapeText" NameU="sys_ShapeText">
+						<Value></Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="5" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="119" UniqueID="{3E1C7A4A-602D-4AD1-9F43-3C462ABD54A8}" Name="Sub Process.119" NameU="Process.119" Master="6">
+					<Text>HAS ATTRIBUTE VALUES (INC A URL THAT SHOULD BECOME A HYPERLINK)</Text>
+					<XForm>
+						<PinX Unit="MM">11.015125237740786</PinX>
+						<PinY Unit="MM">1.574803149606300</PinY>
+					</XForm>
+					<Prop ID="9" Name="SubProcesstype" NameU="SubProcesstype">
+						<Value Unit="STR">Embedded</Value>
+						<Label>Sub Process Type</Label>
+					</Prop>
+					<Prop ID="11" Name="sys_RepositoryName" NameU="sys_RepositoryName">
+						<Value Unit="STR">HAS ATTRIBUTE VALUES (INC A URL THAT SHOULD BECOME A HYPERLINK)</Value>
+						<Label>Repository Name</Label>
+					</Prop>
+					<Prop ID="12" Name="sys_Description" NameU="sys_Description">
+						<Value Unit="STR">To use methods from quality management in order to learn from past successes and failures. The CSI process implements a closed-loop feedback system as specified in ISO 20000 as a means to continually improve the effectiveness and efficiency of IT services and processes.</Value>
+						<Label>Description</Label>
+					</Prop>
+					<Prop ID="14" Name="Standard_creation_date" NameU="Standard_creation_date">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Standard creation date</Label>
+					</Prop>
+					<Prop ID="15" Name="Retire_date" NameU="Retire_date">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Retire date</Label>
+					</Prop>
+					<Prop ID="16" Name="APQC_Identifier" NameU="APQC_Identifier">
+						<Value></Value>
+						<Label>APQC: Identifier</Label>
+					</Prop>
+					<Prop ID="17" Name="APQC_In_Scope" NameU="APQC_In_Scope">
+						<Value Unit="STR">Included</Value>
+						<Label>APQC: Scope</Label>
+					</Prop>
+					<Prop ID="18" Name="Category_General_" NameU="Category_General_">
+						<Value></Value>
+						<Label>Category (General)</Label>
+					</Prop>
+					<Prop ID="19" Name="Process_Strategic_Importance" NameU="Process_Strategic_Importance">
+						<Value Unit="STR">5 - Very High</Value>
+						<Label>Process: Strategic Importance</Label>
+					</Prop>
+					<Prop ID="20" Name="Process_Criticality" NameU="Process_Criticality">
+						<Value Unit="STR">4 - High</Value>
+						<Label>Process: Criticality</Label>
+					</Prop>
+					<Prop ID="21" Name="sys_ShapeText" NameU="sys_ShapeText">
+						<Value Unit="STR">HAS ATTRIBUTE VALUES (INC A URL THAT SHOULD BECOME A HYPERLINK)</Value>
+						<Label></Label>
+					</Prop>
+					<Prop ID="22" Name="PublishDate" NameU="PublishDate">
+						<Value Unit="STR">03/01/2014</Value>
+						<Label>Publish Date</Label>
+					</Prop>
+					<Prop ID="10" Name="CallActivity" NameU="CallActivity">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Call Activity</Label>
+					</Prop>
+					<Prop ID="6" Name="CollapsedOrExpanded" NameU="CollapsedOrExpanded">
+						<Value Unit="STR">Collapsed</Value>
+						<Label>Collapsed or Expanded</Label>
+					</Prop>
+					<Prop ID="8" Name="ShowSequentialMultipleInstances" NameU="ShowSequentialMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Sequential Multiple Instances</Label>
+					</Prop>
+					<Prop ID="3" Name="ShowCompensation" NameU="ShowCompensation">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Compensation</Label>
+					</Prop>
+					<Prop ID="4" Name="ShowParallelMultipleInstances" NameU="ShowParallelMultipleInstances">
+						<Value Unit="STR">FALSE</Value>
+						<Label>Loop: Parallel Multiple Instances</Label>
+					</Prop>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>

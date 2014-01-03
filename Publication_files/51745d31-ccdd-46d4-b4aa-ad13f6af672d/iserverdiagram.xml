@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerDiagram ID="51745d31-ccdd-46d4-b4aa-ad13f6af672d">
+  <iServerProperties>
+    <RepositoryName>Problem Diagnosis and Resolution</RepositoryName>
+    <Category>ITIL Process Model</Category>
+    <Logo>../Images/visio.gif</Logo>
+    <Ext>.html</Ext>
+    <Description>To ensure that - after a successful Problem solution - the Problem Record contains a full historical description, and that related Known Error Records are updated.
+</Description>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+    <Owner UserID="" Name="" Email="" />
+    <Navigation>
+      <TargetFrame repository_open_document="_top" repository_open_diagram="_top" repository_link_document="_top" repository_link_diagram="_top" repository_link_shape="_top" diagram_link_document="_top" diagram_link_diagram="_top" diagram_link_shape="_top" />
+      <DocumentFrame enabled="false" height="30%" />
+      <PopupMenu first_tier_links="5" />
+      <VisioHyperlinks publish="false" />
+      <Indicators ShowDocLinks="true" ShowDiagLinks="true" ShowIssues="true" Positioning="right" />
+    </Navigation>
+    <Pages Count="2">
+      <Page ID="0">
+        <Dimensions>
+          <Height Unit="mm">380</Height>
+          <Width Unit="mm">525</Width>
+        </Dimensions>
+      </Page>
+      <Page ID="4">
+        <Dimensions>
+          <Height Unit="mm">310.103</Height>
+          <Width Unit="mm">472.6861</Width>
+        </Dimensions>
+      </Page>
+    </Pages>
+  </iServerProperties>
+  <CustomAttributes />
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>BPMN: Drill Down</LinkType>
+      <Reason />
+      <Description>drills up to</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Process</Category>
+        <Name>Problem Diagnosis and Resolution</Name>
+        <Target DocumentID="4ccd08bb-2ae5-4296-a627-0211d8f30c8d" DocumentName="Problem Closure and Evaluation" PageID="4" ShapeID="291" />
+        <Target DocumentID="79801fb3-e99c-499a-a992-556d6b3d95a9" DocumentName="Problem Management Reporting" PageID="4" ShapeID="388" />
+        <Target DocumentID="df3e5052-4000-4850-a0cc-79772f5b5488" DocumentName="Problem Identification and Categorization" PageID="4" ShapeID="371" />
+        <Target DocumentID="0febf2c1-4d74-407f-9191-9d73c114c377" DocumentName="Problem Management" PageID="0" ShapeID="340" />
+        <Target DocumentID="51745d31-ccdd-46d4-b4aa-ad13f6af672d" DocumentName="Problem Diagnosis and Resolution" PageID="4" ShapeID="586" />
+        <Target DocumentID="9be31e17-1977-43fe-bc17-c09bc24bc1bf" DocumentName="Problem and Error Control" PageID="4" ShapeID="164" />
+        <Target DocumentID="ba420e7d-e2a7-4c33-a934-f67c483f0a2d" DocumentName="Major Problem Review" PageID="4" ShapeID="7" />
+        <Target DocumentID="82f93e39-c086-4799-bf4a-f8f71c67863f" DocumentName="Index of Service Operation Processes" PageID="0" ShapeID="296" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <Shapes>
+    <Shape ID="718" PageID="0" Source="0_718.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="550" PageID="4" Source="4_550.xml" Issues="True" DiagLinks="False" DocLinks="False" />
+    <Shape ID="946" PageID="0" Source="0_946.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="7" PageID="0" Source="0_7.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="489" PageID="4" Source="4_489.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="486" PageID="4" Source="4_486.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="1058" PageID="0" Source="0_1058.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="670" PageID="4" Source="4_670.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="730" PageID="0" Source="0_730.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="462" PageID="4" Source="4_462.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="646" PageID="4" Source="4_646.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="24" PageID="0" Source="0_24.xml" Issues="False" DiagLinks="False" DocLinks="True" />
+    <Shape ID="754" PageID="0" Source="0_754.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="538" PageID="4" Source="4_538.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="471" PageID="4" Source="4_471.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="1144" PageID="0" Source="0_1144.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="562" PageID="4" Source="4_562.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="58" PageID="0" Source="0_58.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="139" PageID="0" Source="0_139.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="526" PageID="4" Source="4_526.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="167" PageID="0" Source="0_167.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="778" PageID="0" Source="0_778.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="21" PageID="0" Source="0_21.xml" Issues="False" DiagLinks="False" DocLinks="True" />
+    <Shape ID="890" PageID="0" Source="0_890.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="1148" PageID="0" Source="0_1148.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="1030" PageID="0" Source="0_1030.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="834" PageID="0" Source="0_834.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="806" PageID="0" Source="0_806.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="468" PageID="4" Source="4_468.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="1086" PageID="0" Source="0_1086.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="1002" PageID="0" Source="0_1002.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="742" PageID="0" Source="0_742.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="450" PageID="4" Source="4_450.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="211" PageID="0" Source="0_211.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="195" PageID="0" Source="0_195.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="586" PageID="4" Source="4_586.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="18" PageID="0" Source="0_18.xml" Issues="False" DiagLinks="False" DocLinks="True" />
+    <Shape ID="111" PageID="0" Source="0_111.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="477" PageID="4" Source="4_477.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="598" PageID="4" Source="4_598.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="974" PageID="0" Source="0_974.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="10" PageID="0" Source="0_10.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="483" PageID="4" Source="4_483.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="474" PageID="4" Source="4_474.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="456" PageID="4" Source="4_456.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="610" PageID="4" Source="4_610.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="574" PageID="4" Source="4_574.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="658" PageID="4" Source="4_658.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="862" PageID="0" Source="0_862.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="71" PageID="0" Source="0_71.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="88" PageID="0" Source="0_88.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="89" PageID="0" Source="0_89.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="90" PageID="0" Source="0_90.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="91" PageID="0" Source="0_91.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="92" PageID="0" Source="0_92.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="93" PageID="0" Source="0_93.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="94" PageID="0" Source="0_94.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="95" PageID="0" Source="0_95.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="96" PageID="0" Source="0_96.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="97" PageID="0" Source="0_97.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="98" PageID="0" Source="0_98.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="99" PageID="0" Source="0_99.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="100" PageID="0" Source="0_100.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="101" PageID="0" Source="0_101.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="102" PageID="0" Source="0_102.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="103" PageID="0" Source="0_103.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="104" PageID="0" Source="0_104.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="105" PageID="0" Source="0_105.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="106" PageID="0" Source="0_106.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="107" PageID="0" Source="0_107.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="108" PageID="0" Source="0_108.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="109" PageID="0" Source="0_109.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="110" PageID="0" Source="0_110.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="492" PageID="4" Source="4_492.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="493" PageID="4" Source="4_493.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="494" PageID="4" Source="4_494.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="495" PageID="4" Source="4_495.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="496" PageID="4" Source="4_496.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="497" PageID="4" Source="4_497.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="498" PageID="4" Source="4_498.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="499" PageID="4" Source="4_499.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="500" PageID="4" Source="4_500.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="501" PageID="4" Source="4_501.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="502" PageID="4" Source="4_502.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="503" PageID="4" Source="4_503.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="504" PageID="4" Source="4_504.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="505" PageID="4" Source="4_505.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="506" PageID="4" Source="4_506.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="507" PageID="4" Source="4_507.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="508" PageID="4" Source="4_508.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="509" PageID="4" Source="4_509.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="510" PageID="4" Source="4_510.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="511" PageID="4" Source="4_511.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="512" PageID="4" Source="4_512.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="513" PageID="4" Source="4_513.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="514" PageID="4" Source="4_514.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="515" PageID="4" Source="4_515.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="516" PageID="4" Source="4_516.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="517" PageID="4" Source="4_517.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="518" PageID="4" Source="4_518.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="519" PageID="4" Source="4_519.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="520" PageID="4" Source="4_520.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="521" PageID="4" Source="4_521.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="522" PageID="4" Source="4_522.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="523" PageID="4" Source="4_523.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="524" PageID="4" Source="4_524.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="525" PageID="4" Source="4_525.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+  </Shapes>
+</iServerDiagram>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerDiagram ID="92538287-9c31-498d-a131-ee1027a879a4">
+  <iServerProperties>
+    <RepositoryName>Nav test</RepositoryName>
+    <Category>ITIL Process Model</Category>
+    <Logo>../Images/visio.gif</Logo>
+    <Ext>.html</Ext>
+    <Description />
+    <Timestamp CreatedOn="2014-01-03" CreatedBy="System Administrator" LastModifiedOn="2014-01-03" LastModifiedBy="System Administrator" />
+    <Owner UserID="" Name="" Email="" />
+    <Navigation>
+      <TargetFrame repository_open_document="_top" repository_open_diagram="_top" repository_link_document="_top" repository_link_diagram="_top" repository_link_shape="_top" diagram_link_document="_top" diagram_link_diagram="_top" diagram_link_shape="_top" />
+      <DocumentFrame enabled="false" height="30%" />
+      <PopupMenu first_tier_links="5" />
+      <VisioHyperlinks publish="false" />
+      <Indicators ShowDocLinks="true" ShowDiagLinks="true" ShowIssues="true" Positioning="right" />
+    </Navigation>
+    <Pages Count="2">
+      <Page ID="0">
+        <Dimensions>
+          <Height Unit="mm">210</Height>
+          <Width Unit="mm">297</Width>
+        </Dimensions>
+      </Page>
+      <Page ID="4">
+        <Dimensions>
+          <Height Unit="mm">210</Height>
+          <Width Unit="mm">297</Width>
+        </Dimensions>
+      </Page>
+    </Pages>
+  </iServerProperties>
+  <CustomAttributes />
+  <Issues />
+  <Relations />
+  <Shapes>
+    <Shape ID="1" PageID="4" Source="4_1.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="4" PageID="4" Source="4_4.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="6" PageID="0" Source="0_6.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+  </Shapes>
+</iServerDiagram>

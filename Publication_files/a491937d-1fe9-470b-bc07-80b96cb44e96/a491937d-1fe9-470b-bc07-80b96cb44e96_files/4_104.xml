@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="104" PageID="4" ObjectID="39d74f50-9cdb-4515-acce-428f53e0d52b" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">104.6786</Left>
+    <Bottom Unit="mm">278.1483</Bottom>
+    <Right Unit="mm">129.6786</Right>
+    <Top Unit="mm">286.6483</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>IT Service Continuity Strategy</RepositoryName>
+    <Description>The IT Service Continuity Strategy contains an outline of the approach to ensure the continuity of services in the case of disaster events. It includes a list of Vital Business Functions and applied risk reduction or recovery options. The IT Service Conti</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

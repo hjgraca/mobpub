@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="82" PageID="4" ObjectID="dfb10d29-4019-4239-850f-ce1d4d017c73" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">143.5167</Left>
+    <Bottom Unit="mm">240.434</Bottom>
+    <Right Unit="mm">168.5167</Right>
+    <Top Unit="mm">248.934</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Service Transition Report</RepositoryName>
+    <Description>The Service Transition Report is an overall summary of all planned or ongoing Service Transition projects for deploying major Releases, listing key project data like milestones and current project status.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

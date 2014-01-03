@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="731" PageID="0" ObjectID="c14f5a85-8221-4740-897e-25f30c88f7c3" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">22</Width>
+    <Height Unit="mm">14.27</Height>
+    <Left Unit="mm">115</Left>
+    <Bottom Unit="mm">117.5</Bottom>
+    <Right Unit="mm">137</Right>
+    <Top Unit="mm">131.77</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Check recent Changes or Releases</RepositoryName>
+    <Description />
+    <ShapeMaster>Task</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes>
+    <Attribute>
+      <Name>APQC: Identifier</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>APQC: Scope</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>BPMN: Task Type</Name>
+      <Description />
+      <Value>None</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Complexity</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Cost (GBP)</Name>
+      <Description />
+      <Value>0.00</Value>
+      <Datatype>Decimal</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Criticality</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: ID</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Manual or Automated</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Maturity</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Owner</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Possible Improvements</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Strategic Importance</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+  </CustomAttributes>
+</Shape>

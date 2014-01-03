@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="114" PageID="0" ObjectID="2b5ba814-1bdf-4ffe-9c28-dbb923215f75" Issues="False" DiagLinks="False" DocLinks="True" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">78.5</Left>
+    <Bottom Unit="mm">118.25</Bottom>
+    <Right Unit="mm">103.5</Right>
+    <Top Unit="mm">126.75</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Checklist Incident Escalation Rules</RepositoryName>
+    <Description>A set of rules defining a hierarchy for escalating Incidents, and triggers which lead to escalations. Triggers are usually based on Incident severity and resolution times.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates to</Description>
+      <Destination>
+        <ApplicationType>MSWord</ApplicationType>
+        <Ext>.doc</Ext>
+        <Category />
+        <Name>Incident Escalation Rules</Name>
+        <Target DocumentID="23163a2d-0cb5-4d61-8b1a-af35f5125022" DocumentName="Incident Escalation Rules" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

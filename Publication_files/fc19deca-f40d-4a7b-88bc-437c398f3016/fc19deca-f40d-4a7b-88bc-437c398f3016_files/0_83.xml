@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="83" PageID="0" ObjectID="0a9dfb24-1b39-44a2-bc73-a970de969359" Issues="False" DiagLinks="False" DocLinks="True" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">486.3006</Left>
+    <Bottom Unit="mm">351.3854</Bottom>
+    <Right Unit="mm">511.3006</Right>
+    <Top Unit="mm">359.8854</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Checklist Recovery Plan</RepositoryName>
+    <Description>Recovery Plans are created mainly by Availability and IT Service Continuity Management. The plans contain detailed instructions for returning services to a working state.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates to</Description>
+      <Destination>
+        <ApplicationType>MSWord</ApplicationType>
+        <Ext>.doc</Ext>
+        <Category />
+        <Name>Recovery Plan</Name>
+        <Target DocumentID="eedc6271-f2f0-44a1-a4cf-a92d71591668" DocumentName="Recovery Plan" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

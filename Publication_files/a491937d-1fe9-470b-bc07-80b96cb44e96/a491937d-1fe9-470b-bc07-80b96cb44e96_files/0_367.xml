@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="367" PageID="0" ObjectID="aaeab0bb-9892-4232-b3e6-44f45ab8322b" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="1">
+  <Dimensions>
+    <Width Unit="mm">-77</Width>
+    <Height Unit="mm">141.364</Height>
+    <Left Unit="mm">215.1472</Left>
+    <Bottom Unit="mm">58.25333</Bottom>
+    <Right Unit="mm">138.1472</Right>
+    <Top Unit="mm">199.6173</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName />
+    <Description />
+    <ShapeMaster>BPMN: Association</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

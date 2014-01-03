@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="119" PageID="0" ObjectID="23c5968e-1973-4a62-8082-a6fc822cc3fa" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">82.43164</Width>
+    <Height Unit="mm">16</Height>
+    <Left Unit="mm">238.5684</Left>
+    <Bottom Unit="mm">32</Bottom>
+    <Right Unit="mm">321</Right>
+    <Top Unit="mm">48</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>HAS ATTRIBUTE VALUES (INC A URL THAT SHOULD BECOME A HYPERLINK)</RepositoryName>
+    <Description>To use methods from quality management in order to learn from past successes and failures. The CSI process implements a closed-loop feedback system as specified in ISO 20000 as a means to continually improve the effectiveness and efficiency of IT services and processes.</Description>
+    <ShapeMaster>Process</ShapeMaster>
+    <Timestamp CreatedOn="2014-01-03" CreatedBy="System Administrator" LastModifiedOn="2014-01-03" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes>
+    <Attribute>
+      <Name>APQC: Identifier</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>APQC: Scope</Name>
+      <Description />
+      <Value>Included</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Category (General)</Name>
+      <Description>User-definable categorization taxonomy for each metamodel object.</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>ID</Name>
+      <Description>Unique identifier for the architecture object.</Description>
+      <Value>12312312</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Last standard review date</Name>
+      <Description>Last date that the standard was reviewed.
+</Description>
+      <Value>03/01/2014</Value>
+      <Datatype>Date</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Manual or automated</Name>
+      <Description>Whether this process is supported by IT or is a manual process.
+</Description>
+      <Value>Automated</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Next standard review date</Name>
+      <Description>Next date for the standard to be reviewed.
+</Description>
+      <Value>03/01/2014</Value>
+      <Datatype>Date</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Owner</Name>
+      <Description>Owner of the architecture object.</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process criticality</Name>
+      <Description>Criticality of this process to business operations.
+</Description>
+      <Value>Low</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process volumetrics</Name>
+      <Description>Data on frequency of process execution.
+</Description>
+      <Value>123</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Complexity</Name>
+      <Description />
+      <Value>3 - Medium</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Cost (GBP)</Name>
+      <Description />
+      <Value>52.00</Value>
+      <Datatype>Decimal</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Criticality</Name>
+      <Description />
+      <Value>4 - High</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: ID</Name>
+      <Description />
+      <Value>12312312</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Manual or Automated</Name>
+      <Description />
+      <Value>Automated</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Maturity</Name>
+      <Description />
+      <Value>4 - High</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Owner</Name>
+      <Description />
+      <Value>Peter Bates</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Possible Improvements</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Strategic Importance</Name>
+      <Description />
+      <Value>5 - Very High</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Retire date</Name>
+      <Description>Date when the standard was/will be retired.
+</Description>
+      <Value>03/01/2014</Value>
+      <Datatype>Date</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Source</Name>
+      <Description>Location from where the information was collected.</Description>
+      <Value>http://www.orbussoftware.com</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Standard creation date</Name>
+      <Description>If the product is a standard, when the standard was created.
+</Description>
+      <Value>03/01/2014</Value>
+      <Datatype>Date</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Standards class</Name>
+      <Description>Non-Standard, Proposed Standard, Provisional Standard, Standard, Phasing-Out Standard, Retired Standard.
+</Description>
+      <Value>Non-Standard</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+  </CustomAttributes>
+</Shape>

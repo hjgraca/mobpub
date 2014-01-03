@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="114" PageID="0" ObjectID="668a533d-6aa7-44e5-9c74-d265b979da8c" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">146.5</Left>
+    <Bottom Unit="mm">93.75</Bottom>
+    <Right Unit="mm">171.5</Right>
+    <Top Unit="mm">102.25</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>User Role Access Profile</RepositoryName>
+    <Description>A set of data defining the level of access to a service or group of services for a certain type of user ("User Role"). User Role Access Profiles help to protect the confidentiality, integrity and availability of assets by defining what information compute</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

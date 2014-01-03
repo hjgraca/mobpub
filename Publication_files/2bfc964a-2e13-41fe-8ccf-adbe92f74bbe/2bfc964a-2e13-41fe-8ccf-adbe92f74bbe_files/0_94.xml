@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="94" PageID="0" ObjectID="c47ea879-7f1e-4a60-97e9-1e4ffc2144e6" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">146.5</Left>
+    <Bottom Unit="mm">107.75</Bottom>
+    <Right Unit="mm">171.5</Right>
+    <Top Unit="mm">116.25</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>User Role</RepositoryName>
+    <Description>A role as part of a catalogue or hierarchy of all the roles (types of users) in the organization. Access rights are based on the roles that individual users have as part of an organization.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

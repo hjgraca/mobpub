@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="92" PageID="0" ObjectID="e398d09e-72b0-475c-b013-1fda41bcd421" Issues="False" DiagLinks="True" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">110.2158</Width>
+    <Height Unit="mm">18.02494</Height>
+    <Left Unit="mm">220</Left>
+    <Bottom Unit="mm">111.9977</Bottom>
+    <Right Unit="mm">330.2158</Right>
+    <Top Unit="mm">130.0226</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>LINK TO SEVERAL OBJECTS</RepositoryName>
+    <Description>To use methods from quality management in order to learn from past successes and failures. The CSI process implements a closed-loop feedback system as specified in ISO 20000 as a means to continually improve the effectiveness and efficiency of IT services and processes.</Description>
+    <ShapeMaster>Process</ShapeMaster>
+    <Timestamp CreatedOn="2014-01-03" CreatedBy="System Administrator" LastModifiedOn="2014-01-03" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>RACI: Responsible</LinkType>
+      <Reason />
+      <Description>R</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Role</Category>
+        <Name>Problem Manager</Name>
+        <Target DocumentID="4ccd08bb-2ae5-4296-a627-0211d8f30c8d" DocumentName="Problem Closure and Evaluation" PageID="0" ShapeID="19" />
+        <Target DocumentID="79801fb3-e99c-499a-a992-556d6b3d95a9" DocumentName="Problem Management Reporting" PageID="0" ShapeID="7" />
+        <Target DocumentID="df3e5052-4000-4850-a0cc-79772f5b5488" DocumentName="Problem Identification and Categorization" PageID="0" ShapeID="40" />
+        <Target DocumentID="51745d31-ccdd-46d4-b4aa-ad13f6af672d" DocumentName="Problem Diagnosis and Resolution" PageID="0" ShapeID="7" />
+        <Target DocumentID="9be31e17-1977-43fe-bc17-c09bc24bc1bf" DocumentName="Problem and Error Control" PageID="0" ShapeID="1" />
+        <Target DocumentID="ba420e7d-e2a7-4c33-a934-f67c483f0a2d" DocumentName="Major Problem Review" PageID="0" ShapeID="7" />
+      </Destination>
+    </Relation>
+    <Relation>
+      <LinkType>RACI: Responsible</LinkType>
+      <Reason />
+      <Description>R</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Role</Category>
+        <Name>Incident Manager</Name>
+        <Target DocumentID="fc19deca-f40d-4a7b-88bc-437c398f3016" DocumentName="Handling of Major Incidents" PageID="0" ShapeID="66" />
+        <Target DocumentID="2374a64b-a5d3-4842-97d1-6927de476b79" DocumentName="Incident Management Support" PageID="0" ShapeID="22" />
+        <Target DocumentID="1ee7645c-bf74-4dda-8089-bf3ed3a350fe" DocumentName="Incident Management Reporting" PageID="0" ShapeID="12" />
+        <Target DocumentID="24fbb7b4-a06e-48d5-8719-c6f01f9d9db8" DocumentName="Incident Monitoring and Escalation" PageID="0" ShapeID="19" />
+      </Destination>
+    </Relation>
+    <Relation>
+      <LinkType>TOGAF: Process precedes Process</LinkType>
+      <Reason />
+      <Description>precedes</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Process</Category>
+        <Name>ANOTHER TYPE</Name>
+        <Target DocumentID="92538287-9c31-498d-a131-ee1027a879a4" DocumentName="Nav test" PageID="4" ShapeID="4" />
+      </Destination>
+    </Relation>
+    <Relation>
+      <LinkType>RACI: Responsible</LinkType>
+      <Reason />
+      <Description>R</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Role</Category>
+        <Name>2nd Level Support</Name>
+        <Target DocumentID="6f01c78c-d447-491d-b8a7-30a56b2df2f7" DocumentName="Incident Resolution by 2nd Level Support" PageID="0" ShapeID="714" />
+      </Destination>
+    </Relation>
+    <Relation>
+      <LinkType>RACI: Responsible</LinkType>
+      <Reason />
+      <Description>R</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Role</Category>
+        <Name>1st Level Support</Name>
+        <Target DocumentID="fc19deca-f40d-4a7b-88bc-437c398f3016" DocumentName="Handling of Major Incidents" PageID="0" ShapeID="63" />
+        <Target DocumentID="2323345d-29be-42e6-8db1-562b623fa663" DocumentName="Pro-Active User Information" PageID="0" ShapeID="7" />
+        <Target DocumentID="ae937c28-3b15-4d9c-b085-8414abe094fa" DocumentName="Immediate Incident Resolution by 1st Level Support" PageID="0" ShapeID="397" />
+        <Target DocumentID="2a8729d6-6b74-47c5-aee3-8d7ff5d86bba" DocumentName="Incident Closure and Evaluation" PageID="0" ShapeID="19" />
+        <Target DocumentID="24fbb7b4-a06e-48d5-8719-c6f01f9d9db8" DocumentName="Incident Monitoring and Escalation" PageID="0" ShapeID="13" />
+        <Target DocumentID="10b45141-378f-4630-9ed2-e052309dba1c" DocumentName="Incident Logging and Categorization" PageID="0" ShapeID="596" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes>
+    <Attribute>
+      <Name>APQC: Identifier</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>APQC: Scope</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Category (General)</Name>
+      <Description>User-definable categorization taxonomy for each metamodel object.</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>ID</Name>
+      <Description>Unique identifier for the architecture object.</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Last standard review date</Name>
+      <Description>Last date that the standard was reviewed.
+</Description>
+      <Value />
+      <Datatype>Date</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Manual or automated</Name>
+      <Description>Whether this process is supported by IT or is a manual process.
+</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Next standard review date</Name>
+      <Description>Next date for the standard to be reviewed.
+</Description>
+      <Value />
+      <Datatype>Date</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Owner</Name>
+      <Description>Owner of the architecture object.</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process criticality</Name>
+      <Description>Criticality of this process to business operations.
+</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process volumetrics</Name>
+      <Description>Data on frequency of process execution.
+</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Complexity</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Cost (GBP)</Name>
+      <Description />
+      <Value>0.00</Value>
+      <Datatype>Decimal</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Criticality</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: ID</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Manual or Automated</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Maturity</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Owner</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Possible Improvements</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Strategic Importance</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Retire date</Name>
+      <Description>Date when the standard was/will be retired.
+</Description>
+      <Value />
+      <Datatype>Date</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Source</Name>
+      <Description>Location from where the information was collected.</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Standard creation date</Name>
+      <Description>If the product is a standard, when the standard was created.
+</Description>
+      <Value />
+      <Datatype>Date</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Standards class</Name>
+      <Description>Non-Standard, Proposed Standard, Provisional Standard, Standard, Phasing-Out Standard, Retired Standard.
+</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+  </CustomAttributes>
+</Shape>

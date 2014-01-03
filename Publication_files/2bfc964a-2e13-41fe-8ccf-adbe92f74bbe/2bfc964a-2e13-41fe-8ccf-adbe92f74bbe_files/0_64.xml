@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="64" PageID="0" ObjectID="0e0c8c31-14c3-4097-84bc-c5301640b23f" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">78.5</Left>
+    <Bottom Unit="mm">135.75</Bottom>
+    <Right Unit="mm">103.5</Right>
+    <Top Unit="mm">144.25</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Incident Model</RepositoryName>
+    <Description>An Incident Model contains the pre-defined steps that should be taken for dealing with a particular type of Incident. This is a way to ensure that routinely occurring Incidents are handled efficiently and effectively.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

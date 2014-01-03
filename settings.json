@@ -1,7 +1,12 @@
 {
   "name": "Mobile Publisher",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "changes": [
+      "0.7.3",
+      "Bug fixes",
+      "Added popup when more than on relation link",
+      "Opens word documents",
+      "0.7.2",
       "Bug fixes",
       "Added child diagram icon",
       "Scroll enabled in lists"

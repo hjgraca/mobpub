@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="115" PageID="0" ObjectID="75f2b3a4-fdfe-4a53-90e5-318dc45360ab" Issues="True" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">55.43164</Width>
+    <Height Unit="mm">17</Height>
+    <Left Unit="mm">174.5684</Left>
+    <Bottom Unit="mm">31.08106</Bottom>
+    <Right Unit="mm">230</Right>
+    <Top Unit="mm">48.08106</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>HAS TWO ISSUES</RepositoryName>
+    <Description />
+    <ShapeMaster>Navigation Shape</ShapeMaster>
+    <Timestamp CreatedOn="2014-01-03" CreatedBy="System Administrator" LastModifiedOn="2014-01-03" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues>
+    <Issue>
+      <Name>Here is an issue (1)</Name>
+      <Description>Here is some information about the issue. and some more text, and some more text, and some more text, and some more text, and some more text, and some more text, and some more text.</Description>
+      <Category>Change Request</Category>
+      <ActionType>1. Review &amp; feedback comments</ActionType>
+      <Priority>1. High</Priority>
+      <Status>1. Under Review / Discussion</Status>
+      <Closed>No</Closed>
+      <Timestamp CreatedOn="2014-01-03" CreatedBy="System Administrator" LastModifiedOn="2014-01-03" LastModifiedBy="System Administrator" />
+      <ActionUsers>
+        <ActionUser Name="System Administrator" />
+      </ActionUsers>
+      <InformationUsers>
+        <InformationUser Name="Orbus Software" />
+      </InformationUsers>
+    </Issue>
+    <Issue>
+      <Name>Here is an issue (2)</Name>
+      <Description>Here is some information about the issue. and some more text, and some more text, and some more text, and some more text, and some more text, and some more text, and some more text.</Description>
+      <Category>Change Request</Category>
+      <ActionType>1. Review &amp; feedback comments</ActionType>
+      <Priority>1. High</Priority>
+      <Status>1. Under Review / Discussion</Status>
+      <Closed>No</Closed>
+      <Timestamp CreatedOn="2014-01-03" CreatedBy="System Administrator" LastModifiedOn="2014-01-03" LastModifiedBy="System Administrator" />
+      <ActionUsers />
+      <InformationUsers>
+        <InformationUser Name="System Administrator" />
+      </InformationUsers>
+    </Issue>
+  </Issues>
+  <Relations />
+  <CustomAttributes />
+</Shape>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerDiagram ID="27d98237-5c24-4691-88a6-6fce103cbf9f">
+  <iServerProperties>
+    <RepositoryName>ITIL v3 Process Map - Front page</RepositoryName>
+    <Category>ITIL Process Model</Category>
+    <Logo>../Images/visio.gif</Logo>
+    <Ext>.html</Ext>
+    <Description>The ITIL Front Page - an Entry Point into the iServer ITIL Reference Library and ITIL Processes</Description>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2014-01-03" LastModifiedBy="System Administrator" />
+    <Owner UserID="" Name="" Email="" />
+    <Navigation>
+      <TargetFrame repository_open_document="_top" repository_open_diagram="_top" repository_link_document="_top" repository_link_diagram="_top" repository_link_shape="_top" diagram_link_document="_top" diagram_link_diagram="_top" diagram_link_shape="_top" />
+      <DocumentFrame enabled="false" height="30%" />
+      <PopupMenu first_tier_links="5" />
+      <VisioHyperlinks publish="false" />
+      <Indicators ShowDocLinks="true" ShowDiagLinks="true" ShowIssues="true" Positioning="right" />
+    </Navigation>
+    <Pages Count="1">
+      <Page ID="0">
+        <Dimensions>
+          <Height Unit="mm">272</Height>
+          <Width Unit="mm">405</Width>
+        </Dimensions>
+      </Page>
+    </Pages>
+  </iServerProperties>
+  <CustomAttributes />
+  <Issues>
+    <Issue>
+      <Name>another issue</Name>
+      <Description />
+      <Category>Cost Saving - (Currency)</Category>
+      <ActionType>1. Review &amp; feedback comments</ActionType>
+      <Priority>1. High</Priority>
+      <Status>1. Under Review / Discussion</Status>
+      <Closed>No</Closed>
+      <Timestamp CreatedOn="2014-01-03" CreatedBy="System Administrator" LastModifiedOn="2014-01-03" LastModifiedBy="System Administrator" />
+      <ActionUsers />
+      <InformationUsers>
+        <InformationUser Name="System Administrator" />
+      </InformationUsers>
+    </Issue>
+  </Issues>
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates from</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Navigation Shape</Category>
+        <Name>Index of ITIL Processes</Name>
+        <Target DocumentID="a491937d-1fe9-470b-bc07-80b96cb44e96" DocumentName="Service Operation" PageID="0" ShapeID="414" />
+        <Target DocumentID="82f93e39-c086-4799-bf4a-f8f71c67863f" DocumentName="Index of Service Operation Processes" PageID="0" ShapeID="427" />
+      </Destination>
+    </Relation>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates from</Description>
+      <Destination>
+        <ApplicationType>MSWord</ApplicationType>
+        <Ext>.doc</Ext>
+        <Category />
+        <Name>Incident Model</Name>
+        <Target DocumentID="e027db46-8af4-4929-9a2e-414b2dab2f86" DocumentName="Incident Model" />
+      </Destination>
+    </Relation>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates from</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Navigation Shape</Category>
+        <Name>IT Service Management</Name>
+        <Target DocumentID="a491937d-1fe9-470b-bc07-80b96cb44e96" DocumentName="Service Operation" PageID="0" ShapeID="418" />
+        <Target DocumentID="82f93e39-c086-4799-bf4a-f8f71c67863f" DocumentName="Index of Service Operation Processes" PageID="0" ShapeID="431" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <Shapes>
+    <Shape ID="92" PageID="0" Source="0_92.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="14" PageID="0" Source="0_14.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="115" PageID="0" Source="0_115.xml" Issues="True" DiagLinks="False" DocLinks="False" />
+    <Shape ID="180" PageID="0" Source="0_180.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="177" PageID="0" Source="0_177.xml" Issues="False" DiagLinks="False" DocLinks="True" />
+    <Shape ID="147" PageID="0" Source="0_147.xml" Issues="False" DiagLinks="False" DocLinks="True" />
+    <Shape ID="56" PageID="0" Source="0_56.xml" Issues="True" DiagLinks="True" DocLinks="False" />
+    <Shape ID="179" PageID="0" Source="0_179.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="1" PageID="0" Source="0_1.xml" Issues="False" DiagLinks="True" DocLinks="False" />
+    <Shape ID="123" PageID="0" Source="0_123.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="88" PageID="0" Source="0_88.xml" Issues="False" DiagLinks="True" DocLinks="True" />
+    <Shape ID="119" PageID="0" Source="0_119.xml" Issues="False" DiagLinks="False" DocLinks="False" />
+    <Shape ID="113" PageID="0" Source="0_113.xml" Issues="True" DiagLinks="False" DocLinks="False" />
+  </Shapes>
+</iServerDiagram>

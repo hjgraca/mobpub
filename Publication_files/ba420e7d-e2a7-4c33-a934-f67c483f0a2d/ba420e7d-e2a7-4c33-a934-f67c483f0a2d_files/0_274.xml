@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="274" PageID="0" ObjectID="7423d66e-6601-447c-8049-fc63f09fe462" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">7.5</Width>
+    <Height Unit="mm">7.5</Height>
+    <Left Unit="mm">39.28935</Left>
+    <Bottom Unit="mm">161.6344</Bottom>
+    <Right Unit="mm">46.78935</Right>
+    <Top Unit="mm">169.1344</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Problem closed</RepositoryName>
+    <Description />
+    <ShapeMaster>Start Event</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes>
+    <Attribute>
+      <Name>BPMN: Start Event Trigger</Name>
+      <Description />
+      <Value>None</Value>
+      <Datatype>Text</Datatype>
+    </Attribute>
+  </CustomAttributes>
+</Shape>

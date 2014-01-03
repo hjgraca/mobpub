@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="139" PageID="0" ObjectID="30e720bb-6802-4547-b1dc-bb1cf0082ad2" Issues="False" DiagLinks="False" DocLinks="True" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">180.5</Left>
+    <Bottom Unit="mm">131.75</Bottom>
+    <Right Unit="mm">205.5</Right>
+    <Top Unit="mm">140.25</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Checklist Problem Record</RepositoryName>
+    <Description>The Problem Record contains all details of a Problem, documenting the history of the Problem from detection to resolution.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates to</Description>
+      <Destination>
+        <ApplicationType>MSWord</ApplicationType>
+        <Ext>.doc</Ext>
+        <Category />
+        <Name>Problem Record</Name>
+        <Target DocumentID="bcdcd32d-a629-4901-91cf-90d5c813a163" DocumentName="Problem Record" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

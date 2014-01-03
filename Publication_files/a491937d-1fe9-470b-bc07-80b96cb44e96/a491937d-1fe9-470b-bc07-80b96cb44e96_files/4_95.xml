@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="95" PageID="4" ObjectID="766022cc-c696-4cbc-848b-ec5e85caa0a4" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">104.6786</Left>
+    <Bottom Unit="mm">299.1483</Bottom>
+    <Right Unit="mm">129.6786</Right>
+    <Top Unit="mm">307.6483</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Availability Design Guidelines</RepositoryName>
+    <Description>The Availability Design Guidelines define from a technical point of view how the required availability levels can be achieved, including specific instructions for application development and for externally sourced infrastructure components.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

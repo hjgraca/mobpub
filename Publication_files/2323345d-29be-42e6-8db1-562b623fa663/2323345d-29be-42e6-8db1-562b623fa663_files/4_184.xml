@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="184" PageID="4" ObjectID="040be8d7-2d65-4d45-8418-fef4673c5205" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">220.25</Left>
+    <Bottom Unit="mm">149.712</Bottom>
+    <Right Unit="mm">245.25</Right>
+    <Top Unit="mm">158.212</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Pro-Active User Information</RepositoryName>
+    <Description>A notification to users of existing or imminent service failures even if the users are not yet aware of the interruptions, so that users are in a position to prepare themselves for a period of service unavailability.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

@@ -1,9 +1,8 @@
 body {
     margin:     0px;
     margin-bottom: 0px;
-    background:  #FFF;
+    background:  #ecf5fe;
     overflow:   hidden;
-    font-family: Arial,Tahoma,Sans Serif;
 /*    scroll:     no; 
     width:      100%; */
 }
@@ -28,15 +27,15 @@ body {
 
 .divHeader {
 /*    border-top:     solid 2px #f60; */
-    border-top:     solid 1px #cccccc;
-    border-bottom:  solid 1px #cccccc;
+    border-top:     solid 2px #fff;
     height:         35px;
     padding:        0px;
     width:          100%;
-    background:     #FFF;
-    /* filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#cbe1fc', EndColorStr='#7ea6e1'); */
+    background:     #cbe1fc;
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#cbe1fc', EndColorStr='#7ea6e1');
     font-family:    Tahoma, sans-serif;
     font-size:      12pt;
+    font-weight:    bold;
     color:          #000;
     margin:         0px;
     padding-top:    8px;
@@ -46,9 +45,10 @@ body {
 }
 .divControls {
     height:         20px;
+    font-family:    Tahoma, sans-serif;
     font-size:      8pt;
     color:          #fff;
-    background:     #ff6600;
+    background:     #27c;
     width:          100%; /* test */
 }
 .divControlButton {
@@ -60,7 +60,7 @@ body {
     padding-left:   3px;
     padding-right:  3px;
     height:         18px;
-    border:         solid 1px #ffa366;
+    border:         solid 1px #69d;
     cursor:         pointer;
     cursor:         hand;
 }
@@ -73,12 +73,12 @@ body {
     position:       absolute;
     top:            0px;
     left:           0px;
-    color:          #000;
-    background:     #FFF;
+    color:          #fff;
+    background:     #27c;
     padding:        0px;
     height:         47px;
     width:          120px;
-    border:         solid 1px #ccc;
+    border:         solid 1px #fff;
     cursor:         pointer;
     cursor:         hand;
 }
@@ -97,8 +97,7 @@ body {
 }
 
 .divControlMenuItemHighlighted {
-    background:     #9dcef2;
-
+    background:     #69d;
 }
 
 /* Generic name/value pairs */
@@ -210,7 +209,7 @@ body {
 
 /* Panel */
 .divPanel {
-    background:     #ff6600;
+    background:     #25c;
     margin-top:     15px;
     margin-bottom:  22px;
     margin-left:    10px;
@@ -225,8 +224,12 @@ body {
     font-weight:    bold;
     font-size:      8pt;
     color:          #fff;
+    background:     url('Images/panelheadright.gif');
+    background-position-x:  right;
+    background-position-y:  top;
     background-repeat:      no-repeat;
     cursor:         pointer;
+    cursor:         hand;
 }
 .divPanelTitleHighlighted {
     color:          #fff;
@@ -236,6 +239,9 @@ body {
     float:          left;
     padding-top:    4px;
     padding-left:   15px;
+    background:     url('Images/panelheadleft.gif');
+    background-position-x:  left;
+    background-position-y:  top;
     background-repeat:      no-repeat;
 }
 .divPanelToggler {
@@ -245,10 +251,11 @@ body {
 }
 .divPanelBody {
     width:          100%;
-    background:     #f4f4f4;
-    border:         solid 1px #ccc;
+    background:     #fff;
+    border:         solid 1px #25c;
+    font-family:    Tahoma, sans-serif;
     font-size:      8pt;
-    
+    color:          #666;
     padding-top:    4px;
     padding-left:   15px;
     padding-right:  15px;
@@ -273,6 +280,7 @@ body {
     background:     #fff;
     color:          #666;
     padding:        3px;
+    font-family:    Tahoma, sans-serif;
     font-weight:    bold;
     font-size:      8pt;
     border-left:    solid 1px #999;

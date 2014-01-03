@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="386" PageID="4" ObjectID="3a357f13-e5b6-43a2-974f-a0f23f2f924d" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">108.5741</Left>
+    <Bottom Unit="mm">62.51324</Bottom>
+    <Right Unit="mm">133.5741</Right>
+    <Top Unit="mm">71.01324</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Installation Work Order</RepositoryName>
+    <Description>A Work Order for the installation of an application, system or infrastructure component, typically issued from Release Management.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

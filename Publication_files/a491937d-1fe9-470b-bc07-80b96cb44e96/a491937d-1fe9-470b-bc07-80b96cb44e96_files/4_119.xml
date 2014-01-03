@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="119" PageID="4" ObjectID="d9706bcb-58fb-4a27-8c33-fd19a86ed23a" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">104.6786</Left>
+    <Bottom Unit="mm">223.6483</Bottom>
+    <Right Unit="mm">129.6786</Right>
+    <Top Unit="mm">232.1483</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Change Model</RepositoryName>
+    <Description>Change Models describe procedures for the handling of recurring Changes. Typically, a Change Model is provided by the Change Manager for each Standard Change (low-risk, pre-authorized Change)</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="1" PageID="0" ObjectID="609380f2-4bc9-433a-a458-b78e83c48cff" Issues="False" DiagLinks="False" DocLinks="True" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">318.0901</Left>
+    <Bottom Unit="mm">240.2146</Bottom>
+    <Right Unit="mm">343.0901</Right>
+    <Top Unit="mm">248.7146</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Checklist Incident Record</RepositoryName>
+    <Description>A set of data with all details of an Incident, documenting the history of the Incident from registration to resolution. An Incident is defined as an unplanned interruption or reduction in quality of an IT service. Every event that could potentially impair an IT service in the future is also an Incident (e.g. the failure of one hard-drive of a set of mirrored drives).</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates to</Description>
+      <Destination>
+        <ApplicationType>MSWord</ApplicationType>
+        <Ext>.doc</Ext>
+        <Category />
+        <Name>Incident Record</Name>
+        <Target DocumentID="f59926dc-21e0-41d4-a77f-d3c42266fe43" DocumentName="Incident Record" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

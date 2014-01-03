@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="317" PageID="4" ObjectID="7c1389db-ba2a-4f28-a8ee-9524d7707d7e" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">108.5741</Left>
+    <Bottom Unit="mm">201.0132</Bottom>
+    <Right Unit="mm">133.5741</Right>
+    <Top Unit="mm">209.5132</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Maintenance Plan/ SOP</RepositoryName>
+    <Description>A plan produced by Availability Management to define frequency and scope of preventative maintenance for service-critical applications and infrastructure components under control of Availability Management. Maintenance Plans are sometimes known as Standar</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

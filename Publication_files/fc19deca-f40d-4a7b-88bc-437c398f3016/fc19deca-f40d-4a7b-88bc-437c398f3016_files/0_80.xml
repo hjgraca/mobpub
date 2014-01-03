@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="80" PageID="0" ObjectID="19c81c80-1219-44ee-af9f-3dfb596f046a" Issues="False" DiagLinks="False" DocLinks="True" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">451.8006</Left>
+    <Bottom Unit="mm">351.4479</Bottom>
+    <Right Unit="mm">476.8006</Right>
+    <Top Unit="mm">359.9479</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Checklist Request for Change (RFC)</RepositoryName>
+    <Description>A formal request for a Change to be implemented. An RFC includes details of the proposed Change, and may be recorded on paper or electronically. The term RFC is often misused to mean a Change Record, or the Change in itself.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates to</Description>
+      <Destination>
+        <ApplicationType>MSWord</ApplicationType>
+        <Ext>.doc</Ext>
+        <Category />
+        <Name>Request for Change</Name>
+        <Target DocumentID="baaa761f-65ea-4192-a490-ed0898e0db13" DocumentName="Request for Change" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

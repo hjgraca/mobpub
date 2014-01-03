@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="34" PageID="0" ObjectID="c25c0ba2-25c3-4266-b50c-107372808a1c" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">44.5</Left>
+    <Bottom Unit="mm">149.25</Bottom>
+    <Right Unit="mm">69.5</Right>
+    <Top Unit="mm">157.75</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Event Record</RepositoryName>
+    <Description>A change of state which has significance for the management of a Configuration Item or service. The term Event is also used to mean an alert or notification created by any IT service, Configuration Item or monitoring tool. Events typically require IT oper</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

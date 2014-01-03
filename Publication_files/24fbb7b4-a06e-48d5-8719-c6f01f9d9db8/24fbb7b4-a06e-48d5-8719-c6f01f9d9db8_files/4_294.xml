@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="294" PageID="4" ObjectID="07dd89f8-94b2-4243-b93c-93d958938be6" Issues="False" DiagLinks="True" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">17</Height>
+    <Left Unit="mm">289.2048</Left>
+    <Bottom Unit="mm">145.4954</Bottom>
+    <Right Unit="mm">314.2048</Right>
+    <Top Unit="mm">162.4954</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Incident Closure and Evaluation</RepositoryName>
+    <Description>To submit the Incident Record to a final quality control before it is closed. The aim is to make sure that the Incident is actually resolved and that all information required to describe the Incident's life-cycle is supplied in sufficient detail. In addition to this, findings from the resolution of the Incident are to be recorded for future use.</Description>
+    <ShapeMaster>Process</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>BPMN: Drill Down</LinkType>
+      <Reason />
+      <Description>drills down to</Description>
+      <Destination>
+        <ApplicationType>MSVisioDiagram</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>ITIL Process Model</Category>
+        <Name>Incident Closure and Evaluation</Name>
+        <Target DocumentID="2a8729d6-6b74-47c5-aee3-8d7ff5d86bba" DocumentName="Incident Closure and Evaluation" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes>
+    <Attribute>
+      <Name>APQC: Identifier</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>APQC: Scope</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Category (General)</Name>
+      <Description>User-definable categorization taxonomy for each metamodel object.</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>ID</Name>
+      <Description>Unique identifier for the architecture object.</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Last standard review date</Name>
+      <Description>Last date that the standard was reviewed.
+</Description>
+      <Value />
+      <Datatype>Date</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Manual or automated</Name>
+      <Description>Whether this process is supported by IT or is a manual process.
+</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Next standard review date</Name>
+      <Description>Next date for the standard to be reviewed.
+</Description>
+      <Value />
+      <Datatype>Date</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Owner</Name>
+      <Description>Owner of the architecture object.</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process criticality</Name>
+      <Description>Criticality of this process to business operations.
+</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process volumetrics</Name>
+      <Description>Data on frequency of process execution.
+</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Complexity</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Cost (GBP)</Name>
+      <Description />
+      <Value>0.00</Value>
+      <Datatype>Decimal</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Criticality</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: ID</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Manual or Automated</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Maturity</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Owner</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Possible Improvements</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Process: Strategic Importance</Name>
+      <Description />
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Retire date</Name>
+      <Description>Date when the standard was/will be retired.
+</Description>
+      <Value />
+      <Datatype>Date</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Source</Name>
+      <Description>Location from where the information was collected.</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Standard creation date</Name>
+      <Description>If the product is a standard, when the standard was created.
+</Description>
+      <Value />
+      <Datatype>Date</Datatype>
+    </Attribute>
+    <Attribute>
+      <Name>Standards class</Name>
+      <Description>Non-Standard, Proposed Standard, Provisional Standard, Standard, Phasing-Out Standard, Retired Standard.
+</Description>
+      <Value />
+      <Datatype>Text</Datatype>
+    </Attribute>
+  </CustomAttributes>
+</Shape>

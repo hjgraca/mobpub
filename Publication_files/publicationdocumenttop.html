@@ -1,146 +1,147 @@
 <HTML>
 <HEAD>
-<meta http-equiv="Content-Language" content="en-us">
-<TITLE>iServer Interactive Publisher</TITLE>
-<LINK REL=stylesheet HREF="publication.css">
-<LINK REL=stylesheet HREF="pubtogframe.css">
-<script language="javascript"><!--
-    var diagramID;
-    var diagramName = '[Unnamed diagram]';
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <TITLE>iServer Interactive Publisher</TITLE>
+    <LINK REL=stylesheet HREF="publication.css">
+    <LINK REL=stylesheet HREF="pubtogframe.css">
+    <script language="javascript"><!--
+        var diagramID;
+        var diagramName = '[Unnamed diagram]';
 
-    function displayReportingLinks() {
-        if ((parent.iServerXML) && (parent.PublicationPropertiesData)) {
-            var diagramNode = parent.iServerXML.selectSingleNode("iServerDiagram");
-            if (diagramNode) {
-                var diaIdAttr = diagramNode.attributes.getNamedItem("ID");
-                if (diaIdAttr) {
-                    diagramID = diaIdAttr.text;
+        function displayReportingLinks() {
+            if ((parent.iServerXML) && (parent.PublicationPropertiesData)) {
+                var diagramNode = parent.iServerXML.selectSingleNode("iServerDiagram");
+                if (diagramNode) {
+                    var diaIdAttr = diagramNode.attributes.getNamedItem("ID");
+                    if (diaIdAttr) {
+                        diagramID = diaIdAttr.text;
+                    }
                 }
+                var reportingNode = parent.PublicationPropertiesData.selectSingleNode("iServerPublication/PublicationProperties/Reporting");
+                var htmlEnabledAttr = reportingNode.attributes.getNamedItem("html_enabled");
+                var wordEnabledAttr = reportingNode.attributes.getNamedItem("word_enabled");
+                var imageEnabledAttr = reportingNode.attributes.getNamedItem("image_enabled");
+
+                var htmlEnabled = (htmlEnabledAttr && htmlEnabledAttr.text === "true");
+                var wordEnabled = (wordEnabledAttr && wordEnabledAttr.text === "true");
+                var imageEnabled = (imageEnabledAttr && imageEnabledAttr.text === "true");
+
+                if (htmlEnabled || wordEnabled || imageEnabled) {
+                    document.getElementById("reportsTitle").style.display = "inline";
+                    if (htmlEnabled) {
+                        document.getElementById("reportsHTML").style.display = "inline";
+                    }
+                    if (wordEnabled) {
+                        document.getElementById("reportsWord").style.display = "inline";
+                    }
+                    if (imageEnabled) {
+                        document.getElementById("reportsImage").style.display = "inline";
+                    }
+                }
+
             }
-            var reportingNode = parent.PublicationPropertiesData.selectSingleNode("iServerPublication/PublicationProperties/Reporting");
-            var htmlEnabledAttr = reportingNode.attributes.getNamedItem("html_enabled");
-            var wordEnabledAttr = reportingNode.attributes.getNamedItem("word_enabled");
-            var imageEnabledAttr = reportingNode.attributes.getNamedItem("image_enabled");
-
-            var htmlEnabled = (htmlEnabledAttr && htmlEnabledAttr.text === "true");
-            var wordEnabled = (wordEnabledAttr && wordEnabledAttr.text === "true");
-            var imageEnabled = (imageEnabledAttr && imageEnabledAttr.text === "true");
-
-            if (htmlEnabled || wordEnabled || imageEnabled) {
-                document.getElementById("reportsTitle").style.display = "inline";
-                if (htmlEnabled) {
-                    document.getElementById("reportsHTML").style.display = "inline";
-                }
-                if (wordEnabled) {
-                    document.getElementById("reportsWord").style.display = "inline";
-                }
-                if (imageEnabled) {
-                    document.getElementById("reportsImage").style.display = "inline";
-                }
-            }
-
+            displayBreadcrumbs();
         }
-        displayBreadcrumbs();
-    }
-    function openPrintReportHTML() {
-        window.open(diagramID + '/iserverdiagramreport.xml');
-    }
-    function openPrintReportWord() {
-        window.open(diagramID + '/' + diagramID + '.doc');
-    }
-    function openPrintDiagram() {
-        window.open(diagramID + '/' + diagramID + '_files/diagrampreview.html');
-    }
-
-    var COOKIE_BREADCRUMBS = "OrbusBreadcrumbs";
-    var BREADCRUMBS = [];
-    var MAX_STORED_BREADCRUMBS = 10;
-    var MAX_SHOWN_BREADCRUMBS = 2;
-    var MAX_BREADCRUMB_LENGTH = 40;
-    var KEEP_BREADCRUMB_TAIL = 0;
-
-    function removeBreadcrumb(url) {
-        var newBCs = []
-        var deleted = 0;
-        var i; var j = 0;
-        // Omit URL portion after ? if present
-        var baseURL;
-        if (url.indexOf('?') >= 0) {
-            baseURL = url.substr(0, url.indexOf('?'));
-        } else {
-            baseURL = url;
+        function openPrintReportHTML() {
+            window.open(diagramID + '/iserverdiagramreport.xml');
         }
-        for (i = 0; i < BREADCRUMBS.length; i++) {
-            var qm = BREADCRUMBS[i][0].indexOf('?');
-            var bc;
-            if (qm >= 0) {
-                bc = BREADCRUMBS[i][0].substr(0, qm);
+        function openPrintReportWord() {
+            window.open(diagramID + '/' + diagramID + '.docx');
+        }
+        function openPrintDiagram() {
+            window.open(diagramID + '/' + diagramID + '_files/diagrampreview.html');
+        }
+
+        var COOKIE_BREADCRUMBS = "OrbusBreadcrumbs";
+        var BREADCRUMBS = [];
+        var MAX_STORED_BREADCRUMBS = 10;
+        var MAX_SHOWN_BREADCRUMBS = 2;
+        var MAX_BREADCRUMB_LENGTH = 40;
+        var KEEP_BREADCRUMB_TAIL = 0;
+
+        function removeBreadcrumb(url) {
+            var newBCs = []
+            var deleted = 0;
+            var i; var j = 0;
+            // Omit URL portion after ? if present
+            var baseURL;
+            if (url.indexOf('?') >= 0) {
+                baseURL = url.substr(0, url.indexOf('?'));
             } else {
-                bc = BREADCRUMBS[i][0];
+                baseURL = url;
             }
-            if (bc != baseURL) {
-                newBCs[j] = BREADCRUMBS[i];
-                j++;
+            for (i = 0; i < BREADCRUMBS.length; i++) {
+                var qm = BREADCRUMBS[i][0].indexOf('?');
+                var bc;
+                if (qm >= 0) {
+                    bc = BREADCRUMBS[i][0].substr(0, qm);
+                } else {
+                    bc = BREADCRUMBS[i][0];
+                }
+                if (bc != baseURL) {
+                    newBCs[j] = BREADCRUMBS[i];
+                    j++;
+                }
             }
+            BREADCRUMBS = newBCs;
         }
-        BREADCRUMBS = newBCs;
-    }
 
-    function setBreadcrumbs() {
-        if (parent.iServerXML) {
-            var repNameNode = parent.iServerXML.selectSingleNode('iServerDiagram/iServerProperties/RepositoryName');
-            if (repNameNode) {
-                diagramTitle = repNameNode.text;
+        function setBreadcrumbs() {
+            if (parent.iServerXML) {
+                var repNameNode = parent.iServerXML.selectSingleNode('iServerDiagram/iServerProperties/RepositoryName');
+                if (repNameNode) {
+                    diagramTitle = repNameNode.text;
+                }
             }
-        }
         
-        // Add current page
-        BREADCRUMBS[BREADCRUMBS.length] = [parent.location, diagramTitle];
-        // Shift something off tail of list if it's too long
-        if (BREADCRUMBS.length > MAX_STORED_BREADCRUMBS) {
-            var dropped = BREADCRUMBS.shift();
-        }
-        // Store breadcrumbs in cookie
-        var cookiePath = '';
-        if (location.protocol.substr(0,4) === 'file') {
-            cookiePath = '/';
-        } else {
-            var pathBits = location.pathname.split(/[\/\\]/);
-            for (var i = 0; i < pathBits.length - 1; i++) {
-                cookiePath = cookiePath + '/' + pathBits[i];
+            // Add current page
+            BREADCRUMBS[BREADCRUMBS.length] = [parent.location, diagramTitle];
+            // Shift something off tail of list if it's too long
+            if (BREADCRUMBS.length > MAX_STORED_BREADCRUMBS) {
+                var dropped = BREADCRUMBS.shift();
             }
-        }
-        var bcCookie = '';
-        for (var i = 0; i < BREADCRUMBS.length; i++) {
-            bcCookie  = bcCookie + escape(BREADCRUMBS[i][0]) + '|' + escape(BREADCRUMBS[i][1]) + '!';
-        }
-        document.cookie = COOKIE_BREADCRUMBS + '=' + bcCookie + '; path=' + cookiePath;
+            // Store breadcrumbs in cookie
+            var cookiePath = '';
+            if (location.protocol.substr(0,4) === 'file') {
+                cookiePath = '/';
+            } else {
+                var pathBits = location.pathname.split(/[\/\\]/);
+                for (var i = 0; i < pathBits.length - 1; i++) {
+                    cookiePath = cookiePath + '/' + pathBits[i];
+                }
+            }
+            var bcCookie = '';
+            for (var i = 0; i < BREADCRUMBS.length; i++) {
+                bcCookie  = bcCookie + escape(BREADCRUMBS[i][0]) + '|' + escape(BREADCRUMBS[i][1]) + '!';
+            }
+            document.cookie = COOKIE_BREADCRUMBS + '=' + bcCookie + '; path=' + cookiePath;
 
-    }
+        }
 
-    function getBreadcrumbs() {
-        var crumbs = document.cookie.split("; ");
-        var i;
-        for (i = 0; i < crumbs.length; i++) {
-            var crumbBits = crumbs[i].split('=');
-            if (crumbBits[0] && (crumbBits[0] === COOKIE_BREADCRUMBS) && crumbBits[1]) {
-                var parts = crumbBits[1].split('!');
-                for (j = 0; j < parts.length; j++) {
-                    if (parts[j]) {
-                        var bits = parts[j].split('|');
-                        if (bits[0] && bits[1]) {
-                            BREADCRUMBS[j] = [ unescape(bits[0]), unescape(bits[1]) ];
+        function getBreadcrumbs() {
+            var crumbs = document.cookie.split("; ");
+            var i;
+            for (i = 0; i < crumbs.length; i++) {
+                var crumbBits = crumbs[i].split('=');
+                if (crumbBits[0] && (crumbBits[0] === COOKIE_BREADCRUMBS) && crumbBits[1]) {
+                    var parts = crumbBits[1].split('!');
+                    for (j = 0; j < parts.length; j++) {
+                        if (parts[j]) {
+                            var bits = parts[j].split('|');
+                            if (bits[0] && bits[1]) {
+                                BREADCRUMBS[j] = [ unescape(bits[0]), unescape(bits[1]) ];
+                            }
                         }
                     }
                 }
             }
         }
-    }
 
-    function displayBreadcrumbs() {
-        getBreadcrumbs();
-        removeBreadcrumb(parent.location.toString());
-        setBreadcrumbs();
+        function displayBreadcrumbs() {
+            getBreadcrumbs();
+            removeBreadcrumb(parent.location.toString());
+            setBreadcrumbs();
 //        if (BREADCRUMBS.length) {
             var clickMsg = document.getElementById('pClickMessage');
             var breadPara = document.getElementById('pBreadcrumbs');
@@ -177,7 +178,7 @@
                 }
             }
 //        }
-    }
+        }
 // --></script>
 </HEAD>
 <BODY ID="bodyDoc" STYLE="overflow:hidden;" CLASS="bodyDoc">

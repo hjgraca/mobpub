@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="289" PageID="4" ObjectID="3012e1cf-a232-40d3-9fe9-0f1cef3b76c2" Issues="False" DiagLinks="False" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">73.4375</Left>
+    <Bottom Unit="mm">115.9439</Bottom>
+    <Right Unit="mm">98.4375</Right>
+    <Top Unit="mm">124.4439</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Availability Guidelines for the Service Desk</RepositoryName>
+    <Description>Rules produced by Availability Management on how to manage Incidents causing unavailability, to prevent minor Incidents from becoming major Incidents.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

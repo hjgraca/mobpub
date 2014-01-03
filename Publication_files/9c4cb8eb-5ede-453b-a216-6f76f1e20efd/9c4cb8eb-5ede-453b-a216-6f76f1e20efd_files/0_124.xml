@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="124" PageID="0" ObjectID="9440cdfa-9092-460c-917e-a95fd85fb04f" Issues="False" DiagLinks="False" DocLinks="True" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">25</Width>
+    <Height Unit="mm">8.5</Height>
+    <Left Unit="mm">146.5</Left>
+    <Bottom Unit="mm">118.25</Bottom>
+    <Right Unit="mm">171.5</Right>
+    <Top Unit="mm">126.75</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Checklist User Role Access Profile</RepositoryName>
+    <Description>A set of data defining the level of access to a service or group of services for a certain type of user ("User Role"). User Role Access Profiles help to protect the confidentiality, integrity and availability of assets by defining what information computer users can utilize, the programs that they can run, and the modifications that they can make.</Description>
+    <ShapeMaster>Data object</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates to</Description>
+      <Destination>
+        <ApplicationType>MSWord</ApplicationType>
+        <Ext>.doc</Ext>
+        <Category />
+        <Name>User Role Access Profile</Name>
+        <Target DocumentID="fd28ba31-7967-4890-ac91-f4aa7f0450d2" DocumentName="User Role Access Profile" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

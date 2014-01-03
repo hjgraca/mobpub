@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="pubinfo.publication.xsl"?>
-<iServerPublication version="7.0.00" ID="fe816fe0-260d-4fe9-aec5-ae2de0bbb652">
+<iServerPublication version="7.0.00" ID="40b2e811-f344-498c-a818-f69e19940ee5">
   <PublicationProperties>
-    <Title>Publication</Title>
+    <Title>ITIL Processes Publication - Incident Management</Title>
     <Description />
     <Notes />
     <DefaultView>structview</DefaultView>
-    <Timestamp CreatedOn="2012-10-18" CreatedBy="System Administrator" LastModifiedOn="2012-10-18" LastModifiedBy="System Administrator" />
+    <Timestamp CreatedOn="2014-01-03" CreatedBy="System Administrator" LastModifiedOn="2014-01-03" LastModifiedBy="System Administrator" />
     <Navigation>
       <TargetFrame repository_open_document="_top" repository_open_diagram="_top" repository_link_document="_top" repository_link_diagram="_top" repository_link_shape="_top" diagram_link_document="_top" diagram_link_diagram="_top" diagram_link_shape="_top" />
       <DocumentFrame enabled="false" height="30%" />
@@ -18,7 +18,7 @@
   </PublicationProperties>
   <PublicationFeedback Enabled="true">
     <PublicationContacts>
-      <Contact UserID="" Name="" Email="email@email.com" />
+      <Contact UserID="" Name="" Email="peter.bates@orbussoftware.com" />
     </PublicationContacts>
     <IssueCategories>
       <IssueCategory ID="1" Name="Change Request" Description="Any completely new requirements need to be recorded as part of this group." />
@@ -26,6 +26,7 @@
       <IssueCategory ID="3" Name="General Issue" Description="Record any other issues (anything not covered by the other issue categories)" />
       <IssueCategory ID="4" Name="Improvement Suggestion" Description="Record any issues considered to be relevant to management or to be resolved by management as part of this group." />
       <IssueCategory ID="5" Name="Management Issue" Description="Record any changes as part of this group - changes could be process changes, updates, errors, revisions to supporting documentation" />
+      <IssueCategory ID="8" Name="Portal Feedback" Description="Feedback issues created in iServer Portal " />
       <IssueCategory ID="6" Name="Question" Description="Any questions which are to be resolved should be recorded here" />
       <IssueCategory ID="7" Name="Task" Description="Something needs to be done" />
     </IssueCategories>
@@ -35,6 +36,7 @@
       <IssuePriority ID="3" Name="3. Low" Description="Resolve within one month" />
       <IssuePriority ID="4" Name="4. Long Term" Description="Resolve within 6 months" />
       <IssuePriority ID="5" Name="5. No Priority" Description="No specific resolution time set" />
+      <IssuePriority ID="6" Name="Portal Feedback" Description="Default priority for feedback issues created in iServer Portal" />
     </IssuePriorities>
   </PublicationFeedback>
 </iServerPublication>

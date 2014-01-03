@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="714" PageID="0" ObjectID="af335641-80a1-4a7d-9549-e8252a7dbf6d" Issues="False" DiagLinks="True" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">645</Width>
+    <Height Unit="mm">100</Height>
+    <Left Unit="mm">15</Left>
+    <Bottom Unit="mm">235</Bottom>
+    <Right Unit="mm">660</Right>
+    <Top Unit="mm">335</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>2nd Level Support</RepositoryName>
+    <Description>2nd Level Support takes over Incidents which cannot be solved immediately with the means of 1st Level Support. If necessary, it will
+request external support, e.g. from software or hardware manufacturers. The aim is to restore a failed IT service as quickly as
+possible. If no solution can be found 2nd Level Support passes on the Incident to Problem Management.</Description>
+    <ShapeMaster>Role</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>RACI: Responsible</LinkType>
+      <Reason />
+      <Description>R</Description>
+      <Destination>
+        <ApplicationType>MSVisioShape</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Process</Category>
+        <Name>LINK TO SEVERAL OBJECTS</Name>
+        <Target DocumentID="27d98237-5c24-4691-88a6-6fce103cbf9f" DocumentName="ITIL v3 Process Map - Front page" PageID="0" ShapeID="92" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

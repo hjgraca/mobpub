@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="814" PageID="0" ObjectID="caae3431-929b-44c0-807b-5393abc5ebaf" Issues="False" DiagLinks="True" DocLinks="False" IsRelationship="0">
+  <Dimensions>
+    <Width Unit="mm">36.5</Width>
+    <Height Unit="mm">16.2</Height>
+    <Left Unit="mm">620.3875</Left>
+    <Bottom Unit="mm">369</Bottom>
+    <Right Unit="mm">656.8875</Right>
+    <Top Unit="mm">385.2</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Index of Service Operation Processes</RepositoryName>
+    <Description />
+    <ShapeMaster>Navigation Shape</ShapeMaster>
+    <Timestamp CreatedOn="2013-03-28" CreatedBy="System Administrator" LastModifiedOn="2013-03-28" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates to</Description>
+      <Destination>
+        <ApplicationType>MSVisioDiagram</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>ITIL Process Model</Category>
+        <Name>Index of Service Operation Processes</Name>
+        <Target DocumentID="82f93e39-c086-4799-bf4a-f8f71c67863f" DocumentName="Index of Service Operation Processes" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>
