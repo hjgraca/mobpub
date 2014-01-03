@@ -21,5 +21,6 @@
   "diagramFile": "publication.structview.xml",
   "categoryFile": "publication.catview.xml",
   "searchFile": "publication.structview.xml",
-  "diagramImageFile": "/iserverdiagram.xml"
+  "diagramImageFile": "/iserverdiagram.xml",
+  "imagesFolder": "/Publication_files/Images/"
 }
