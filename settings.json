@@ -1,6 +1,11 @@
 {
   "name": "Mobile Publisher",
-  "version": "0.7.1",
+  "version": "0.7.2",
+  "changes": [
+      "Bug fixes",
+      "Added child diagram icon",
+      "Scroll enabled in lists"
+  ],
   "description": "Mobile Publisher",
   "main": "app.js",
   "dependencies": {
