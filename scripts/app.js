@@ -8,6 +8,8 @@ var mobilepub = (function () {
 			$.getJSON("settings.json", function(data) {
 				mobilepub.settings = data;
 				$("#appVersion").text(data.version);
+				$(".datetime").text(" [" + data.dateTime + "] ");
+
 				mobilepub.buildDiagramStruct();
 				mobilepub.buildCategoryStruct();
 			});
@@ -565,6 +567,17 @@ function OnShapeClick(a,b,evt){
 };
 function UpdateTooltip(){
 
+}
+
+function getDateTime() {
+  now = new Date();
+  year = "" + now.getFullYear();
+  month = "" + (now.getMonth() + 1); if (month.length == 1) { month = "0" + month; }
+  day = "" + now.getDate(); if (day.length == 1) { day = "0" + day; }
+  hour = "" + now.getHours(); if (hour.length == 1) { hour = "0" + hour; }
+  minute = "" + now.getMinutes(); if (minute.length == 1) { minute = "0" + minute; }
+  second = "" + now.getSeconds(); if (second.length == 1) { second = "0" + second; }
+  return day + "-" + month + "-" + year + " " + hour + ":" + minute + ":" + second;
 }
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
