@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="30" PageID="0" ObjectID="3fa433da-e1db-4660-89ff-48748113430a" Issues="N" DiagLinks="N" DocLinks="N" IsRelationship="N">
+  <Dimensions>
+    <Width Unit="mm">32.70006</Width>
+    <Height Unit="mm">32.70006</Height>
+    <Left Unit="mm">128.2498</Left>
+    <Bottom Unit="mm">111.7124</Bottom>
+    <Right Unit="mm">160.9499</Right>
+    <Top Unit="mm">144.4125</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>G. Implementation Governance</RepositoryName>
+    <Description />
+    <ShapeMaster>ADM Phase</ShapeMaster>
+    <Timestamp CreatedOn="2011-01-13" CreatedBy="System Administrator" LastModifiedOn="2011-01-13" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="26" PageID="0" ObjectID="78fbe944-026c-4877-aa0a-cb37369cc5b1" Issues="N" DiagLinks="N" DocLinks="N" IsRelationship="N">
+  <Dimensions>
+    <Width Unit="mm">32.70006</Width>
+    <Height Unit="mm">32.70006</Height>
+    <Left Unit="mm">259.0501</Left>
+    <Bottom Unit="mm">111.7124</Bottom>
+    <Right Unit="mm">291.7501</Right>
+    <Top Unit="mm">144.4125</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>C. Information Systems Architecture</RepositoryName>
+    <Description />
+    <ShapeMaster>ADM Phase</ShapeMaster>
+    <Timestamp CreatedOn="2011-01-13" CreatedBy="System Administrator" LastModifiedOn="2011-01-13" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

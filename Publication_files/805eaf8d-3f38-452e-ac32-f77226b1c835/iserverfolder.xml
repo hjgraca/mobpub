@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerFolder ID="805eaf8d-3f38-452e-ac32-f77226b1c835">
+  <iServerProperties>
+    <RepositoryName>Architecture Repository</RepositoryName>
+    <Category>Architecture Repository</Category>
+    <Logo>../Images/treefolder.gif</Logo>
+    <Description />
+    <Timestamp CreatedOn="2010-03-16" CreatedBy="System Administrator" LastModifiedOn="2010-03-16" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <CustomAttributes />
+  <Issues />
+</iServerFolder>

@@ -3,6 +3,7 @@ body {
     margin:         0pt;
     overflow:       scroll;
     font-size:      8pt;
+    font-family: Arial,Tahoma,Sans Serif;
 }
 .divTree {
 }
@@ -52,55 +53,51 @@ body {
 }
 
 .divText {
-    border:         solid 1px #fff;
+
     position:       relative;
     left:           3px;
     display:        inline;
     height:         16px;
-    font-family:    Tahoma, sans-serif;
     font-size:      8pt;
     vertical-align: middle;
     cursor:         default;
+    padding:3px;
 }
 .divTextMouseover {
-    border:         solid 1px #fff;
-    color:          #009;
+
     text-decoration: underline;
     position:       relative;
     left:           3px;
     display:        inline;
     height:         16px;
-    font-family:    Tahoma, sans-serif;
     font-size:      8pt;
     vertical-align: middle;
     cursor:         default;
+    padding:3px;
 }
 .divTextSelected {
-    border:         solid 1px #47c;
-    background:     #47c;
-    color:          #fff;
+    background:     #ececed;
+    color:          #ff6600;
     position:       relative;
     left:           3px;
     display:        inline;
     height:         16px;
-    font-family:    Tahoma, sans-serif;
     font-size:      8pt;
     vertical-align: middle;
     cursor:         default;
+    padding:3px;
 }
 .divTextSelectedMouseover {
-    border:         solid 1px #47c;
-    background:     #47c;
-    color:          #fff;
-    text-decoration: underline;
+    background:     #ececed;
+    color:          #ff6600;
     position:       relative;
     left:           3px;
     display:        inline;
     height:         16px;
-    font-family:    Tahoma, sans-serif;
     font-size:      8pt;
     vertical-align: middle;
     cursor:         default;
+    padding:3px;
 }
 
 

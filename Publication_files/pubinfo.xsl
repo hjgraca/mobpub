@@ -5,7 +5,6 @@
   <xsl:template match="/">
     <html>
       <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
         <link rel="stylesheet" type="text/css" media="screen">
           <xsl:attribute name="href">
             <xsl:value-of select="$pathToRoot" />pubinfo.css
@@ -201,7 +200,7 @@
           window.open('iserverdiagramreport.xml');
           }
           function openPrintReportWord() {
-          window.open('<xsl:value-of select="*/@ID" />.docx');
+          window.open('<xsl:value-of select="*/@ID" />.doc');
           }
           function openPrintDiagram() {
           window.open('<xsl:value-of select="*/@ID" />_files/diagrampreview.html');

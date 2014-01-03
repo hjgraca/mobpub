@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerFolder ID="0918d922-e57f-4ca7-a9eb-edc3d0e9aef2">
+  <iServerProperties>
+    <RepositoryName>Architecture Landscape</RepositoryName>
+    <Category>Architecture Landscape</Category>
+    <Logo>../Images/treefolder.gif</Logo>
+    <Description>The Architecture Landscape shows an architectural view of the building blocks that are in use within the organization today (e.g., a list of the live applications). The landscape is likely to exist at multiple levels of abstraction to suit different architecture objectives.</Description>
+    <Timestamp CreatedOn="2010-03-16" CreatedBy="System Administrator" LastModifiedOn="2011-01-06" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <CustomAttributes />
+  <Issues />
+</iServerFolder>

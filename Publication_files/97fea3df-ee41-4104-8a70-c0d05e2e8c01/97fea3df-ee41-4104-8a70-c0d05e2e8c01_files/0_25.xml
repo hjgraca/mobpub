@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="25" PageID="0" ObjectID="ecb9fd59-5b4b-4a40-a878-59619f583e1a" Issues="N" DiagLinks="Y" DocLinks="N" IsRelationship="N">
+  <Dimensions>
+    <Width Unit="mm">32.70006</Width>
+    <Height Unit="mm">32.70006</Height>
+    <Left Unit="mm">239.8948</Left>
+    <Bottom Unit="mm">157.9573</Bottom>
+    <Right Unit="mm">272.5949</Right>
+    <Top Unit="mm">190.6574</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>B. Business Architecture</RepositoryName>
+    <Description />
+    <ShapeMaster>ADM Phase</ShapeMaster>
+    <Timestamp CreatedOn="2011-01-13" CreatedBy="System Administrator" LastModifiedOn="2011-01-13" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations>
+    <Relation>
+      <LinkType>General: (Document Navigation)</LinkType>
+      <Reason />
+      <Description>navigates to</Description>
+      <Destination>
+        <ApplicationType>MSVisioDiagram</ApplicationType>
+        <Ext>.html</Ext>
+        <Category>Functional Decomposition Diagram</Category>
+        <Name>MTT (Org) Functional Decomposition Diagram</Name>
+        <Target DocumentID="61d9ee3c-34b6-46b1-b552-0e7ff40d32fe" DocumentName="MTT (Org) Functional Decomposition Diagram" />
+      </Destination>
+    </Relation>
+  </Relations>
+  <CustomAttributes />
+</Shape>

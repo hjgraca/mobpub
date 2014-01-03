@@ -501,9 +501,9 @@ function Shape (xmlNode)
        if (xmlNode != null)
         {
 
-            this.gotIssues = (xmlNode.attributes.getNamedItem("Issues") && (xmlNode.attributes.getNamedItem("Issues")).text === "True");
-            this.gotDocLinks = (xmlNode.attributes.getNamedItem("DocLinks") && (xmlNode.attributes.getNamedItem("DocLinks")).text === "True");
-            this.gotDiagLinks = (xmlNode.attributes.getNamedItem("DiagLinks") && (xmlNode.attributes.getNamedItem("DiagLinks")).text === "True");
+            this.gotIssues = (xmlNode.attributes.getNamedItem("Issues") && (xmlNode.attributes.getNamedItem("Issues")).text === "Y");
+            this.gotDocLinks = (xmlNode.attributes.getNamedItem("DocLinks") && (xmlNode.attributes.getNamedItem("DocLinks")).text === "Y");
+            this.gotDiagLinks = (xmlNode.attributes.getNamedItem("DiagLinks") && (xmlNode.attributes.getNamedItem("DiagLinks")).text === "Y");
 
             var id = xmlNode.attributes.getNamedItem ("ID");
             if (id != null && id.text.length > 0)
@@ -524,7 +524,7 @@ function Shape (xmlNode)
             var isrelationship = xmlNode.attributes.getNamedItem ("IsRelationship");
             if (isrelationship != null && isrelationship.text.length > 0)
             {
-                if (isrelationship.text == "1")
+                if (isrelationship.text == "Y")
                 {
                     this.isRelationship = true;
                 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerFolder ID="8d72ecce-7bdd-4d9f-a3c7-ecdeb80d4e96">
+  <iServerProperties>
+    <RepositoryName>0. MTT Strategic Architecture (Example)</RepositoryName>
+    <Category>Architecture Landscape: Strategic/Segment/Capability Architectures</Category>
+    <Logo>../Images/treefolder.gif</Logo>
+    <Description />
+    <Timestamp CreatedOn="2010-03-16" CreatedBy="System Administrator" LastModifiedOn="2011-08-08" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <CustomAttributes />
+  <Issues />
+</iServerFolder>

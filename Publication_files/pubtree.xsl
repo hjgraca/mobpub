@@ -4,7 +4,6 @@
 <xsl:template match="iServerPublication">
 <html>
     <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
         <title>Publisher</title>
         <link rel="stylesheet" href="pubtree.css" type="text/css" />
         <script language="jscript" type="text/jscript" src="pubtree.js"></script>

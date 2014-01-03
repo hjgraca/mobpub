@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerFolder ID="49ec928e-72ff-4525-a5e3-f0836f992b92">
+  <iServerProperties>
+    <RepositoryName>iServer Example ADM</RepositoryName>
+    <Category>TOGAF 9 ADM</Category>
+    <Logo>../Images/treefolder.gif</Logo>
+    <Description>Copy me into your Architecture Landscape for ADM Iterations</Description>
+    <Timestamp CreatedOn="2011-01-04" CreatedBy="System Administrator" LastModifiedOn="2011-01-04" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <CustomAttributes />
+  <Issues />
+</iServerFolder>

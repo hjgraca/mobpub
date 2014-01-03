@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../pubinfo.object.xsl"?>
+<iServerFolder ID="391eac03-2db6-48f0-8da0-b584f2cf6f18">
+  <iServerProperties>
+    <RepositoryName>Phase BCD. Baseline (MTT)</RepositoryName>
+    <Category>Phase B,C,D. Baseline Architecture</Category>
+    <Logo>../Images/treefolder.gif</Logo>
+    <Description />
+    <Timestamp CreatedOn="2011-01-04" CreatedBy="System Administrator" LastModifiedOn="2011-01-05" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <CustomAttributes />
+  <Issues />
+</iServerFolder>

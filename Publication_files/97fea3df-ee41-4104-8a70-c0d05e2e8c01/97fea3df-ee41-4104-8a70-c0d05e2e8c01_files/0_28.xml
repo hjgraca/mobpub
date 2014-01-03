@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="28" PageID="0" ObjectID="b103e285-8d9d-4886-9c58-37b4b66c550c" Issues="N" DiagLinks="N" DocLinks="N" IsRelationship="N">
+  <Dimensions>
+    <Width Unit="mm">32.70006</Width>
+    <Height Unit="mm">32.70006</Height>
+    <Left Unit="mm">193.65</Left>
+    <Bottom Unit="mm">46.31231</Bottom>
+    <Right Unit="mm">226.35</Right>
+    <Top Unit="mm">79.01237</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>E. Opportunities and Solutions</RepositoryName>
+    <Description />
+    <ShapeMaster>ADM Phase</ShapeMaster>
+    <Timestamp CreatedOn="2011-01-13" CreatedBy="System Administrator" LastModifiedOn="2011-01-13" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

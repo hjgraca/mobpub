@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shape ID="32" PageID="0" ObjectID="0160f4b2-f3a8-4afe-9fcd-fce7c2416327" Issues="N" DiagLinks="N" DocLinks="N" IsRelationship="N">
+  <Dimensions>
+    <Width Unit="mm">49.23997</Width>
+    <Height Unit="mm">49.23997</Height>
+    <Left Unit="mm">185.38</Left>
+    <Bottom Unit="mm">103.3475</Bottom>
+    <Right Unit="mm">234.62</Right>
+    <Top Unit="mm">152.5875</Top>
+  </Dimensions>
+  <iServerProperties>
+    <RepositoryName>Requirements Management</RepositoryName>
+    <Description />
+    <ShapeMaster>ADM Phase</ShapeMaster>
+    <Timestamp CreatedOn="2011-01-13" CreatedBy="System Administrator" LastModifiedOn="2011-01-13" LastModifiedBy="System Administrator" />
+  </iServerProperties>
+  <Issues />
+  <Relations />
+  <CustomAttributes />
+</Shape>

@@ -1,42 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="pubinfo.publication.xsl"?>
-<iServerPublication version="7.0.00" ID="2a539292-326a-4181-8e8b-bf85b2ec3d5b">
+<iServerPublication version="7.0.00" ID="fe816fe0-260d-4fe9-aec5-ae2de0bbb652">
   <PublicationProperties>
-    <Title>APQC</Title>
+    <Title>Publication</Title>
     <Description />
     <Notes />
     <DefaultView>structview</DefaultView>
-    <Timestamp CreatedOn="2013-05-12" CreatedBy="System Administrator" LastModifiedOn="2013-05-12" LastModifiedBy="System Administrator" />
+    <Timestamp CreatedOn="2012-10-18" CreatedBy="System Administrator" LastModifiedOn="2012-10-18" LastModifiedBy="System Administrator" />
     <Navigation>
       <TargetFrame repository_open_document="_top" repository_open_diagram="_top" repository_link_document="_top" repository_link_diagram="_top" repository_link_shape="_top" diagram_link_document="_top" diagram_link_diagram="_top" diagram_link_shape="_top" />
       <DocumentFrame enabled="false" height="30%" />
       <PopupMenu first_tier_links="5" />
       <VisioHyperlinks publish="false" />
-      <Indicators ShowDocLinks="true" ShowDiagLinks="true" ShowIssues="true" Positioning="bottom" />
+      <Indicators ShowDocLinks="true" ShowDiagLinks="true" ShowIssues="true" Positioning="right" />
     </Navigation>
     <Reporting word_enabled="false" html_enabled="true" image_enabled="true" />
   </PublicationProperties>
-  <PublicationFeedback Enabled="false">
+  <PublicationFeedback Enabled="true">
     <PublicationContacts>
-      <Contact UserID="" Name="" Email="" />
+      <Contact UserID="" Name="" Email="email@email.com" />
     </PublicationContacts>
     <IssueCategories>
-      <IssueCategory ID="3" Name="Change Request" Description="Any completely new requirements need to be recorded as part of this group." />
-      <IssueCategory ID="1" Name="General Issue" Description="Record any other issues (anything not covered by the other issue categories)" />
-      <IssueCategory ID="2" Name="Improvement Suggestion" Description="Record any issues considered to be relevant to management or to be resolved by management as part of this group." />
-      <IssueCategory ID="4" Name="Management Issue" Description="Record any changes as part of this group - changes could be process changes, updates, errors, revisions to supporting documentation" />
-      <IssueCategory ID="5" Name="New Requirement" Description="Record any suggested improvements as part of this group" />
-      <IssueCategory ID="8" Name="Portal Feedback" Description="Feedback issues created in iServer Portal " />
+      <IssueCategory ID="1" Name="Change Request" Description="Any completely new requirements need to be recorded as part of this group." />
+      <IssueCategory ID="2" Name="Cost Saving - (Currency)" Description="Provide details in (currency) of potential cost savings" />
+      <IssueCategory ID="3" Name="General Issue" Description="Record any other issues (anything not covered by the other issue categories)" />
+      <IssueCategory ID="4" Name="Improvement Suggestion" Description="Record any issues considered to be relevant to management or to be resolved by management as part of this group." />
+      <IssueCategory ID="5" Name="Management Issue" Description="Record any changes as part of this group - changes could be process changes, updates, errors, revisions to supporting documentation" />
       <IssueCategory ID="6" Name="Question" Description="Any questions which are to be resolved should be recorded here" />
       <IssueCategory ID="7" Name="Task" Description="Something needs to be done" />
     </IssueCategories>
     <IssuePriorities>
-      <IssuePriority ID="1" Name="1. High" Description="" />
-      <IssuePriority ID="2" Name="2. Medium" Description="" />
-      <IssuePriority ID="3" Name="3. Low" Description="" />
-      <IssuePriority ID="4" Name="4. Long Term" Description="" />
-      <IssuePriority ID="5" Name="5. No Priority" Description="" />
-      <IssuePriority ID="6" Name="Portal Feedback" Description="Default priority for feedback issues created in iServer Portal" />
+      <IssuePriority ID="1" Name="1. High" Description="Resolve in 24 hours" />
+      <IssuePriority ID="2" Name="2. Medium" Description="Resolve within a working week" />
+      <IssuePriority ID="3" Name="3. Low" Description="Resolve within one month" />
+      <IssuePriority ID="4" Name="4. Long Term" Description="Resolve within 6 months" />
+      <IssuePriority ID="5" Name="5. No Priority" Description="No specific resolution time set" />
     </IssuePriorities>
   </PublicationFeedback>
 </iServerPublication>

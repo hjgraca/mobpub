@@ -37,7 +37,6 @@
   <xsl:param name="pathToData" />
   <html>
     <head>
-      <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
       <link rel="stylesheet" type="text/css">
         <xsl:attribute name="href">
           <xsl:value-of select="$pathToRoot" />/pubinfo-report.css
