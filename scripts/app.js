@@ -111,11 +111,12 @@ var mobilepub = (function () {
 						mobilepub.diagram.base = mobilepub.buildDiagramInfo(xml);
 
 						mobilepub.setTitle($(xml).find('RepositoryName').text());
-
+						
 						//add diagram
 						var imagesrc = diagramPath + 'gif_1.gif';
-						// $('#im').attr('src','');
 						$('#im').attr('src',imagesrc);
+						// img for size
+						$('#hiddenimg').attr('src',imagesrc);
 
 						$.get(diagramPath + 'gif_1.html', function(data) {
 						  	var map = $(data).find("map");
@@ -155,7 +156,10 @@ var mobilepub = (function () {
 						createdBy: properties.find('Timestamp').attr('CreatedBy'),
 						lastModifiedOn: properties.find('Timestamp').attr('LastModifiedOn'),
 						lastModifiedBy: properties.find('Timestamp').attr('LastModifiedBy')
-					}
+					},
+					pages: properties.find('Pages > Page').map(function(i,e){
+						return $(e).attr("ID")
+					}).toArray()
 				},
 				attributes: attributes.find("Attribute").map(function(i,e){ 
 					return {
@@ -165,22 +169,31 @@ var mobilepub = (function () {
 						dataType: $(e).find("DataType").text(),  
 					};
 				}).toArray(),
-				// issues: issues.find("Issue").map(function(i,e){ 
-				// 	return {
-				// 		name: $(e).find("Name").text(), 
-				// 		description: $(e).find("Description").text(),
-				// 		value: $(e).find("Value").text(),
-				// 		dataType: $(e).find("DataType").text(),  
-				// 	};
-				// }).toArray(),
-				// relations: relations.find("Relation").map(function(i,e){ 
-				// 	return {
-				// 		name: $(e).find("Name").text(), 
-				// 		description: $(e).find("Description").text(),
-				// 		value: $(e).find("Value").text(),
-				// 		dataType: $(e).find("DataType").text(),  
-				// 	};
-				// }).toArray(),
+				issues: issues.find("Issue").map(function(i,e){ 
+					return {
+						name: $(e).find("Name").text(), 
+						description: $(e).find("Description").text(),
+						actionType: $(e).find("ActionType").text(),
+						priority: $(e).find("Priority").text(),  
+						status: $(e).find("Status").text(),
+						closed: $(e).find("Closed").text(),
+						createdOn: issues.find('Timestamp').attr('CreatedOn'),
+						createdBy: issues.find('Timestamp').attr('CreatedBy'),
+						lastModifiedOn: issues.find('Timestamp').attr('LastModifiedOn'),
+						lastModifiedBy: issues.find('Timestamp').attr('LastModifiedBy')
+					};
+				}).toArray(),
+				relations: relations.find("Relation").map(function(i,e){ 
+					var target = $(e).find("Target"),
+						dest = $(e).find("Destination");
+				 	return {
+				 		docId: target.attr("DocumentID"),
+						docName: target.attr("DocumentName"),
+						destExt: $(dest).children("Ext").text(),
+						destName: $(dest).children("Name").text(),
+						description: $(e).children("Description").text() + " " + $(dest).children("Name").text()
+				 	};
+				}).toArray()
 			};
 
 			return diagram;
@@ -224,7 +237,7 @@ var mobilepub = (function () {
 								diagData.find("Pages Page[ID='" + pageId + "'] > Shapes > Shape[ID='"+ shapeId +"']").each(function(){
 									var x = $(this).find("XFORM > PinX").text(),
 										y = $(this).find("XFORM > PinY").text(),
-										div = $('<div style="z-index:4; position: absolute; opacity: 0.7; filter: alpha(opacity=85)" onclick="mobilepub.navigateToChild(' + pageId +', ' + shapeId + ',\''+ source +'\')"><img style="width:24px;height:24px" title="iServer diagram links available for this object" src=""></div>');
+										div = $('<div style="z-index:4; position: absolute; opacity: 0.7; filter: alpha(opacity=85)" onclick="mobilepub.navigateToChild(' + pageId +', ' + shapeId + ',\''+ source +'\')"><img style="width:24px;height:24px" src=""></div>');
 
 									var dimensions = $(shapexml).find("Dimensions").map(function(i,e){
 										return {
@@ -297,7 +310,7 @@ var mobilepub = (function () {
 									if(isIssues){
 										$(div).find("img").attr("src", mobilepub.settings.imagesFolder + "hasissues.gif");
 										$(div).css({"top": yLong - 36, "left": xLong - 24});
-										$(div).attr("onclick",'mobilepub.navigateToChild(' + pageId +', ' + shapeId + ',\''+ source +'\',\'issue\')');
+										$(div).attr("onclick",'mobilepub.showShapeInfoByFile(\''+ source +'\')');
 										
 										$(div).clone().prependTo("#imagescroller");
 									}
@@ -393,15 +406,35 @@ var mobilepub = (function () {
 					});
 				});
 
+				current.children("Document").each(function(){
+					items.push({
+						id: $(this).attr('ID'),
+						name: $(this).attr('Name'),
+						category: $(this).attr('Category'),
+						ext: $(this).attr('Ext'),
+						isDoc: true,
+						childCount: $(this).children().length,
+						isImage: true,
+						image: '<img class="ui-li-icon" src="/Publication_files/Images/word.gif" style="top: 12px;left: 16px;">'
+					});
+				});
+
 				mobilepub.setTitle($(current[0]).attr("Name"));
 			}
 
 			_.each(items, function(val){
 				var icon = val.isImage ? 'data-icon="action"' : '',
 					count = val.isImage ? '' : '<span class="ui-li-count">'+ val.childCount +'</span>',
-					url= val.isImage ? '/partials/diagram.html?id='+ val.id : '/partials/browsecategory.html?id='+ val.id + '&name=' + val.name;
+					url= val.isImage ? '/partials/diagram.html?id='+ val.id : '/partials/browsecategory.html?id='+ val.id + '&name=' + val.name,
+					link = '<a href="'+ url +'" data-transition="slide">';
 
-				$("#categorylist").append('<li '+ icon +'><a href="'+ url +'" data-transition="slide">'+ val.image + val.name + count + '</a></li>');
+				if(val.isDoc){
+					url = mobilepub.settings.publicationpath + val.id + "/" + val.id + val.ext;
+					link = '<a onclick="downloadURL(\''+ url +'\')" data-transition="slide">'
+				}	
+
+				$("#categorylist").append('<li '+ icon +'>'+ link + val.image + val.name + count + '</a></li>');	
+				
 			});
 
 			// refresh list
@@ -441,7 +474,8 @@ var mobilepub = (function () {
 				});
 
 				$("#diagraminfolist").append('<h3>Properties</h3>');
-				var divprop = $('<div class="ui-grid-a">');
+				var divprop = $('<div class="ui-grid-a">')
+					separator = '<div class="ui-block-a" style="margin-bottom:15px"></div>';
 
 				for (var i = 0; i < props.length; i++) {
 					
@@ -452,24 +486,73 @@ var mobilepub = (function () {
 				$("#diagraminfolist").append(divprop);
 
 				
+				// add attributes
 				$("#diagraminfolist").append('<h3>Attributes</h3>');
 				var divattr = $('<div class="ui-grid-a">');
 
-				_.each(mobilepub.diagram.current.attributes, function(val){
 
-					divattr.append('<div class="ui-block-a">'+ val.name +'</div>')
-					.append('<div class="ui-block-b"><div class="ui-bar-a">'+ val.value +'</div></div>');
-
-				});
-
+				if(mobilepub.diagram.current.attributes.length === 0){
+					divattr.append('<div class="ui-block-a"><small>No attributes</small></div>');
+				}else{
+					_.each(mobilepub.diagram.current.attributes, function(val){
+						divattr.append('<div class="ui-block-a">'+ val.name +'</div>')
+						.append('<div class="ui-block-b"><div class="ui-bar-a">'+ val.value +'</div></div>');
+					});
+				}
 				divattr.append('</div>');
 				$("#diagraminfolist").append(divattr);
 
-				//new iScroll('diagraminfowrapper');
-				// $("#diagraminfopanel").trigger("updatelayout");
+				// add issues
+
+				$("#diagraminfolist").append('<h3>Issues</h3>');
+				var divissues = $('<div class="ui-grid-a">');
+
+				if(mobilepub.diagram.current.issues.length === 0){
+					divissues.append('<div class="ui-block-a"><small>No issues</small></div>');
+				}else{
+					_.each(mobilepub.diagram.current.issues, function(val){
+
+						Object.keys(val).forEach(function(key) {
+						    divissues.append('<div class="ui-block-a">'+ key +'</div>')
+							.append('<div class="ui-block-b"><div class="ui-bar-a">'+ val[key] +'</div></div>');
+						});
+						divissues.append(separator);
+
+					});
+				}
+				divissues.append('</div>');
+				$("#diagraminfolist").append(divissues);
+
+				// add relations
+
+				$("#diagraminfolist").append('<h3>Relations</h3>');
+				var divrel = $('<div class="ui-grid-a">');
+
+				if(mobilepub.diagram.current.relations.length === 0){
+					divrel.append('<div class="ui-block-a"><small>No relations</small></div>');
+				}else{
+
+					var rel = mobilepub.diagram.current.relations.map(function(val){
+						return {
+							name: val.destName,
+							description: val.description,
+							documentName: val.docName
+						};
+					});
+
+					_.each(rel, function(val){
+						Object.keys(val).forEach(function(key) {
+						    divrel.append('<div class="ui-block-a">'+ key +'</div>')
+							.append('<div class="ui-block-b"><div class="ui-bar-a">'+ val[key] +'</div></div>');
+						});
+						divrel.append(separator);
+					});
+				}
+				divrel.append('</div>');
+				$("#diagraminfolist").append(divrel);
+
 
 				mobilepub.diagram.diagWrapper.refresh();
-
 				// must clear
 				mobilepub.diagram.current = undefined;
 		},
@@ -483,6 +566,10 @@ var mobilepub = (function () {
 					$("#diagraminfopanel").panel("open");
 				}
 			});
+		},
+		showShapeInfoByFile: function(file){
+			var path = mobilepub.diagram.currentPath + file;
+			mobilepub.showShapeInfo(path);
 		},
 		navigateToChild: function(pageId, shapeId, source, action){
 			$.ajax({
@@ -549,15 +636,18 @@ var mobilepub = (function () {
 
 
 var downloadURL = function downloadURL(url) {
-    var hiddenIFrameID = 'hiddenDownloader',
-        iframe = document.getElementById(hiddenIFrameID);
-    if (iframe === null) {
-        iframe = document.createElement('iframe');
-        iframe.id = hiddenIFrameID;
-        iframe.style.display = 'none';
-        document.body.appendChild(iframe);
-    }
-    iframe.src = url;
+
+	$("#filedownload").attr("href", "/partials/fileviewer.html?url=" + url).click();
+	//window.location = url;
+    // var hiddenIFrameID = 'hiddenDownloader',
+    //     iframe = document.getElementById(hiddenIFrameID);
+    // if (iframe === null) {
+    //     iframe = document.createElement('iframe');
+    //     iframe.id = hiddenIFrameID;
+    //     iframe.style.display = 'none';
+    //     document.body.appendChild(iframe);
+    // }
+    // iframe.src = url;
 };
 
 function OnShapeClick(a,b,evt){
@@ -581,6 +671,21 @@ function getDateTime() {
 }
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+$('#layer').click(function(event){
+    var iframe = $('#filecontainer iframe').get(0);
+    var iframeDoc = (iframe.contentDocument) ? iframe.contentDocument : iframe.contentWindow.document;
+
+    // Find click position (coordinates)
+    var x = event.offsetX;
+    var y = event.offsetY;
+
+    // Trigger click inside iframe
+    var link = iframeDoc.elementFromPoint(x, y);
+    var newEvent = iframeDoc.createEvent('HTMLEvents');
+    newEvent.initEvent('click', true, true);
+    link.dispatchEvent(newEvent);
+});
 
 function getQueryVariable(query, variable) {
 if(!query){
@@ -615,6 +720,10 @@ $(document).on("pageshow", '#browsediagrampage',function(event, data){
 $(document).on("pageshow", '#diagrampage',function(event, data){
 	var parameters = $(this).data("url").split("?")[1];
 	mobilepub.loadDiagramImage(getQueryVariable(parameters, "id"));
+
+	setTimeout(function(){
+	    $('img[usemap]').ImageMapResize({ origImageWidth: $('#hiddenimg').width() });
+	},100);
 });
 
 // $(document).on("pagebeforeshow", '#browsecategorypage',function(event, data){
@@ -647,8 +756,21 @@ $(document).on("panelbeforeopen", '#diagraminfopanel',function(event, data){
 	mobilepub.loadDiagramInfoPanel();    
 });
 
+$(document).on("pagebeforeshow", '#fileviewer',function(event, data){
+	var parameters = $(this).data("url").split("?")[1];
+	$("#filecontainer").append('<iframe src="'+ getQueryVariable(parameters, "url") +'" seamless></iframe>');
+	
+	$(".scroller").niceScroll({
+		touchbehavior: true
+	});	
+
+});
+
 $(document).on("pageshow",function(event, data){
-	if($(".wrapper").length > 0){
-		mobilepub.diagram.diagWrapper = new iScroll($(".wrapper")[0]);
+	setTimeout(function(){
+	if($(".wrapper:visible").length > 0){
+		mobilepub.diagram.diagWrapper = new iScroll($(".wrapper:visible")[0]);
 	}
+	},100);
+
 });
