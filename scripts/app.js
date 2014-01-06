@@ -113,7 +113,7 @@ var mobilepub = (function () {
 			var path = mobilepub.settings.publicationpath + id + mobilepub.settings.diagramImageFile,
 				diagramPath = mobilepub.settings.publicationpath + id + '/' + id + '_files/';
 			mobilepub.diagram.currentPath = diagramPath;
-			mobilepub.diagram.imagescroll = new iScroll('imagewrapper', { zoom:true });	
+			//mobilepub.diagram.imagescroll = new iScroll('imagewrapper', { zoom:true });	
 
 			$.ajax({
 				type: "GET",
@@ -129,9 +129,17 @@ var mobilepub = (function () {
 						//add diagram
 						var imagesrc = diagramPath + 'gif_1.gif';
 						$('#im').attr('src',imagesrc);
-						// img for size
-						$('#hiddenimg').attr('src',imagesrc);
-
+						
+						// in memory img for size
+						$("<img/>")
+				        .attr("src", imagesrc)
+				        .load(function() {
+				            mobilepub.diagram.image ={
+				            	width: this.width,
+				            	height: this.height
+				            }
+				        });
+						
 						$.get(diagramPath + 'gif_1.html', function(data) {
 						  	var map = $(data).find("map");
 						  
@@ -144,10 +152,12 @@ var mobilepub = (function () {
 					mobilepub.buildDiagramExtraIcons(xml);
 
 					setTimeout(function(){
+						//debugger;
 					    // set size after dom created
 					    $('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
 						//$('#imagescroller').css('height',$('#im').height());
-						mobilepub.diagram.imagescroll.refresh();
+						//mobilepub.diagram.imagescroll.refresh();
+						new iScroll('imagewrapper', { zoom:true });
 
 					},1000);
 
@@ -736,7 +746,7 @@ $(document).on("pageshow", '#diagrampage',function(event, data){
 	mobilepub.loadDiagramImage(getQueryVariable(parameters, "id"));
 
 	setTimeout(function(){
-	    $('img[usemap]').ImageMapResize({ origImageWidth: $('#hiddenimg').width() });
+	    $('img[usemap]').ImageMapResize({ origImageWidth: mobilepub.diagram.image.width });
 	},100);
 });
 
