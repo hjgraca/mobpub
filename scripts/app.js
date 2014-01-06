@@ -5,13 +5,27 @@ var mobilepub = (function () {
 		},
 
 		load: function(){
+
 			$.getJSON("settings.json", function(data) {
 				mobilepub.settings = data;
+				mobilepub.getTitle();
 				$("#appVersion").text(data.version);
 				$(".datetime").text(" [" + data.dateTime + "] ");
 
 				mobilepub.buildDiagramStruct();
 				mobilepub.buildCategoryStruct();
+			});
+		},
+		getTitle: function(){
+			$.ajax({
+				type: "GET",
+				url: mobilepub.settings.publicationpath + "publicationproperties.xml",
+				dataType: "xml",
+				success: function(xml) {				
+					mobilepub.title = $(xml).find("PublicationProperties > Title").text();
+					$("#apptitle").text(mobilepub.title);
+					document.title = mobilepub.title;
+				}
 			});
 		},
 		buildDiagramChildren: function(item){
@@ -115,15 +129,25 @@ var mobilepub = (function () {
 						//add diagram
 						var imagesrc = diagramPath + 'gif_1.gif';
 						$('#im').attr('src',imagesrc);
-						// img for size
-						$('#hiddenimg').attr('src',imagesrc);
-
+						
+						// in memory img for size
+						$("<img/>")
+				        .attr("src", imagesrc)
+				        .load(function() {
+				            mobilepub.diagram.image ={
+				            	width: this.width,
+				            	height: this.height
+				            }
+				        });
+						
 						$.get(diagramPath + 'gif_1.html', function(data) {
 						  	var map = $(data).find("map");
 						  
 							//$('#im').css({'width': $(window).width(), 'height' : $(window).height()}).parent().append(map);
 							$('#im').parent().append(map);
 							$('#im').attr("usemap", "#"+ map.attr("name"));
+
+							$('#im').maphilight();
 						});
 					});
 
@@ -134,6 +158,7 @@ var mobilepub = (function () {
 					    $('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
 						//$('#imagescroller').css('height',$('#im').height());
 						mobilepub.diagram.imagescroll.refresh();
+						//new iScroll('imagewrapper', { zoom:true });
 
 					},1000);
 
@@ -563,7 +588,12 @@ var mobilepub = (function () {
 				dataType: "xml",
 				success: function(xml) {
 					mobilepub.diagram.current = mobilepub.buildDiagramInfo(xml);
-					$("#diagraminfopanel").panel("open");
+					
+					if($("#diagraminfopanel").data("mobilePanel")._open){
+						mobilepub.loadDiagramInfoPanel(); 
+					}else{
+						$("#diagraminfopanel").panel("open");
+					}
 				}
 			});
 		},
@@ -630,6 +660,13 @@ var mobilepub = (function () {
 					$("#itemslist").append('<a onclick="downloadURL(\''+ url +'\')" data-transition="slide" class="ui-btn ui-shadow ui-corner-all ui-btn-b">'+ opt.items[i].description +'</a>')	
 				}
 			};
+		},
+		clearAllAreaStyles:function(){
+			$("area").each(function(){
+				var data = $(this).mouseout().data('maphilight') || {"strokeColor":"0000ff","strokeWidth":5,"fillOpacity":0.3};
+				data.alwaysOn = undefined;
+				$(this).data('maphilight',data).trigger('alwaysOn.maphilight');
+			});
 		}
 	}
 })();
@@ -652,8 +689,24 @@ var downloadURL = function downloadURL(url) {
 
 function OnShapeClick(a,b,evt){
 	evt.preventDefault();
-	var path = mobilepub.diagram.currentPath + a + "_" + b + '.xml';
-	mobilepub.showShapeInfo(path);
+	// higlight
+	var data = $(evt.currentTarget).mouseout().data('maphilight') || {"strokeColor":"0000ff","strokeWidth":5,"fillOpacity":0.3},
+		isOn = !data.alwaysOn;
+
+	mobilepub.clearAllAreaStyles();
+
+	if(!isOn){
+		if($("#diagraminfopanel").data("mobilePanel")._open){
+			$("#diagraminfopanel").panel( "close" );
+		}
+	}else{
+		// show info
+		var path = mobilepub.diagram.currentPath + a + "_" + b + '.xml';
+		mobilepub.showShapeInfo(path);
+		data.alwaysOn = isOn;
+		$(evt.currentTarget).data('maphilight',data).trigger('alwaysOn.maphilight');
+	}
+	
 };
 function UpdateTooltip(){
 
@@ -722,8 +775,8 @@ $(document).on("pageshow", '#diagrampage',function(event, data){
 	mobilepub.loadDiagramImage(getQueryVariable(parameters, "id"));
 
 	setTimeout(function(){
-	    $('img[usemap]').ImageMapResize({ origImageWidth: $('#hiddenimg').width() });
-	},100);
+	    $('img[usemap]').ImageMapResize({ origImageWidth: mobilepub.diagram.image.width });
+	},1000);
 });
 
 // $(document).on("pagebeforeshow", '#browsecategorypage',function(event, data){
@@ -754,6 +807,15 @@ $(document).on("pagebeforeshow", '#shapechildpopup',function(event, data){
 
 $(document).on("panelbeforeopen", '#diagraminfopanel',function(event, data){
 	mobilepub.loadDiagramInfoPanel();    
+});
+
+// $(document).on("panelopen", '#diagraminfopanel',function(event, data){
+// 	//mobilepub.diagram.imagescroll.refresh();
+	
+// });
+
+$(document).on("panelbeforeclose", '#diagraminfopanel',function(event, data){
+	mobilepub.clearAllAreaStyles();
 });
 
 $(document).on("pagebeforeshow", '#fileviewer',function(event, data){
