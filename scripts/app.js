@@ -5,13 +5,27 @@ var mobilepub = (function () {
 		},
 
 		load: function(){
+
 			$.getJSON("settings.json", function(data) {
 				mobilepub.settings = data;
+				mobilepub.getTitle();
 				$("#appVersion").text(data.version);
 				$(".datetime").text(" [" + data.dateTime + "] ");
 
 				mobilepub.buildDiagramStruct();
 				mobilepub.buildCategoryStruct();
+			});
+		},
+		getTitle: function(){
+			$.ajax({
+				type: "GET",
+				url: mobilepub.settings.publicationpath + "publicationproperties.xml",
+				dataType: "xml",
+				success: function(xml) {				
+					mobilepub.title = $(xml).find("PublicationProperties > Title").text();
+					$("#apptitle").text(mobilepub.title);
+					document.title = mobilepub.title;
+				}
 			});
 		},
 		buildDiagramChildren: function(item){
