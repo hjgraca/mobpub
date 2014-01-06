@@ -1,5 +1,5 @@
 <div id="diagrampage" data-role="page" data-theme="a" data-title="Diagram" data-add-back-btn="true"> 
-       <div data-role="header" data-position="fixed"> 
+       <div data-role="header" > 
         <a href="" data-rel="back">Back</a>
              <h1>Orbus</h1> 
              <a href="/" data-icon="home">Home</a>
@@ -11,8 +11,8 @@
         <img id="im" src=""/>
         <!-- <img id="im" src="" style="width:100%" /> -->
         
-        
-    </div>  </div>       
+        </div>
+    </div>  
        </div>   
       <div data-role="footer" data-position="fixed">
         <div data-role="navbar" data-iconpos="bottom">
@@ -24,14 +24,14 @@
         </div><!-- /navbar -->
       </div> 
 
-
-<div data-role="panel" id="diagraminfopanel" data-display="overlay" data-position-fixed="true">
+        <div data-role="panel" id="diagraminfopanel" data-display="reveal" data-position-fixed="true" data-dismissible="false">
   <div data-role="header" data-theme="b" style="z-index:2"> 
-    <h2>Info</h2> 
+    <!-- <h2>Info</h2>  -->
+    <a data-rel="close">Close panel</a>
   </div>
-                <div class="wrapper">   
+    <div class="wrapper">   
        <div class="scroller"> 
-  <div data-role="content">
+  <div role="main" class="ui-content jqm-content jqm-fullwidth">
     <div id="diagraminfolist"></div></div></div>
   </div>
 </div>
