@@ -28,18 +28,18 @@ var mobilepub = (function () {
 				}
 			});
 		},
-		buildDiagramChildren: function(item){
-			var children = [];
+		// buildDiagramChildren: function(item){
+		// 	var children = [];
 
-			item.children('Folder').each(function(){             
-	            children.push({
-					id:$(this).attr('ID'),
-					name: $(this).attr('Name'),
-					children: mobilepub.buildDiagramChildren($(this))
-				});
-	         });
-			return children;
-		},
+		// 	item.children('Folder').each(function(){             
+	 //            children.push({
+		// 			id:$(this).attr('ID'),
+		// 			name: $(this).attr('Name'),
+		// 			children: mobilepub.buildDiagramChildren($(this))
+		// 		});
+	 //         });
+		// 	return children;
+		// },
 		diagram:{},
 		category:{},
 		buildDiagramStruct: function(){
@@ -109,10 +109,18 @@ var mobilepub = (function () {
 			$("#diagramlist").listview('refresh');	
 
 		},
-		loadDiagramImage: function(id){
+		loadDiagramImage: function(id, currentPage){
 			var path = mobilepub.settings.publicationpath + id + mobilepub.settings.diagramImageFile,
 				diagramPath = mobilepub.settings.publicationpath + id + '/' + id + '_files/';
 			mobilepub.diagram.currentPath = diagramPath;
+			mobilepub.diagram.currentId = id;
+			if(currentPage){
+				mobilepub.diagram.currentPage = parseInt(currentPage);
+			}else{
+				mobilepub.diagram.currentPage = 0;
+			}
+			var gif = 'gif_' + (mobilepub.diagram.currentPage + 1);
+
 			mobilepub.diagram.imagescroll = new iScroll('imagewrapper', { zoom:true });	
 
 			$.ajax({
@@ -127,7 +135,7 @@ var mobilepub = (function () {
 						mobilepub.setTitle($(xml).find('RepositoryName').text());
 						
 						//add diagram
-						var imagesrc = diagramPath + 'gif_1.gif';
+						var imagesrc = diagramPath + gif +'.gif';
 						$('#im').attr('src',imagesrc);
 						
 						// in memory img for size
@@ -140,7 +148,7 @@ var mobilepub = (function () {
 				            }
 				        });
 						
-						$.get(diagramPath + 'gif_1.html', function(data) {
+						$.get(diagramPath + gif +'.html', function(data) {
 						  	var map = $(data).find("map");
 						  
 							//$('#im').css({'width': $(window).width(), 'height' : $(window).height()}).parent().append(map);
@@ -228,25 +236,32 @@ var mobilepub = (function () {
 				type: "GET",
 				url: mobilepub.diagram.currentPath + "/data.xml",
 				dataType: "xml",
-				success: function(res) {	
-					var diagData = $(res).find("VisioDocument Pages"),
-						pageSize = $(xml).find("Pages > Page Dimensions").map(function(i,e){
-										return {
-											width: {
-												unit: $(e).children("Width").attr("Unit"),
-												value: $(e).children("Width").text(),
-											},
-											height:{
-												unit: $(e).children("Height").attr("Unit"),
-												value: $(e).children("Height").text(),
-											}
-										};
-									})[0];
+				success: function(res) {						
+					mobilepub.diagram.pages = $(xml).find("Pages > Page").map(function(i,e){
+						return {
+							id: $(e).attr("ID"),
+							pageSize : $(e).find("Dimensions").map(function(r,dim){
+								return {
+									width: {
+										unit: $(dim).children("Width").attr("Unit"),
+										value: $(dim).children("Width").text(),
+									},
+									height:{
+										unit: $(dim).children("Height").attr("Unit"),
+										value: $(dim).children("Height").text(),
+									}
+								};
+							}).toArray()[0]
+						};
+					});
 
+					mobilepub.buildDiagramPages();
+					var currentPage = mobilepub.diagram.pages[mobilepub.diagram.currentPage],
+						diagData = $(res).find("VisioDocument Pages Page[ID='" + currentPage.id + "']");
+					
 					// search shapes with diaglinks, issues or doclinks
-					$(xml).find('Shapes Shape[DiagLinks="Y"], Shape[DiagLinks="True"],[Issues="Y"],[Issues="True"],[DocLinks="Y"],[DocLinks="True"]').each(function(){
+					$(xml).find('Shapes Shape[DiagLinks="Y"][PageID='+ currentPage.id +'], Shape[DiagLinks="True"][PageID='+ currentPage.id +'],[Issues="Y"][PageID='+ currentPage.id +'],[Issues="True"][PageID='+ currentPage.id +'],[DocLinks="Y"][PageID='+ currentPage.id +'],[DocLinks="True"][PageID='+ currentPage.id +']').each(function(){
 						var shapeId = $(this).attr("ID"), 
-							pageId = $(this).attr("PageID"),
 							isDiagLink = $(this).attr("DiagLinks") === "Y" || $(this).attr("DiagLinks") === "True",
 							isIssues = $(this).attr("Issues") === "Y" || $(this).attr("Issues") === "True",
 							isDocLink = $(this).attr("DocLinks") === "Y" || $(this).attr("DocLinks") === "True",
@@ -259,10 +274,10 @@ var mobilepub = (function () {
 							dataType: "xml",
 							success: function(shapexml) {				
 
-								diagData.find("Pages Page[ID='" + pageId + "'] > Shapes > Shape[ID='"+ shapeId +"']").each(function(){
+								diagData.find("Shapes > Shape[ID='"+ shapeId +"']").each(function(){
 									var x = $(this).find("XFORM > PinX").text(),
 										y = $(this).find("XFORM > PinY").text(),
-										div = $('<div style="z-index:4; position: absolute; opacity: 0.7; filter: alpha(opacity=85)" onclick="mobilepub.navigateToChild(' + pageId +', ' + shapeId + ',\''+ source +'\')"><img style="width:24px;height:24px" src=""></div>');
+										div = $('<div style="z-index:4; position: absolute; opacity: 0.7; filter: alpha(opacity=85)" onclick="mobilepub.navigateToChild(' + currentPage.id +', ' + shapeId + ',\''+ source +'\')"><img style="width:24px;height:24px" src=""></div>');
 
 									var dimensions = $(shapexml).find("Dimensions").map(function(i,e){
 										return {
@@ -296,10 +311,10 @@ var mobilepub = (function () {
 									// ViewMgrPostZoomMDIUpdate() vml_1.js
 									var imageRight = $("#im").width(),
 										imageBottom = $("#im").height(),
-										xLong = mobilepub.ConvertXorYCoordinate(dimensions.left.value,  0, pageSize.width.value, 0, imageRight, 0),
-    									yLong = mobilepub.ConvertXorYCoordinate(dimensions.top.value,  0, pageSize.height.value, 0, imageBottom, 1),
-        								scaleX = imageRight / pageSize.width.value,
-        								scaleY = imageBottom / pageSize.height.value,
+										xLong = mobilepub.ConvertXorYCoordinate(dimensions.left.value,  0, currentPage.pageSize.width.value, 0, imageRight, 0),
+    									yLong = mobilepub.ConvertXorYCoordinate(dimensions.top.value,  0, currentPage.pageSize.height.value, 0, imageBottom, 1),
+        								scaleX = imageRight / currentPage.pageSize.width.value,
+        								scaleY = imageBottom / currentPage.pageSize.height.value,
         								sWidth = dimensions.width.value * scaleX,
         								sHeight = dimensions.height.value * scaleY;
 
@@ -343,7 +358,7 @@ var mobilepub = (function () {
 									if(isDocLink){
 										$(div).find("img").attr("src", mobilepub.settings.imagesFolder + "hasdoclinks.gif");
 										$(div).css({"top": yLong - 24, "left": xLong - 24});
-										$(div).attr("onclick",'mobilepub.navigateToChild(' + pageId +', ' + shapeId + ',\''+ source +'\',\'doc\')');
+										$(div).attr("onclick",'mobilepub.navigateToChild(' + currentPage.id +', ' + shapeId + ',\''+ source +'\',\'doc\')');
 
 										$(div).clone().prependTo("#imagescroller");
 									}
@@ -358,6 +373,26 @@ var mobilepub = (function () {
 
 				}
 			});
+		},
+		buildDiagramPages: function(){
+			var url = "/partials/diagram.html?id=" + mobilepub.diagram.currentId + "&page=";
+
+			if(mobilepub.diagram.pages.length === 1){
+				$("#nextpage").remove();
+			}else{
+				
+				if(mobilepub.diagram.currentPage < mobilepub.diagram.pages.length){
+					$("#nextpage").attr("href", url + parseInt(mobilepub.diagram.currentPage + 1));
+				}else{
+					$("#nextpage").remove();
+				}
+
+				// if(mobilepub.diagram.currentPage > 0){
+				// 	$("#prevpage").attr("href", url + parseInt(mobilepub.diagram.currentPage - 1));
+				// }else{
+				// 	$("#prevpage").remove();
+				// }
+			}
 		},
 		ConvertXorYCoordinate: function(PosValue, OldMin, OldMax, NewMin, NewMax, MapBackwards)
 		{
@@ -708,9 +743,7 @@ function OnShapeClick(a,b,evt){
 	}
 	
 };
-function UpdateTooltip(){
-
-}
+function UpdateTooltip(){}
 
 function getDateTime() {
   now = new Date();
@@ -725,25 +758,25 @@ function getDateTime() {
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
-$('#layer').click(function(event){
-    var iframe = $('#filecontainer iframe').get(0);
-    var iframeDoc = (iframe.contentDocument) ? iframe.contentDocument : iframe.contentWindow.document;
+// $('#layer').click(function(event){
+//     var iframe = $('#filecontainer iframe').get(0);
+//     var iframeDoc = (iframe.contentDocument) ? iframe.contentDocument : iframe.contentWindow.document;
 
-    // Find click position (coordinates)
-    var x = event.offsetX;
-    var y = event.offsetY;
+//     // Find click position (coordinates)
+//     var x = event.offsetX;
+//     var y = event.offsetY;
 
-    // Trigger click inside iframe
-    var link = iframeDoc.elementFromPoint(x, y);
-    var newEvent = iframeDoc.createEvent('HTMLEvents');
-    newEvent.initEvent('click', true, true);
-    link.dispatchEvent(newEvent);
-});
+//     // Trigger click inside iframe
+//     var link = iframeDoc.elementFromPoint(x, y);
+//     var newEvent = iframeDoc.createEvent('HTMLEvents');
+//     newEvent.initEvent('click', true, true);
+//     link.dispatchEvent(newEvent);
+// });
 
 function getQueryVariable(query, variable) {
-if(!query){
-	return undefined;
-}
+	if(!query){
+		return undefined;
+	}
     var vars = query.split('&');
     for (var i = 0; i < vars.length; i++) {
         var pair = vars[i].split('=');
@@ -772,7 +805,7 @@ $(document).on("pageshow", '#browsediagrampage',function(event, data){
 
 $(document).on("pageshow", '#diagrampage',function(event, data){
 	var parameters = $(this).data("url").split("?")[1];
-	mobilepub.loadDiagramImage(getQueryVariable(parameters, "id"));
+	mobilepub.loadDiagramImage(getQueryVariable(parameters, "id"), getQueryVariable(parameters, "page"));
 
 	setTimeout(function(){
 	    $('img[usemap]').ImageMapResize({ origImageWidth: mobilepub.diagram.image.width });
