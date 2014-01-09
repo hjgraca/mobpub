@@ -155,7 +155,7 @@ var mobilepub = (function () {
 							$('#im').parent().append(map);
 							$('#im').attr("usemap", "#"+ map.attr("name"));
 
-							$('#im').maphilight();
+							
 						});
 					});
 
@@ -167,7 +167,10 @@ var mobilepub = (function () {
 						//$('#imagescroller').css('height',$('#im').height());
 						mobilepub.diagram.imagescroll.refresh();
 						//new iScroll('imagewrapper', { zoom:true });
-
+$('#im').maphilight({
+	wrapClass:true,
+	fade:false
+});
 					},1000);
 
 				}
@@ -381,17 +384,11 @@ var mobilepub = (function () {
 				$("#nextpage").remove();
 			}else{
 				
-				if(mobilepub.diagram.currentPage < mobilepub.diagram.pages.length){
+				if(mobilepub.diagram.currentPage < mobilepub.diagram.pages.length -1){
 					$("#nextpage").attr("href", url + parseInt(mobilepub.diagram.currentPage + 1));
 				}else{
 					$("#nextpage").remove();
 				}
-
-				// if(mobilepub.diagram.currentPage > 0){
-				// 	$("#prevpage").attr("href", url + parseInt(mobilepub.diagram.currentPage - 1));
-				// }else{
-				// 	$("#prevpage").remove();
-				// }
 			}
 		},
 		ConvertXorYCoordinate: function(PosValue, OldMin, OldMax, NewMin, NewMax, MapBackwards)
@@ -611,8 +608,11 @@ var mobilepub = (function () {
 				divrel.append('</div>');
 				$("#diagraminfolist").append(divrel);
 
-
-				mobilepub.diagram.diagWrapper.refresh();
+				setTimeout(function(){
+				    mobilepub.diagram.diagWrapper.refresh();
+				    mobilepub.diagram.diagWrapper.scrollTo(0,0);
+				},0);
+				
 				// must clear
 				mobilepub.diagram.current = undefined;
 		},
