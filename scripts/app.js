@@ -154,7 +154,8 @@ var mobilepub = (function () {
 							//$('#im').css({'width': $(window).width(), 'height' : $(window).height()}).parent().append(map);
 							$('#im').parent().append(map);
 							$('#im').attr("usemap", "#"+ map.attr("name"));
-
+							$("area").attr("href", "#").removeAttr("onmouseover")
+							.removeAttr("onfocus").removeAttr("onkeyup");	
 							
 						});
 					});
@@ -167,10 +168,13 @@ var mobilepub = (function () {
 						//$('#imagescroller').css('height',$('#im').height());
 						mobilepub.diagram.imagescroll.refresh();
 						//new iScroll('imagewrapper', { zoom:true });
-$('#im').maphilight({
-	wrapClass:true,
-	fade:false
-});
+
+// $('img[usemap]').mapster();
+						$('#im').maphilight({
+							wrapClass:true,
+							fade:false
+						});
+
 					},1000);
 
 				}
