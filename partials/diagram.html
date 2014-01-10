@@ -1,38 +1,57 @@
 <div id="diagrampage" data-role="page" data-theme="a" data-title="Diagram" data-add-back-btn="true"> 
-       <div data-role="header" > 
-        <a href="" data-rel="back">Back</a>
-             <h1>Orbus</h1> 
-             <a href="/" data-icon="home">Home</a>
-         </div> 
-            <div data-role="content">
-             <div id="imagewrapper">
-      <div id="imagescroller">
+ <div data-role="header" > 
+  <a id="diagrambackbtn" href="" data-rel="back">Back</a>
+  <h1>Orbus</h1> 
+  <a href="/" data-icon="home">Home</a>
+</div> 
+<div data-role="content">
+ <div id="imagewrapper">
+  <div id="imagescroller">
 
-        <img id="im" src=""/>
-        <!-- <img id="im" src="" style="width:100%" /> -->
-        
-        </div>
-    </div>  
-       </div>   
-      <div data-role="footer" data-position="fixed">
-        <div data-role="navbar" data-iconpos="bottom">
-            <ul>
-                <li><a id="nextpage" data-icon="arrow-r" data-transition="slide">Next Page</a></li>
-                <li><a href="/partials/search.html" data-icon="search" data-transition="flip">Search</a></li>
-                <li><a href="#diagraminfopanel" data-icon="info">Info</a></li>
-            </ul>
-        </div><!-- /navbar -->
-      </div> 
+    <img id="im" src=""/>
+    <!-- <img id="im" src="" style="width:100%" /> -->
 
-        <div data-role="panel" id="diagraminfopanel" data-display="reveal" data-position-fixed="true" data-dismissible="false">
-  <div data-role="header" data-theme="b" style="z-index:2"> 
-    <!-- <h2>Info</h2>  -->
-    <a data-rel="close">Close panel</a>
   </div>
-    <div class="wrapper">   
-       <div class="scroller"> 
-  <div role="main" class="ui-content jqm-content jqm-fullwidth">
-    <div id="diagraminfolist"></div></div></div>
+</div>  
+</div>   
+<div data-role="footer" data-position="fixed">
+  <div data-role="navbar" data-iconpos="bottom">
+    <ul>
+      <li><a id="nextpage" data-icon="arrow-r" data-transition="slide">Next Page</a></li>
+      <li><a href="/partials/search.html" data-icon="search" data-transition="flip">Search</a></li>
+      <li><a href="#diagraminfopanel" data-icon="info">Info</a></li>
+    </ul>
+  </div><!-- /navbar -->
+</div> 
+
+<div data-role="panel" id="diagraminfopanel" data-display="reveal" data-position-fixed="true" data-dismissible="false">
+<ul data-role="listview" class="ui-listview" data-theme="b">
+          <li data-icon="delete" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete">Close</a></li>
+        </ul>
+  <div class="wrapper">   
+   <div class="scroller"> 
+    <div data-role="collapsible-set" data-inset="false" style="margin-left: 15px;margin-right: 15px;">
+      <div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false">
+        <h3>PROPERTIES</h3>
+        <div id="propertiesinfolist"></div>
+      </div><!-- /collapsible -->
+      <div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false">
+        <h3>ATTRIBUTES</h3>
+        <div id="attributesinfolist"></div>
+      </div><!-- /collapsible -->
+      <div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false">
+        <h3>RELATED ITEMS</h3>
+        <div id="relatedinfolist"></div>
+      </div><!-- /collapsible -->
+      <div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false">
+        <h3>ISSUES</h3>
+        <div id="issuesinfolist"></div>
+      
+      </div>
+
+      </div><!-- /collapsible -->
+    </div>
+</div></div>
   </div>
-</div>
-  </div> 
+</div> 
+

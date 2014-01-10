@@ -284,7 +284,7 @@ var mobilepub = (function () {
 								diagData.find("Shapes > Shape[ID='"+ shapeId +"']").each(function(){
 									var x = $(this).find("XFORM > PinX").text(),
 										y = $(this).find("XFORM > PinY").text(),
-										div = $('<div style="z-index:4; position: absolute; opacity: 0.7; filter: alpha(opacity=85)" onclick="mobilepub.navigateToChild(' + currentPage.id +', ' + shapeId + ',\''+ source +'\')"><img style="width:24px;height:24px" src=""></div>');
+										div = $('<div style="z-index:4; position: absolute; opacity: 0.7; filter: alpha(opacity=85)" onclick="mobilepub.navigateToChild(' + currentPage.id +', ' + shapeId + ',\''+ source +'\')"><img class="responsive-image" src=""></div>');
 
 									var dimensions = $(shapexml).find("Dimensions").map(function(i,e){
 										return {
@@ -348,7 +348,7 @@ var mobilepub = (function () {
 									if(isDiagLink){
 
 										$(div).find("img").attr("src", mobilepub.settings.imagesFolder + "hasdiaglinks.gif");
-										$(div).css({"top": yLong, "left": xLong - 24});
+										$(div).css({"top": yLong, "left": xLong - $(".responsive-image").width()});
 
 										$(div).clone().prependTo("#imagescroller");
 										//$("#imagescroller").prepend(diagDiv);
@@ -356,7 +356,7 @@ var mobilepub = (function () {
 
 									if(isIssues){
 										$(div).find("img").attr("src", mobilepub.settings.imagesFolder + "hasissues.gif");
-										$(div).css({"top": yLong - 36, "left": xLong - 24});
+										$(div).css({"top": yLong - $(".responsive-image").width(), "left": xLong - $(".responsive-image").width()});
 										$(div).attr("onclick",'mobilepub.showShapeInfoByFile(\''+ source +'\')');
 										
 										$(div).clone().prependTo("#imagescroller");
@@ -364,7 +364,7 @@ var mobilepub = (function () {
 
 									if(isDocLink){
 										$(div).find("img").attr("src", mobilepub.settings.imagesFolder + "hasdoclinks.gif");
-										$(div).css({"top": yLong - 24, "left": xLong - 24});
+										$(div).css({"top": yLong - $(".responsive-image").width(), "left": xLong - $(".responsive-image").width()});
 										$(div).attr("onclick",'mobilepub.navigateToChild(' + currentPage.id +', ' + shapeId + ',\''+ source +'\',\'doc\')');
 
 										$(div).clone().prependTo("#imagescroller");
@@ -503,7 +503,7 @@ var mobilepub = (function () {
 		},
 		loadDiagramInfoPanel : function(){
 
-				$("#diagraminfolist").empty();
+				$("#propertiesinfolist, #attributesinfolist, #issuesinfolist, #relatedinfolist").empty();
 
 				if(!mobilepub.diagram.current){
 					mobilepub.diagram.current = mobilepub.diagram.base;
@@ -534,7 +534,6 @@ var mobilepub = (function () {
 					value: mobilepub.diagram.current.properties.timestamp.lastModifiedBy 
 				});
 
-				$("#diagraminfolist").append('<h3>Properties</h3>');
 				var divprop = $('<div class="ui-grid-a">')
 					separator = '<div class="ui-block-a" style="margin-bottom:15px"></div>';
 
@@ -544,14 +543,11 @@ var mobilepub = (function () {
 					.append('<div class="ui-block-b"><div class="ui-bar-a">'+ props[i].value +'</div></div>');
 				};
 				divprop.append('</div>');
-				$("#diagraminfolist").append(divprop);
+				$("#propertiesinfolist").append(divprop);
 
 				
 				// add attributes
-				$("#diagraminfolist").append('<h3>Attributes</h3>');
 				var divattr = $('<div class="ui-grid-a">');
-
-
 				if(mobilepub.diagram.current.attributes.length === 0){
 					divattr.append('<div class="ui-block-a"><small>No attributes</small></div>');
 				}else{
@@ -561,56 +557,71 @@ var mobilepub = (function () {
 					});
 				}
 				divattr.append('</div>');
-				$("#diagraminfolist").append(divattr);
+				$("#attributesinfolist").append(divattr);
 
 				// add issues
-
-				$("#diagraminfolist").append('<h3>Issues</h3>');
-				var divissues = $('<div class="ui-grid-a">');
-
 				if(mobilepub.diagram.current.issues.length === 0){
-					divissues.append('<div class="ui-block-a"><small>No issues</small></div>');
+					$("#issuesinfolist").append('<small>No issues</small>');
 				}else{
+
+					var issueset = $('<div data-role="collapsible-set" data-inset="false"/>');
+
 					_.each(mobilepub.diagram.current.issues, function(val){
+						var divissues = $('<div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false"/>').clone();
+						var issuegrid = $('<div class="ui-grid-a"/>');
+						divissues.append("<h3>"+ val.name +"</h3>");
 
 						Object.keys(val).forEach(function(key) {
-						    divissues.append('<div class="ui-block-a">'+ key +'</div>')
-							.append('<div class="ui-block-b"><div class="ui-bar-a">'+ val[key] +'</div></div>');
+							if(key !== "name"){
+							    issuegrid.append('<div class="ui-block-a">'+ key +'</div>')
+								.append('<div class="ui-block-b"><div class="ui-bar-a">'+ val[key] +'</div></div>');
+							}
 						});
-						divissues.append(separator);
 
+						issueset.append(divissues.append(issuegrid));
 					});
+					$("#issuesinfolist").append(issueset.collapsibleset());
 				}
-				divissues.append('</div>');
-				$("#diagraminfolist").append(divissues);
-
+				
 				// add relations
-
-				$("#diagraminfolist").append('<h3>Relations</h3>');
-				var divrel = $('<div class="ui-grid-a">');
+				//var divrel = $('<div class="ui-grid-a"/>');
 
 				if(mobilepub.diagram.current.relations.length === 0){
-					divrel.append('<div class="ui-block-a"><small>No relations</small></div>');
+					$("#relatedinfolist").append('<small>No relations</small>');
 				}else{
-
 					var rel = mobilepub.diagram.current.relations.map(function(val){
 						return {
 							name: val.destName,
 							description: val.description,
-							documentName: val.docName
+							documentName: val.docName,
+							ext: val.destExt,
+							docId: val.docId
 						};
 					});
+					var relset = $('<div data-role="collapsible-set" data-inset="false"/>');
 
 					_.each(rel, function(val){
+						
+						var divrel = $('<div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false"/>').clone(),
+							relgrid = $('<div class="ui-grid-a"/>'),
+							navigate = $("<a href='#' onclick='mobilepub.navigateToRelation(\""+ val.docId+ "\", \""+ val.ext +"\")' class='ui-btn ui-btn-icon-right ui-icon-action'>Navigate</a>").clone();
+
+						divrel.append("<h3>"+ val.name +"</h3>").append(navigate);
+
 						Object.keys(val).forEach(function(key) {
-						    divrel.append('<div class="ui-block-a">'+ key +'</div>')
-							.append('<div class="ui-block-b"><div class="ui-bar-a">'+ val[key] +'</div></div>');
+							if(key !== "name" && key !== "ext" && key !== "docId"){
+							    relgrid.append('<div class="ui-block-a">'+ key +'</div>')
+								.append('<div class="ui-block-b"><div class="ui-bar-a">'+ val[key] +'</div></div>');
+							}
 						});
-						divrel.append(separator);
+
+						relset.append(divrel.append(relgrid));
 					});
+
+					$("#relatedinfolist").append(relset.collapsibleset());
 				}
-				divrel.append('</div>');
-				$("#diagraminfolist").append(divrel);
+				//divrel.append('</div>');
+				
 
 				setTimeout(function(){
 				    mobilepub.diagram.diagWrapper.refresh();
@@ -619,6 +630,13 @@ var mobilepub = (function () {
 				
 				// must clear
 				mobilepub.diagram.current = undefined;
+		},
+		navigateToRelation : function(docId, ext){
+			if(ext === ".doc"){
+					downloadURL(mobilepub.settings.publicationpath + docId + "/" + docId + ext);
+			}else{
+				$.mobile.changePage('/partials/diagram.html?id='+ docId);
+			}
 		},
 		showShapeInfo: function(path){
 			$.ajax({
@@ -813,6 +831,11 @@ $(document).on("pageshow", '#diagrampage',function(event, data){
 
 	setTimeout(function(){
 	    $('img[usemap]').ImageMapResize({ origImageWidth: mobilepub.diagram.image.width });
+
+		$("div:jqmData(role='collapsible')").on("collapsibleexpand", function(event, ui) {
+			setTimeout(function(){mobilepub.diagram.diagWrapper.refresh();},10);
+		});
+
 	},1000);
 });
 
@@ -843,7 +866,8 @@ $(document).on("pagebeforeshow", '#shapechildpopup',function(event, data){
 });
 
 $(document).on("panelbeforeopen", '#diagraminfopanel',function(event, data){
-	mobilepub.loadDiagramInfoPanel();    
+	mobilepub.loadDiagramInfoPanel();  
+	$("#diagrambackbtn").hide();
 });
 
 // $(document).on("panelopen", '#diagraminfopanel',function(event, data){
@@ -853,6 +877,7 @@ $(document).on("panelbeforeopen", '#diagraminfopanel',function(event, data){
 
 $(document).on("panelbeforeclose", '#diagraminfopanel',function(event, data){
 	mobilepub.clearAllAreaStyles();
+	$("#diagrambackbtn").show();
 });
 
 $(document).on("pagebeforeshow", '#fileviewer',function(event, data){
@@ -871,5 +896,4 @@ $(document).on("pageshow",function(event, data){
 		mobilepub.diagram.diagWrapper = new iScroll($(".wrapper:visible")[0]);
 	}
 	},100);
-
 });

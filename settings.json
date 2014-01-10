@@ -1,8 +1,14 @@
 {
   "name": "Mobile Publisher",
-  "version": "0.7.5",
-  "dateTime": "06-01-2014 14:30:18",
+  "version": "0.8.0",
+  "dateTime": "10-01-2014 13:01:18",
   "changes": [
+      "0.8.0",
+      "Bug fixes",
+      "Diagram paging implemented (some diagrams fail)",
+      "Diagram starts 100% visible",
+      "Diagram info panel collapsible groups",
+      "Navigate to relations on diagram info panel",
       "0.7.5",
       "Bug fixes",
       "Shape hilight",
