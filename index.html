@@ -82,6 +82,10 @@
         -webkit-transform:translate3d(0,0,0);
       }
 
+      .responsive-image{
+        height:auto;
+        width:15px;
+      }
 /*desktop*/
 @media (min-width : 320px) and (max-width : 480px) {
       img[usemap] {
@@ -104,9 +108,12 @@
   img[usemap] {
         border: none;
         height: auto;
-        max-width: 100%;
-        width: auto;
       }
+.responsive-image{
+        height:auto;
+        width:24px;
+      }
+
 }
 
 /* iPhone 4 ----------- */
@@ -115,6 +122,10 @@ img[usemap] {
         border: none;
         height: auto;
       }
+      .responsive-image{
+        height:auto;
+        width:24px;
+      }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -122,15 +133,12 @@ img[usemap] {
 img[usemap] {
         border: none;
         height: auto;
+        max-width: 100%;
+        width: auto;
       }
 }
 
 
-
-      .responsive-image{
-        height:auto;
-        width:15px;
-      }
 
       </style> 
 
