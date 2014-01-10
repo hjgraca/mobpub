@@ -915,9 +915,9 @@ $(document).on("pagebeforeshow", '#fileviewer',function(event, data){
 	var parameters = $(this).data("url").split("?")[1];
 	$("#filecontainer").append('<iframe src="'+ getQueryVariable(parameters, "url") +'" seamless></iframe>');
 	
-	$(".filescroller").niceScroll({
-		touchbehavior: true
-	});	
+	// $(".filescroller").niceScroll({
+	// 	touchbehavior: true
+	// });	
 
 });
 
