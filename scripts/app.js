@@ -172,7 +172,8 @@ mobilepub.buildDiagramExtraIcons(xml);
 										fade:false
 									}).ImageMapResize({ origImageWidth: mobilepub.diagram.image.width });
 
-									mobilepub.diagram.imagescroll.refresh();
+setTimeout(function(){
+									mobilepub.diagram.imagescroll.refresh();},100);
 
 							
 							});
@@ -914,7 +915,7 @@ $(document).on("pagebeforeshow", '#fileviewer',function(event, data){
 	var parameters = $(this).data("url").split("?")[1];
 	$("#filecontainer").append('<iframe src="'+ getQueryVariable(parameters, "url") +'" seamless></iframe>');
 	
-	$(".scroller").niceScroll({
+	$(".filescroller").niceScroll({
 		touchbehavior: true
 	});	
 
