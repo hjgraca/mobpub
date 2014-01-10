@@ -135,47 +135,70 @@ var mobilepub = (function () {
 						mobilepub.setTitle($(xml).find('RepositoryName').text());
 						
 						//add diagram
-						var imagesrc = diagramPath + gif +'.gif';
-						$('#im').attr('src',imagesrc);
+						 var imagesrc = diagramPath + gif +'.gif';
+						// $('#im').attr('src',imagesrc);
 						
 						// in memory img for size
 						$("<img/>")
 				        .attr("src", imagesrc)
 				        .load(function() {
-				            mobilepub.diagram.image ={
+							$(this).attr("id", "im");
+							
+							$("#imagescroller").append($(this));
+							 mobilepub.diagram.image ={
 				            	width: this.width,
 				            	height: this.height
 				            }
+				        	
+				        	$.get(diagramPath + gif +'.html', function(data) {
+
+								  	var map = $(data).find("map");
+								  
+									//$('#im').css({'width': $(window).width(), 'height' : $(window).height()}).parent().append(map);
+									$('#im').parent().append(map);
+									$('#im').attr("usemap", "#"+ map.attr("name"));
+									$("area").attr("href", "#").removeAttr("onmouseover")
+									.removeAttr("onfocus").removeAttr("onkeyup");	
+
+mobilepub.buildDiagramExtraIcons(xml);
+					            $('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
+							//$('#imagescroller').css('height',$('#im').height());
+							
+							//new iScroll('imagewrapper', { zoom:true });
+
+			// $('img[usemap]').mapster();
+									$('#im').maphilight({
+										wrapClass:true,
+										fade:false
+									}).ImageMapResize({ origImageWidth: mobilepub.diagram.image.width });
+
+									mobilepub.diagram.imagescroll.refresh();
+
+							
+							});
+
+				        	
 				        });
 						
-						$.get(diagramPath + gif +'.html', function(data) {
-						  	var map = $(data).find("map");
-						  
-							//$('#im').css({'width': $(window).width(), 'height' : $(window).height()}).parent().append(map);
-							$('#im').parent().append(map);
-							$('#im').attr("usemap", "#"+ map.attr("name"));
-							$("area").attr("href", "#").removeAttr("onmouseover")
-							.removeAttr("onfocus").removeAttr("onkeyup");	
-							
-						});
+						
 					});
 
-					mobilepub.buildDiagramExtraIcons(xml);
+					
 
-					setTimeout(function(){
-					    // set size after dom created
-					    $('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
-						//$('#imagescroller').css('height',$('#im').height());
-						mobilepub.diagram.imagescroll.refresh();
-						//new iScroll('imagewrapper', { zoom:true });
+// 					setTimeout(function(){
+// 					    // set size after dom created
+// 					    $('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
+// 						//$('#imagescroller').css('height',$('#im').height());
+// 						mobilepub.diagram.imagescroll.refresh();
+// 						//new iScroll('imagewrapper', { zoom:true });
 
-// $('img[usemap]').mapster();
-						$('#im').maphilight({
-							wrapClass:true,
-							fade:false
-						});
+// // $('img[usemap]').mapster();
+// 						$('#im').maphilight({
+// 							wrapClass:true,
+// 							fade:false
+// 						});
 
-					},1000);
+// 					},1000);
 
 				}
 			});
@@ -812,6 +835,7 @@ function getQueryVariable(query, variable) {
 $(document).on("mobileinit", function(event){ 
 	// load settings
 	mobilepub.load();
+	$.mobile.pushStateEnabled = false;
 });
 
 // $(document).on("pagebeforeshow", '#browsediagrampage',function(event, data){
@@ -829,14 +853,18 @@ $(document).on("pageshow", '#diagrampage',function(event, data){
 	var parameters = $(this).data("url").split("?")[1];
 	mobilepub.loadDiagramImage(getQueryVariable(parameters, "id"), getQueryVariable(parameters, "page"));
 
-	setTimeout(function(){
-	    $('img[usemap]').ImageMapResize({ origImageWidth: mobilepub.diagram.image.width });
+// $('img[usemap]').load(function(){
+// 	console.log("s");
+// 	$('img[usemap]').ImageMapResize({ origImageWidth: mobilepub.diagram.image.width });
+// });
 
-		$("div:jqmData(role='collapsible')").on("collapsibleexpand", function(event, ui) {
-			setTimeout(function(){mobilepub.diagram.diagWrapper.refresh();},10);
-		});
+	// setTimeout(function(){
+	    
+	// 	$("div:jqmData(role='collapsible')").on("collapsibleexpand", function(event, ui) {
+	// 		setTimeout(function(){mobilepub.diagram.diagWrapper.refresh();},10);
+	// 	});
 
-	},1000);
+	// },1000);
 });
 
 // $(document).on("pagebeforeshow", '#browsecategorypage',function(event, data){
@@ -870,10 +898,12 @@ $(document).on("panelbeforeopen", '#diagraminfopanel',function(event, data){
 	$("#diagrambackbtn").hide();
 });
 
-// $(document).on("panelopen", '#diagraminfopanel',function(event, data){
-// 	//mobilepub.diagram.imagescroll.refresh();
+$(document).on("panelopen", '#diagraminfopanel',function(event, data){
+	$("div:jqmData(role='collapsible')").on("collapsibleexpand", function(event, ui) {
+			setTimeout(function(){mobilepub.diagram.diagWrapper.refresh();},1000);
+		});
 	
-// });
+});
 
 $(document).on("panelbeforeclose", '#diagraminfopanel',function(event, data){
 	mobilepub.clearAllAreaStyles();
@@ -897,3 +927,4 @@ $(document).on("pageshow",function(event, data){
 	}
 	},100);
 });
+
