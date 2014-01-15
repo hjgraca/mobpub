@@ -141,6 +141,7 @@ var mobilepub = (function () {
 						// in memory img for size
 						$("<img/>")
 				        .attr("src", imagesrc)
+				        //.css("width", $(window).width())
 				        .load(function() {
 							$(this).attr("id", "im");
 							
@@ -866,6 +867,7 @@ $(document).on("pageshow", '#diagrampage',function(event, data){
 	// 	});
 
 	// },1000);
+
 });
 
 // $(document).on("pagebeforeshow", '#browsecategorypage',function(event, data){
@@ -928,4 +930,6 @@ $(document).on("pageshow",function(event, data){
 	}
 	},100);
 });
+
+// https://github.com/zynga/scroller
 
