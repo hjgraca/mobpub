@@ -648,10 +648,10 @@ setTimeout(function(){
 				//divrel.append('</div>');
 				
 
-				setTimeout(function(){
-				    mobilepub.diagram.diagWrapper.refresh();
-				    mobilepub.diagram.diagWrapper.scrollTo(0,0);
-				},0);
+				// setTimeout(function(){
+				//     mobilepub.diagram.diagWrapper.refresh();
+				//     mobilepub.diagram.diagWrapper.scrollTo(0,0);
+				// },0);
 				
 				// must clear
 				mobilepub.diagram.current = undefined;
@@ -903,7 +903,7 @@ $(document).on("panelbeforeopen", '#diagraminfopanel',function(event, data){
 
 $(document).on("panelopen", '#diagraminfopanel',function(event, data){
 	$("div:jqmData(role='collapsible')").on("collapsibleexpand", function(event, ui) {
-			setTimeout(function(){mobilepub.diagram.diagWrapper.refresh();},1000);
+			// setTimeout(function(){mobilepub.diagram.diagWrapper.refresh();},1000);
 		});
 	
 });
@@ -926,10 +926,24 @@ $(document).on("pagebeforeshow", '#fileviewer',function(event, data){
 $(document).on("pageshow",function(event, data){
 	setTimeout(function(){
 	if($(".wrapper:visible").length > 0){
-		mobilepub.diagram.diagWrapper = new iScroll($(".wrapper:visible")[0]);
+		// mobilepub.diagram.diagWrapper = new iScroll($(".wrapper:visible")[0]);
+
+		// mobilepub.diagram.diagWrapper = new Scroller(render, {
+		// 					zooming: true
+		// 				});
+
+		// mobilepub.diagram.diagWrapper = new EasyScroller(listTable, {
+	 //        scrollingX: true,
+	 //        scrollingY: true,
+	 //        zooming: true
+	 //    });
 	}
 	},100);
 });
 
-// https://github.com/zynga/scroller
+
+//https://github.com/ftlabs/ftscroller
+//https://github.com/zynga/scroller/issues/26
+//https://github.com/zynga/scroller
+
 

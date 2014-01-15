@@ -76,6 +76,7 @@
         padding:0;
         /*background:#fff;*/
         -webkit-overflow-scrolling: touch;
+        overflow-y:auto
       }
 
       .filescroller{
@@ -83,6 +84,7 @@
         -webkit-tap-highlight-color:rgba(0,0,0,0);
         padding:0;
         -webkit-overflow-scrolling: touch;
+        overflow-y:auto
       }
 
       #imagescroller img {
@@ -160,7 +162,7 @@ img[usemap] {
 
        </div>
        <div class="wrapper">   
-         <div class="scroller">  
+         <div class="scroller" data-scrollable="y">  
            <div data-role="content">    
              <div id="branding">  
               <h1>Image here</h1>
@@ -188,6 +190,7 @@ img[usemap] {
 
         <script src="/scripts/Animate.js"></script>
         <script src="/scripts/Scroller.js"></script>
+        <script src="/scripts/EasyScroller.js"></script>
         <script src="/scripts/jquery.imagemapresize.js"></script>
         <script src="/scripts/jquery.nicescroll.min.js"></script>
         <script src="/scripts/iscroll.js"></script>
