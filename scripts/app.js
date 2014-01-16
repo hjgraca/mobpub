@@ -28,18 +28,6 @@ var mobilepub = (function () {
 				}
 			});
 		},
-		// buildDiagramChildren: function(item){
-		// 	var children = [];
-
-		// 	item.children('Folder').each(function(){             
-	 //            children.push({
-		// 			id:$(this).attr('ID'),
-		// 			name: $(this).attr('Name'),
-		// 			children: mobilepub.buildDiagramChildren($(this))
-		// 		});
-	 //         });
-		// 	return children;
-		// },
 		diagram:{},
 		category:{},
 		buildDiagramStruct: function(){
@@ -121,7 +109,7 @@ var mobilepub = (function () {
 			}
 			var gif = 'gif_' + (mobilepub.diagram.currentPage + 1);
 
-			mobilepub.diagram.imagescroll = new iScroll('imagewrapper', { zoom:true });	
+			// mobilepub.diagram.imagescroll = new IScroll('imagewrapper', { zoom:true });	
 
 			$.ajax({
 				type: "GET",
@@ -162,7 +150,7 @@ var mobilepub = (function () {
 									.removeAttr("onfocus").removeAttr("onkeyup");	
 
 mobilepub.buildDiagramExtraIcons(xml);
-					            $('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
+					            $('#imagewrapper').css({'width': $('#im').width(), 'height' : $('#im').height()});
 							//$('#imagescroller').css('height',$('#im').height());
 							
 							//new iScroll('imagewrapper', { zoom:true });
@@ -173,8 +161,13 @@ mobilepub.buildDiagramExtraIcons(xml);
 										fade:false
 									}).ImageMapResize({ origImageWidth: mobilepub.diagram.image.width });
 
-setTimeout(function(){
-									mobilepub.diagram.imagescroll.refresh();},100);
+									// $('.iscroll-scroller').trigger( "updatelayout" )
+
+setTimeout(function(){new IScroll('#imagewrapper', {
+	zoom:true,
+    mouseWheel: true,
+    scrollbars: true
+});},100);
 
 							
 							});
@@ -924,26 +917,35 @@ $(document).on("pagebeforeshow", '#fileviewer',function(event, data){
 });
 
 $(document).on("pageshow",function(event, data){
-	setTimeout(function(){
-	if($(".wrapper:visible").length > 0){
-		// mobilepub.diagram.diagWrapper = new iScroll($(".wrapper:visible")[0]);
+	// setTimeout(function(){
+	// if($(".wrapper:visible").length > 0){
+	// 	// mobilepub.diagram.diagWrapper = new iScroll($(".wrapper:visible")[0]);
 
-		// mobilepub.diagram.diagWrapper = new Scroller(render, {
-		// 					zooming: true
-		// 				});
+	// 	// mobilepub.diagram.diagWrapper = new Scroller(render, {
+	// 	// 					zooming: true
+	// 	// 				});
 
-		// mobilepub.diagram.diagWrapper = new EasyScroller(listTable, {
-	 //        scrollingX: true,
-	 //        scrollingY: true,
-	 //        zooming: true
-	 //    });
-	}
-	},100);
+	// 	// mobilepub.diagram.diagWrapper = new EasyScroller(listTable, {
+	//  //        scrollingX: true,
+	//  //        scrollingY: true,
+	//  //        zooming: true
+	//  //    });
+	// }
+	// },100);
+
+
+setTimeout(function(){
+	//new Scroller($(".scroller:visible")[0].parentNode);
+	//$(".scroller:visible").overscroll();
+
+
+},100);
 });
 
 
 //https://github.com/ftlabs/ftscroller
 //https://github.com/zynga/scroller/issues/26
 //https://github.com/zynga/scroller
+//https://github.com/cubiq/iscroll/
 
 
