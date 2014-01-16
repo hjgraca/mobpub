@@ -108,7 +108,7 @@ var mobilepub = (function () {
 			}
 			var gif = 'gif_' + (mobilepub.diagram.currentPage + 1);
 
-			mobilepub.diagram.imagescroll = new iScroll('imagewrapper', { zoom:true, zoomStart: 0.4, zoomMin:0.2, zoomMax: 3, mouseWheel: true, wheelAction: 'zoom'});	
+			mobilepub.diagram.imagescroll = new iScroll('imagewrapper', { zoom:true, zoomStart: 0.5, zoomMin:0.4, zoomMax: 3, mouseWheel: true, wheelAction: 'zoom'});	
 
 			$.ajax({
 				type: "GET",
@@ -885,8 +885,9 @@ $(document).on("pagebeforeshow", '#setuppage',function(event, data){
     for (var i = 0; i < mobilepub.settings.changes.length; i++) {
     	mobilepub.settings.changes[i]
     	$("#changes").append("<li>"+ mobilepub.settings.changes[i] +"</li>");
-    	$("#changes").trigger("updatelayout");
     };
+
+    $("#changes").trigger("updatelayout");
 });
 
 $(document).on("pagebeforeshow", '#shapechildpopup',function(event, data){
@@ -914,40 +915,40 @@ $(document).on("pagebeforeshow", '#fileviewer',function(event, data){
 	var parameters = $(this).data("url").split("?")[1];
 	$("#filecontainer").append('<iframe src="'+ getQueryVariable(parameters, "url") +'" seamless></iframe>');
 
-setTimeout(function(){
+// setTimeout(function(){
 	
-	new iScroll('filecontainer', { zoom:true, zoomStart: 0.4, zoomMin:0.2, zoomMax: 3, mouseWheel: true, wheelAction: 'zoom'});
-	$("#filecontainer").trigger("updatelayout");
+// 	new iScroll('filecontainer', { zoom:true, zoomStart: 0.4, zoomMin:0.2, zoomMax: 3, mouseWheel: true, wheelAction: 'zoom'});
+// 	$("#filecontainer").trigger("updatelayout");
 
-},1000);
+// },1000);
 	
 });
 
-$(document).on("pageshow",function(event, data){
-	// setTimeout(function(){
-	// if($(".wrapper:visible").length > 0){
-	// 	// mobilepub.diagram.diagWrapper = new iScroll($(".wrapper:visible")[0]);
+// $(document).on("pageshow",function(event, data){
+// 	// setTimeout(function(){
+// 	// if($(".wrapper:visible").length > 0){
+// 	// 	// mobilepub.diagram.diagWrapper = new iScroll($(".wrapper:visible")[0]);
 
-	// 	// mobilepub.diagram.diagWrapper = new Scroller(render, {
-	// 	// 					zooming: true
-	// 	// 				});
+// 	// 	// mobilepub.diagram.diagWrapper = new Scroller(render, {
+// 	// 	// 					zooming: true
+// 	// 	// 				});
 
-	// 	// mobilepub.diagram.diagWrapper = new EasyScroller(listTable, {
-	//  //        scrollingX: true,
-	//  //        scrollingY: true,
-	//  //        zooming: true
-	//  //    });
-	// }
-	// },100);
-
-
-setTimeout(function(){
-	//new Scroller($(".scroller:visible")[0].parentNode);
-	//$(".scroller:visible").overscroll();
+// 	// 	// mobilepub.diagram.diagWrapper = new EasyScroller(listTable, {
+// 	//  //        scrollingX: true,
+// 	//  //        scrollingY: true,
+// 	//  //        zooming: true
+// 	//  //    });
+// 	// }
+// 	// },100);
 
 
-},100);
-});
+// setTimeout(function(){
+// 	//new Scroller($(".scroller:visible")[0].parentNode);
+// 	//$(".scroller:visible").overscroll();
+
+
+// },100);
+// });
 
 $( document ).on("pageinit", "#searchpage", function() {
     $("#autocomplete").on("filterablebeforefilter", function ( e, data ) {
