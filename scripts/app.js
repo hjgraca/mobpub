@@ -108,8 +108,7 @@ var mobilepub = (function () {
 			}
 			var gif = 'gif_' + (mobilepub.diagram.currentPage + 1);
 
-			mobilepub.diagram.imagescroll = new iScroll('imagewrapper', { zoom:true, zoomStart: 0.5, zoomMin:0.5, zoomMax: 3, mouseWheel: true,
-    wheelAction: 'zoom'});	
+			mobilepub.diagram.imagescroll = new iScroll('imagewrapper', { zoom:true, zoomStart: 0.4, zoomMin:0.2, zoomMax: 3, mouseWheel: true, wheelAction: 'zoom'});	
 
 			$.ajax({
 				type: "GET",
@@ -914,6 +913,14 @@ $(document).on("panelbeforeclose", '#diagraminfopanel',function(event, data){
 $(document).on("pagebeforeshow", '#fileviewer',function(event, data){
 	var parameters = $(this).data("url").split("?")[1];
 	$("#filecontainer").append('<iframe src="'+ getQueryVariable(parameters, "url") +'" seamless></iframe>');
+
+setTimeout(function(){
+	
+	new iScroll('filecontainer', { zoom:true, zoomStart: 0.4, zoomMin:0.2, zoomMax: 3, mouseWheel: true, wheelAction: 'zoom'});
+	$("#filecontainer").trigger("updatelayout");
+
+},1000);
+	
 });
 
 $(document).on("pageshow",function(event, data){

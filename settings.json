@@ -1,8 +1,12 @@
 {
   "name": "Mobile Publisher",
-  "version": "0.8.0",
-  "dateTime": "10-01-2014 15:01:18",
+  "version": "0.8.2",
+  "dateTime": "16-01-2014 17:01:18",
   "changes": [
+      "0.8.2",
+      "Search implemented",
+      "Diagram image works better over 3g connections",
+      "Diagram paging implemented",
       "0.8.1",
       "Media queries, if mobile full diagram, big screen resized diagram",
       "Modern browser support for refresh when not in initial page",
