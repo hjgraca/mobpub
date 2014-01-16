@@ -964,13 +964,16 @@ $( document ).on("pageinit", "#searchpage", function() {
 			$.each(mobilepub.diagram.folders.find(":iAttrStart(Name, "+ $input.val() +")"), function ( i, val ) {
                     
                     var src = "href='/partials/diagram.html?id=" + $(val).attr("ID") + "'";
+					if($(val).is("Folder")){
+						html +="<li><a data-transition='slide' href='/partials/browsediagram.html?id="+ $(val).attr("ID") +"'><img class='ui-li-icon' src='"+ mobilepub.settings.imagesFolder + "/treefolder.gif' style='top: 12px;left: 16px;'/>" + $(val).attr("Name") + "</a></div>"
+                    }else{
+	                    if($(val).is("Document")){
+	                    	var url = mobilepub.settings.publicationpath + $(val).attr("ID") + "/" + $(val).attr("ID") + $(val).attr("Ext");
+	                		src = 'onclick="downloadURL(\''+ url +'\')"';	
+	                    }
 
-                    if($(val).is("Document")){
-                    	var url = mobilepub.settings.publicationpath + $(val).attr("ID") + "/" + $(val).attr("ID") + $(val).attr("Ext");
-                		src = 'onclick="downloadURL(\''+ url +'\')"';	
-                    }
-
-                    html += "<li><a data-transition='slide' "+ src +"><img class='ui-li-icon' src='"+ mobilepub.settings.publicationpath + "/" + $(val).attr("Logo") + "' style='top: 12px;left: 16px;''>" + $(val).attr("Name") + "</a></li>";
+	                    html += "<li><a data-transition='slide' "+ src +"><img class='ui-li-icon' src='"+ mobilepub.settings.publicationpath + "/" + $(val).attr("Logo") + "' style='top: 12px;left: 16px;'/>" + $(val).attr("Name") + "</a></li>";
+                	}
                 });
 
             $ul.html(html);
@@ -983,7 +986,7 @@ $( document ).on("pageinit", "#searchpage", function() {
 
 $.expr[':'].iAttrStart = function(obj, params, meta, stack) {
     var opts = meta[3].match(/(.*)\s*,\s*(.*)/);
-    return (opts[1] in obj.attributes) && ($(obj).attr(opts[1]).toLowerCase().indexOf(opts[2].toLowerCase()) === 0);
+    return (opts[1] in obj.attributes) && ($(obj).attr(opts[1]).toLowerCase().indexOf(opts[2].toLowerCase()) !== -1);
 };
 
 
