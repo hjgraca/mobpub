@@ -1,17 +1,14 @@
 <div id="searchpage" data-role="page" data-theme="a" data-title="Search" data-add-back-btn="true"> 
-       <div data-role="header"> 
-        <a href="" data-rel="back">Back</a>
-             <h1>Orbus</h1> 
-             <a href="/" data-icon="home">Home</a> 
-         </div> 
-       <div data-role="content">      
-                      
-       </div>   
-      <div data-role="footer" data-position="fixed">
-       <div data-role="navbar" data-iconpos="bottom">
-            <ul>
-                <li><a href="/partials/setup.html" data-icon="gear" data-transition="flip">Setup</a></li>
-            </ul>
-        </div><!-- /navbar -->
-      </div> 
+        <div data-role="header" data-position="fixed"> 
+  <a href="" data-rel="back">Back</a>
+  <h1>Orbus</h1> 
+  <a href="/" data-icon="home">Home</a>
+</div> 
+
+       <div data-role="content" data-iscroll>      
+                <h3>Search Publication</h3>
+          <p>After you enter <strong>at least one characters</strong> a dropdown will show all possible matches.</p>
+          <ul id="autocomplete" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Find a document..." data-filter-theme="a"></ul>      
+       </div>  
+
   </div> 

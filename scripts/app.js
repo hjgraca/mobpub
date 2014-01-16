@@ -5,7 +5,6 @@ var mobilepub = (function () {
 		},
 
 		load: function(){
-
 			$.getJSON("settings.json", function(data) {
 				mobilepub.settings = data;
 				mobilepub.getTitle();
@@ -109,7 +108,8 @@ var mobilepub = (function () {
 			}
 			var gif = 'gif_' + (mobilepub.diagram.currentPage + 1);
 
-			// mobilepub.diagram.imagescroll = new IScroll('imagewrapper', { zoom:true });	
+			mobilepub.diagram.imagescroll = new iScroll('imagewrapper', { zoom:true, zoomStart: 0.5, zoomMin:0.5, zoomMax: 3, mouseWheel: true,
+    wheelAction: 'zoom'});	
 
 			$.ajax({
 				type: "GET",
@@ -150,7 +150,7 @@ var mobilepub = (function () {
 									.removeAttr("onfocus").removeAttr("onkeyup");	
 
 mobilepub.buildDiagramExtraIcons(xml);
-					            $('#imagewrapper').css({'width': $('#im').width(), 'height' : $('#im').height()});
+					            $('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
 							//$('#imagescroller').css('height',$('#im').height());
 							
 							//new iScroll('imagewrapper', { zoom:true });
@@ -163,11 +163,15 @@ mobilepub.buildDiagramExtraIcons(xml);
 
 									// $('.iscroll-scroller').trigger( "updatelayout" )
 
-setTimeout(function(){new IScroll('#imagewrapper', {
-	zoom:true,
-    mouseWheel: true,
-    scrollbars: true
-});},100);
+									
+
+// setTimeout(function(){new IScroll('#imagewrapper', {
+// 	zoom:true,
+//     mouseWheel: true,
+//     scrollbars: true
+// });},100);
+
+								setTimeout(function(){mobilepub.diagram.imagescroll.refresh();},100);
 
 							
 							});
@@ -882,6 +886,7 @@ $(document).on("pagebeforeshow", '#setuppage',function(event, data){
     for (var i = 0; i < mobilepub.settings.changes.length; i++) {
     	mobilepub.settings.changes[i]
     	$("#changes").append("<li>"+ mobilepub.settings.changes[i] +"</li>");
+    	$("#changes").trigger("updatelayout");
     };
 });
 
@@ -909,11 +914,6 @@ $(document).on("panelbeforeclose", '#diagraminfopanel',function(event, data){
 $(document).on("pagebeforeshow", '#fileviewer',function(event, data){
 	var parameters = $(this).data("url").split("?")[1];
 	$("#filecontainer").append('<iframe src="'+ getQueryVariable(parameters, "url") +'" seamless></iframe>');
-	
-	// $(".filescroller").niceScroll({
-	// 	touchbehavior: true
-	// });	
-
 });
 
 $(document).on("pageshow",function(event, data){
@@ -942,10 +942,44 @@ setTimeout(function(){
 },100);
 });
 
+$( document ).on("pageinit", "#searchpage", function() {
+    $("#autocomplete").on("filterablebeforefilter", function ( e, data ) {
+        var $ul = $( this ),
+            $input = $( data.input ),
+            value = $input.val(),
+            html = "";
+        $ul.html( "" );
+        if ( value && value.length > 0 ) {
+            $ul.html( "<li><div class='ui-loader'><span class='ui-icon ui-icon-loading'></span></div></li>" );
+            //$ul.listview( "refresh" );
+
+			$.each(mobilepub.diagram.folders.find(":iAttrStart(Name, "+ $input.val() +")"), function ( i, val ) {
+                    
+                    var src = "href='/partials/diagram.html?id=" + $(val).attr("ID") + "'";
+
+                    if($(val).is("Document")){
+                    	var url = mobilepub.settings.publicationpath + $(val).attr("ID") + "/" + $(val).attr("ID") + $(val).attr("Ext");
+                		src = 'onclick="downloadURL(\''+ url +'\')"';	
+                    }
+
+                    html += "<li><a data-transition='slide' "+ src +"><img class='ui-li-icon' src='"+ mobilepub.settings.publicationpath + "/" + $(val).attr("Logo") + "' style='top: 12px;left: 16px;''>" + $(val).attr("Name") + "</a></li>";
+                });
+
+            $ul.html(html);
+            $ul.listview("refresh");
+            $ul.trigger("updatelayout");
+        }
+    });
+});
+
+
+$.expr[':'].iAttrStart = function(obj, params, meta, stack) {
+    var opts = meta[3].match(/(.*)\s*,\s*(.*)/);
+    return (opts[1] in obj.attributes) && ($(obj).attr(opts[1]).toLowerCase().indexOf(opts[2].toLowerCase()) === 0);
+};
+
 
 //https://github.com/ftlabs/ftscroller
-//https://github.com/zynga/scroller/issues/26
-//https://github.com/zynga/scroller
 //https://github.com/cubiq/iscroll/
 
 
