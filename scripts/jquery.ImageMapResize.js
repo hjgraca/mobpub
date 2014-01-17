@@ -1,5 +1,5 @@
-﻿//jquery Plugin: ImageMapResize
-//Release under MIT Licence - https://github.com/leemicw/ImageMapResize/blob/master/License.txt
+﻿// jquery Plugin: ImageMapResize
+// Release under MIT Licence - https://github.com/leemicw/ImageMapResize/blob/master/License.txt
 
 (function ( $ ) {
 	$.fn.ImageMapResize = function (options) {
