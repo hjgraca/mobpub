@@ -1,10 +1,13 @@
 {
   "name": "Mobile Publisher",
-  "version": "0.8.2",
-  "dateTime": "16-01-2014 17:01:18",
+  "version": "0.8.3",
+  "dateTime": "16-01-2014 23:51:18",
   "changes": [
+      "0.8.3",
+      "Navigation takes page in consideration",
+      "Navigate to shape, highlights the shape",
       "0.8.2",
-      "Search implemented",
+      "Search implemented (diagram, folder, document)",
       "Diagram image works better over 3g connections",
       "Diagram paging implemented",
       "0.8.1",
