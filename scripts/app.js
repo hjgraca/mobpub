@@ -261,10 +261,11 @@ currentShape = currentShape;
 						};
 					});
 
-					mobilepub.buildDiagramPages();
 					var currentPage = mobilepub.diagram.pages[mobilepub.diagram.currentPage],
 						diagData = $(res).find("VisioDocument Pages Page[ID='" + currentPage.id + "']");
 					
+					mobilepub.buildDiagramPages(currentPage.id);
+
 					// search shapes with diaglinks, issues or doclinks
 					$(xml).find('Shapes Shape[DiagLinks="Y"][PageID='+ currentPage.id +'], Shape[DiagLinks="True"][PageID='+ currentPage.id +'],[Issues="Y"][PageID='+ currentPage.id +'],[Issues="True"][PageID='+ currentPage.id +'],[DocLinks="Y"][PageID='+ currentPage.id +'],[DocLinks="True"][PageID='+ currentPage.id +']').each(function(){
 						var shapeId = $(this).attr("ID"), 
@@ -380,21 +381,28 @@ currentShape = currentShape;
 				}
 			});
 		},
-		buildDiagramPages: function(){
+		buildDiagramPages: function(currentPage){
 			var url = "/partials/diagram.html?id=" + mobilepub.diagram.currentId + "&page=";
 
 			if(mobilepub.diagram.pages.length === 1){
-				$("#nextpage").remove();
+				// $("#nextpage, #prevpage").remove();
 			}else{
-				
+				var array = _.pluck(mobilepub.diagram.pages, "id");
 				if(mobilepub.diagram.currentPage < mobilepub.diagram.pages.length -1){
-					var array = _.pluck(mobilepub.diagram.pages, "id"),
-					 	index = ""+ mobilepub.diagram.currentPage,
-					 	nextpg = mobilepub.diagram.pages[_.indexOf(array, index) + 1].id; 
-
-					$("#nextpage").attr("href", url + nextpg);
+					var nextpg = mobilepub.diagram.pages[_.indexOf(array, currentPage) + 1].id; 
+					$("#nextpage").attr("href", url + nextpg).removeClass('ui-disabled');
+					
+					// if(mobilepub.diagram.currentPage == 0){
+					// 	$("#prevpage").remove();
+					// }
 				}else{
-					$("#nextpage").remove();
+					//$("#nextpage").remove();
+					if(mobilepub.diagram.currentPage > 0){
+					 	var prevpg = mobilepub.diagram.pages[_.indexOf(array, currentPage) - 1].id; 
+						$("#prevpage").attr("href", url + prevpg).removeClass('ui-disabled');
+					}else{
+						// $("#prevpage").remove();
+					}
 				}
 			}
 		},
