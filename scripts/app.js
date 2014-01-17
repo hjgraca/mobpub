@@ -169,13 +169,15 @@ var mobilepub = (function () {
 								setTimeout(function(){
 									mobilepub.diagram.imagescroll.refresh();
 
-									// shape stuff
-									if(currentShape && currentShape !== "undefined"){
-										$("area[shapeid="+ currentShape +"]")
-											.data('maphilight',{"alwaysOn":true, "strokeColor":"00ff00","strokeWidth":2,"fillOpacity":0.5})
-											.trigger('alwaysOn.maphilight');
+									setTimeout(function(){
+										// shape stuff
+										if(currentShape && currentShape !== "undefined"){
+											$("area[shapeid="+ currentShape +"]")
+												.data('maphilight',{"alwaysOn":true, "strokeColor":"00ff00","strokeWidth":2,"fillOpacity":0.5})
+												.trigger('alwaysOn.maphilight');
 
-									}
+										}
+									},100);
 
 								},100);
 
