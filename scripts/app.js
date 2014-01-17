@@ -158,7 +158,6 @@ currentShape = currentShape;
 							
 							//new iScroll('imagewrapper', { zoom:true });
 
-			// $('img[usemap]').mapster();
 									$('#im').maphilight({
 										wrapClass:true,
 										fade:false
@@ -199,8 +198,6 @@ currentShape = currentShape;
 // 						//$('#imagescroller').css('height',$('#im').height());
 // 						mobilepub.diagram.imagescroll.refresh();
 // 						//new iScroll('imagewrapper', { zoom:true });
-
-// // $('img[usemap]').mapster();
 // 						$('#im').maphilight({
 // 							wrapClass:true,
 // 							fade:false
