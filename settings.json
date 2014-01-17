@@ -1,8 +1,12 @@
 {
   "name": "Mobile Publisher",
-  "version": "0.8.3",
-  "dateTime": "16-01-2014 23:51:18",
+  "version": "0.8.4",
+  "dateTime": "17-01-2014 13:51:18",
   "changes": [
+      "0.8.4",
+      "Bug Fixes",
+      "Scripts on server renamed",
+      "Diagram pages now allow back",
       "0.8.3",
       "Navigation takes page in consideration",
       "Navigate to shape, highlights the shape",

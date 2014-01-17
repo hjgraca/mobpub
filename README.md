@@ -1,2 +1,65 @@
-mobpub
+Mobile Publisher
 ======
+Settings
+
+{
+  "name": "Mobile Publisher",
+  "version": "0.8.4",
+  "dateTime": "17-01-2014 13:51:18",
+  "changes": [
+  	  "0.8.4",
+  	  "Bug Fixes",
+  	  "Scripts on server renamed",
+  	  "Diagram pages now allow back",
+      "0.8.3",
+      "Navigation takes page in consideration",
+      "Navigate to shape, highlights the shape",
+      "0.8.2",
+      "Search implemented (diagram, folder, document)",
+      "Diagram image works better over 3g connections",
+      "Diagram paging implemented",
+      "0.8.1",
+      "Media queries, if mobile full diagram, big screen resized diagram",
+      "Modern browser support for refresh when not in initial page",
+      "0.8.0",
+      "Bug fixes",
+      "Diagram paging implemented (some diagrams fail)",
+      "Diagram starts 100% visible",
+      "Diagram info panel collapsible groups",
+      "Navigate to relations on diagram info panel",
+      "0.7.5",
+      "Bug fixes",
+      "Shape hilight",
+      "Diagram info panel now pushes diagram",
+      "Diagram info panel close button",
+      "0.7.4",
+      "Bug fixes",
+      "Added support for documents",
+      "Added issues and relations",
+      "0.7.3",
+      "Bug fixes",
+      "Added popup when more than on relation link",
+      "Opens word documents",
+      "0.7.2",
+      "Bug fixes",
+      "Added child diagram icon",
+      "Scroll enabled in lists"
+  ],
+  "description": "Mobile Publisher",
+  "main": "app.js",
+  "dependencies": {
+    "consolidate": "~0.9.1",
+    "crypto": "~0.0.3",
+    "express": "~3.3.4",
+    "mongodb": "~1.3.11",
+    "swig": "~0.14.0"
+  },
+  "author": "Orbus",
+  "license": "BSD",
+  "publicationpath": "/Publication_files/",
+  "diagramFile": "publication.structview.xml",
+  "categoryFile": "publication.catview.xml",
+  "searchFile": "publication.structview.xml",
+  "diagramImageFile": "/iserverdiagram.xml",
+  "imagesFolder": "/Publication_files/Images/"
+}
