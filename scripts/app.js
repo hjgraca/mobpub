@@ -54,8 +54,6 @@ var mobilepub = (function () {
 						isImage: false,
 						image: defaultImage
 					});
-
-					// $("#diagramlist").append('<li><a href="/partials/browsediagram.html?id='+ $(this).attr('ID') +'" data-transition="slide">'+ $(this).attr('Name') +'<span class="ui-li-count">'+ $(this).children().length +'</span></a></li>');
 				});
 			}else{
 				var current = mobilepub.diagram.folders.find("Folder[ID="+ id +"]");
@@ -93,7 +91,7 @@ var mobilepub = (function () {
 			});
 
 			// refresh list
-			$("#diagramlist").listview('refresh');	
+			$("#diagramlist").listview('refresh').trigger("updatelayout");
 
 		},
 		loadDiagramImage: function(id, currentPage, currentShape){
@@ -115,8 +113,6 @@ var mobilepub = (function () {
 
 						mobilepub.setTitle($(xml).find('RepositoryName').text());
 
-						
-						// add shape stuff
 						if(currentPage && currentPage !== "undefined"){
 							mobilepub.diagram.currentPage = parseInt($(this).find("Pages Page[ID="+ currentPage +"]").index());
 							//mobilepub.diagram.currentPage = parseInt(currentPage);
@@ -150,7 +146,11 @@ var mobilepub = (function () {
 									$('#im').parent().append(map);
 									$('#im').attr("usemap", "#"+ map.attr("name"));
 									$("area").attr("href", "#").removeAttr("onmouseover")
-									.removeAttr("onfocus").removeAttr("onkeyup");	
+									.removeAttr("onfocus").removeAttr("onkeyup");
+
+									$("area").each(function(){ 
+										$(this).attr("shapeid" , $(this).attr("onclick").split(",")[1]) 
+									});	
 
 								mobilepub.buildDiagramExtraIcons(xml);
 					            $('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
@@ -166,20 +166,14 @@ var mobilepub = (function () {
 
 									// $('.iscroll-scroller').trigger( "updatelayout" )
 
-									
-
-// setTimeout(function(){new IScroll('#imagewrapper', {
-// 	zoom:true,
-//     mouseWheel: true,
-//     scrollbars: true
-// });},100);
-
 								setTimeout(function(){
 									mobilepub.diagram.imagescroll.refresh();
 
 									// shape stuff
-
 									if(currentShape && currentShape !== "undefined"){
+										$("area[shapeid="+ currentShape +"]")
+											.data('maphilight',{"alwaysOn":true, "strokeColor":"00ff00","strokeWidth":2,"fillOpacity":0.5})
+											.trigger('alwaysOn.maphilight');
 
 									}
 
@@ -265,6 +259,8 @@ var mobilepub = (function () {
 						docName: target.attr("DocumentName"),
 						destExt: $(dest).children("Ext").text(),
 						destName: $(dest).children("Name").text(),
+			 			destPageId: target.attr("PageID") || 0,
+						destShapeId: target.attr("ShapeID") || 0,
 						description: $(e).children("Description").text() + " " + $(dest).children("Name").text()
 				 	};
 				}).toArray()
@@ -633,7 +629,9 @@ var mobilepub = (function () {
 							description: val.description,
 							documentName: val.docName,
 							ext: val.destExt,
-							docId: val.docId
+							docId: val.docId,
+							pageId: val.destPageId,
+							shapeId: val.destShapeId
 						};
 					});
 					var relset = $('<div data-role="collapsible-set" data-inset="false"/>');
@@ -642,7 +640,7 @@ var mobilepub = (function () {
 						
 						var divrel = $('<div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false"/>').clone(),
 							relgrid = $('<div class="ui-grid-a"/>'),
-							navigate = $("<a href='#' onclick='mobilepub.navigateToRelation(\""+ val.docId+ "\", \""+ val.ext +"\")' class='ui-btn ui-btn-icon-right ui-icon-action'>Navigate</a>").clone();
+							navigate = $("<a href='#' onclick='mobilepub.navigateToRelation(\""+ val.docId+ "\", \""+ val.ext +"\", \""+ val.pageId +"\", \""+ val.shapeId +"\")' class='ui-btn ui-btn-icon-right ui-icon-action'>Navigate</a>").clone();
 
 						divrel.append("<h3>"+ val.name +"</h3>").append(navigate);
 
@@ -658,22 +656,15 @@ var mobilepub = (function () {
 
 					$("#relatedinfolist").append(relset.collapsibleset());
 				}
-				//divrel.append('</div>');
-				
 
-				// setTimeout(function(){
-				//     mobilepub.diagram.diagWrapper.refresh();
-				//     mobilepub.diagram.diagWrapper.scrollTo(0,0);
-				// },0);
-				
 				// must clear
 				mobilepub.diagram.current = undefined;
 		},
-		navigateToRelation : function(docId, ext){
+		navigateToRelation : function(docId, ext, pageId, shapeId){
 			if(ext === ".doc"){
 					downloadURL(mobilepub.settings.publicationpath + docId + "/" + docId + ext);
 			}else{
-				$.mobile.changePage('/partials/diagram.html?id='+ docId);
+				$.mobile.changePage('/partials/diagram.html?id='+ docId + "&page=" + pageId + "&shapeid=" + shapeId);
 			}
 		},
 		showShapeInfo: function(path){
@@ -759,7 +750,7 @@ var mobilepub = (function () {
 		},
 		clearAllAreaStyles:function(){
 			$("area").each(function(){
-				var data = $(this).mouseout().data('maphilight') || {"strokeColor":"0000ff","strokeWidth":5,"fillOpacity":0.3};
+				var data = {"strokeColor":"0000ff","strokeWidth":5,"fillOpacity":0.3};
 				data.alwaysOn = undefined;
 				$(this).data('maphilight',data).trigger('alwaysOn.maphilight');
 			});
@@ -818,21 +809,6 @@ function getDateTime() {
 }
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-
-// $('#layer').click(function(event){
-//     var iframe = $('#filecontainer iframe').get(0);
-//     var iframeDoc = (iframe.contentDocument) ? iframe.contentDocument : iframe.contentWindow.document;
-
-//     // Find click position (coordinates)
-//     var x = event.offsetX;
-//     var y = event.offsetY;
-
-//     // Trigger click inside iframe
-//     var link = iframeDoc.elementFromPoint(x, y);
-//     var newEvent = iframeDoc.createEvent('HTMLEvents');
-//     newEvent.initEvent('click', true, true);
-//     link.dispatchEvent(newEvent);
-// });
 
 function getQueryVariable(query, variable) {
 	if(!query){
