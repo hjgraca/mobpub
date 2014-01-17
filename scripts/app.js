@@ -154,9 +154,6 @@ currentShape = currentShape;
 
 								mobilepub.buildDiagramExtraIcons(xml);
 					            $('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
-							//$('#imagescroller').css('height',$('#im').height());
-							
-							//new iScroll('imagewrapper', { zoom:true });
 
 									$('#im').maphilight({
 										wrapClass:true,
@@ -169,42 +166,14 @@ currentShape = currentShape;
 									mobilepub.diagram.imagescroll.refresh();
 
 									if(currentShape && currentShape !== "undefined"){
-									var area = $("area[shapeid="+ currentShape +"]").data('maphilight',{"alwaysOn":true, "strokeColor":"00ff00","strokeWidth":2,"fillOpacity":0.5});
-
-									setTimeout(function(){
-										// shape stuff
-												area.trigger('alwaysOn.maphilight');
-
-										
-									},100);
+										$("area[shapeid="+ currentShape +"]").data('maphilight',{"alwaysOn":true, "strokeColor":"00ff00","strokeWidth":2,"fillOpacity":0.5})
+										.trigger('alwaysOn.maphilight');
 									}
 
 								},100);
-
-							
 							});
-
-				        	
 				        });
-						
-						
 					});
-
-					
-
-// 					setTimeout(function(){
-// 					    // set size after dom created
-// 					    $('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
-// 						//$('#imagescroller').css('height',$('#im').height());
-// 						mobilepub.diagram.imagescroll.refresh();
-// 						//new iScroll('imagewrapper', { zoom:true });
-// 						$('#im').maphilight({
-// 							wrapClass:true,
-// 							fade:false
-// 						});
-
-// 					},1000);
-
 				}
 			});
 		},
@@ -667,14 +636,18 @@ currentShape = currentShape;
 				$.mobile.changePage('/partials/diagram.html?id='+ docId + "&page=" + pageId + "&shapeid=" + shapeId);
 			}
 		},
-		showShapeInfo: function(path){
+		showShapeInfo: function(path, target){
 			$.ajax({
 				type: "GET",
 				url: path,
 				dataType: "xml",
 				success: function(xml) {
 					mobilepub.diagram.current = mobilepub.buildDiagramInfo(xml);
-					
+
+					if(target){
+						$(target).trigger('alwaysOn.maphilight');
+					}
+
 					if($("#diagraminfopanel").data("mobilePanel")._open){
 						mobilepub.loadDiagramInfoPanel(); 
 					}else{
@@ -789,9 +762,9 @@ function OnShapeClick(a,b,evt){
 	}else{
 		// show info
 		var path = mobilepub.diagram.currentPath + a + "_" + b + '.xml';
-		mobilepub.showShapeInfo(path);
 		data.alwaysOn = isOn;
-		$(evt.currentTarget).data('maphilight',data).trigger('alwaysOn.maphilight');
+		$(evt.currentTarget).data('maphilight',data);
+		mobilepub.showShapeInfo(path, evt.currentTarget);
 	}
 	
 };
