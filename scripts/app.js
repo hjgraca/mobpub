@@ -101,7 +101,7 @@ var mobilepub = (function () {
 			mobilepub.diagram.currentId = id;
 
 			mobilepub.diagram.imagescroll = new iScroll('imagewrapper', { zoom:true, zoomStart: 0.5, zoomMin:0.4, zoomMax: 3, mouseWheel: true, wheelAction: 'zoom'});	
-
+currentShape = currentShape;
 			$.ajax({
 				type: "GET",
 				url: path,
@@ -169,15 +169,16 @@ var mobilepub = (function () {
 								setTimeout(function(){
 									mobilepub.diagram.imagescroll.refresh();
 
+									if(currentShape && currentShape !== "undefined"){
+									var area = $("area[shapeid="+ currentShape +"]").data('maphilight',{"alwaysOn":true, "strokeColor":"00ff00","strokeWidth":2,"fillOpacity":0.5});
+
 									setTimeout(function(){
 										// shape stuff
-										if(currentShape && currentShape !== "undefined"){
-											$("area[shapeid="+ currentShape +"]")
-												.data('maphilight',{"alwaysOn":true, "strokeColor":"00ff00","strokeWidth":2,"fillOpacity":0.5})
-												.trigger('alwaysOn.maphilight');
+												area.trigger('alwaysOn.maphilight');
 
-										}
+										
 									},100);
+									}
 
 								},100);
 
