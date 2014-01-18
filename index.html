@@ -12,10 +12,51 @@
  <link rel="apple-touch-icon" sizes="120x120" href="/images/icon/ios7/Icon-60@2x.png">
  <link rel="apple-touch-icon" sizes="152x152" href="/images/icon/ios7/Icon-76@2x.png">
 
- <link rel="apple-touch-startup-image" href="/images/logo.png">
+ <link rel="apple-touch-startup-image" href="/images/icon/splash.png">
+
+<!-- iPhone -->
+<link href="/images/icon/splash-iphone.png"
+      media="(device-width: 320px) and (device-height: 480px)
+         and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image">
+<!-- iPhone (Retina) -->
+<link href="/images/icon/splash-iphone-retina.png"
+      media="(device-width: 320px) and (device-height: 480px)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image">
+<!-- iPhone 5 -->
+<link href="/images/icon/splash-iphone-5.png"
+      media="(device-width: 320px) and (device-height: 568px)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image">
+<!-- iPad (portrait) -->
+<link href="/images/icon/splash-ipad-portrait.png"
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: portrait)
+         and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image">
+<!-- iPad (landscape) -->
+<link href="/images/icon/splash-ipad-landscape.png"
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: landscape)
+         and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image">
+<!-- iPad (Retina, portrait) -->
+<link href="/images/icon/splash-ipad-retina-portrait.png"
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: portrait)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image">
+<!-- iPad (Retina, landscape) -->
+<link href="/images/icon/splash-ipad-retina-landscape.png"
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: landscape)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image">
+
  <meta name="apple-mobile-web-app-capable" content="yes">
  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
- <meta name="apple-mobile-web-app-title" content="Orbus Mobile Publisher">
+ <meta name="apple-mobile-web-app-title" content="Orbus Publisher">
  <link rel="stylesheet" href="/styles/jquery.mobile-1.4.0.min.css">
  <link rel="stylesheet" href="/styles/jquery.mobile.icons-1.4.0.min.css">
  <script src="/scripts/jquery-1.10.2.min.js"></script> 
@@ -34,7 +75,9 @@
 
       #imagewrapper{
         position:absolute; z-index:1;
-        top:45px; bottom:48px; left:0;
+        top:45px; 
+        bottom:48px; 
+        left:0;
         width:100%;
         background:#aaa;
         overflow:auto;
@@ -172,9 +215,10 @@ img[usemap] {
         <script src="/scripts/iscroll.js"></script>
         <script src="/scripts/jquery.maphilight.min.js"></script>
         <script src="/scripts/jquery.mobile.iscrollview.js"></script>
-        <script src="/scripts/iscroll-zoom.js"></script>
+        
+<script src="/scripts/iscroll5.js"></script>
+<script src="/scripts/iscroll-zoom.js"></script>
 
-<!-- <script src="/scripts/iscroll5.js"></script> -->
 
       </body> 
       </html>
