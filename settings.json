@@ -3,6 +3,11 @@
   "version": "0.8.4",
   "dateTime": "17-01-2014 13:51:18",
   "changes": [
+      "0.9.0",
+      "Added Comments",
+      "Left panel is fixed to the left on desktop (diagram info)",
+      "Bigger icons on desktop",
+      "Bug Fixes",
       "0.8.4",
       "Bug Fixes",
       "Scripts on server renamed",

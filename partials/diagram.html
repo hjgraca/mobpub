@@ -2,7 +2,7 @@
  <div data-role="header" > 
   <a id="diagrambackbtn" href="" data-rel="back">Back</a>
   <h1>Orbus</h1> 
-  <a href="/" data-icon="home">Home</a>
+  <a href="#popupMenu" data-rel="popup" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-a">Actions...</a>
 </div> 
 <div data-role="content">
  <div id="imagewrapper">
@@ -19,7 +19,8 @@
     <ul>
       <li><a id="prevpage" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="ui-disabled">Prev Page</a></li>
       <li><a id="nextpage" data-icon="arrow-r" data-transition="slide" class="ui-disabled">Next Page</a></li>
-      <li><a href="/partials/search.html" data-icon="search" data-transition="flip">Search</a></li>
+      <!-- <li><a href="/partials/search.html" data-icon="search" data-transition="flip">Search</a></li> -->
+      <li><a href="#commentpopup" id="commentbtn" data-rel="popup" data-position-to="window" data-transition="pop" data-icon="comment" class="ui-disabled">Comment</a></li>
       <li><a href="#diagraminfopanel" data-icon="info">Info</a></li>
     </ul>
   </div><!-- /navbar -->
@@ -27,7 +28,8 @@
 
 <div data-role="panel" id="diagraminfopanel" data-display="reveal" data-position-fixed="true" data-dismissible="false">
 <ul data-role="listview" class="ui-listview" data-theme="b">
-          <li data-icon="delete" class="ui-first-child"><a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete">Close</a></li>
+          <li data-icon="delete" class="ui-first-child">
+            <a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete">Close</a></li>
         </ul>
   <div class="wrapper">   
    <div class="scroller" data-iscroll> 
@@ -44,7 +46,7 @@
         <h3>RELATED ITEMS</h3>
         <div id="relatedinfolist"></div>
       </div><!-- /collapsible -->
-      <div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false">
+      <div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false" data-id="collissues">
         <h3>ISSUES</h3>
         <div id="issuesinfolist"></div>
       
@@ -53,6 +55,41 @@
       </div><!-- /collapsible -->
     </div>
 </div></div>
-  </div>
+
+
+<div data-role="popup" id="commentpopup" data-overlay-theme="b" data-history="false" data-dismissible="false" style="max-width:400px;">
+
+<div data-role="header" class="head" data-theme="a">
+    <h1>Comment</h1>
+    </div>
+    <div role="main" class="ui-content">
+<form id="commentform">
+<label for="email">E-mail to:</label>
+<input type="email" name="email" placeholder="name@domain.com">
+
+<label for="name">Your Name</label>
+<input type="text" name="name" placeholder="Full Name">
+  
+<label for="phone">Comment</label>
+<textarea rows="4" cols="50" name="comment"></textarea>
+</form>
+<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" id="cancelComment">Cancel</a>
+<a href="#" id="sendComment" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-transition="flow">Send</a>
+
+</div>
+
+
 </div> 
+
+<div data-role="popup" id="popupMenu">
+        <ul data-role="listview" data-inset="true" style="min-width:210px;">
+            <li data-role="list-divider">Choose an action</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/partials/search.html">Search</a></li>
+        </ul>
+</div>
+
+  </div> 
+
+
 
