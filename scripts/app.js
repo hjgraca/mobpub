@@ -116,12 +116,12 @@ var mobilepub = (function () {
 			mobilepub.diagram.imagescroll = new IScroll('#imagewrapper', { zoom:true, 
 				zoomStart: 0.5, zoomMin:0.3, 
 				zoomMax: 3,scrollX: true, click:true, tap: true});	
-		}else{
-			mobilepub.diagram.imagescroll = new iScroll('imagewrapper', { zoom:true, zoomStart: 1, 
-				zoomMin:1, zoomMax: 3, mouseWheel: true, wheelAction: 'zoom'});
-		}
+			}else{
+				mobilepub.diagram.imagescroll = new iScroll('imagewrapper', { zoom:true, zoomStart: 1, 
+					zoomMin:1, zoomMax: 3, mouseWheel: true, wheelAction: 'zoom'});
+			}
 
-currentShape = currentShape;
+			currentShape = currentShape;
 			$.ajax({
 				type: "GET",
 				url: path,
@@ -287,11 +287,12 @@ currentShape = currentShape;
 					mobilepub.buildDiagramPages(currentPage.id);
 
 					// search shapes with diaglinks, issues or doclinks
-					$(xml).find('Shapes Shape[DiagLinks="Y"][PageID='+ currentPage.id +'], Shape[DiagLinks="True"][PageID='+ currentPage.id +'],[Issues="Y"][PageID='+ currentPage.id +'],[Issues="True"][PageID='+ currentPage.id +'],[DocLinks="Y"][PageID='+ currentPage.id +'],[DocLinks="True"][PageID='+ currentPage.id +']').each(function(){
+					//$(xml).find('Shapes Shape[DiagLinks="Y"][PageID='+ currentPage.id +'], Shape[DiagLinks="True"][PageID='+ currentPage.id +'],[Issues="Y"][PageID='+ currentPage.id +'],[Issues="True"][PageID='+ currentPage.id +'],[DocLinks="Y"][PageID='+ currentPage.id +'],[DocLinks="True"][PageID='+ currentPage.id +']').each(function(){
+					$(xml).find('Shapes Shape[PageID='+ currentPage.id +']').each(function(){
 						var shapeId = $(this).attr("ID"), 
-							isDiagLink = $(this).attr("DiagLinks") === "Y" || $(this).attr("DiagLinks") === "True",
-							isIssues = $(this).attr("Issues") === "Y" || $(this).attr("Issues") === "True",
-							isDocLink = $(this).attr("DocLinks") === "Y" || $(this).attr("DocLinks") === "True",
+							isDiagLink = $(this).attr("DiagLinks") == "Y" || $(this).attr("DiagLinks") == "True",
+							isIssues = $(this).attr("Issues") == "Y" || $(this).attr("Issues") == "True",
+							isDocLink = $(this).attr("DocLinks") == "Y" || $(this).attr("DocLinks") == "True",
 							source = $(this).attr("Source").trim();
 						
 						// get shape
@@ -344,9 +345,9 @@ currentShape = currentShape;
         								scaleY = imageBottom / currentPage.pageSize.height.value,
         								sWidth = dimensions.width.value * scaleX,
         								sHeight = dimensions.height.value * scaleY;
+							            xLong += sWidth;
+							            yLong += sHeight;
 
-									            xLong += sWidth;
-									            yLong += sHeight;
 										// These give values for xLong / yLong that give the CENTRE of the row/column
 										// of meta-data indicators.  Individual MDI locations are set in the loop below
 									        // if (this.showMDIsPosition == 'left') {
@@ -366,6 +367,7 @@ currentShape = currentShape;
 					    //             this.MDIndicatorDivs[i][idx].style.posLeft = x
 					    //             this.MDIndicatorDivs[i][idx].style.posTop = y;
 
+					    			debugger;
 									
 									if(isDiagLink){
 
@@ -395,6 +397,22 @@ currentShape = currentShape;
 										$(div).attr("onclick",'mobilepub.navigateToChild(' + currentPage.id +', ' + shapeId + ',\''+ source +'\',\'doc\')');
 
 										$(div).clone().prependTo("#imagescroller");
+									}
+
+									if(!isDiagLink && !isDocLink){
+										// check if item has hyperlinks
+
+										$(this).find("Hyperlinks").each(function(){
+											$(div).find("img").attr("src", mobilepub.settings.imagesFolder + "hasdiaglinks.gif");
+
+											if(!isIssues){
+												$(div).css({"top": yLong - $(".responsive-image").width(), "left": xLong - $(".responsive-image").width()});	
+											}else{
+												$(div).css({"top": yLong, "left": xLong - $(".responsive-image").width()});
+											}
+											$(div).attr("onclick",'mobilepub.navigateToHyperlink(\'' + $(this).find("Address").text() + '\')');
+											$(div).clone().prependTo("#imagescroller");
+										});
 									}
 
 									//$(div).css({"top": yLong, "left": xLong - 24});
@@ -670,6 +688,9 @@ currentShape = currentShape;
 			}else{
 				$.mobile.changePage('/partials/diagram.html?id='+ docId + "&page=" + pageId + "&shapeid=" + shapeId);
 			}
+		},
+		navigateToHyperlink : function(url){
+			window.open(url);
 		},
 		showShapeInfo: function(path, target, openInfoLevel){
 			$.ajax({
