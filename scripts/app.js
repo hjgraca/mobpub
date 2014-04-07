@@ -367,8 +367,6 @@ var mobilepub = (function () {
 					    //             this.MDIndicatorDivs[i][idx].style.posLeft = x
 					    //             this.MDIndicatorDivs[i][idx].style.posTop = y;
 
-					    			debugger;
-									
 									if(isDiagLink){
 
 										$(div).find("img").attr("src", mobilepub.settings.imagesFolder + "hasdiaglinks.gif");
