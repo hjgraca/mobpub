@@ -1,8 +1,14 @@
 {
   "name": "Mobile Publisher",
-  "version": "0.9.0",
-  "dateTime": "06-04-2014 20:34:18",
+  "version": "0.9.1",
+  "dateTime": "07-08-2014 20:34:18",
   "changes": [
+      "0.9.1",
+      "Added zoom controls when on desktop",
+      "Indicator positioning and Indicator visibility based on settings",
+      "jquery mobile update",
+      "Iscrool update",
+      "Bug fixes",
       "0.9.0",
       "Added Comments",
       "Left panel is fixed to the left on desktop (diagram info)",

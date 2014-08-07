@@ -4,7 +4,6 @@ var mobilepub = (function () {
 			$("div[data-role=header]:not(.head):visible h1").text(title);
 			mobilepub.diagram.diagramTitle = title;
 		},
-
 		load: function(){
 			$.getJSON("settings.json", function(data) {
 				mobilepub.settings = data;
@@ -41,6 +40,7 @@ var mobilepub = (function () {
 		},
 		diagram:{},
 		category:{},
+		panzoom:{},
 		buildDiagramStruct: function(){
 			$.ajax({
 				type: "GET",
@@ -112,16 +112,45 @@ var mobilepub = (function () {
 			mobilepub.diagram.currentPath = diagramPath;
 			mobilepub.diagram.currentId = id;
 
-			if(window.mobilecheck()){
+		if(window.mobilecheck()){
 			mobilepub.diagram.imagescroll = new IScroll('#imagewrapper', { zoom:true, 
 				zoomStart: 0.5, zoomMin:0.3, 
 				zoomMax: 3,scrollX: true, click:true, tap: true});	
 		}else{
-			mobilepub.diagram.imagescroll = new iScroll('imagewrapper', { zoom:true, zoomStart: 1, 
-				zoomMin:1, zoomMax: 3, mouseWheel: true, wheelAction: 'zoom'});
+			$('#zoomcontrol').show();
+			mobilepub.diagram.imagescroll = new IScroll('#imagewrapper');
+
+			mobilepub.panzoom = $('#imagescroller').panzoom({
+			    //cursor: 'default',
+			    increment: 0.5,
+			    minScale: 0.5,
+			    maxScale: 4,
+			    // rangeStep: 2,
+			    transition: true,
+			    duration: 200,
+			    easing: "ease-in-out",
+			    $zoomIn: $('#_zi_icon'),
+			    $zoomOut: $('#_zo_icon'),
+			    $reset: $('#_rs_icon'),
+			    // $zoomRange: $('.zoom-range'),
+			    focal: {
+			        clientX: 10,
+			        clientY: 50
+			    },
+// 			    onZoom:function(e, panzoom){
+// if(parseFloat(panzoom.getMatrix()[0]) > 1){
+// 	// $('#imagescroller').width($('#imagescroller').width() * parseFloat(panzoom.getMatrix()[0]));
+// 	// $('.responsive-image').width(18);					
+// }else{
+// 	// $('.responsive-image').width(24);
+// }
+//  // $('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
+// // mobilepub.diagram.imagescroll.refresh();
+// 			    }
+			});
 		}
 
-currentShape = currentShape;
+			currentShape = currentShape;
 			$.ajax({
 				type: "GET",
 				url: path,
@@ -173,14 +202,18 @@ currentShape = currentShape;
 									});	
 
 								mobilepub.buildDiagramExtraIcons(xml);
-					            $('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
+$('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
+
+								// if(window.mobilecheck()){
+					   //          	$('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
+					   //      	}else{
+					   //      		$('#imagewrapper').css({'width': $('#im').width(), 'height' : $('#im').height()});
+					   //      	}
 
 									$('#im').maphilight({
 										wrapClass:true,
 										fade:false
 									}).ImageMapResize({ origImageWidth: mobilepub.diagram.image.width });
-
-									// $('.iscroll-scroller').trigger( "updatelayout" )
 
 								setTimeout(function(){
 									mobilepub.diagram.imagescroll.refresh();
@@ -283,8 +316,16 @@ currentShape = currentShape;
 
 					var currentPage = mobilepub.diagram.pages[mobilepub.diagram.currentPage],
 						diagData = $(res).find("VisioDocument Pages Page[ID='" + currentPage.id + "']");
-					
+
+					//$('.responsive-image').remove();					
 					mobilepub.buildDiagramPages(currentPage.id);
+
+					var ind = $(xml).find('Navigation > Indicators'),
+						showDocLinks = $(ind).attr('ShowDocLinks') == "true",
+						showDiagLinks = $(ind).attr('ShowDiagLinks') == "true",
+						showIssues = $(ind).attr('ShowIssues') == "true",
+						iconPositioning = $(ind).attr('Positioning');
+
 
 					// search shapes with diaglinks, issues or doclinks
 					$(xml).find('Shapes Shape[DiagLinks="Y"][PageID='+ currentPage.id +'], Shape[DiagLinks="True"][PageID='+ currentPage.id +'],[Issues="Y"][PageID='+ currentPage.id +'],[Issues="True"][PageID='+ currentPage.id +'],[DocLinks="Y"][PageID='+ currentPage.id +'],[DocLinks="True"][PageID='+ currentPage.id +']').each(function(){
@@ -300,6 +341,7 @@ currentShape = currentShape;
 							url: mobilepub.diagram.currentPath + "/" + source,
 							dataType: "xml",
 							success: function(shapexml) {				
+								
 
 								diagData.find("Shapes > Shape[ID='"+ shapeId +"']").each(function(){
 									var x = $(this).find("XFORM > PinX").text(),
@@ -335,7 +377,6 @@ currentShape = currentShape;
 										};
 									})[0];
 
-									// ViewMgrPostZoomMDIUpdate() vml_1.js
 									var imageRight = $("#im").width(),
 										imageBottom = $("#im").height(),
 										xLong = mobilepub.ConvertXorYCoordinate(dimensions.left.value,  0, currentPage.pageSize.width.value, 0, imageRight, 0),
@@ -345,29 +386,29 @@ currentShape = currentShape;
         								sWidth = dimensions.width.value * scaleX,
         								sHeight = dimensions.height.value * scaleY;
 
-									            xLong += sWidth;
-									            yLong += sHeight;
+									            // xLong += sWidth;
+									            // yLong += sHeight;
 										// These give values for xLong / yLong that give the CENTRE of the row/column
 										// of meta-data indicators.  Individual MDI locations are set in the loop below
-									        // if (this.showMDIsPosition == 'left') {
-									        //     yLong += Math.floor(sHeight / 2);
-									        // } else if (this.showMDIsPosition == 'right') {
-									            // xLong += sWidth;
-									            // yLong += Math.floor(sHeight / 2);
-									        // } else if (this.showMDIsPosition == 'top') {
-									        //     xLong += Math.floor(sWidth / 2);
-									        // } else if (this.showMDIsPosition == 'bottom') {
-									        //     xLong += Math.floor(sWidth / 2);
-									        //     yLong += sHeight;
-									        // }
+									        if (iconPositioning == 'left') {
+									            yLong += Math.floor(sHeight / 2);
+									        } else if (iconPositioning == 'right') {
+									            xLong += sWidth;
+									            yLong += Math.floor(sHeight / 2);
+									        } else if (iconPositioning == 'top') {
+									            xLong += Math.floor(sWidth / 2);
+									        } else if (iconPositioning == 'bottom') {
+									            xLong += Math.floor(sWidth / 2);
+									            yLong += sHeight;
+									        }
 									// var x = xLong - (this.MDIndicatorDivs[i][idx].clientWidth / 2);
 					    //             var y = yLong - ((this.MDIndicatorDivs[i][idx].clientHeight * nMDIs) / 2) + MDIoffset;
 					    //             MDIoffset += this.MDIndicatorDivs[i][idx].clientHeight;
 					    //             this.MDIndicatorDivs[i][idx].style.posLeft = x
 					    //             this.MDIndicatorDivs[i][idx].style.posTop = y;
 
-									
-									if(isDiagLink){
+debugger;									
+									if(isDiagLink && showDiagLinks){
 
 										$(div).find("img").attr("src", mobilepub.settings.imagesFolder + "hasdiaglinks.gif");
 
@@ -378,10 +419,9 @@ currentShape = currentShape;
 										}
 
 										$(div).clone().prependTo("#imagescroller");
-										//$("#imagescroller").prepend(diagDiv);
 									}
 
-									if(isIssues){
+									if(isIssues && showIssues){
 										$(div).find("img").attr("src", mobilepub.settings.imagesFolder + "hasissues.gif");
 										$(div).css({"top": yLong - $(".responsive-image").width(), "left": xLong - $(".responsive-image").width()});
 										$(div).attr("onclick",'mobilepub.showShapeInfoByFile(\''+ source +'\',\'Issues\')');
@@ -389,7 +429,7 @@ currentShape = currentShape;
 										$(div).clone().prependTo("#imagescroller");
 									}
 
-									if(isDocLink){
+									if(isDocLink && showDocLinks){
 										$(div).find("img").attr("src", mobilepub.settings.imagesFolder + "hasdoclinks.gif");
 										$(div).css({"top": yLong - $(".responsive-image").width(), "left": xLong - $(".responsive-image").width()});
 										$(div).attr("onclick",'mobilepub.navigateToChild(' + currentPage.id +', ' + shapeId + ',\''+ source +'\',\'doc\')');
@@ -861,6 +901,26 @@ $(document).on("pageshow", '#diagrampage',function(event, data){
 if(mobilepub.feedback.canSendFeedback){
 	$("#commentbtn").removeClass('ui-disabled');
 	$("form#commentform input[name=email]").val(mobilepub.feedback.email);
+
+
+$("#_mr_icon, #_md_icon,#_ml_icon,#_mu_icon").click(function(){
+	var pan = $(this).data("pan"),x=0,y=0;
+	if(pan=="up"){
+		y =-10;
+	}else if(pan=="down"){
+		y =10;
+	}
+	else if(pan=="left"){
+		x =-10;
+	}
+	else{
+		x =10;
+	}
+	mobilepub.panzoom.panzoom('pan',x,y,{
+		relative:true,
+		animate:true});
+});
+
 }
 
 // $('img[usemap]').load(function(){
@@ -1011,6 +1071,7 @@ $.expr[':'].iAttrStart = function(obj, params, meta, stack) {
     var opts = meta[3].match(/(.*)\s*,\s*(.*)/);
     return (opts[1] in obj.attributes) && ($(obj).attr(opts[1]).toLowerCase().indexOf(opts[2].toLowerCase()) !== -1);
 };
+
 
 window.mobilecheck = function() {
 var check = false;

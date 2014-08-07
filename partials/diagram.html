@@ -1,95 +1,97 @@
-<div id="diagrampage" data-role="page" data-theme="a" data-title="Diagram" data-add-back-btn="true"> 
- <div data-role="header" > 
-  <a id="diagrambackbtn" href="" data-rel="back">Back</a>
-  <h1>Orbus</h1> 
-  <a href="#popupMenu" data-rel="popup" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-a">Actions...</a>
-</div> 
-<div data-role="content">
- <div id="imagewrapper">
-  <div id="imagescroller">
+  <div id="diagrampage" data-role="page" data-theme="a" data-title="Diagram" data-add-back-btn="true"> 
+   <div data-role="header" > 
+    <a id="diagrambackbtn" href="" data-rel="back">Back</a>
+    <h1>Orbus</h1> 
+    <a href="#popupMenu" data-rel="popup" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-a">Actions...</a>
+  </div> 
+  <div data-role="content">
+   <div id="imagewrapper">
+    <div id="imagescroller">
 
-    <!-- <img id="im" src=""/> -->
-    <!-- <img id="im" src="" style="width:100%" /> -->
+    </div>
+  </div> 
+
+  </div>   
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar" data-iconpos="bottom">
+      <ul>
+        <li><a id="prevpage" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="ui-disabled">Prev Page</a></li>
+        <li><a id="nextpage" data-icon="arrow-r" data-transition="slide" class="ui-disabled">Next Page</a></li>
+        <!-- <li><a href="/partials/search.html" data-icon="search" data-transition="flip">Search</a></li> -->
+        <li><a href="#commentpopup" id="commentbtn" data-rel="popup" data-position-to="window" data-transition="pop" data-icon="comment" class="ui-disabled">Comment</a></li>
+        <li><a href="#diagraminfopanel" data-icon="info">Info</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div> 
+
+  <div data-role="panel" id="diagraminfopanel" data-display="reveal" data-position-fixed="true" data-dismissible="false">
+  <ul data-role="listview" class="ui-listview" data-theme="b">
+            <li data-icon="delete" class="ui-first-child">
+              <a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete">Close</a></li>
+          </ul>
+    <div class="wrapper">   
+     <div class="scroller" data-iscroll> 
+      <div data-role="collapsible-set" data-inset="false" style="margin-left: 15px;margin-right: 15px;">
+        <div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false">
+          <h3>PROPERTIES</h3>
+          <div id="propertiesinfolist"></div>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false">
+          <h3>ATTRIBUTES</h3>
+          <div id="attributesinfolist"></div>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false">
+          <h3>RELATED ITEMS</h3>
+          <div id="relatedinfolist"></div>
+        </div><!-- /collapsible -->
+        <div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false" data-id="collissues">
+          <h3>ISSUES</h3>
+          <div id="issuesinfolist"></div>
+        
+        </div>
+
+        </div><!-- /collapsible -->
+      </div>
+  </div></div>
+
+
+  <div data-role="popup" id="commentpopup" data-overlay-theme="b" data-history="false" data-dismissible="false" style="max-width:400px;">
+
+  <div data-role="header" class="head" data-theme="a">
+      <h1>Comment</h1>
+      </div>
+      <div role="main" class="ui-content">
+  <form id="commentform">
+  <label for="email">E-mail to:</label>
+  <input type="email" name="email" placeholder="name@domain.com">
+
+  <label for="name">Your Name</label>
+  <input type="text" name="name" placeholder="Full Name">
+    
+  <label for="phone">Comment</label>
+  <textarea rows="4" cols="50" name="comment"></textarea>
+  </form>
+  <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" id="cancelComment">Cancel</a>
+  <a href="#" id="sendComment" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-transition="flow">Send</a>
 
   </div>
-</div>  
-</div>   
-<div data-role="footer" data-position="fixed">
-  <div data-role="navbar" data-iconpos="bottom">
-    <ul>
-      <li><a id="prevpage" data-icon="arrow-l" data-transition="slide" data-direction="reverse" class="ui-disabled">Prev Page</a></li>
-      <li><a id="nextpage" data-icon="arrow-r" data-transition="slide" class="ui-disabled">Next Page</a></li>
-      <!-- <li><a href="/partials/search.html" data-icon="search" data-transition="flip">Search</a></li> -->
-      <li><a href="#commentpopup" id="commentbtn" data-rel="popup" data-position-to="window" data-transition="pop" data-icon="comment" class="ui-disabled">Comment</a></li>
-      <li><a href="#diagraminfopanel" data-icon="info">Info</a></li>
-    </ul>
-  </div><!-- /navbar -->
-</div> 
 
-<div data-role="panel" id="diagraminfopanel" data-display="reveal" data-position-fixed="true" data-dismissible="false">
-<ul data-role="listview" class="ui-listview" data-theme="b">
-          <li data-icon="delete" class="ui-first-child">
-            <a href="#" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete">Close</a></li>
-        </ul>
-  <div class="wrapper">   
-   <div class="scroller" data-iscroll> 
-    <div data-role="collapsible-set" data-inset="false" style="margin-left: 15px;margin-right: 15px;">
-      <div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false">
-        <h3>PROPERTIES</h3>
-        <div id="propertiesinfolist"></div>
-      </div><!-- /collapsible -->
-      <div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false">
-        <h3>ATTRIBUTES</h3>
-        <div id="attributesinfolist"></div>
-      </div><!-- /collapsible -->
-      <div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false">
-        <h3>RELATED ITEMS</h3>
-        <div id="relatedinfolist"></div>
-      </div><!-- /collapsible -->
-      <div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false" data-id="collissues">
-        <h3>ISSUES</h3>
-        <div id="issuesinfolist"></div>
-      
-      </div>
-
-      </div><!-- /collapsible -->
-    </div>
-</div></div>
-
-
-<div data-role="popup" id="commentpopup" data-overlay-theme="b" data-history="false" data-dismissible="false" style="max-width:400px;">
-
-<div data-role="header" class="head" data-theme="a">
-    <h1>Comment</h1>
-    </div>
-    <div role="main" class="ui-content">
-<form id="commentform">
-<label for="email">E-mail to:</label>
-<input type="email" name="email" placeholder="name@domain.com">
-
-<label for="name">Your Name</label>
-<input type="text" name="name" placeholder="Full Name">
-  
-<label for="phone">Comment</label>
-<textarea rows="4" cols="50" name="comment"></textarea>
-</form>
-<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" id="cancelComment">Cancel</a>
-<a href="#" id="sendComment" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-transition="flow">Send</a>
-
-</div>
-
-
-</div> 
-
-<div data-role="popup" id="popupMenu">
-        <ul data-role="listview" data-inset="true" style="min-width:210px;">
-            <li data-role="list-divider">Choose an action</li>
-            <li><a href="/">Home</a></li>
-            <li><a href="/partials/search.html">Search</a></li>
-        </ul>
-</div>
 
   </div> 
+
+  <div data-role="popup" id="popupMenu">
+          <ul data-role="listview" data-inset="true" style="min-width:210px;">
+              <li data-role="list-divider">Choose an action</li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/partials/search.html">Search</a></li>
+          </ul>
+  </div>
+
+<div id="zoomcontrol" style="position: absolute; right:10px; bottom: 65px; width: 97px; height: 64px; z-index: 90000;display:none" class="noSel">         <div class="noSel controlsBg" style="position: relative; width: 100%; height: 100%; z-index: 1; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; opacity: 0.55; background-color: rgb(0, 0, 0);">          </div>        <div style="position: absolute; display: block; left: 4px; top: 11px; width: 20px; height: 20px; z-index: 1; opacity: 0.7;" class="noSel">            <div id="_zinorm" style="position: absolute; left: 1px; top: 1px; width: 18px; height: 18px; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; display: block; background: rgb(255, 255, 255);">          </div><div id="_ziover" style="position: absolute; left: 0px; top: 0px; width: 20px; height: 20px; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; display: none; background: rgb(255, 255, 255);">         </div><div id="_zi_icon" style="position: absolute; left: 1px; top: 1px; width: 18px; height: 18px; background: transparent url(/images/icons.png) -16px -16px no-repeat;">         </div></div><div style="position: absolute; display: block; left: 4px; top: 33px; width: 20px; height: 20px; z-index: 2; opacity: 0.7;" class="noSel">            <div id="_zonorm" style="position: absolute; left: 1px; top: 1px; width: 18px; height: 18px; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; background: rgb(255, 255, 255);">          </div><div id="_zoover" style="position: absolute; left: 0px; top: 0px; width: 20px; height: 20px; display: none; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; background: rgb(255, 255, 255);">         </div><div id="_zo_icon" style="position: absolute; left: 1px; top: 1px; width: 18px; height: 18px; background: transparent url(/images/icons.png) -66px -16px no-repeat;">         </div></div><div style="position: absolute; display: block; left: 37px; top: 23px; width: 18px; height: 18px; z-index: 3; opacity: 0.7;" class="noSel">           <div id="_mrnorm" style="position: absolute; left: 1px; top: 1px; width: 16px; height: 16px; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; background: rgb(255, 255, 255);">          </div><div id="_mrover" style="position: absolute; left: 0px; top: 0px; width: 18px; height: 18px; display: none; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; background: rgb(255, 255, 255);">         </div><div id="_mr_icon" data-pan="left" style="position: absolute; left: 1px; top: 1px; width: 16px; height: 16px; background: transparent url(/images/icons.png) -117px -17px no-repeat;">          </div></div><div style="position: absolute; display: block; left: 75px; top: 23px; width: 18px; height: 18px; z-index: 4; opacity: 0.7;" class="noSel">           <div id="_mlnorm" style="position: absolute; left: 1px; top: 1px; width: 16px; height: 16px; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; background: rgb(255, 255, 255);">          </div><div id="_mlover" style="position: absolute; left: 0px; top: 0px; width: 18px; height: 18px; display: none; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; background: rgb(255, 255, 255);">         </div><div id="_ml_icon" data-pan="right" style="position: absolute; left: 1px; top: 1px; width: 16px; height: 16px; background: transparent url(/images/icons.png) -167px -17px no-repeat;">          </div></div><div style="position: absolute; display: block; left: 56px; top: 42px; width: 18px; height: 18px; z-index: 5; opacity: 0.7;" class="noSel">           <div id="_munorm" style="position: absolute; left: 1px; top: 1px; width: 16px; height: 16px; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; background: rgb(255, 255, 255);">          </div><div id="_muover" style="position: absolute; left: 0px; top: 0px; width: 18px; height: 18px; display: none; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; background: rgb(255, 255, 255);">         </div><div id="_mu_icon" data-pan="down" style="position: absolute; left: 1px; top: 1px; width: 16px; height: 16px; background: transparent url(/images/icons.png) -217px -17px no-repeat;">          </div></div><div style="position: absolute; display: block; left: 56px; top: 4px; width: 18px; height: 18px; z-index: 6; opacity: 0.7;" class="noSel">            <div id="_mdnorm" style="position: absolute; left: 1px; top: 1px; width: 16px; height: 16px; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; background: rgb(255, 255, 255);">          </div><div id="_mdover" style="position: absolute; left: 0px; top: 0px; width: 18px; height: 18px; display: none; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; background: rgb(255, 255, 255);">         </div><div id="_md_icon" data-pan="up" style="position: absolute; left: 1px; top: 1px; width: 16px; height: 16px; background: transparent url(/images/icons.png) -267px -17px no-repeat;">          </div></div><div style="position: absolute; display: block; left: 56px; top: 23px; width: 18px; height: 18px; z-index: 7; opacity: 0.7;" class="noSel">           <div id="_rsnorm" style="position: absolute; left: 1px; top: 1px; width: 16px; height: 16px; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; background: rgb(255, 255, 255);">          </div><div id="_rsover" style="position: absolute; left: 0px; top: 0px; width: 18px; height: 18px; display: none; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; background: rgb(255, 255, 255);">         </div><div id="_rs_icon" style="position: absolute; left: 1px; top: 1px; width: 16px; height: 16px; background: transparent url(/images/icons.png) -317px -17px no-repeat;">          </div></div></div>
+
+    </div> 
+
+
 
 
 
