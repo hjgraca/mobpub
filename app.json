@@ -1,7 +1,7 @@
 {
   "name": "Mobile Publisher",
   "description": "Mobile Publisher",
-  "repository": "git@heroku.com:mpub.git",
+  "repository": "https://github.com/hjgraca/mobpub.git",
   "logo": "https://node-js-sample.herokuapp.com/node.svg",
   "keywords": ["node", "express", "static"]
 }
