@@ -719,15 +719,23 @@ debugger;
 				success: function(xml) {
 					mobilepub.diagram.current = mobilepub.buildDiagramInfo(xml);
 
-					$( "[data-role=collapsible-set]" ).children().collapsible( "collapse" );
+					var opensShape =true;
+					if(supports_html5_storage()){
+					 opensShape = localStorage.getItem("openinfoshapeclick") == "false" ? false : true;
+					}
+
 					if(target){
 						$(target).trigger('alwaysOn.maphilight');
 					}
+					
+					$( "[data-role=collapsible-set]" ).children().collapsible( "collapse" );
 
 					if($("#diagraminfopanel").data("mobilePanel")._open){
 						mobilepub.loadDiagramInfoPanel(); 
 					}else{
-						$("#diagraminfopanel").panel("open");
+						if(opensShape){
+							$("#diagraminfopanel").panel("open");
+						}
 					}
 
 					if(openInfoLevel != undefined){
@@ -735,6 +743,7 @@ debugger;
 							$("[data-id=collissues]").collapsible( "expand" );
 						}
 					}
+					
 
 				},error:function(){
 					// $("#diagraminfopanel").panel("close");
@@ -960,7 +969,28 @@ $(document).on("pagebeforeshow", '#setuppage',function(event, data){
     };
 
     $("#changes").trigger("updatelayout");
+	
+	if(supports_html5_storage()){
+
+		var checked = localStorage.getItem("openinfoshapeclick") == "false" ? false : true;
+		$("#chckShaspeClick").prop('checked', checked).checkboxradio("refresh");
+	}
+
+
+    $("#chckShaspeClick").change(function(){
+		if(supports_html5_storage()){
+			localStorage.setItem("openinfoshapeclick", $("#chckShaspeClick").is(':checked'));
+		}
+    });
 });
+
+function supports_html5_storage() {
+  try {
+    return 'localStorage' in window && window['localStorage'] !== null;
+  } catch (e) {
+    return false;
+  }
+}
 
 $(document).on("pagebeforeshow", '#shapechildpopup',function(event, data){
     mobilepub.buildShapePopupOptions();
