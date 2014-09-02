@@ -1,7 +1,7 @@
 {
   "name": "Mobile Publisher",
-  "version": "0.9.1",
-  "dateTime": "07-08-2014 20:34:18",
+  "version": "0.9.2",
+  "dateTime": "02-09-2014 22:34:18",
   "changes": [
       "0.9.2",
       "Option on Setup page that allows per browser to enable/disable info panel on shape click",
