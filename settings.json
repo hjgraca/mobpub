@@ -4,7 +4,7 @@
   "dateTime": "07-08-2014 20:34:18",
   "changes": [
       "0.9.2",
-      "Option on Setup page that allows per browser to enable/disable info panel on shape click"
+      "Option on Setup page that allows per browser to enable/disable info panel on shape click",
       "Bug fixes",
       "0.9.1",
       "Added zoom controls when on desktop",
