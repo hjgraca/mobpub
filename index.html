@@ -59,18 +59,20 @@
  <meta name="apple-mobile-web-app-title" content="Orbus Publisher">
  <link rel="stylesheet" href="/styles/jquery.mobile-1.4.3.min.css">
  <link rel="stylesheet" href="/styles/jquery.mobile.icons-1.4.3.min.css">
+ <link rel="stylesheet" href="/styles/orbus.min.css">
+
  <script src="/scripts/jquery-1.10.2.min.js"></script> 
  <script src="/scripts/underscore-min.js"></script>
  <script src="/scripts/app.js"></script>
  <script src="/scripts/jquery.mobile-1.4.3.min.js"></script>
  <style type="text/css">
  #branding{
-  background: url(/images/logo.png) no-repeat;
-  width: 322px;
-  height: 100px;
-  text-indent: -999px;
-  font-size: 0px;
-  margin: 0px auto 0 auto;
+  background: url(/images/orbus.jpg) no-repeat;
+width: 360px;
+height: 100px;
+text-indent: -999px;
+font-size: 0px;
+margin: 0px auto 50px auto;
 }
 
       #imagewrapper{
@@ -192,9 +194,9 @@ img[usemap] {
              <div id="branding">  
               <h1>Image here</h1>
             </div>  
-            <div><small id="appVersion"></small><small class="datetime"></small> <small>click setup for list of changes</small></div>
             <ul data-role="listview" data-inset="true" data-dividertheme="b"> 
              <li data-role="list-divider">Options</li> 
+             <li><a href="#" style="display:none" id="homediagramlink" data-transition="slide">Home</a></li> 
              <li><a href="/partials/browsediagram.html" data-transition="slide">Browse by diagram</a></li> 
              <li><a href="/partials/browsecategory.html" data-transition="slide">Browse by category</a></li> 
              <li><a href="/partials/search.html" data-transition="slide">Search</a></li> 

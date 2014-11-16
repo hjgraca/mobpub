@@ -8,11 +8,12 @@
     <DefaultView>structview</DefaultView>
     <Timestamp CreatedOn="2014-01-03" CreatedBy="System Administrator" LastModifiedOn="2014-01-03" LastModifiedBy="System Administrator" />
     <Navigation>
+      <HomePage DocumentID="27d98237-5c24-4691-88a6-6fce103cbf9f"/>
       <TargetFrame repository_open_document="_top" repository_open_diagram="_top" repository_link_document="_top" repository_link_diagram="_top" repository_link_shape="_top" diagram_link_document="_top" diagram_link_diagram="_top" diagram_link_shape="_top" />
       <DocumentFrame enabled="false" height="30%" />
       <PopupMenu first_tier_links="5" />
       <VisioHyperlinks publish="false" />
-      <Indicators ShowDocLinks="true" ShowDiagLinks="true" ShowIssues="true" Positioning="right" />
+      <Indicators ShowDocLinks="true" ShowDiagLinks="true" ShowIssues="true" Positioning="left" />
     </Navigation>
     <Reporting word_enabled="false" html_enabled="true" image_enabled="true" />
   </PublicationProperties>
