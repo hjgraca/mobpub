@@ -129,28 +129,18 @@ var mobilepub = (function () {
 			    increment: 0.5,
 			    minScale: 0.5,
 			    maxScale: 4,
-			    // rangeStep: 2,
 			    transition: true,
 			    duration: 200,
 			    easing: "ease-in-out",
 			    $zoomIn: $('#_zi_icon'),
 			    $zoomOut: $('#_zo_icon'),
 			    $reset: $('#_rs_icon'),
-			    // $zoomRange: $('.zoom-range'),
+				//startTransform: 'scale(1.1)',
 			    focal: {
 			        clientX: 10,
 			        clientY: 50
 			    },
-// 			    onZoom:function(e, panzoom){
-// if(parseFloat(panzoom.getMatrix()[0]) > 1){
-// 	// $('#imagescroller').width($('#imagescroller').width() * parseFloat(panzoom.getMatrix()[0]));
-// 	// $('.responsive-image').width(18);					
-// }else{
-// 	// $('.responsive-image').width(24);
-// }
-//  // $('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
-// // mobilepub.diagram.imagescroll.refresh();
-// 			    }
+				//contain:'invert'
 			});
 		}
 
@@ -206,7 +196,7 @@ var mobilepub = (function () {
 									});	
 
 								mobilepub.buildDiagramExtraIcons(xml);
-$('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
+$('#imagescroller').css({'width': "100%", 'height' : "100%"});
 
 								// if(window.mobilecheck()){
 					   //          	$('#imagescroller').css({'width': $('#im').width(), 'height' : $('#im').height()});
