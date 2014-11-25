@@ -13,7 +13,7 @@
       <DocumentFrame enabled="false" height="30%" />
       <PopupMenu first_tier_links="5" />
       <VisioHyperlinks publish="false" />
-      <Indicators ShowDocLinks="true" ShowDiagLinks="true" ShowIssues="true" Positioning="left" />
+      <Indicators ShowDocLinks="true" ShowDiagLinks="true" ShowIssues="true" Positioning="right" />
     </Navigation>
     <Reporting word_enabled="false" html_enabled="true" image_enabled="true" />
   </PublicationProperties>

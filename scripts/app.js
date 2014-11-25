@@ -1016,6 +1016,7 @@ $(document).on("panelbeforeclose", '#diagraminfopanel',function(event, data){
 
 $(document).on("panelclose", '#diagraminfopanel',function(event, data){
 	$("#imagewrapper").css("bottom","48px");
+	$(".ui-panel-wrapper").css("position","static");
 	
 });
 
